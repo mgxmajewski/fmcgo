@@ -132,6 +132,7 @@ const IndexPage = () => {
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations FMCGO!
+        Your server is great!
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
