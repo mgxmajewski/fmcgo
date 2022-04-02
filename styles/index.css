@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Times New Roman';
-    src: url(../font/Satoshi-Regular.otf) format('truetype');
+    src: url(../font/Satoshi-Regular.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: url(../font/Satoshi-Italic.otf) format('truetype');
+    src: url(../font/Satoshi-Italic.otf) format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: url(../font/Satoshi-Bold.otf) format('truetype');
+    src: url(../font/Satoshi-Bold.otf) format('opentype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: url(../font/Satoshi-BoldItalic.otf) format('truetype');
+    src: url(../font/Satoshi-BoldItalic.otf) format('opentype');
     font-style: italic;
     font-weight: bold;
 }
@@ -105,7 +105,7 @@ body {
     border-right: 0;
     transform: rotateY(-90deg) translateX(-100px);
     transform-origin: left;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation: moveLeftSide 2s infinite ease-in-out alternate;
 }
 
@@ -139,21 +139,21 @@ body {
 
 
 #carrefour div {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 #pepsi div {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 #desperados div {
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 
 #heineken div {
-    animation-delay: 8s;
+    animation-delay: 4s;
 }
 
 #develey div {
-    animation-delay: 10s;
+    animation-delay: 5s;
 }
