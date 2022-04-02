@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(../font/Satoshi-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(../font/Satoshi-Italic.otf) format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(../font/Satoshi-Bold.otf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(../font/Satoshi-BoldItalic.otf) format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
@@ -47,7 +71,7 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
     width: 100%;
     height: 100%;
@@ -59,7 +83,7 @@ body {
 .front {
     background-color: black;
     transform: translateZ(-100px);
-    animation: moveFront 2s infinite ease-in-out alternate;
+     animation: moveFront 4s infinite ease-in-out alternate;
 }
 
 .back {
@@ -70,7 +94,7 @@ body {
     width: 0;
     transform: rotateY(-90deg) translateX(-100px) translateZ(-100px);
     transform-origin: left;
-    animation: moveRightSide 2s infinite ease-in-out alternate;
+    animation: moveRightSide 4s infinite ease-in-out alternate;
 }
 
 .left {
@@ -78,7 +102,7 @@ body {
     transform: rotateY(-90deg) translateX(-100px);
     transform-origin: left;
     animation-delay: 3s;
-    animation: moveLeftSide 2s infinite ease-in-out alternate;
+    animation: moveLeftSide 4s infinite ease-in-out alternate;
 }
 
 @keyframes moveFront {
