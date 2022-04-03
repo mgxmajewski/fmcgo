@@ -2,7 +2,6 @@
     grid-area: go-hero;
     height: 100vh;
     display: grid;
-    background: chocolate;
     grid-template:
             "fmcgo-logo fmcgo-tagline"
             "fmcgo-copy fmcgo-copy";
@@ -29,9 +28,10 @@
 
 .fmcgo-copy{
     grid-area: fmcgo-copy;
-    font-size: 1.2vw;
+    width: 65.5vw;
+    font-size: 1.13vw;
+    color: #7b7b7b;
     justify-self: center;
-    padding-left: 3vw;
     /*align-items: center;*/
 
 }

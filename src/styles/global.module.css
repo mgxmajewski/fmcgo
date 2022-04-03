@@ -111,8 +111,9 @@ textarea {
    THE END of "Base styles: opinionated defaults"
    ========================================================================== */
 
-html {
+body {
     font-family: "Satoshi", sans-serif;
+    color: black;
 }
 
 .layout {
