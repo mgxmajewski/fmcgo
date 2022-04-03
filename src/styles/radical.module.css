@@ -1,0 +1,45 @@
+.radical-section {
+    grid-area: radical-section;
+    height: 100vh;
+    background-color: cadetblue;
+    display: grid;
+    padding-left: 16vw;
+    grid-template:
+            "radical-icons"
+            "radical-tagline"
+            "radical-copy"
+            "radical-drawers";
+    grid-row-gap: 5vw;
+    grid-column-gap: 3vw;
+    justify-items: center;
+}
+
+.radical-icons {
+    grid-area: radical-icons;
+    width: 21.5vw;
+    justify-self: right;
+    padding-bottom: .5vw;
+    align-self: end;
+}
+
+.radical-tagline {
+    grid-area: radical-tagline;
+    font-weight: 900;
+    color: white;
+    font-size: 3vw;
+    line-height: 1.05;
+    justify-self: left;
+    align-self: end;
+}
+
+.radical-copy {
+    grid-area: radical-copy;
+    width: 65.5vw;
+    font-size: 1.13vw;
+    color: white;
+    justify-self: left;
+}
+
+.radical-drawers {
+    grid-area: radical-drawers;
+}

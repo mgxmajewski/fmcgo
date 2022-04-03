@@ -9,7 +9,7 @@
     grid-column-gap: 3vw;
 }
 
-.fmcgo-logo{
+.fmcgo-logo {
     grid-area: fmcgo-logo;
     width: 21.5vw;
     justify-self: right;
@@ -26,12 +26,9 @@
     align-self: end;
 }
 
-.fmcgo-copy{
+.fmcgo-copy {
     grid-area: fmcgo-copy;
-    width: 65.5vw;
     font-size: 1.13vw;
     color: #7b7b7b;
     justify-self: center;
-    /*align-items: center;*/
-
 }
