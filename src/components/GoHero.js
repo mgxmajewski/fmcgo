@@ -8,7 +8,7 @@ const GoHero = () => {
         <section className={goHeroSection}>
                 <Logo className={fmcgoLogo}/>
             <div className={fmcgoTagline}>
-                We <sup><u className={fmcgoTaglineGradient}>move</u></sup> as fast <br/> as goods we <sup><u className={fmcgoTaglineGradient}>move</u></sup>
+                We <sup className={fmcgoTaglineGradient}>move</sup> as fast <br/> as goods we <sup className={fmcgoTaglineGradient}>move</sup>
             </div>
             <div className={fmcgoCopy}>We are FMC_Go – newly established advertising agency specialized in work for FMCG and retail brands.<br/>
                 We are a team of specialists and managers with many years of experience gathered in the biggest
