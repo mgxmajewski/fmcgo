@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Times New Roman';
+    font-family: 'Satoshi';
     src: url(../font/Satoshi-Regular.otf) format('opentype');
 }
 
 @font-face {
-    font-family: 'Times New Roman';
+    font-family: 'Satoshi';
     src: url(../font/Satoshi-Italic.otf) format('opentype');
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Times New Roman';
+    font-family: 'Satoshi';
     src: url(../font/Satoshi-Bold.otf) format('opentype');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Times New Roman';
+    font-family: 'Satoshi';
     src: url(../font/Satoshi-BoldItalic.otf) format('opentype');
     font-style: italic;
     font-weight: bold;
@@ -31,6 +31,7 @@
 }
 
 body {
+    font-family: 'Satoshi', sans-serif;
     background-color: #eee;
     min-height: 100vh;
     display: -webkit-box;
