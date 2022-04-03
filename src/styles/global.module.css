@@ -11,6 +11,12 @@
 
 @font-face {
     font-family: 'Satoshi';
+    src: url(../../font/Satoshi-Black.otf) format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Satoshi';
     src: url(../../font/Satoshi-Bold.otf) format('opentype');
     font-weight: bold;
 }
@@ -112,8 +118,6 @@ html {
 .layout {
     scrollbar-gutter: stable both-edges;
     width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
     display: grid;
     grid-gap: .5em;
     grid-row-gap: .5em;

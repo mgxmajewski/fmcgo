@@ -1,5 +1,37 @@
-.go-hero-section{
+.go-hero-section {
     grid-area: go-hero;
     height: 100vh;
+    display: grid;
     background: chocolate;
+    grid-template:
+            "fmcgo-logo fmcgo-tagline"
+            "fmcgo-copy fmcgo-copy";
+    grid-row-gap: 5vw;
+    grid-column-gap: 3vw;
+}
+
+.fmcgo-logo{
+    grid-area: fmcgo-logo;
+    width: 21.5vw;
+    justify-self: right;
+    padding-bottom: .5vw;
+    align-self: end;
+}
+
+.fmcgo-tagline {
+    grid-area: fmcgo-tagline;
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: 1.05;
+    justify-self: left;
+    align-self: end;
+}
+
+.fmcgo-copy{
+    grid-area: fmcgo-copy;
+    font-size: 1.2vw;
+    justify-self: center;
+    padding-left: 3vw;
+    /*align-items: center;*/
+
 }
