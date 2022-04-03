@@ -77,6 +77,7 @@ body {
     height: 100%;
     /*opacity: 0.9;*/
     border: 3px solid black;
+    outline: 1px solid transparent;
     border-collapse: collapse;
 }
 
