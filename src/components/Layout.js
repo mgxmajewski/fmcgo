@@ -7,15 +7,18 @@ import PropTypes from "prop-types";
 
 const Layout = ({children}) => {
     return (
-        <div className={layout}>
+        <>
             <NavBar/>
-            {/*content for each page*/}
-            {children}
-            <footer>
-                <p>&reg; 2022 fmcgo.pl</p>
-            </footer>
-        </div>
-    );
+            <div className={layout}>
+                {/*content for each page*/}
+                {children}
+                <footer>
+                    <p>&reg; 2022 fmcgo.pl</p>
+                </footer>
+            </div>
+        </>
+    )
+        ;
 };
 
 Layout.propTypes = {

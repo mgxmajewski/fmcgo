@@ -1,0 +1,5 @@
+.go-hero-section{
+    grid-area: go-hero;
+    height: 100vh;
+    background: chocolate;
+}

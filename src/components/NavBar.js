@@ -11,11 +11,11 @@ const NavBar = () => {
     return (
         <nav className={navbarGo}>
             <ul>
-                <li>go</li>
-                <li>Radical</li>
-                <li>Co</li>
-                <li>Board</li>
                 <li>ContactUs</li>
+                <li>Board</li>
+                <li>Co</li>
+                <li>Radical</li>
+                <li>go</li>
             </ul>
         </nav>
     );

@@ -1,16 +1,24 @@
 .navbar-go {
-    grid-area: navbar;
-    display: flex;
-    justify-self: right;
-    flex-direction: row;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-go ul {
-    list-style-type: none;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+    padding-right: 80px;
 }
 
 .navbar-go li {
-    float: left;
-    padding: 1em;
+  padding: 14px 16px;
+    display: block;
+    float: right;
 }
 
