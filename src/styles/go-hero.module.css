@@ -26,6 +26,23 @@
     align-self: end;
 }
 
+.fmcgo-tagline-gradient {
+    background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fmcgo-tagline-gradient::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  border-radius: 2px;
+  background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+}
+
 .fmcgo-copy {
     grid-area: fmcgo-copy;
     font-size: 1.13vw;

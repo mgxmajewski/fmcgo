@@ -1,14 +1,14 @@
 import React from 'react';
 import Logo from '../assets/fmcgologo.svg'
 
-import {goHeroSection, fmcgoLogo, fmcgoTagline, fmcgoCopy} from "../styles/go-hero.module.css";
+import {goHeroSection, fmcgoLogo, fmcgoTagline, fmcgoCopy, fmcgoTaglineGradient} from "../styles/go-hero.module.css";
 
 const GoHero = () => {
     return (
         <section className={goHeroSection}>
                 <Logo className={fmcgoLogo}/>
             <div className={fmcgoTagline}>
-                We <sup><u>move</u></sup> as fast <br/> as goods we <sup><u>move</u></sup>
+                We <sup><u className={fmcgoTaglineGradient}>move</u></sup> as fast <br/> as goods we <sup><u className={fmcgoTaglineGradient}>move</u></sup>
             </div>
             <div className={fmcgoCopy}>We are FMC_Go – newly established advertising agency specialized in work for FMCG and retail brands.<br/>
                 We are a team of specialists and managers with many years of experience gathered in the biggest
