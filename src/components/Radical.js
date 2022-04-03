@@ -1,12 +1,20 @@
 import React from 'react';
-
-import {radicalSection, radicalIcons, radicalTagline, radicalCopy, radicalDrawers} from "../styles/radical.module.css";
+import MouseIcon from '../assets/mouse-scroll-down-icon.svg'
+import {radicalSection, radicalIcons, radicalTagline, radicalCopy, radicalDrawers, iconBox, mouseIcon, mouseGo,socialIcons} from "../styles/radical.module.css";
 
 
 const Radical = () => {
     return (
         <section className={radicalSection}>
-            <div className={radicalIcons}>icons</div>
+            <div className={radicalIcons}>
+                <div className={mouseGo}>
+                    <MouseIcon className={mouseIcon}/>
+                    go</div>
+                <div className={socialIcons}>
+                    <div className={iconBox}>f</div>
+                    <div className={iconBox}>@</div>
+                </div>
+            </div>
             <div className={radicalTagline}>#Radical Advertising </div>
             <div className={radicalCopy}>
                 If a creative idea can’t be fit into an e-commerce banner, it’s not advertising.<br/>

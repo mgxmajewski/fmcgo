@@ -1,7 +1,7 @@
 .radical-section {
     grid-area: radical-section;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: black;
     display: grid;
     padding-left: 16vw;
     grid-template:
@@ -16,8 +16,11 @@
 
 .radical-icons {
     grid-area: radical-icons;
-    width: 21.5vw;
-    justify-self: right;
+    width: 65vw;
+    display: grid;
+    grid-template:
+            "mouse-go social-icons";
+    justify-self: left;
     padding-bottom: .5vw;
     align-self: end;
 }
@@ -42,4 +45,49 @@
 
 .radical-drawers {
     grid-area: radical-drawers;
+}
+
+
+.mouse-go {
+    grid-area: mouse-go;
+    justify-self: left;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    /*justify-content: center;*/
+    margin-top: -1vw;
+    font-size: 3vw;
+    font-weight: 900;
+    gap: 1vw;
+}
+
+.mouse-icon {
+    width: 2vw;
+    margin-top: 2vw;
+}
+
+
+.social-icons {
+    grid-area: social-icons;
+    justify-self: right;
+    align-self: center;
+    gap: .5vw;
+    display: inline-flex;
+}
+
+.icon-box {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    width: 2vw;
+    height: 2vw;
+    padding: 1.4vw;
+}
+
+.icon-box--lifted{
+
 }
