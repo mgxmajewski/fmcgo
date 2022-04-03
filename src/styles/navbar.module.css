@@ -1,0 +1,16 @@
+.navbar-go {
+    grid-area: navbar;
+    display: flex;
+    justify-self: right;
+    flex-direction: row;
+}
+
+.navbar-go ul {
+    list-style-type: none;
+}
+
+.navbar-go li {
+    float: left;
+    padding: 1em;
+}
+
