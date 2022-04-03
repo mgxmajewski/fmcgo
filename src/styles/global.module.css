@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../../font/Satoshi-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../../font/Satoshi-Italic.otf) format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../../font/Satoshi-Bold.otf) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../../font/Satoshi-BoldItalic.otf) format('opentype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   THE END of "Base styles: opinionated defaults"
+   ========================================================================== */
+
+html {
+    font-family: "Satoshi", sans-serif;
+}
+
+.layout {
+    scrollbar-gutter: stable both-edges;
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: grid;
+    grid-gap: .5em;
+    grid-row-gap: .5em;
+    row-gap: .5em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navbar"
+      "go-hero"
+      "radical-section"
+      "co-section"
+      "board-section"
+      "contact-section"
+      "footer"
+}
