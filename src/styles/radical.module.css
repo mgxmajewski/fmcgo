@@ -55,17 +55,16 @@
     align-items: center;
     color: white;
     /*justify-content: center;*/
-    margin-top: -1vw;
-    font-size: 3vw;
+    margin-top: -.3vw;
+    font-size: 2.2vw;
     font-weight: 900;
-    gap: 1vw;
+    gap: .8vw;
 }
 
 .mouse-icon {
-    width: 2vw;
+    width: 1.5vw;
     margin-top: 2vw;
 }
-
 
 .social-icons {
     grid-area: social-icons;
@@ -79,13 +78,13 @@
     display: flex;
     color: white;
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     align-items: center;
     justify-content: center;
     border: 3px solid white;
-    width: 2vw;
-    height: 2vw;
-    padding: 1.4vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 1vw;
 }
 
 .icon-box--lifted{
