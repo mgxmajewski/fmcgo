@@ -14,16 +14,18 @@ import {
 
 
 const DrawerCuboid = (props) => {
+
+    const {brand, width} = props
+
 const AdjustedDrawer = styled.div`
-    --cube-width: 300px;
-    --cube-height: 100px;
+    --cube-width: ${width};
 `;
     return (
         <div className={defaultDrawerDimension}>
             <AdjustedDrawer>
                 <div className={drawerContainer}>
                     <div className={cube}>
-                        <div className={`${side} ${front}`}>Carrefour</div>
+                        <div className={`${side} ${front}`}>{brand}</div>
                         <div className={`${side} ${left}`}></div>
                         <div className={`${side} ${right}`}></div>
                         <div className={`${side} ${back}`}></div>

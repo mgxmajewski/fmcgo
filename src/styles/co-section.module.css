@@ -40,9 +40,15 @@
 
 .co-drawers {
     grid-area: co-drawers;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1vw 4vw;
+    font-weight: 900;
+    flex-wrap: wrap;
     background-color: cyan;
     width: 67vw;
-    height: 20vh;
+    height: 15vh;
     justify-self: left;
 }
 

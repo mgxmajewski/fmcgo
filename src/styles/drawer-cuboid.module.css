@@ -1,28 +1,30 @@
 
 /*default - to be ovverriden with props*/
 .default-drawer-dimension {
-    --cube-width: 100px;
-    --cube-height: 50px;
+    --cube-width: 6vw;
+    --cube-height: 3vw;
+    --cube-depth: 6vw;
 }
 
 .drawer-container {
-    width: calc(var(--cube-width) * 1.4);
-    height: calc(var(--cube-height) * 1.3);
+    width: calc(var(--cube-width) * 1);
+    height: calc(var(--cube-height) * 1);
     /*border: 2px solid white;*/
     /*border-radius: 4px;*/
     display: -webkit-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1800px;
+    perspective: 2000px;
     perspective-origin: -250px -140px;
-    animation: moveOnZ 2s infinite ease-in-out alternate;
+    /*animation: moveOnZ 2s infinite ease-in-out alternate;*/
 }
 
 .cube {
 
     position: relative;
     width: var(--cube-width);
+
     height: var(--cube-height);
     transform-style: preserve-3d;
 }
@@ -32,7 +34,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    font-size: 1em;
+    font-size: 1.2vw;
     color: white;
     width: 100%;
     height: 100%;
@@ -45,31 +47,33 @@
 .front {
     /*top: 1%;*/
     background-color: black;
-    transform: translateZ(0);
-    animation: moveFront 2s infinite ease-in-out alternate;
+    transform: translateZ(calc(var(--cube-depth)));
+    /*animation: moveFront 2s infinite ease-in-out alternate;*/
 }
 
 .back {
-    transform: translateZ(calc(var(--cube-width) * -1));
+    /*transform: translateZ(calc(var(--cube-width) * -1));*/
+    transform: translateZ(0);
 }
 
 .right {
-    width: var(--cube-width);
+    width: var(--cube-depth);
     border-left: 0;
     border-right: 0;
-    transform: rotateY(-90deg) translateX(calc(var(--cube-width) * -1)) translateZ(calc(var(--cube-width) * -1));
+    /*transform: rotateY(-90deg) translateX(calc(var(--cube-width))) translateZ(calc(var(--cube-depth) * -1));*/
+    transform: rotateY(-90deg)translateZ(calc(var(--cube-width) * -1));
     transform-origin: left;
-    animation: moveRightSide 2s infinite ease-in-out alternate;
+    /*animation: moveRightSide 2s infinite ease-in-out alternate;*/
 }
 
 .left {
-    width: var(--cube-width);
+    width: var(--cube-depth);
     border-left: 0;
     border-right: 0;
-    transform: rotateY(-90deg) translateX(calc(var(--cube-width) * -1));
+    transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
-    animation-delay: 1s;
-    animation: moveLeftSide 2s infinite ease-in-out alternate;
+    /*animation-delay: 1s;*/
+    /*animation: moveLeftSide 2s infinite ease-in-out alternate;*/
 }
 
 @keyframes moveFront {
