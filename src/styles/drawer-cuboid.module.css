@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     perspective: 2000px;
-    perspective-origin: -250px -140px;
+    perspective-origin: -250px -250px;
     /*animation: moveOnZ 2s infinite ease-in-out alternate;*/
 }
 
@@ -53,7 +53,8 @@
 
 .back {
     /*transform: translateZ(calc(var(--cube-width) * -1));*/
-    transform: translateZ(0);
+
+    transform: rotateY(180deg) translateZ(0);
 }
 
 .right {
@@ -61,8 +62,14 @@
     border-left: 0;
     border-right: 0;
     /*transform: rotateY(-90deg) translateX(calc(var(--cube-width))) translateZ(calc(var(--cube-depth) * -1));*/
-    transform: rotateY(-90deg)translateZ(calc(var(--cube-width) * -1));
+
+    /*transform: rotateY(-90deg)translateZ(calc(var(--cube-width) * -1));*/
+    /*transform-origin: left;*/
+
+    /*transform: rotateY(90deg) translateZ(calc(var(--cube-height) * -1/2 * var(--cube-height)));*/
+    transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
+
     /*animation: moveRightSide 2s infinite ease-in-out alternate;*/
 }
 
