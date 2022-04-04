@@ -17,7 +17,7 @@
     align-items: center;
     perspective: 2000px;
     perspective-origin: -250px -250px;
-    /*animation: moveOnZ 2s infinite ease-in-out alternate;*/
+    animation: moveOnZ 2s infinite ease-in-out alternate;
 }
 
 .cube {
@@ -48,7 +48,7 @@
     /*top: 1%;*/
     background-color: black;
     transform: translateZ(calc(var(--cube-depth)));
-    /*animation: moveFront 2s infinite ease-in-out alternate;*/
+    animation: moveFront 2s infinite ease-in-out alternate;
 }
 
 .back {
@@ -70,7 +70,7 @@
     transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
 
-    /*animation: moveRightSide 2s infinite ease-in-out alternate;*/
+    animation: moveRightSide 2s infinite ease-in-out alternate;
 }
 
 .left {
@@ -80,12 +80,12 @@
     transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
     /*animation-delay: 1s;*/
-    /*animation: moveLeftSide 2s infinite ease-in-out alternate;*/
+    animation: moveLeftSide 2s infinite ease-in-out alternate;
 }
 
 @keyframes moveFront {
     from {
-        transform: translateZ(calc(var(--cube-width) * -1));
+        transform: translateZ(calc(var(--cube-depth)));
     }
     to {
         transform: translateZ(0);
@@ -94,20 +94,25 @@
 
 @keyframes moveLeftSide {
     from {
-        width: 0;
+        /*transform: translateZ(0);*/
+        transform: rotateY(-90deg) translateX(0);
+        width: calc(var(--cube-depth));
     }
     to {
-        width: var(--cube-width);
+        transform: rotateY(-90deg) translateX(0);
+        width: 0;
     }
 }
 
 
 @keyframes moveRightSide {
     from {
-        width: 0;
+        width: var(--cube-depth);
+        transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
     to {
-        width: var(--cube-width);
+        width: 0;
+        transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
 }
 
