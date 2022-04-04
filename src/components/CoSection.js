@@ -2,6 +2,7 @@ import React from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
+import DrawerCuboid from "./DrawerCuboid";
 
 const CoSection = () => {
     return (
@@ -14,7 +15,7 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                Drawers
+                <DrawerCuboid/>
             </div>
             <CoSlider/>
         </section>
