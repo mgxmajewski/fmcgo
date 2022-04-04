@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from '../assets/fmcgologo.svg'
+
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
@@ -15,16 +17,16 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                <DrawerCuboid width='9vw' text='Carrefour'/>
-                <DrawerCuboid width='8.3vw' text='Pepsi'/>
-                <DrawerCuboid width='11vw' text='Desperados'/>
-                <DrawerCuboid width='10vw' text='Heineken'/>
-                <DrawerCuboid width='9vw' text='Develey'/>
-                <DrawerCuboid width='12vw' text='Costa Coffee'/>
-                <DrawerCuboid width='8vw' text='Tchibo'/>
-                <DrawerCuboid width='7vw' text='Stock'/>
-                <DrawerCuboid width='9vw' text='Sephora'/>
-                <DrawerCuboid width='8.3vw' text='Clarins'/>
+                <DrawerCuboid width='9vw'>Carrefour</DrawerCuboid>
+                <DrawerCuboid width='8.3vw'>Pepsi</DrawerCuboid>
+                <DrawerCuboid width='11vw'>Desperados</DrawerCuboid>
+                <DrawerCuboid width='10vw'>Heineken</DrawerCuboid>
+                <DrawerCuboid width='9vw'>Develey</DrawerCuboid>
+                <DrawerCuboid width='12vw'>Costa Coffee</DrawerCuboid>
+                <DrawerCuboid width='8vw'>Tchibo</DrawerCuboid>
+                <DrawerCuboid width='7vw'>Stock</DrawerCuboid>
+                <DrawerCuboid width='9vw'>Sephora</DrawerCuboid>
+                <DrawerCuboid width='8.3vw'>Clarins</DrawerCuboid>
             </div>
             <CoSlider/>
         </section>
