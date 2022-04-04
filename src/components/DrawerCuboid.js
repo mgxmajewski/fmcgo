@@ -15,7 +15,7 @@ import {
 
 const DrawerCuboid = (props) => {
 
-    const {brand, width} = props
+    const {text, width} = props
 
 const AdjustedDrawer = styled.div`
     --cube-width: ${width};
@@ -25,7 +25,7 @@ const AdjustedDrawer = styled.div`
             <AdjustedDrawer>
                 <div className={drawerContainer}>
                     <div className={cube}>
-                        <div className={`${side} ${front}`}>{brand}</div>
+                        <div className={`${side} ${front}`}>{text}</div>
                         <div className={`${side} ${left}`}></div>
                         <div className={`${side} ${right}`}></div>
                         <div className={`${side} ${back}`}></div>

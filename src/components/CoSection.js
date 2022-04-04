@@ -15,16 +15,16 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                <DrawerCuboid width='9vw' brand='Carrefour'/>
-                <DrawerCuboid width='8vw' brand='Pepsi'/>
-                <DrawerCuboid width='11vw' brand='Desperados'/>
-                <DrawerCuboid width='10vw' brand='Heineken'/>
-                <DrawerCuboid width='9vw' brand='Develey'/>
-                <DrawerCuboid width='12vw' brand='Costa Coffee'/>
-                <DrawerCuboid width='8vw' brand='Tchibo'/>
-                <DrawerCuboid width='7vw' brand='Stock'/>
-                <DrawerCuboid width='9vw' brand='Sephora'/>
-                <DrawerCuboid width='8vw' brand='Clarins'/>
+                <DrawerCuboid width='9vw' text='Carrefour'/>
+                <DrawerCuboid width='8.3vw' text='Pepsi'/>
+                <DrawerCuboid width='11vw' text='Desperados'/>
+                <DrawerCuboid width='10vw' text='Heineken'/>
+                <DrawerCuboid width='9vw' text='Develey'/>
+                <DrawerCuboid width='12vw' text='Costa Coffee'/>
+                <DrawerCuboid width='8vw' text='Tchibo'/>
+                <DrawerCuboid width='7vw' text='Stock'/>
+                <DrawerCuboid width='9vw' text='Sephora'/>
+                <DrawerCuboid width='8.3vw' text='Clarins'/>
             </div>
             <CoSlider/>
         </section>
