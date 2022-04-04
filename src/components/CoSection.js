@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../assets/fmcgologo.svg'
 
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
