@@ -126,9 +126,9 @@ body {
     scrollbar-gutter: stable both-edges;
     width: 100%;
     display: grid;
-    grid-gap: .5em;
-    grid-row-gap: .5em;
-    row-gap: .5em;
+    /*grid-gap: .5em;*/
+    /*grid-row-gap: .5em;*/
+    /*row-gap: .5em;*/
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
