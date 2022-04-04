@@ -54,7 +54,7 @@
     justify-self: left;
     display: inline-flex;
     align-items: center;
-    background: linear-gradient(90deg, rgba(144, 58, 68, 1) 60%, rgba(227, 147, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(169,45,70,1) 42%, rgba(227,147,0,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -.3vw;
