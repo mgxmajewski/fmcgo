@@ -1,0 +1,48 @@
+.co-section {
+    grid-area: co-section;
+    height: 100vh;
+    background-color: #2954d4;
+    display: grid;
+    padding-left: 16vw;
+    grid-template:
+            "co-tagline"
+            "co-copy"
+            "co-drawers"
+            "co-slider";
+    grid-row-gap: 1vw;
+    grid-column-gap: 3vw;
+    justify-items: center;
+}
+
+.co-tagline {
+    grid-area: co-tagline;
+    font-weight: 900;
+    color: white;
+    font-size: 3vw;
+    line-height: 1.05;
+    justify-self: left;
+    align-self: end;
+    padding-top: 1vw;
+}
+
+.co-copy {
+    grid-area: co-copy;
+    width: 67vw;
+    font-size: 1.13vw;
+    font-weight: 300;
+    color: white;
+    justify-self: left;
+}
+
+.co-copy b {
+    font-weight: bold;
+}
+
+.co-drawers {
+    grid-area: co-drawers;
+    background-color: cyan;
+    width: 67vw;
+    height: 20vh;
+    justify-self: left;
+}
+
