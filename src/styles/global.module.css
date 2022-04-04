@@ -17,6 +17,12 @@
 
 @font-face {
     font-family: 'Satoshi';
+    src: url(../../font/Satoshi-Light.otf) format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Satoshi';
     src: url(../../font/Satoshi-Bold.otf) format('opentype');
     font-weight: bold;
 }
