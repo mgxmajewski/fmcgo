@@ -29,7 +29,7 @@
     grid-area: radical-tagline;
     font-weight: 900;
     color: white;
-    font-size: 3vw;
+    font-size: var(--section-tagline-size);
     line-height: 1.05;
     justify-self: left;
     align-self: end;
