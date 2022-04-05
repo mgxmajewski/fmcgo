@@ -1,7 +1,6 @@
 .co-section {
     grid-area: co-section;
-    height:150vh;
-    background-color: #2954d4;
+    /*height: 170vh;*/
     display: grid;
     padding-left: 16vw;
     grid-template:
@@ -9,8 +8,8 @@
             "co-copy"
             "co-drawers"
             "co-slider";
-    grid-row-gap: 1vw;
-    grid-template-rows: 8vh 8vh 15vh auto;
+    grid-row-gap: 2vw;
+    grid-template-rows: 10vw 7vw 16.9vw auto;
     grid-column-gap: 3vw;
     justify-items: center;
 }
@@ -18,8 +17,8 @@
 .co-tagline {
     grid-area: co-tagline;
     font-weight: 900;
-    color: white;
-    font-size: 3vw;
+    color: black;
+    font-size: var(--section-tagline-size);
     line-height: 1.05;
     justify-self: left;
     align-self: end;
@@ -35,7 +34,8 @@
     width: 67vw;
     font-size: 1.13vw;
     font-weight: 300;
-    color: white;
+    color: black;
+    padding-top: 1vw;
     justify-self: left;
 }
 
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     background-color: cyan;
     width: 67vw;
-    height: 15vh;
+    height: 12.9vw;
     justify-self: left;
 }
 
