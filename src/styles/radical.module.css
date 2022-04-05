@@ -1,6 +1,6 @@
 .radical-section {
     grid-area: radical-section;
-    height: 80vh;
+    height: 50vw;
     background-color: black;
     display: grid;
     padding-left: 16vw;
@@ -9,19 +9,20 @@
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
-    grid-row-gap: 5vw;
+    grid-row-gap: 3vw;
+    grid-template-rows: 6vw 7.5vw 8vw auto;
     grid-column-gap: 3vw;
     justify-items: center;
 }
 
 .radical-icons {
     grid-area: radical-icons;
-    width: 65vw;
+    width: var(--main-content-column-width);
     display: grid;
     grid-template:
             "mouse-go social-icons";
     justify-self: left;
-    padding-top: 1vw;
+    padding-top: 0.4vw;
     align-self: start;
 }
 
@@ -37,7 +38,7 @@
 
 .radical-copy {
     grid-area: radical-copy;
-    width: 65.5vw;
+    width: var(--main-content-column-width);
     font-size: 1.13vw;
     font-weight: 300;
     color: white;
@@ -57,7 +58,7 @@
     background: linear-gradient(90deg, rgba(169,45,70,1) 42%, rgba(227,147,0,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: -.3vw;
+    /*margin-top: -.3vw;*/
     font-size: 2.2vw;
     font-weight: 900;
     gap: .8vw;
@@ -65,13 +66,14 @@
 
 .mouse-icon {
     width: 1.5vw;
-    margin-top: 2vw;
+    margin-top: 1.7vw;
 }
 
 .social-icons {
     grid-area: social-icons;
     justify-self: right;
     align-self: center;
+    padding-top: 1vw;
     gap: .5vw;
     display: inline-flex;
 }

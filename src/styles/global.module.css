@@ -122,6 +122,7 @@ body {
     color: black;
     overflow-x: hidden;
     --section-tagline-size: 2.8vw;
+    --main-content-column-width: 67vw;
 }
 
 .layout {

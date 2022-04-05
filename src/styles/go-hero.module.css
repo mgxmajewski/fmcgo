@@ -1,6 +1,6 @@
 .go-hero-section {
     grid-area: go-hero;
-    height: 80vh;
+    height: 42vw;
     display: grid;
     padding-left: 16vw;
     grid-template:
