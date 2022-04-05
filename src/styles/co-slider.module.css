@@ -84,22 +84,22 @@
 }
 
 .white-dot {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 1.4vw;
+  width: 1.4vw;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
 }
 
 .empty-dot {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 1.4vw;
+  width: 1.4vw;
   border: .15vw solid white;
   /*background-color: #bbb;*/
   border-radius: 50%;
   display: inline-block;
 }
 
-.background {
-
+.arrow {
+    width: 1vw;
 }

@@ -16,16 +16,16 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                <DrawerCuboidZAnimation width='9vw'>Carrefour</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='8.3vw'>Pepsi</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='11vw'>Desperados</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='10vw'>Heineken</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='9vw'>Develey</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='12vw'>Costa Coffee</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='8vw'>Tchibo</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='7vw'>Stock</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='9vw'>Sephora</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='8.3vw'>Clarins</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='11.5vw'>Carrefour</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='8.2vw'>Pepsi</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='11.2vw'>Desperados</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='11.1vw'>Heineken</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='11vw'>Develey</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='14vw'>Costa Coffee</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='10vw'>Tchibo</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='8.2vw'>Stock</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='11vw'>Sephora</DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation width='10.5vw'>Clarins</DrawerCuboidZAnimation>
             </div>
             <CoSlider/>
         </section>

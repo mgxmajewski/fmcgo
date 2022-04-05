@@ -1,8 +1,8 @@
 /*default - to be ovverriden with props*/
 .default-drawer-dimension {
     --cube-width: 6vw;
-    --cube-height: 3vw;
-    --cube-depth: 6vw;
+    --cube-height: 4.2vw;
+    --cube-depth: 4vw;
 }
 
 .drawer-container {
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     perspective: 2000px;
-    perspective-origin: -250px -250px;
+    perspective-origin: -450px -450px;
 }
 
 .cube {
@@ -30,7 +30,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     color: white;
     width: 100%;
     height: 100%;
