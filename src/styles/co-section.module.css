@@ -1,6 +1,6 @@
 .co-section {
     grid-area: co-section;
-    height: 100vh;
+    height:150vh;
     background-color: #2954d4;
     display: grid;
     padding-left: 16vw;
@@ -10,6 +10,7 @@
             "co-drawers"
             "co-slider";
     grid-row-gap: 1vw;
+    grid-template-rows: 8vh 8vh 15vh auto;
     grid-column-gap: 3vw;
     justify-items: center;
 }
@@ -25,6 +26,10 @@
     padding-top: 1vw;
 }
 
+.co-tagline sup {
+    font-size: 1.8vw;
+}
+
 .co-copy {
     grid-area: co-copy;
     width: 67vw;
@@ -37,6 +42,8 @@
 .co-copy b {
     font-weight: bold;
 }
+
+
 
 .co-drawers {
     grid-area: co-drawers;

@@ -120,6 +120,7 @@ textarea {
 body {
     font-family: "Satoshi", sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 .layout {
