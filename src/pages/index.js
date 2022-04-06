@@ -5,6 +5,7 @@ import GoHero from "../components/GoHero";
 import Radical from "../components/Radical";
 import CoSection from "../components/CoSection";
 import BoardSection from "../components/BoardSection";
+import NewsSection from "../components/NewsSection";
 
 // markup
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
             <Radical/>
             <CoSection/>
             <BoardSection/>
+            <NewsSection/>
         </Layout>
     )
 }
