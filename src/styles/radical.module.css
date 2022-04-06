@@ -40,7 +40,7 @@
     grid-area: radical-copy;
     width: var(--main-content-column-width);
     font-size: 1.13vw;
-    line-height: 1.8;
+    line-height: var(--copy-line-height);
     font-weight: 300;
     color: white;
     justify-self: left;

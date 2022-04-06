@@ -36,6 +36,7 @@
     grid-area: fmcgo-copy;
     font-size: 1.13vw;
     color: #7b7b7b;
+    line-height: var(--copy-line-height);
     justify-self: left;
     font-weight: 300;
 }

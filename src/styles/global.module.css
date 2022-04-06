@@ -123,6 +123,7 @@ body {
     overflow-x: hidden;
     --section-tagline-size: 2.8vw;
     --main-content-column-width: 67vw;
+    --copy-line-height: 1.8;
 }
 
 .layout {

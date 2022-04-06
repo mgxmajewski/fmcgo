@@ -34,6 +34,7 @@
     width: var(--main-content-column-width);
     font-size: 1.13vw;
     font-weight: 300;
+    line-height: var(--copy-line-height);
     color: black;
     padding-top: 1vw;
     justify-self: left;
