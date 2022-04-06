@@ -6,6 +6,7 @@ import Radical from "../components/Radical";
 import CoSection from "../components/CoSection";
 import BoardSection from "../components/BoardSection";
 import NewsSection from "../components/NewsSection";
+import ContactSection from "../components/ContactSection";
 
 // markup
 const IndexPage = () => {
@@ -16,6 +17,7 @@ const IndexPage = () => {
             <CoSection/>
             <BoardSection/>
             <NewsSection/>
+            <ContactSection/>
         </Layout>
     )
 }

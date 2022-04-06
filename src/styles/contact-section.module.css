@@ -1,0 +1,109 @@
+.contact-section {
+    grid-area: contact-section;
+    height: 63vw;
+    display: grid;
+    padding-left: 8vw;
+    grid-template:
+            "contact-tagline"
+            "contact-form";
+    grid-row-gap: 5vw;
+    grid-column-gap: 3.5vw;
+    grid-template-rows: 2vw auto;
+    justify-items: center;
+}
+
+.contact-tagline {
+    display: grid;
+    grid-area: contact-tagline;
+    font-weight: 900;
+    padding-left: 8vw;
+    color: white;
+    top: 9vw;
+    font-size: var(--section-tagline-size);
+    line-height: 1.05;
+    justify-self: left;
+    align-self: end;
+    grid-template-columns: 38.6vw auto;
+    grid-column-gap: 11vw;
+    z-index: 10;
+}
+
+/*.contact-copy {*/
+/*    grid-area: contact-copy;*/
+/*    width: var(--main-content-column-width);*/
+/*    font-size: 1.13vw;*/
+/*    line-height: var(--copy-line-height);*/
+/*    font-weight: 300;*/
+/*    color: white;*/
+/*    justify-self: left;*/
+/*}*/
+
+.contact-form-container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form {
+    top: 7vw;
+    position: relative;
+    grid-area: contact-articles;
+    width: 92vw;
+    font-size: 1.13vw;
+    height: 45vw;
+    line-height: var(--copy-line-height);
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    justify-self: left;
+    display: grid;
+    grid-template-columns: 38.6vw 20vw;
+    grid-column-gap: 11vw;
+}
+
+.contact-form:before {
+    background: rgb(144, 58, 68);
+    background: linear-gradient(90deg, rgba(144, 58, 68, 1) 0%, rgba(227, 147, 0, 1) 35%);
+    position: absolute;
+    content: '';
+    height: 50vw;
+    width: 100vw;
+    z-index: -2000000;
+    background-color: chocolate;
+    top: -14.5vw;
+    left: -8vw;
+}
+
+.form-input-col {
+    background-color: cornflowerblue;
+    margin-left: 8vw;
+}
+
+.form-details-col {
+    background-color: darkcyan;
+    margin-left: 8vw;
+}
+
+/*.contact-article {*/
+/*    display: grid;*/
+/*    border-top: .1vw solid black;*/
+/*    grid-template-rows: 2vw auto;*/
+/*}*/
+
+/*.contact-date {*/
+/*    padding-top: 1.4vw;*/
+/*    color: black;*/
+/*    font-size: .8vw;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.contact-copy {*/
+/*    color: black;*/
+/*    font-size: 1.5vw;*/
+/*    font-weight: 900;*/
+/*}*/
+
+/*.contact-tagline-gradient {*/
+/*    background: linear-gradient(90deg, rgba(144, 58, 68, 1) 0%, rgba(227, 147, 0, 1) 35%);*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*}*/
