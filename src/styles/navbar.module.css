@@ -12,13 +12,20 @@
     text-align: center;
     text-decoration: none;
     padding-top: 3vw;
-    font-size: 15px;
-    padding-right: 1vw;
+    font-size: 1vw;
+    padding-right: 5vw;
 }
 
 .navbar-go li {
-    padding: 0 1vw;
+    padding: 0 .5vw;
     display: block;
     float: right;
+}
+
+.navbar-go-gradient {
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(74,90,211,1) 0%, rgba(212,49,73,1) 50%, rgba(99,14,105,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 

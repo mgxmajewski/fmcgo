@@ -2,7 +2,7 @@ import React from 'react';
 // import {Link} from "gatsby";
 // import {handleLogout} from "../utils/LogoutHandler";
 // import {navigate} from 'gatsby';
-import {navbarGo} from "../styles/navbar.module.css";
+import {navbarGo, navbarGoGradient} from "../styles/navbar.module.css";
 
 
 
@@ -15,7 +15,7 @@ const NavBar = () => {
                 <li>Board</li>
                 <li>Co</li>
                 <li>Radical</li>
-                <li>go</li>
+                <li className={navbarGoGradient}>go</li>
             </ul>
         </nav>
     );
