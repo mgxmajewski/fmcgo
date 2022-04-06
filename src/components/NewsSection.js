@@ -1,11 +1,11 @@
 import React from 'react';
-import {newsSection, newsTagline, newsArticlesContainer, newsArticle, newsDate, newsCopy} from '../styles/news-section.module.css'
+import {newsSection, newsTagline, newsTaglineGradient, newsArticlesContainer, newsArticle, newsDate, newsCopy} from '../styles/news-section.module.css'
 
 
 const NewsSection = () => {
     return (
         <section className={newsSection}>
-            <div className={newsTagline}>So, let's GO!</div>
+            <div className={newsTagline}>So, <span className={newsTaglineGradient}>let's GO!</span></div>
             <div className={newsArticlesContainer}>
                 <div className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
