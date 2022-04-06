@@ -13,10 +13,12 @@ import {
 
 const DrawerCuboidStatic = (props) => {
 
-    const {width, children} = props
+    const {width, cubeColor, fontColor, children} = props
 
     const AdjustedDrawer = styled.div`
     --cube-width: ${width};
+    --cube-color: ${cubeColor};
+    --font-color: ${fontColor};
 `;
 
     return (

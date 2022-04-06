@@ -3,6 +3,8 @@
     --cube-width: 6vw;
     --cube-height: 4.2vw;
     --cube-depth: 4vw;
+    --cube-color: black;
+    --font-color: white;
 }
 
 .drawer-container {
@@ -31,16 +33,16 @@
     align-items: center;
     justify-items: center;
     font-size: 1.7vw;
-    color: white;
+    color: var(--font-color);
     width: 100%;
     height: 100%;
-    border: .3vw solid black;
+    border: .3vw solid var(--cube-color);
     outline: 1px solid transparent;
     border-collapse: collapse;
 }
 
 .front {
-    background-color: black;
+    background-color: var(--cube-color);
     transform: translateZ(calc(var(--cube-depth)));
 }
 

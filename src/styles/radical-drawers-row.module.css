@@ -1,0 +1,22 @@
+.bean-container{
+    width: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.bean{
+    width: 1.5vw
+}
+
+.bottle{
+    width: 5vw;
+}
+
+.fmcgo-tag{
+    width: 6vw;
+}
+
+.price-tag{
+    font-size: 1vw;
+}

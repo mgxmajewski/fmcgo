@@ -1,6 +1,7 @@
 import React from 'react';
 import MouseIcon from '../assets/mouse-icon.svg'
 import {radicalSection, radicalIcons, radicalTagline, radicalCopy, radicalDrawers, iconBox, mouseIcon, mouseGo,socialIcons} from "../styles/radical.module.css";
+import RadicalDrawersRow from "./RadicalDrawersRow";
 
 
 const Radical = () => {
@@ -21,7 +22,9 @@ const Radical = () => {
                 We are here to sell your products not just our services. We love our pack-shots and price-tags, and we’ll never hesitate <br/>
                 to use them. We believe that the only true measurement for successful advertising is sales.
             </div>
-            <div className={radicalDrawers}>drawers</div>
+            <div className={radicalDrawers}>
+                <RadicalDrawersRow/>
+            </div>
         </section>
     );
 };
