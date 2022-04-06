@@ -1,5 +1,5 @@
 import React from 'react';
-import MouseIcon from '../assets/mouse-scroll-down-icon.svg'
+import MouseIcon from '../assets/mouse-icon.svg'
 import {radicalSection, radicalIcons, radicalTagline, radicalCopy, radicalDrawers, iconBox, mouseIcon, mouseGo,socialIcons} from "../styles/radical.module.css";
 
 
