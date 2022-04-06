@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {
     back,
+    gradientBack,
     cube,
     defaultDrawerDimension,
     drawerContainer,
@@ -10,12 +11,8 @@ import {
     right,
     side,
     gradientFront,
-    gradientLeft,
-    gradientRight,
-    hackyDivGradientBackTop,
-    hackyDivGradientBackBottom,
-    hackyDivGradientBackLeft,
-    hackyDivGradientBackRight
+    gradientMatchLeft,
+    gradientMatchRight,
 } from "../styles/drawer-cuboid.module.css";
 
 const DrawerCuboidStaticGradient = (props) => {
@@ -33,12 +30,14 @@ const DrawerCuboidStaticGradient = (props) => {
                 <div className={drawerContainer}>
                     <div className={`${cube}`}>
                         <div className={`${side} ${front} ${gradientFront}`}>{children}</div>
-                        <div className={`${side} ${left} ${gradientLeft}`}></div>
-                        <div className={`${side} ${right} ${gradientRight}`}></div>
-                        <div className={`${side} ${hackyDivGradientBackTop}`}></div>
-                        <div className={`${side} ${hackyDivGradientBackBottom}`}></div>
-                        <div className={`${side} ${hackyDivGradientBackLeft}`}></div>
-                        <div className={`${side} ${hackyDivGradientBackRight}`}></div>
+                        <div className={`${side} ${left} ${gradientMatchLeft}`}></div>
+                        <div className={`${side} ${right} ${gradientMatchRight}`}></div>
+                        <div className={`${side} ${back} ${gradientBack}`}></div>
+
+                        {/*<div className={`${side} ${hackyDivGradientBackTop}`}></div>*/}
+                        {/*<div className={`${side} ${hackyDivGradientBackBottom}`}></div>*/}
+                        {/*<div className={`${side} ${hackyDivGradientBackLeft}`}></div>*/}
+                        {/*<div className={`${side} ${hackyDivGradientBackRight}`}></div>*/}
                     </div>
                 </div>
             </AdjustedDrawer>
