@@ -25,7 +25,7 @@ const DrawerCuboidStatic = (props) => {
         <div className={defaultDrawerDimension}>
             <AdjustedDrawer>
                 <div className={drawerContainer}>
-                    <div className={cube}>
+                    <div className={`${cube}`}>
                         <div className={`${side} ${front}`}>{children}</div>
                         <div className={`${side} ${left}`}></div>
                         <div className={`${side} ${right}`}></div>
