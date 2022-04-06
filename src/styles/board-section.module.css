@@ -1,0 +1,93 @@
+.board-section {
+    grid-area: board-section;
+    height: 76vw;
+    background-color: black;
+    display: grid;
+    padding-left: 16vw;
+    grid-template:
+            "board-tagline"
+            "board-copy"
+            "board-pictures";
+    grid-row-gap: 2vw;
+    grid-template-rows: 12.7vw 5.7vw auto;
+    justify-items: center;
+}
+
+.board-tagline {
+    grid-area: board-tagline;
+    font-weight: 900;
+    color: white;
+    font-size: var(--section-tagline-size);
+    line-height: 1.05;
+    justify-self: left;
+    align-self: end;
+}
+
+.board-copy {
+    grid-area: board-copy;
+    width: var(--main-content-column-width);
+    font-size: 1.13vw;
+    line-height: var(--copy-line-height);
+    font-weight: 300;
+    color: white;
+    justify-self: left;
+}
+
+.board-pictures {
+    padding-top: 5.3vw;
+    grid-area: board-pictures;
+    width: var(--main-content-column-width);
+    font-size: 1.13vw;
+    line-height: var(--copy-line-height);
+    font-weight: 300;
+    color: white;
+    justify-self: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 21.8vw auto;
+    grid-column-gap: 5vw;
+    grid-row-gap: 2vw;
+}
+
+.board-pictures b {
+    font-weight: bold;
+}
+
+.board-person-container {
+    position: relative;
+    z-index: 1;
+}
+
+.board-person-picture-right,
+.board-person-picture-left {
+    position: relative;
+    height: 20.8vw;
+    width: 31.8vw;
+    background-color: grey;
+}
+
+.board-person-picture-left:before {
+    content: '';
+    position: absolute;
+    background: rgb(139, 37, 86);
+    background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+    height: 20.8vw;
+    width: 31.8vw;
+    z-index: -2000000;
+    background-color: chocolate;
+    top: 1vw;
+    left: -1vw;
+}
+
+.board-person-picture-right:before {
+    content: '';
+    position: absolute;
+   background: rgb(228,148,28);
+background: radial-gradient(circle, rgba(228,148,28,1) 0%, rgba(128,52,39,1) 100%);
+    height: 20.8vw;
+    width: 31.8vw;
+    z-index: -2000000;
+    background-color: chocolate;
+    top: 1vw;
+    left: -1vw;
+}

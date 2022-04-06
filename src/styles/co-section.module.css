@@ -1,6 +1,6 @@
 .co-section {
     grid-area: co-section;
-    /*height: 170vh;*/
+    height: 91vw;
     display: grid;
     padding-left: 16vw;
     grid-template:
