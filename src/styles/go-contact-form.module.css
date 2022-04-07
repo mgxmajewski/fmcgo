@@ -31,7 +31,8 @@
 .go-contact-form input:focus {
     outline: none;
     /*background: rgb(201, 42, 62);*/
-    background: rgb(255, 98, 30);
+    /*background: rgb(255, 98, 30);*/
+    background: rgb(220, 60, 62);
     background: linear-gradient(90deg, rgb(220, 60, 62) 0%, rgba(227, 147, 0, 1) 35%);
 }
 
