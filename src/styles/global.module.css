@@ -1,3 +1,5 @@
+@import url("https://p.typekit.net/p.css?s=1&k=jqc2zgo&ht=tk&f=31232.31234&a=107100808&app=typekit&e=css");
+
 @font-face {
     font-family: 'Satoshi';
     src: url(../../font/Satoshi-Regular.otf) format('opentype');
@@ -34,6 +36,17 @@
     font-weight: bold;
 }
 
+@font-face {
+font-family:"nobel";
+src:url("https://use.typekit.net/af/2d455d/00000000000000003b9ae84f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/2d455d/00000000000000003b9ae84f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/2d455d/00000000000000003b9ae84f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"nobel";
+src:url("https://use.typekit.net/af/6ab96c/00000000000000003b9ae851/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"),url("https://use.typekit.net/af/6ab96c/00000000000000003b9ae851/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"),url("https://use.typekit.net/af/6ab96c/00000000000000003b9ae851/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:800;font-stretch:normal;
+}
 
 :root {
     box-sizing: border-box;

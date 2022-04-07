@@ -1,24 +1,24 @@
-.bean-container{
+.bean-container {
     width: 7vw;
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.bean{
+.bean {
     width: 1.7vw
 }
 
-.bottle{
+.bottle {
     width: 7.5vw;
 }
 
-.fmcgo-tag{
+.fmcgo-tag {
     width: 7vw;
 }
 
-.price-tag{
-    font-size: 2.5vw;
+.price-tag {
+    font-family: "nobel", sans-serif;
+    font-size: 2.3vw;
     font-weight: 900;
     text-wrap: none;
 }
