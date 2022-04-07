@@ -80,8 +80,40 @@
 }
 
 .form-details-col {
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
+    display: grid;
+    grid-template:
+                "details-name"
+                "details-address"
+                "details-contact"
+                "details-social";
+    grid-template-rows: 9vw 6vw 5vw 4vw;
+    align-items: end;
+    font-weight: 300;
+    line-height: 1.1;
     /*margin-left: 8vw;*/
+}
+
+.details-name {
+    grid-area: details-name;
+}
+
+.details-name b {
+    font-weight: bold;
+}
+
+.details-address {
+    grid-area: details-address;
+}
+
+.details-contact {
+    grid-area: details-contact;
+}
+
+.details-social {
+    grid-area: details-social;
+    display: flex;
+    gap: .2vw;
 }
 
 /*.contact-article {*/
