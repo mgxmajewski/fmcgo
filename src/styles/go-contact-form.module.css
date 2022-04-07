@@ -18,13 +18,21 @@
 
 .go-contact-form input::placeholder {
     color: white;
+    opacity: 1;
     padding-left: 0;
 }
 
+/*.go-contact-form input::-moz-placeholder {*/
+/*    color: white;*/
+/*    opacity: 1;*/
+/*    padding-left: 0;*/
+/*}*/
+
 .go-contact-form input:focus {
     outline: none;
-    background: rgb(139, 37, 86);
-    background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+    /*background: rgb(201, 42, 62);*/
+    background: rgb(255, 98, 30);
+    background: linear-gradient(90deg, rgb(220, 60, 62) 0%, rgba(227, 147, 0, 1) 35%);
 }
 
 .go-submit {
