@@ -17,7 +17,7 @@ const ContactSection = () => {
                     <div>Go</div>
                 </div>
                 <div className={contactForm}>
-                    <div className={formInputCol}> input</div>
+                    <div className={formInputCol}>input</div>
                     <div className={formDetailsCol}>details</div>
                 </div>
             </div>

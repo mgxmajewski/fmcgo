@@ -1,6 +1,6 @@
 .news-section {
     grid-area: news-section;
-    height: 60vw;
+    height: 72vw;
     display: grid;
     padding-left: 16vw;
     grid-template:
@@ -36,7 +36,7 @@
     width: var(--main-content-column-width);
     font-size: 1.13vw;
     height: 32vw;
-    line-height: var(--copy-line-height);
+    line-height: 1.15;
     font-weight: 300;
     color: white;
     justify-self: left;
