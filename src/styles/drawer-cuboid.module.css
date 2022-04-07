@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1500px;
-    perspective-origin: -500px -500px;
+    perspective: 2000px;
+    perspective-origin: -450px -450px;
 }
 
 .cube {
