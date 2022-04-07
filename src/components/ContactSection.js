@@ -12,7 +12,7 @@ import {
     detailsSocial
 } from '../styles/contact-section.module.css'
 import {iconBox, socialIcons} from "../styles/radical.module.css";
-import ContactForm from "./ContactForm";
+import GoContactForm from "./GoContactForm";
 
 const ContactSection = () => {
     return (
@@ -24,7 +24,7 @@ const ContactSection = () => {
                 </div>
                 <div className={contactForm}>
                     <div className={formInputCol}>
-                        <ContactForm/>
+                        <GoContactForm/>
                     </div>
                     <div className={formDetailsCol}>
                         <div className={detailsName}>

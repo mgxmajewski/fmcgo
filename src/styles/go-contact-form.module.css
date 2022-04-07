@@ -1,0 +1,45 @@
+.go-contact-form {
+    padding-top: 3.9vw;
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto;
+}
+
+.go-contact-form input {
+    font-size: 2.2vw;
+    height: 5.2vw;
+    background-color: black;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: .1vw solid white;
+}
+
+.go-contact-form input::placeholder {
+    color: white;
+    padding-left: 0;
+}
+
+.go-contact-form input:focus {
+    outline: none;
+    background: rgb(139, 37, 86);
+    background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+}
+
+.go-submit {
+    height: 9.6vw;
+    display: grid;
+    align-items: end;
+}
+
+.go-contact-form button {
+    width: 11vw;
+    height: 6vw;
+    outline: none;
+    border: 0;
+    background-color: white;
+    font-weight: 900;
+    font-size: 3vw;
+}
+

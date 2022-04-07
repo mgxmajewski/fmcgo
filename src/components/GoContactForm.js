@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
+import {goContactForm, goSubmit} from '../styles/go-contact-form.module.css'
 
-const ContactForm = () => {
+
+const GoContactForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -15,9 +17,8 @@ const ContactForm = () => {
     }
 
     return (
-        <div>
-            <form className='form' onSubmit={handleSubmit}>
-                <div className='form-control'>
+            <form className={goContactForm} onSubmit={handleSubmit}>
+                {/*<div className='form-control'>*/}
                     <input
                         type='text'
                         id='name'
@@ -66,11 +67,12 @@ const ContactForm = () => {
                         placeholder='Message'
                         onChange={(e) => setMessage(e.target.value)}
                     />
+                {/*</div>*/}
+                <div className={goSubmit}>
+                    <button type='submit'>Go!</button>
                 </div>
-                <button type='submit'>Go!</button>
             </form>
-        </div>
   );
 };
 
-export default ContactForm;
+export default GoContactForm;
