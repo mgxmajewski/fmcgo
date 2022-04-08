@@ -3,7 +3,7 @@ import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: cyan;
+  background: ${({scrollNav}) => scrollNav ? 'white' : 'black'};
   height: 80px;
   //margin-top: -80px;
   display: flex;
@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 
 export const NavBarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -41,29 +41,29 @@ export const NavLogo = styled(LinkR)`
 `
 
 export const MobileIcon = styled.div`
-display: none;
+  display: none;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100% , 60%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: chocolate;
   }
 `
 
-export  const NavMenu = styled.ul`
+export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
-  
-  @media screen and (max-width: 768px){
-  display: none;
-}
+  //margin-right: -22px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const NavItem = styled.li`
@@ -87,9 +87,9 @@ export const NavLinks = styled(LinkS)`
 `
 
 export const NavBtn = styled.nav`
-display: flex;
+  display: flex;
   align-items: center;
-  
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -99,15 +99,15 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: cornflowerblue;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 8px 18px;
   color: darkblue;
-  font-size: 16px;
+  font-size: 10px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-out;
   text-decoration: none;
-  
+
   &:hover {
     transition: all 0.2s ease-out;
     background: coral;
