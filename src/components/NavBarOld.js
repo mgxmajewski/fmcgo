@@ -6,7 +6,7 @@ import {navbarGo, navbarGoGradient} from "../styles/navbar.module.css";
 
 
 
-const NavBar = () => {
+const NavBarOld = () => {
 
     return (
         <nav className={navbarGo}>
@@ -21,4 +21,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBarOld;
