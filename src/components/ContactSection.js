@@ -11,7 +11,7 @@ import {
     detailsContact,
     detailsSocial
 } from '../styles/contact-section.module.css'
-import {iconBox, socialIcons} from "../styles/radical.module.css";
+import {iconBox} from "../styles/radical.module.css";
 import GoContactForm from "./GoContactForm";
 
 const ContactSection = () => {
