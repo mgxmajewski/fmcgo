@@ -7,7 +7,7 @@ import DrawerCuboidZAnimation from "./DrawerCuboidZAnimation";
 
 const CoSection = () => {
     return (
-        <section className={coSection}>
+        <section className={coSection} id="co-section">
             <div className={coTagline}>Filip<sup>&</sup>Marcel<sup>&</sup>Co<sup>Go</sup></div>
             <div className={coCopy}>
                 <b>There’s 40 years of experience in advertising between us.</b> We’ve served as heads of departments,

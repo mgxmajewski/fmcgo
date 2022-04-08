@@ -6,7 +6,7 @@ import RadicalDrawersRow from "./RadicalDrawersRow";
 
 const Radical = () => {
     return (
-        <section className={radicalSection}>
+        <section className={radicalSection}  id="radical-section">
             <div className={radicalIcons}>
                 <div className={mouseGo}>
                     <MouseIcon className={mouseIcon}/>

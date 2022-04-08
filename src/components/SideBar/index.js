@@ -18,19 +18,19 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="#go-section" onClick={toggle}>
+                    <SideBarLink to="go-section" onClick={toggle}>
                         go
                     </SideBarLink>
-                    <SideBarLink to="#radical-section" onClick={toggle}>
+                    <SideBarLink to="radical-section" onClick={toggle}>
                         Radical
                     </SideBarLink>
-                    <SideBarLink to="#co-section" onClick={toggle}>
+                    <SideBarLink to="co-section" onClick={toggle}>
                         Co
                     </SideBarLink>
-                    <SideBarLink to="#board-section" onClick={toggle}>
+                    <SideBarLink to="board-section" onClick={toggle}>
                         Board
                     </SideBarLink>
-                    <SideBarLink to="#contact-section" onClick={toggle}>
+                    <SideBarLink to="contact-section" onClick={toggle}>
                         Contact
                     </SideBarLink>
                 </SideBarMenu>

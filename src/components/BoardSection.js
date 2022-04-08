@@ -14,7 +14,7 @@ import directorTwo from '../assets/director2.png'
 
 const BoardSection = () => {
     return (
-        <section className={boardSection}>
+        <section className={boardSection} id="board-section">
             <div className={boardTagline}>
                 Our Network<br/>
                 and Board of Directors

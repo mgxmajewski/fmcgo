@@ -16,7 +16,7 @@ import GoContactForm from "./GoContactForm";
 
 const ContactSection = () => {
     return (
-        <section className={contactSection}>
+        <section className={contactSection}  id="contact-section">
             <div className={contactFormContainer}>
                 <div className={contactTagline}>
                     <div>Contact</div>

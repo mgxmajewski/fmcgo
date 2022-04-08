@@ -12,12 +12,12 @@ import ContactSection from "../components/ContactSection";
 const IndexPage = () => {
     return (
         <Layout>
-            <GoHero id="go-section"/>
-            <Radical id="radical-section"/>
-            <CoSection id="co-section"/>
-            <BoardSection id="board-section"/>
+            <GoHero />
+            <Radical/>
+            <CoSection />
+            <BoardSection />
             <NewsSection/>
-            <ContactSection id="contact-section"/>
+            <ContactSection/>
         </Layout>
     )
 }

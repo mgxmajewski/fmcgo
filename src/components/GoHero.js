@@ -13,7 +13,7 @@ import {
 
 const GoHero = () => {
     return (
-        <section className={goHeroSection}>
+        <section className={goHeroSection} id="go-section">
             <div className={fmcgoLogo}>
                 <Logo className={fmcgoVectorLogo}/>
             </div>

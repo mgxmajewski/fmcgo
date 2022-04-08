@@ -39,19 +39,19 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="#go-section">
+                            <NavLinks to="go-section">
                                 go
                             </NavLinks>
-                            <NavLinks to="#radical-section">
+                            <NavLinks to="radical-section">
                                 Radical
                             </NavLinks>
-                            <NavLinks to="#co-section">
+                            <NavLinks to="co-section">
                                 Co
                             </NavLinks>
-                            <NavLinks to="#board-section">
+                            <NavLinks to="board-section">
                                 Board
                             </NavLinks>
-                            <NavLinks to="#contact-section">
+                            <NavLinks to="contact-section">
                                 Contact
                             </NavLinks>
                         </NavItem>
