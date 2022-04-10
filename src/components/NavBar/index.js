@@ -1,29 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa'
-import {
-    MobileIcon,
-    Nav,
-    NavBarContainer,
-    NavItem,
-    NavLinks,
-    NavLogo,
-    NavMenu,
-    NavBtn,
-    NavBtnLink
-} from "./NavbarElements";
+import {MobileIcon, Nav, NavBarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu} from "./NavbarElements";
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNAv] = useState(false);
 
     const changeNav = () => {
-        if(window.scrollY >= 80) {
+        if (window.scrollY >= 80) {
             setScrollNAv(true)
         } else {
             setScrollNAv(false)
         }
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         window.addEventListener('scroll', changeNav)
     }, []);
 
@@ -39,19 +29,59 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="go-section">
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                // exact='true'
+                                to="go-section"
+                            >
                                 go
                             </NavLinks>
-                            <NavLinks to="radical-section">
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                // exact='true'
+                                to="radical-section"
+                            >
                                 Radical
                             </NavLinks>
-                            <NavLinks to="co-section">
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                // exact='true'
+                                to="co-section"
+                            >
                                 Co
                             </NavLinks>
-                            <NavLinks to="board-section">
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                // exact='true'
+                                to="board-section"
+                            >
                                 Board
                             </NavLinks>
-                            <NavLinks to="contact-section">
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                // exact='true'
+                                to="contact-section"
+                            >
                                 Contact
                             </NavLinks>
                         </NavItem>
