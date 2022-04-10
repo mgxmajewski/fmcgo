@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     CloseIcon,
     Icon,
@@ -11,6 +11,21 @@ import {
 } from "./SideBarElements";
 
 const SideBar = ({isOpen, toggle}) => {
+        const [scrollNav, setScrollNAv] = useState(false);
+
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNAv(true)
+        } else {
+            setScrollNAv(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, []);
+
+
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <Icon>
@@ -18,19 +33,60 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="go-section" onClick={toggle}>
+                    <SideBarLink
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        // exact='true'
+                        to="go-section"
+                        onClick={toggle}
+                    >
                         go
                     </SideBarLink>
-                    <SideBarLink to="radical-section" onClick={toggle}>
+                    <SideBarLink
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        to="radical-section"
+                        onClick={toggle}
+                    >
                         Radical
                     </SideBarLink>
-                    <SideBarLink to="co-section" onClick={toggle}>
+                    <SideBarLink
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        to="co-section"
+                        onClick={toggle}
+                    >
                         Co
                     </SideBarLink>
-                    <SideBarLink to="board-section" onClick={toggle}>
+                    <SideBarLink
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        to="board-section"
+                        onClick={toggle}
+                    >
                         Board
                     </SideBarLink>
-                    <SideBarLink to="contact-section" onClick={toggle}>
+                    <SideBarLink
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        to="contact-section"
+                        onClick={toggle}
+                    >
                         Contact
                     </SideBarLink>
                 </SideBarMenu>

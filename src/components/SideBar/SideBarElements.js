@@ -41,17 +41,18 @@ export const SideBarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-  
+
   //overwrite default
   padding-inline-start: 0;
-  
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
 `
 
 export const SideBarLink = styled(LinkS)`
   //left: -10px;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,8 +63,19 @@ export const SideBarLink = styled(LinkS)`
   color: white;
   cursor: pointer;
 
+  &.active{
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //transition: 0.2s ease-in-out;
+  }
+  
   &:hover {
-    color: coral;
+    font-weight: 900;
+    color: grey;
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
     transition: 0.2s ease-in-out;
   }
 `
