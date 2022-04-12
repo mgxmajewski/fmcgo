@@ -6,6 +6,7 @@ const Navbar = ({toggle}) => {
     const [isNavFontBright, setIsNavFontBright] = useState('false');
 
     const toggleNavFontColor = () => {
+
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
         const navBarFontBottomEdge = 38
 
@@ -18,12 +19,17 @@ const Navbar = ({toggle}) => {
         const boardSectionTopEdge = radicalSectionBottomEdge + coSectionHeight
         const boardSectionHeight = document.getElementById('board-section').clientHeight;
         const boardSectionBottemEdge = boardSectionTopEdge + boardSectionHeight
+        const newsSectionHeight = document.getElementById('news-section').clientHeight;
+        const contactSectionTopEdge = boardSectionBottemEdge + newsSectionHeight;
+        const contactSectionFormEdge = contactSectionTopEdge + window.innerWidth * .0145
+
 
         // Booleans checking if NavBar is over dark sections to change font color to white
         const navBarIsOverRadicalSection = window.scrollY >= radicalSectionTopEdge && window.scrollY <= radicalSectionBottomEdge
         const navBarIsOverBoardSection = window.scrollY >= boardSectionTopEdge && window.scrollY <= boardSectionBottemEdge
+        const navBarIsOverContactForm =  window.scrollY >= contactSectionFormEdge
 
-        if (navBarIsOverRadicalSection || navBarIsOverBoardSection) {
+        if (navBarIsOverRadicalSection || navBarIsOverBoardSection || navBarIsOverContactForm) {
             setIsNavFontBright('true')
         } else {
             setIsNavFontBright('false')
@@ -41,7 +47,7 @@ const Navbar = ({toggle}) => {
                     {/*<NavLogo to='/'>*/}
                     {/*    LANGUAGE*/}
                     {/*</NavLogo>*/}
-                    <MobileIcon onClick={toggle}>
+                    <MobileIcon isbright={isNavFontBright} onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>

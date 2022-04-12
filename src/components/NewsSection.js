@@ -12,7 +12,7 @@ import {
 
 const NewsSection = () => {
     return (
-        <section className={newsSection}>
+        <section className={newsSection} id="news-section">
             <div className={newsTagline}>So, <span className={newsTaglineGradient}>let's GO!</span></div>
             <div className={newsArticlesContainer}>
                 <div className={newsArticle}>
