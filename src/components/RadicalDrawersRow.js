@@ -1,10 +1,10 @@
 import React from 'react';
-import DrawerCuboidStatic from "./DrawerCuboidStatic";
+import DrawerCuboidStatic from "./Drawers/DrawerCuboidStatic";
 import BottleIcon from "../assets/bottle.svg"
 import CoffeeBeanIcon from "../assets/coffee-bean.svg"
 import FmcgoTagIcon from "../assets/fmcgotag.svg"
 import {bean, beanContainer, bottle, fmcgoTag, priceTag} from "../styles/radical-drawers-row.module.css"
-import DrawerCuboidStaticGradient from "./DrawerCuboidStaticGradient";
+import DrawerCuboidStatisGradient from "./Drawers/DrawerCuboidStatisGradient";
 
 
 const RadicalDrawersRow = () => {
@@ -17,9 +17,9 @@ const RadicalDrawersRow = () => {
                     <CoffeeBeanIcon className={bean}/>
                 </div>
             </DrawerCuboidStatic>
-            <DrawerCuboidStaticGradient width='9vw' cubeColor='orange' fontColor='black'>
+            <DrawerCuboidStatisGradient width='9vw' cubeColor='orange' fontColor='black'>
                 <FmcgoTagIcon className={fmcgoTag}/>
-            </DrawerCuboidStaticGradient>
+            </DrawerCuboidStatisGradient>
             <DrawerCuboidStatic width='9vw' cubeColor='white' fontColor='black'>
                 <BottleIcon className={bottle}/>
             </DrawerCuboidStatic>

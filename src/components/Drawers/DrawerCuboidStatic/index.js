@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import {AdjustedDrawer} from "./DrawerCuboidStaticElements";
 import {
     back,
     cube,
@@ -9,21 +10,15 @@ import {
     left,
     right,
     side
-} from "../styles/drawer-cuboid.module.css";
+} from "../../../styles/drawer-cuboid.module.css";
 
 const DrawerCuboidStatic = (props) => {
 
     const {width, cubeColor, fontColor, children} = props
 
-    const AdjustedDrawer = styled.div`
-    --cube-width: ${width};
-    --cube-color: ${cubeColor};
-    --font-color: ${fontColor};
-`;
-
     return (
         <div className={defaultDrawerDimension}>
-            <AdjustedDrawer>
+            <AdjustedDrawer width={width} cubeColor={cubeColor} fontColor={fontColor}>
                 <div className={drawerContainer}>
                     <div className={`${cube}`}>
                         <div className={`${side} ${front}`}>{children}</div>

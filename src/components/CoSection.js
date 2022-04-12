@@ -3,7 +3,7 @@ import React from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
-import DrawerCuboidZAnimation from "./DrawerCuboidZAnimation";
+import Index from "./Drawers/DrawerCuboidZAnimation";
 
 const CoSection = () => {
     return (
@@ -16,16 +16,16 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                <DrawerCuboidZAnimation width='11.5vw'>Carrefour</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='8.2vw'>Pepsi</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='11.2vw'>Desperados</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='11.1vw'>Heineken</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='11vw'>Develey</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='14vw'>Costa Coffee</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='10vw'>Tchibo</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='8.2vw'>Stock</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='11vw'>Sephora</DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation width='10.5vw'>Clarins</DrawerCuboidZAnimation>
+                <Index width='11.5vw'>Carrefour</Index>
+                <Index width='8.2vw'>Pepsi</Index>
+                <Index width='11.2vw'>Desperados</Index>
+                <Index width='11.1vw'>Heineken</Index>
+                <Index width='11vw'>Develey</Index>
+                <Index width='14vw'>Costa Coffee</Index>
+                <Index width='10vw'>Tchibo</Index>
+                <Index width='8.2vw'>Stock</Index>
+                <Index width='11vw'>Sephora</Index>
+                <Index width='10.5vw'>Clarins</Index>
             </div>
             <CoSlider/>
         </section>
