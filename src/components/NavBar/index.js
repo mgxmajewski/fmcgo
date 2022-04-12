@@ -7,6 +7,7 @@ const Navbar = ({toggle}) => {
 
     const toggleNavFontColor = () => {
 
+        const getElementHeight = name => document.getElementById(name).clientHeight;
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
         const navBarFontBottomEdge = 38
 
@@ -14,15 +15,15 @@ const Navbar = ({toggle}) => {
         const contactFormPseudoElementOffset = window.innerWidth * .0145
 
         // Calculations to get the right context for navBar font changes.
-        const goSectionHeight = document.getElementById('go-section').clientHeight;
+        const goSectionHeight = getElementHeight('go-section');
         const radicalSectionTopEdge = goSectionHeight + navBarFontBottomEdge
-        const radicalSectionHeight = document.getElementById('radical-section').clientHeight;
+        const radicalSectionHeight = getElementHeight('radical-section');
         const radicalSectionBottomEdge = radicalSectionTopEdge + radicalSectionHeight
-        const coSectionHeight = document.getElementById('co-section').clientHeight;
+        const coSectionHeight = getElementHeight('co-section');
         const boardSectionTopEdge = radicalSectionBottomEdge + coSectionHeight
-        const boardSectionHeight = document.getElementById('board-section').clientHeight;
+        const boardSectionHeight = getElementHeight('board-section');
         const boardSectionBottemEdge = boardSectionTopEdge + boardSectionHeight
-        const newsSectionHeight = document.getElementById('news-section').clientHeight;
+        const newsSectionHeight = getElementHeight('news-section');
         const contactSectionTopEdge = boardSectionBottemEdge + newsSectionHeight;
         const contactSectionFormEdge = contactSectionTopEdge + contactFormPseudoElementOffset
 
