@@ -80,11 +80,12 @@
 }
 
 .radical-drawers {
+    overflow: hidden;
     padding-top: 4vw;
     grid-area: radical-drawers;
     display: flex;
-    margin-left: -105vw;
-    width: 100vw;
+    margin-left: -57vw;
+    width: 160vw;
     gap: 8vw;
 }
 
