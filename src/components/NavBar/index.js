@@ -3,7 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import {MobileIcon, Nav, NavBarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu} from "./NavbarElements";
 
 const Navbar = ({toggle}) => {
-    const [isNavFontBright, setIsNavFontBright] = useState(false);
+    const [isNavFontBright, setIsNavFontBright] = useState('false');
 
     const toggleNavFontColor = () => {
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
@@ -24,9 +24,9 @@ const Navbar = ({toggle}) => {
         const navBarIsOverBoardSection = window.scrollY >= boardSectionTopEdge && window.scrollY <= boardSectionBottemEdge
 
         if (navBarIsOverRadicalSection || navBarIsOverBoardSection) {
-            setIsNavFontBright(true)
+            setIsNavFontBright('true')
         } else {
-            setIsNavFontBright(false)
+            setIsNavFontBright('false')
         }
     }
 
@@ -54,7 +54,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="go-section"
-                                isNavFontBright={isNavFontBright}
+                                isbright={isNavFontBright}
                             >
                                 go
                             </NavLinks>
@@ -66,7 +66,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="radical-section"
-                                isNavFontBright={isNavFontBright}
+                                isbright={isNavFontBright}
                             >
                                 Radical
                             </NavLinks>
@@ -78,7 +78,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="co-section"
-                                isNavFontBright={isNavFontBright}
+                                isbright={isNavFontBright}
                             >
                                 Co
                             </NavLinks>
@@ -90,7 +90,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="board-section"
-                                isNavFontBright={isNavFontBright}
+                                isbright={isNavFontBright}
                             >
                                 Board
                             </NavLinks>
@@ -102,7 +102,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="contact-section"
-                                isNavFontBright={isNavFontBright}
+                                isbright={isNavFontBright}
                             >
                                 Contact
                             </NavLinks>

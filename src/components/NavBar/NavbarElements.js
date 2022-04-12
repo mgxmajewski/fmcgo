@@ -73,7 +73,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   //color: black;
-  color: ${({isNavFontBright}) => isNavFontBright ? 'white' : 'black'};
+  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   display: flex;
   //font-weight: 900;
   //flex-direction: row;
