@@ -91,7 +91,7 @@ const SideBar = ({isOpen, toggle}) => {
                     </SideBarLink>
                 </SideBarMenu>
                 <SideBtnWrap>
-                    <SideBarRoute>
+                    <SideBarRoute to="/">
                         language
                     </SideBarRoute>
                 </SideBtnWrap>
