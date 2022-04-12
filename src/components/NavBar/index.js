@@ -10,6 +10,9 @@ const Navbar = ({toggle}) => {
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
         const navBarFontBottomEdge = 38
 
+        // This is offset for contact form pseudo-element (gradient background)
+        const contactFormPseudoElementOffset = window.innerWidth * .0145
+
         // Calculations to get the right context for navBar font changes.
         const goSectionHeight = document.getElementById('go-section').clientHeight;
         const radicalSectionTopEdge = goSectionHeight + navBarFontBottomEdge
@@ -21,7 +24,7 @@ const Navbar = ({toggle}) => {
         const boardSectionBottemEdge = boardSectionTopEdge + boardSectionHeight
         const newsSectionHeight = document.getElementById('news-section').clientHeight;
         const contactSectionTopEdge = boardSectionBottemEdge + newsSectionHeight;
-        const contactSectionFormEdge = contactSectionTopEdge + window.innerWidth * .0145
+        const contactSectionFormEdge = contactSectionTopEdge + contactFormPseudoElementOffset
 
 
         // Booleans checking if NavBar is over dark sections to change font color to white
