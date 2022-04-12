@@ -136,8 +136,12 @@ body {
     color: black;
     overflow-x: hidden;
     --section-tagline-size: 2.8vw;
+    --section-tagline-size-mobile: 6.5vw;
+    --main-content-column-width-mobile: 82vw;
     --main-content-column-width: 67vw;
     --copy-line-height: 1.8;
+    --copy-font-size-desktop: 1.13vw;
+    --copy-font-size-mobile: 4.5vw;
 }
 
 .layout {

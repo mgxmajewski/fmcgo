@@ -1,99 +1,172 @@
 .radical-section {
     grid-area: radical-section;
-    height: 50vw;
-    background-color: black;
     display: grid;
-    padding-left: 16vw;
+    height: 150vw;
+    background-color: black;
+    justify-items: center;
+    padding-left: 8vw;
     grid-template:
             "radical-icons"
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
-    grid-row-gap: 2vw;
-    grid-template-rows: 6vw 8.5vw 10.5vw auto;
-    grid-column-gap: 3vw;
-    justify-items: center;
+    grid-row-gap: 4vw;
+    grid-template-rows: 20vw 8.5vw 80vw auto;
+    /*grid-column-gap: 3vw;*/
+}
+
+@media (min-width: 900px) {
+    .radical-section {
+        padding-left: 16vw;
+        grid-template:
+            "radical-icons"
+            "radical-tagline"
+            "radical-copy"
+            "radical-drawers";
+        grid-row-gap: 2vw;
+        grid-template-rows: 6vw 8.5vw 10.5vw auto;
+        /*grid-column-gap: 3vw;*/
+    }
 }
 
 .radical-icons {
     grid-area: radical-icons;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-mobile);
     display: grid;
     grid-template:
             "mouse-go social-icons";
     justify-self: left;
-    padding-top: 0.4vw;
     align-self: start;
+    padding-top: 2vw;
+}
+
+@media (min-width: 900px) {
+    .radical-icons {
+        width: var(--main-content-column-width);
+        padding-top: 0.4vw;
+    }
 }
 
 .radical-tagline {
     grid-area: radical-tagline;
     font-weight: 900;
-    color: white;
-    font-size: var(--section-tagline-size);
-    line-height: 1.05;
     justify-self: left;
     align-self: end;
+    color: white;
+    line-height: 1.05;
+    font-size: var(--section-tagline-size-mobile);
+}
+
+@media (min-width: 900px) {
+    .radical-tagline {
+        font-size: var(--section-tagline-size);
+    }
 }
 
 .radical-copy {
     grid-area: radical-copy;
     width: var(--main-content-column-width);
-    font-size: 1.13vw;
+    font-size: var(--copy-font-size-mobile);
     line-height: var(--copy-line-height);
     font-weight: 300;
     color: white;
     justify-self: left;
 }
 
-.radical-drawers {
-    grid-area: radical-drawers;
-    display: flex;
-    margin-left: -16.5vw;
-    width: 100vw;
-    gap:3.8vw;
+@media (min-width: 900px) {
+    .radical-copy {
+        font-size: var(--copy-font-size-desktop);
+    }
 }
 
+.radical-drawers {
+    padding-top: 4vw;
+    grid-area: radical-drawers;
+    display: flex;
+    margin-left: -105vw;
+    width: 100vw;
+    gap: 8vw;
+}
+
+@media (min-width: 900px) {
+    .radical-drawers {
+        padding-top: 0;
+        margin-left: -16.5vw;
+        width: 100vw;
+        gap: 3.8vw;
+    }
+}
 
 .mouse-go {
     grid-area: mouse-go;
     justify-self: left;
     display: inline-flex;
     align-items: center;
-    background: linear-gradient(90deg, rgba(169,45,70,1) 42%, rgba(227,147,0,1) 100%);
+    background: linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /*margin-top: -.3vw;*/
-    font-size: 2.2vw;
+    font-size: 6vw;
     font-weight: 900;
-    gap: .8vw;
+    gap: 1.5vw;
+}
+
+@media (min-width: 900px) {
+    .mouse-go {
+        font-size: 2.2vw;
+        gap: .8vw;
+    }
 }
 
 .mouse-icon {
-    width: 1.5vw;
-    margin-top: 1.7vw;
+    width: 4vw;
+    margin-top: 4vw;
+}
+
+@media (min-width: 900px) {
+    .mouse-icon {
+        width: 1.5vw;
+        margin-top: 1.7vw;
+    }
 }
 
 .social-icons {
     grid-area: social-icons;
+    display: inline-flex;
     justify-self: right;
     align-self: center;
-    padding-top: 1vw;
-    gap: .5vw;
-    display: inline-flex;
+    padding-top: 2vw;
+    gap: 2vw;
+}
+
+@media (min-width: 900px) {
+    .social-icons {
+        padding-top: 1vw;
+        gap: .5vw;
+    }
 }
 
 .icon-box {
     display: flex;
     color: white;
     font-weight: bold;
-    font-size: 1.5vw;
     align-items: center;
     justify-content: center;
     border: .2vw solid white;
-    width: 1.5vw;
-    height: 1.5vw;
-    padding: 1vw;
+    font-size: 4.5vw;
+    width: 5vw;
+    height: 5vw;
+    padding: 3vw;
+}
+
+@media (min-width: 900px) {
+    .icon-box {
+        border: .2vw solid white;
+        font-size: 1.5vw;
+        width: 1.5vw;
+        height: 1.5vw;
+        padding: 1vw;
+    }
 }
 
 .icon-box--lifted {

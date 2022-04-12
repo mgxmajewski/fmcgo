@@ -1,8 +1,8 @@
-/*default - to be ovverriden with props*/
+/*default - to be overridden with props*/
 .default-drawer-dimension {
     --cube-width: 6vw;
     --cube-height: 4.2vw;
-    --cube-depth: 4vw;
+    --cube-depth: 12vw;
     --cube-color: black;
     --font-color: white;
 }
