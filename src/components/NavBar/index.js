@@ -9,7 +9,7 @@ const Navbar = ({toggle}) => {
 
         const getElementHeight = name => document.getElementById(name).clientHeight;
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
-        const navBarFontBottomEdge = 38
+        const navBarFontBottomEdge = 0
 
         // This is offset for contact form pseudo-element (gradient background)
         const contactFormPseudoElementOffset = window.innerWidth * .0145 + window.innerWidth * .03
