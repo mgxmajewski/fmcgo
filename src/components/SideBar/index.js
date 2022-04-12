@@ -11,20 +11,6 @@ import {
 } from "./SideBarElements";
 
 const SideBar = ({isOpen, toggle}) => {
-        const [scrollNav, setScrollNAv] = useState(false);
-
-    const changeNav = () => {
-        if (window.scrollY >= 80) {
-            setScrollNAv(true)
-        } else {
-            setScrollNAv(false)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav)
-    }, []);
-
 
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
