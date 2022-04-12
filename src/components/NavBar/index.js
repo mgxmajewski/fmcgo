@@ -12,7 +12,7 @@ const Navbar = ({toggle}) => {
         const navBarFontBottomEdge = 38
 
         // This is offset for contact form pseudo-element (gradient background)
-        const contactFormPseudoElementOffset = window.innerWidth * .0145
+        const contactFormPseudoElementOffset = window.innerWidth * .0145 + window.innerWidth * .03
 
         // Calculations to get the right context for navBar font changes.
         const goSectionHeight = getElementHeight('go-section');
@@ -109,7 +109,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                offset={-60}
                                 // exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
