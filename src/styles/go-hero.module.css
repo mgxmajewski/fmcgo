@@ -3,7 +3,7 @@
     grid-area: go-hero;
     display: grid;
     padding-left: 8vw;
-    height: 155vw;
+    height: 148vw;
     grid-template:
             "fmcgo-logo"
             "fmcgo-tagline"
@@ -52,7 +52,7 @@
     font-weight: 900;
     line-height: 1.05;
     justify-self: left;
-    font-size: 10.5vw;
+    font-size: 10vw;
     align-self: start;
 }
 
@@ -69,7 +69,8 @@
     font-weight: 300;
     justify-self: left;
     line-height: var(--copy-line-height);
-    font-size: 5vw;
+    font-size: 4.6vw;
+    padding-right: 8vw;
 }
 
 @media (min-width: 900px) {
