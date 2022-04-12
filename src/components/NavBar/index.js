@@ -3,23 +3,40 @@ import {FaBars} from 'react-icons/fa'
 import {MobileIcon, Nav, NavBarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu} from "./NavbarElements";
 
 const Navbar = ({toggle}) => {
-    const [scrollNav, setScrollNAv] = useState(false);
+    const [isNavFontBright, setIsNavFontBright] = useState(false);
 
-    const changeNav = () => {
-        if (window.scrollY >= 80) {
-            setScrollNAv(true)
+    const toggleNavFontColor = () => {
+        // This is offset which makes the font to change the color when it exceeds half of its height into new section.
+        const navBarFontBottomEdge = 38
+
+        // Calculations to get the right context for navBar font changes.
+        const goSectionHeight = document.getElementById('go-section').clientHeight;
+        const radicalSectionTopEdge = goSectionHeight + navBarFontBottomEdge
+        const radicalSectionHeight = document.getElementById('radical-section').clientHeight;
+        const radicalSectionBottomEdge = radicalSectionTopEdge + radicalSectionHeight
+        const coSectionHeight = document.getElementById('co-section').clientHeight;
+        const boardSectionTopEdge = radicalSectionBottomEdge + coSectionHeight
+        const boardSectionHeight = document.getElementById('board-section').clientHeight;
+        const boardSectionBottemEdge = boardSectionTopEdge + boardSectionHeight
+
+        // Booleans checking if NavBar is over dark sections to change font color to white
+        const navBarIsOverRadicalSection = window.scrollY >= radicalSectionTopEdge && window.scrollY <= radicalSectionBottomEdge
+        const navBarIsOverBoardSection = window.scrollY >= boardSectionTopEdge && window.scrollY <= boardSectionBottemEdge
+
+        if (navBarIsOverRadicalSection || navBarIsOverBoardSection) {
+            setIsNavFontBright(true)
         } else {
-            setScrollNAv(false)
+            setIsNavFontBright(false)
         }
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', changeNav)
+        window.addEventListener('scroll', toggleNavFontColor)
     }, []);
 
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+            <Nav>
                 <NavBarContainer>
                     {/*<NavLogo to='/'>*/}
                     {/*    LANGUAGE*/}
@@ -37,6 +54,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="go-section"
+                                isNavFontBright={isNavFontBright}
                             >
                                 go
                             </NavLinks>
@@ -48,6 +66,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="radical-section"
+                                isNavFontBright={isNavFontBright}
                             >
                                 Radical
                             </NavLinks>
@@ -59,6 +78,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="co-section"
+                                isNavFontBright={isNavFontBright}
                             >
                                 Co
                             </NavLinks>
@@ -70,6 +90,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="board-section"
+                                isNavFontBright={isNavFontBright}
                             >
                                 Board
                             </NavLinks>
@@ -81,6 +102,7 @@ const Navbar = ({toggle}) => {
                                 offset={-80}
                                 // exact='true'
                                 to="contact-section"
+                                isNavFontBright={isNavFontBright}
                             >
                                 Contact
                             </NavLinks>

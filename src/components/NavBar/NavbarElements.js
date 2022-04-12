@@ -3,7 +3,7 @@ import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: ${({scrollNav}) => scrollNav ? 'transparent' : 'transparent'};
+  background: transparent;
   height: 80px;
   //margin-top: -80px;
   display: flex;
@@ -72,9 +72,10 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-  color: black;
+  //color: black;
+  color: ${({isNavFontBright}) => isNavFontBright ? 'white' : 'black'};
   display: flex;
-  font-weight: 900;
+  //font-weight: 900;
   //flex-direction: row;
   align-items: center;
   text-decoration: none;
