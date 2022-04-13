@@ -1,36 +1,10 @@
 import React from 'react';
 
-
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 
 const CoSection = () => {
-
-    // Check if window is defined (so if in the browser or in node.js).
-    const isBrowser = typeof window !== "undefined"
-
-    let breakPoint;
-
-    if (isBrowser) {
-        breakPoint = window.innerWidth;
-    }
-
-    const drawerHeight = breakPoint > 900 ? '4.2vw' : '9vw';
-    const drawerDepth = breakPoint > 900 ? '4vw' : '10vw';
-
-    const CarrefourWidth = breakPoint > 900 ? '11.5vw' : '24vw';
-    const PepsiWidth = breakPoint > 900 ? '8.2vw' : '17vw';
-    const DesperadosWidth = breakPoint > 900 ? '11.2vw' : '28vw';
-    const HeinekenWidth = breakPoint > 900 ? '11.1vw' : '24vw';
-    const DeveleyWidth = breakPoint > 900 ? '11vw' : '22vw';
-    const CostaCoffeeWidth = breakPoint > 900 ? '14vw' : '32vw';
-    const TchiboWidth = breakPoint > 900 ? '10vw' : '20vw';
-    const StockWidth = breakPoint > 900 ? '8.2vw' : '17vw';
-    const SephoraWidth = breakPoint > 900 ? '11vw' : '22vw';
-    const ClarinsWidth = breakPoint > 900 ? '10.5vw' : '21vw';
-
-    console.log(`ClarinsWidth: ` + JSON.stringify(ClarinsWidth));
 
     return (
         <section className={coSection} id="co-section">
@@ -43,72 +17,62 @@ const CoSection = () => {
             </div>
             <div className={coDrawers}>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={CarrefourWidth}
+                    brand='carrefour'
+                    section='co-section'
                 >
                     Carrefour
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={PepsiWidth}
+                    brand='pepsi'
+                    section='co-section'
                 >
                     Pepsi
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={DesperadosWidth}
+                    brand='desperados'
+                    section='co-section'
                 >
                     Desperados
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={HeinekenWidth}
+                    brand='heineken'
+                    section='co-section'
                 >
                     Heineken
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={DeveleyWidth}
+                    brand='develey'
+                    section='co-section'
                 >
                     Develey
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={CostaCoffeeWidth}
+                    brand='costa'
+                    section='co-section'
                 >
                     Costa Coffee
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={TchiboWidth}
+                    brand='tchibo'
+                    section='co-section'
                 >
                     Tchibo
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={StockWidth}
+                    brand='stock'
+                    section='co-section'
                 >
                     Stock
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={SephoraWidth}
+                    brand='sephora'
+                    section='co-section'
                 >
                     Sephora
                 </DrawerCuboidZAnimation>
                 <DrawerCuboidZAnimation
-                    height={drawerHeight}
-                    depth={drawerDepth}
-                    width={ClarinsWidth}
+                    brand='clarins'
+                    section='co-section'
                 >
                     Clarins
                 </DrawerCuboidZAnimation>

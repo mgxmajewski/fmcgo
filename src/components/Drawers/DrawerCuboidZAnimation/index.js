@@ -1,5 +1,5 @@
 import React from 'react';
-import {AdjustedDrawer} from './DrawerCuboidZAnimationElements'
+import {AdjustedDrawer} from "../DrawerCuboidDynamicProps";
 import {
     back,
     cube,
@@ -16,11 +16,11 @@ import {
 
 const DrawerCuboidZAnimation = (props) => {
 
-    const {width, height, depth, children, brandClass} = props
+    const {width, height, depth, brand, children, section} = props
 
     return (
         <div className={defaultDrawerDimension}>
-            <AdjustedDrawer width={width} height={height} depth={depth} className={brandClass}>
+            <AdjustedDrawer width={width} height={height} section={section} depth={depth} brand={brand}>
                 <div className={drawerContainer}>
                     <div className={cube}>
                         <div className={`${side} ${front} ${frontZAnimation}`}>{children}</div>

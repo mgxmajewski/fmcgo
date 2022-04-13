@@ -1,6 +1,5 @@
 import React from 'react';
-import {AdjustedDrawer} from "./DrawerCuboidStatisGradientElements";
-
+import {AdjustedDrawer} from "../DrawerCuboidDynamicProps";
 import {
     back,
     gradientBack,
@@ -17,11 +16,11 @@ import {
 } from "../../../styles/drawer-cuboid.module.css";
 
 const DrawerCuboidStatisGradient = (props) => {
-    const {width, height, depth, cubeColor, fontColor, children} = props
+    const {width, height, depth, cubeColor, fontColor, children, section} = props
 
     return (
         <div className={defaultDrawerDimension}>
-            <AdjustedDrawer width={width} height={height} depth={depth} cubeColor={cubeColor} fontColor={fontColor}>
+            <AdjustedDrawer width={width} height={height} depth={depth} section={section} cubeColor={cubeColor} fontColor={fontColor}>
                 <div className={drawerContainer}>
                     <div className={`${cube}`}>
                         <div className={`${side} ${front} ${gradientFront}`}>{children}</div>
