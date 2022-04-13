@@ -16,11 +16,11 @@ import {
 
 const DrawerCuboidZAnimation = (props) => {
 
-    const {width, height, depth, children} = props
+    const {width, height, depth, children, brandClass} = props
 
     return (
         <div className={defaultDrawerDimension}>
-            <AdjustedDrawer width={width} height={height} depth={depth}>
+            <AdjustedDrawer width={width} height={height} depth={depth} className={brandClass}>
                 <div className={drawerContainer}>
                     <div className={cube}>
                         <div className={`${side} ${front} ${frontZAnimation}`}>{children}</div>

@@ -3,9 +3,33 @@ import React from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
-import Index from "./Drawers/DrawerCuboidZAnimation";
+import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 
 const CoSection = () => {
+
+    // Check if window is defined (so if in the browser or in node.js).
+    const isBrowser = typeof window !== "undefined"
+
+    let breakPoint;
+
+    if (isBrowser) {
+        breakPoint = window.innerWidth
+    }
+
+    const drawerHeight = breakPoint > 900 ? '4.2vw' : '9vw'
+    const drawerDepth = breakPoint > 900 ? '4vw' : '10vw'
+
+    const CarrefourWidth = breakPoint > 900 ? '11.5vw' : '24vw'
+    const PepsiWidth = breakPoint > 900 ? '8.2vw' : '17vw'
+    const DesperadosWidth = breakPoint > 900 ? '11.2vw' : '28vw'
+    const HeinekenWidth = breakPoint > 900 ? '11.1vw' : '24vw'
+    const DeveleyWidth = breakPoint > 900 ? '11vw' : '22vw'
+    const CostaCoffeeWidth = breakPoint > 900 ? '14vw' : '32vw'
+    const TchiboWidth = breakPoint > 900 ? '10vw' : '20vw'
+    const StockWidth = breakPoint > 900 ? '8.2vw' : '17vw'
+    const SephoraWidth = breakPoint > 900 ? '11vw' : '22vw'
+    const ClarinsWidth = breakPoint > 900 ? '10.5vw' : '21vw'
+
     return (
         <section className={coSection} id="co-section">
             <div className={coTagline}>Filip<sup>&</sup>Marcel<sup>&</sup>Co<sup>Go</sup></div>
@@ -16,16 +40,76 @@ const CoSection = () => {
                 turns us on is adverting that is meant to sell.
             </div>
             <div className={coDrawers}>
-                <Index width='11.5vw'>Carrefour</Index>
-                <Index width='8.2vw'>Pepsi</Index>
-                <Index width='11.2vw'>Desperados</Index>
-                <Index width='11.1vw'>Heineken</Index>
-                <Index width='11vw'>Develey</Index>
-                <Index width='14vw'>Costa Coffee</Index>
-                <Index width='10vw'>Tchibo</Index>
-                <Index width='8.2vw'>Stock</Index>
-                <Index width='11vw'>Sephora</Index>
-                <Index width='10.5vw'>Clarins</Index>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={CarrefourWidth}
+                >
+                    Carrefour
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={PepsiWidth}
+                >
+                    Pepsi
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={DesperadosWidth}
+                >
+                    Desperados
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={HeinekenWidth}
+                >
+                    Heineken
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={DeveleyWidth}
+                >
+                    Develey
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={CostaCoffeeWidth}
+                >
+                    Costa Coffee
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={TchiboWidth}
+                >
+                    Tchibo
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={StockWidth}
+                >
+                    Stock
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={SephoraWidth}
+                >
+                    Sephora
+                </DrawerCuboidZAnimation>
+                <DrawerCuboidZAnimation
+                    height={drawerHeight}
+                    depth={drawerDepth}
+                    width={ClarinsWidth}
+                >
+                    Clarins
+                </DrawerCuboidZAnimation>
             </div>
             <CoSlider/>
         </section>

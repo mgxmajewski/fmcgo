@@ -81,18 +81,25 @@
     font-weight: bold;
 }
 
-
 .co-drawers {
     grid-area: co-drawers;
     display: flex;
+    font-weight: 900;
     flex-direction: row;
     justify-content: start;
-    gap: 2vw 2.7vw;
-    font-weight: 900;
     flex-wrap: wrap;
     /*background-color: cyan;*/
-    width: 70vw;
-    height: 12.9vw;
     justify-self: left;
+    /*height: 12.9vw;*/
+    width: 70vw;
+    gap: 4vw 6vw;
+}
+
+@media (min-width: 900px) {
+    .co-drawers {
+        height: 12.9vw;
+        width: 70vw;
+        gap: 2vw 2.7vw;
+    }
 }
 
