@@ -32,7 +32,6 @@
 .cube {
     position: relative;
     width: var(--cube-width);
-
     height: var(--cube-height);
     transform-style: preserve-3d;
 }
