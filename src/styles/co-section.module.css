@@ -1,49 +1,85 @@
 .co-section {
     grid-area: co-section;
-    height: 91vw;
     display: grid;
-    padding-left: 16vw;
+    justify-items: center;
+    padding-left: var(--padding-left-mobile);
+    height: 250vw;
     grid-template:
             "co-tagline"
             "co-copy"
             "co-drawers"
             "co-slider";
-    grid-row-gap: 2vw;
-    grid-template-rows: 10vw 7vw 16.9vw auto;
+    grid-row-gap: var(--row-gap-mobile);
+    grid-template-rows: 15vw 90vw 65vw auto;
     grid-column-gap: 3vw;
-    justify-items: center;
+}
+
+@media (min-width: 900px) {
+    .co-section {
+        padding-left: var(--padding-left-desktop);
+        height: 91vw;
+        grid-template:
+            "co-tagline"
+            "co-copy"
+            "co-drawers"
+            "co-slider";
+        grid-row-gap: var(--row-gap-desktop);
+        grid-template-rows: 10vw 7vw 16.9vw auto;
+        grid-column-gap: 3vw;
+    }
 }
 
 .co-tagline {
     grid-area: co-tagline;
     font-weight: 900;
     color: black;
-    font-size: var(--section-tagline-size);
-    line-height: 1.05;
     justify-self: left;
     align-self: end;
+    line-height: 1.05;
     padding-top: 1vw;
+    font-size: var(--section-tagline-size-mobile);
+}
+
+@media (min-width: 900px) {
+    .co-tagline {
+        padding-top: 1vw;
+        font-size: var(--section-tagline-size-desktop);
+    }
 }
 
 .co-tagline sup {
-    font-size: 1.8vw;
+    font-size: calc(var(--section-tagline-size-mobile) * .6);
+}
+
+@media (min-width: 900px) {
+    .co-tagline sup {
+        font-size: calc(var(--section-tagline-size-desktop) * .6);
+    }
 }
 
 .co-copy {
     grid-area: co-copy;
-    width: var(--main-content-column-width);
-    font-size: 1.13vw;
     font-weight: 300;
     line-height: var(--copy-line-height);
     color: black;
     padding-top: 1vw;
     justify-self: left;
+    font-size: var(--copy-font-size-mobile);
+    width: var(--main-content-column-width-desktop);
+}
+
+@media (min-width: 900px) {
+    .co-copy {
+        padding-top: 1vw;
+        justify-self: left;
+        font-size: var(--copy-font-size-desktop);
+        width: var(--main-content-column-width-desktop);
+    }
 }
 
 .co-copy b {
     font-weight: bold;
 }
-
 
 
 .co-drawers {
