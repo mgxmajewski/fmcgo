@@ -2,9 +2,18 @@
 .default-drawer-dimension {
     --cube-width: 6vw;
     --cube-height: 4.2vw;
-    --cube-depth: 12vw;
+    --cube-depth: 4vw;
     --cube-color: black;
     --font-color: white;
+    --border-width: .6vw;
+    --border-width-sides: .7vw;
+}
+
+@media (min-width: 900px) {
+    .default-drawer-dimension {
+        --border-width: .3vw;
+        --border-width-sides: .35vw;
+    }
 }
 
 .drawer-container {
@@ -19,7 +28,6 @@
 }
 
 .cube {
-
     position: relative;
     width: var(--cube-width);
 
@@ -36,7 +44,7 @@
     color: var(--font-color);
     width: 100%;
     height: 100%;
-    border: .3vw solid var(--cube-color);
+    border: var(--border-width) solid var(--cube-color);
     outline: 1px solid transparent;
     border-collapse: collapse;
 }
@@ -110,14 +118,14 @@
     width: var(--cube-depth);
     border-left: 0;
     border-right: 0;
-    border-top: .35vw solid var(--cube-color);
-    border-bottom: .35vw solid var(--cube-color);
+    border-top: var(--border-width-sides) solid var(--cube-color);
+    border-bottom: var(--border-width-sides) solid var(--cube-color);
     transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
 }
 
 .gradient-match-right {
-    border: .35vw solid rgb(243, 177, 13);
+    border: var(--border-width-sides) solid rgb(243, 177, 13);
 }
 
 .right-z-animation {
@@ -128,14 +136,14 @@
     width: var(--cube-depth);
     border-left: 0;
     border-right: 0;
-    border-top: .35vw solid var(--cube-color);
-    border-bottom: .35vw solid var(--cube-color);
+    border-top: var(--border-width-sides) solid var(--cube-color);
+    border-bottom: var(--border-width-sides) solid var(--cube-color);
     transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
 }
 
 .gradient-match-left {
-    border: .35vw solid rgb(229, 40, 77);
+    border: var(--border-width-sides) solid rgb(229, 40, 77);
 }
 
 .left-z-animation {

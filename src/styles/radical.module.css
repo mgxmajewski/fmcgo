@@ -17,6 +17,7 @@
 
 @media (min-width: 900px) {
     .radical-section {
+        height: 50vw;
         padding-left: 16vw;
         grid-template:
             "radical-icons"
