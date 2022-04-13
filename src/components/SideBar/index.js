@@ -36,7 +36,7 @@ const SideBar = ({isOpen, toggle}) => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        offset={-80}
+                        // offset={-80}
                         to="radical-section"
                         onClick={toggle}
                     >
@@ -47,7 +47,7 @@ const SideBar = ({isOpen, toggle}) => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        offset={-80}
+                        // offset={-80}
                         to="co-section"
                         onClick={toggle}
                     >
@@ -58,7 +58,7 @@ const SideBar = ({isOpen, toggle}) => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        offset={-80}
+                        // offset={-80}
                         to="board-section"
                         onClick={toggle}
                     >
@@ -69,7 +69,7 @@ const SideBar = ({isOpen, toggle}) => {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        offset={-80}
+                        // offset={-80}
                         to="contact-section"
                         onClick={toggle}
                     >
