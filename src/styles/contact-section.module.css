@@ -19,7 +19,7 @@
     padding-left: 8vw;
     color: white;
     /*top: -9vw;*/
-    font-size: var(--section-tagline-size);
+    font-size: var(--section-tagline-size-desktop);
     line-height: 1.05;
     justify-self: left;
     align-self: end;

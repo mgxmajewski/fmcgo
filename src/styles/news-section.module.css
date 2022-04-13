@@ -15,7 +15,7 @@
     grid-area: news-tagline;
     font-weight: 900;
     color: black;
-    font-size: var(--section-tagline-size);
+    font-size: var(--section-tagline-size-desktop);
     line-height: 1.05;
     justify-self: left;
     align-self: end;
@@ -33,7 +33,7 @@
 
 .news-articles-container {
     grid-area: news-articles;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-desktop);
     font-size: 1.13vw;
     height: 32vw;
     line-height: 1.15;

@@ -17,7 +17,7 @@
     grid-area: board-tagline;
     font-weight: 900;
     color: white;
-    font-size: var(--section-tagline-size);
+    font-size: var(--section-tagline-size-desktop);
     line-height: 1.05;
     justify-self: left;
     align-self: end;
@@ -25,7 +25,7 @@
 
 .board-copy {
     grid-area: board-copy;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-desktop);
     font-size: 1.13vw;
     line-height: var(--copy-line-height);
     font-weight: 300;
@@ -36,7 +36,7 @@
 .board-pictures {
     padding-top: 5.3vw;
     grid-area: board-pictures;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-desktop);
     font-size: 1.13vw;
     line-height: var(--copy-line-height);
     font-weight: 300;

@@ -11,7 +11,7 @@
             "left-arrow slider-copy right-arrow"
             ".......... slider-dots ...........";
     grid-template-rows: 14.5vw 11vw auto;
-    grid-template-columns: 8vw var(--main-content-column-width) auto;
+    grid-template-columns: 8vw var(--main-content-column-width-desktop) auto;
     grid-row-gap: 2.2vw;
 
     /*justify-self: left;*/
@@ -23,7 +23,7 @@
     grid-area: slider-name;
     font-weight: 900;
     color: white;
-    font-size: var(--section-tagline-size);
+    font-size: var(--section-tagline-size-desktop);
     line-height: 1.05;
     justify-self: left;
     align-self: end;
@@ -50,7 +50,7 @@
 
 .slider-copy{
     grid-area: slider-copy;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-desktop);
     font-size: 1.1vw;
     font-weight: 300;
     color: white;

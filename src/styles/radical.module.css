@@ -43,7 +43,7 @@
 
 @media (min-width: 900px) {
     .radical-icons {
-        width: var(--main-content-column-width);
+        width: var(--main-content-column-width-desktop);
         padding-top: 0.4vw;
     }
 }
@@ -60,13 +60,13 @@
 
 @media (min-width: 900px) {
     .radical-tagline {
-        font-size: var(--section-tagline-size);
+        font-size: var(--section-tagline-size-desktop);
     }
 }
 
 .radical-copy {
     grid-area: radical-copy;
-    width: var(--main-content-column-width);
+    width: var(--main-content-column-width-desktop);
     font-size: var(--copy-font-size-mobile);
     line-height: var(--copy-line-height);
     font-weight: 300;
