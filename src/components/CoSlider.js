@@ -6,12 +6,13 @@ import SliderArrowRight from '../assets/slider-arrow-right.svg'
 
 
 
-import {coSlider, sliderName, sliderLeftArrow, sliderCopy, sliderRightArrow, sliderDots, whiteDot, emptyDot, arrow} from '../styles/co-slider.module.css'
+import {coSlider, sliderPicture, sliderName, sliderLeftArrow, sliderCopy, sliderRightArrow, sliderDots, whiteDot, emptyDot, arrow} from '../styles/co-slider.module.css'
 
 const CoSlider = () => {
 
     return (
-        <div className={coSlider} style={Object.assign({backgroundImage: `url(${background})`}, {backgroundSize: `cover`})}>
+        <div className={coSlider}>
+            <div className={sliderPicture} style={Object.assign({backgroundImage: `url(${background})`}, {backgroundSize: `cover`})}></div>
             <div className={sliderName}>Filip<sup>Szperl</sup></div>
             <div className={sliderLeftArrow}>
                 <DrawerCuboidStatic

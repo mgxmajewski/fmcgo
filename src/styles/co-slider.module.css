@@ -1,25 +1,56 @@
 .co-slider {
     grid-area: co-slider;
-    width: 92vw;
     background-color: crimson;
-    height: 42vw;
     display: grid;
     justify-self: left;
-    margin-left: -8vw;
+    height: 160vw;
+    /*margin-left: -8vw;*/
+    /*width: 92vw;*/
     grid-template:
-            ".......... slider-name ..........."
-            "left-arrow slider-copy right-arrow"
-            ".......... slider-dots ...........";
-    grid-template-rows: 14.5vw 11vw auto;
-    grid-template-columns: 8vw var(--main-content-column-width-desktop) auto;
-    grid-row-gap: 2.2vw;
+            "left-arrow  slider-picture right-arrow"
+            "slider-name .......... slider-dots"
+            "slider-copy slider-copy slider-copy";
+    grid-template-rows: 50vw 11vw auto;
+    grid-template-columns: 18vw 52vw auto;
+    grid-row-gap: 4.2vw;
 
     /*justify-self: left;*/
     /*padding-bottom: .5vw;*/
     /*align-self: end;*/
 }
 
-.slider-name{
+@media (min-width: 900px) {
+    .co-slider {
+        height: 42vw;
+        margin-left: -8vw;
+        width: 92vw;
+        grid-template:
+            "slider-picture slider-name ..........."
+            "left-arrow slider-copy right-arrow"
+            ".......... slider-dots ...........";
+        grid-template-rows: 14.5vw 11vw auto;
+        grid-template-columns: 8vw var(--main-content-column-width-desktop) auto;
+        grid-row-gap: 2.2vw;
+    }
+}
+
+.slider-picture {
+    grid-area: slider-picture;
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 50vw;
+    margin-left: -26vw;
+}
+
+@media (min-width: 900px) {
+    .slider-picture {
+        height: 42vw;
+        width: 92vw;
+        margin-left: 0;
+    }
+}
+
+.slider-name {
     grid-area: slider-name;
     font-weight: 900;
     color: white;
@@ -30,9 +61,13 @@
     padding-bottom: 1vw;
 }
 
+@media (min-width: 900px){
+
+}
+
 .slider-name sup {
     font-size: 1.8vw;
-     background: linear-gradient(90deg, rgba(232,46,89,1) 12%, rgba(95,74,229,1) 100%);
+    background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -44,11 +79,11 @@
     width: 100%;
     left: .2vw;
     height: 0.2vw;
-    background: linear-gradient(90deg, rgba(232,46,89,1) 12%, rgba(95,74,229,1) 100%);
+    background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
 }
 
 
-.slider-copy{
+.slider-copy {
     grid-area: slider-copy;
     width: var(--main-content-column-width-desktop);
     font-size: 1.1vw;
@@ -61,21 +96,21 @@
     font-weight: bold;
 }
 
-.slider-left-arrow{
+.slider-left-arrow {
     grid-area: left-arrow;
     margin-left: -2vw;
     justify-self: left;
     align-self: center;
 }
 
-.slider-right-arrow{
+.slider-right-arrow {
     grid-area: right-arrow;
     margin-left: 2vw;
     justify-self: left;
     align-self: center;
 }
 
-.slider-dots{
+.slider-dots {
     grid-area: slider-dots;
     display: flex;
     gap: .5vw;
@@ -84,20 +119,20 @@
 }
 
 .white-dot {
-  height: 1.4vw;
-  width: 1.4vw;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
+    height: 1.4vw;
+    width: 1.4vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .empty-dot {
-  height: 1.4vw;
-  width: 1.4vw;
-  border: .15vw solid white;
-  /*background-color: #bbb;*/
-  border-radius: 50%;
-  display: inline-block;
+    height: 1.4vw;
+    width: 1.4vw;
+    border: .15vw solid white;
+    /*background-color: #bbb;*/
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .arrow {
