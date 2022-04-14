@@ -9,8 +9,9 @@
             "co-copy"
             "co-drawers"
             "co-slider";
+    grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: 15vw 90vw 65vw auto;
+    grid-template-rows: 15vw 72vw 67vw auto;
     grid-column-gap: 3vw;
 }
 
@@ -62,10 +63,10 @@
     font-weight: 300;
     line-height: var(--copy-line-height);
     color: black;
-    padding-top: 1vw;
+    /*padding-top: 1vw;*/
     justify-self: left;
     font-size: var(--copy-font-size-mobile);
-    width: var(--main-content-column-width-desktop);
+    /*width: var(--main-content-column-width-desktop);*/
 }
 
 @media (min-width: 900px) {

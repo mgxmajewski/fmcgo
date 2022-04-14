@@ -67,7 +67,6 @@
 
 .radical-copy {
     grid-area: radical-copy;
-    width: var(--main-content-column-width-desktop);
     font-size: var(--copy-font-size-mobile);
     line-height: var(--copy-line-height);
     font-weight: 300;
