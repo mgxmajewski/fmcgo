@@ -3,7 +3,7 @@
     display: grid;
     justify-items: center;
     padding-left: var(--padding-left-mobile);
-    height: 350vw;
+    height: 303vw;
     grid-template:
             "co-tagline"
             "co-copy"
