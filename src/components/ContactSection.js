@@ -9,7 +9,8 @@ import {
     detailsName,
     detailsAddress,
     detailsContact,
-    detailsSocial
+    detailsSocial,
+    desktopOnlyGo
 } from '../styles/contact-section.module.css'
 import {iconBox} from "../styles/radical.module.css";
 import GoContactForm from "./GoContactForm";
@@ -20,7 +21,7 @@ const ContactSection = () => {
             <div className={contactFormContainer}>
                 <div className={contactTagline}>
                     <div>Contact</div>
-                    <div>Go</div>
+                    <div className={desktopOnlyGo}>Go</div>
                 </div>
                 <div className={contactForm}>
                     <div className={formInputCol}>
