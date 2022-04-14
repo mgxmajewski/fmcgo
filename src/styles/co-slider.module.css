@@ -174,7 +174,7 @@
 
 @media (min-width: 900px) {
     .empty-dot {
-        background-color: white;
+        border: .15vw solid white;
         height: 1.4vw;
         width: 1.4vw;
     }
