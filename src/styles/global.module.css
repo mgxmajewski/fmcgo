@@ -72,7 +72,6 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    /*scroll-behavior: smooth;*/
 }
 
 /*
@@ -136,6 +135,10 @@ textarea {
 /* ==========================================================================
    THE END of "Base styles: opinionated defaults"
    ========================================================================== */
+
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-family: "Satoshi", sans-serif;
