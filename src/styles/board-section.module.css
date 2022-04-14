@@ -1,93 +1,128 @@
 .board-section {
     grid-area: board-section;
-    height: 76vw;
     background-color: black;
     display: grid;
-    padding-left: 16vw;
+    height: 100vw;
+    padding-left: 8vw;
     grid-template:
+            "board-tagline"
+            "board-copy";
+    grid-row-gap: var(--row-gap-mobile);
+    grid-template-columns: var(--single-column-width-mobile);
+    grid-template-rows: 20vw;
+    justify-items: center;
+}
+
+@media (min-width: 900px) {
+    .board-section {
+        height: 76vw;
+        padding-left: 16vw;
+        grid-template:
             "board-tagline"
             "board-copy"
             "board-pictures";
-    grid-row-gap: 2vw;
-    grid-template-rows: 12.7vw 5.7vw auto;
-    justify-items: center;
+        grid-row-gap: var(--row-gap-desktop);
+        grid-template-rows: 12.7vw 5.7vw auto;
+        justify-items: center;
+    }
 }
 
 .board-tagline {
     grid-area: board-tagline;
-    font-weight: 900;
     color: white;
-    font-size: var(--section-tagline-size-desktop);
+    font-weight: 900;
     line-height: 1.05;
+    font-size: var(--section-tagline-size-mobile);
     justify-self: left;
     align-self: end;
 }
 
+@media (min-width: 900px) {
+    .board-tagline {
+        font-size: var(--section-tagline-size-desktop);
+    }
+}
+
 .board-copy {
     grid-area: board-copy;
-    width: var(--main-content-column-width-desktop);
-    font-size: 1.13vw;
+    font-size: var(--copy-font-size-mobile);
     line-height: var(--copy-line-height);
     font-weight: 300;
     color: white;
     justify-self: left;
 }
 
-.board-pictures {
-    padding-top: 5.3vw;
-    grid-area: board-pictures;
-    width: var(--main-content-column-width-desktop);
-    font-size: 1.13vw;
-    line-height: var(--copy-line-height);
-    font-weight: 300;
-    color: white;
-    justify-self: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 21.8vw auto;
-    grid-column-gap: 5vw;
-    grid-row-gap: 2vw;
+@media (min-width: 900px) {
+    .board-copy {
+        width: var(--main-content-column-width-desktop);
+        font-size: var(--copy-font-size-desktop);
+    }
 }
 
-.board-pictures b {
-    font-weight: bold;
-}
-
-.board-person-container {
-    position: relative;
-    z-index: 1;
-}
-
+.board-pictures,
+.board-person-container,
 .board-person-picture-right,
 .board-person-picture-left {
-    position: relative;
-    height: 20.8vw;
-    width: 31.8vw;
-    background-color: grey;
+    display: none;
 }
 
-.board-person-picture-left:before {
-    content: '';
-    position: absolute;
-    background: rgb(139, 37, 86);
-    background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
-    height: 20.8vw;
-    width: 31.8vw;
-    z-index: -2000000;
-    background-color: chocolate;
-    top: 1vw;
-    left: -1vw;
-}
+@media (min-width: 900px) {
+    .board-pictures {
+        padding-top: 5.3vw;
+        grid-area: board-pictures;
+        width: var(--main-content-column-width-desktop);
+        font-size: 1.13vw;
+        line-height: var(--copy-line-height);
+        font-weight: 300;
+        color: white;
+        justify-self: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 21.8vw auto;
+        grid-column-gap: 5vw;
+        grid-row-gap: 2vw;
+    }
 
-.board-person-picture-right:before {
-    content: '';
-    position: absolute;
-   background: rgb(228,148,28);
-background: radial-gradient(circle, rgba(228,148,28,1) 0%, rgba(128,52,39,1) 100%);
-    height: 20.8vw;
-    width: 31.8vw;
-    z-index: -2000000;
-    background-color: chocolate;
-    top: 1vw;
-    left: -1vw;
+    .board-pictures b {
+        font-weight: bold;
+    }
+
+    .board-person-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .board-person-picture-right,
+    .board-person-picture-left {
+        position: relative;
+        height: 20.8vw;
+        width: 31.8vw;
+        background-color: grey;
+    }
+
+    .board-person-picture-left:before {
+        content: '';
+        position: absolute;
+        background: rgb(139, 37, 86);
+        background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+        height: 20.8vw;
+        width: 31.8vw;
+        z-index: -2000000;
+        background-color: chocolate;
+        top: 1vw;
+        left: -1vw;
+    }
+
+    .board-person-picture-right:before {
+        content: '';
+        position: absolute;
+        background: rgb(228, 148, 28);
+        background: radial-gradient(circle, rgba(228, 148, 28, 1) 0%, rgba(128, 52, 39, 1) 100%);
+        height: 20.8vw;
+        width: 31.8vw;
+        z-index: -2000000;
+        background-color: chocolate;
+        top: 1vw;
+        left: -1vw;
+    }
 }
