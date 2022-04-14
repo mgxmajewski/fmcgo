@@ -10,9 +10,9 @@
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
+    grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: 4vw;
     grid-template-rows: 20vw 8.5vw 80vw auto;
-    /*grid-column-gap: 3vw;*/
 }
 
 @media (min-width: 900px) {
@@ -24,6 +24,7 @@
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
+        grid-template-columns: var(--single-column-width-desktop);
         grid-row-gap: 2vw;
         grid-template-rows: 6vw 8.5vw 10.5vw auto;
         /*grid-column-gap: 3vw;*/
@@ -32,7 +33,7 @@
 
 .radical-icons {
     grid-area: radical-icons;
-    width: var(--main-content-column-width-mobile);
+    width: 100%;
     display: grid;
     grid-template:
             "mouse-go social-icons";
