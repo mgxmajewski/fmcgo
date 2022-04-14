@@ -8,7 +8,7 @@
             "fmcgo-logo"
             "fmcgo-tagline"
             "fmcgo-copy";
-    grid-template-columns: 1fr;
+    grid-template-columns: 92vw;
     grid-template-rows: 26vw 24vw auto;
     grid-row-gap: 5vw;
     grid-column-gap: 3vw;
