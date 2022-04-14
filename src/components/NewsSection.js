@@ -6,8 +6,10 @@ import {
     newsDate,
     newsSection,
     newsTagline,
-    newsTaglineGradient
+    newsTaglineGradient,
+    desktopOnlyNews
 } from '../styles/news-section.module.css'
+import {carrefour, container} from "../styles/drawer-container.module.css";
 
 
 const NewsSection = () => {
@@ -20,12 +22,12 @@ const NewsSection = () => {
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={newsArticle}>
+                <div className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={newsArticle}>
+                <div className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
@@ -43,7 +45,7 @@ const NewsSection = () => {
                         technologies
                     </p>
                 </div>
-                <div className={newsArticle}>
+                <div className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>

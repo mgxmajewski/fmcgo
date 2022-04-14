@@ -2,7 +2,7 @@
     grid-area: board-section;
     background-color: black;
     display: grid;
-    height: 100vw;
+    height: 103vw;
     padding-left: 8vw;
     grid-template:
             "board-tagline"
