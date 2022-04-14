@@ -8,7 +8,7 @@
             "fmcgo-logo"
             "fmcgo-tagline"
             "fmcgo-copy";
-    grid-template-columns: 92vw;
+    grid-template-columns: var(--single-column-width-mobile);
     grid-template-rows: 26vw 24vw auto;
     grid-row-gap: 5vw;
     grid-column-gap: 3vw;
@@ -70,7 +70,6 @@
     justify-self: left;
     line-height: var(--copy-line-height);
     font-size: 4.6vw;
-    padding-right: 8vw;
 }
 
 @media (min-width: 900px) {
