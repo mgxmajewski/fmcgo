@@ -105,7 +105,7 @@
 
 @media (min-width: 900px) {
     .slider-copy {
-        width: var(--main-content-column-width-desktop);
+        width: 29vw;
         font-size: 1.1vw;
         color: white;
     }
