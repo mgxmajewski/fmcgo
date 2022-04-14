@@ -6,14 +6,22 @@
 }
 
 .go-contact-form input {
-    font-size: 2.2vw;
-    height: 5.2vw;
     background-color: black;
     color: white;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: .1vw solid white;
+    height: 11vw;
+    font-size: var(--copy-font-size-mobile);
+}
+
+@media (min-width: 900px) {
+    .go-contact-form input {
+        border-bottom: .1vw solid white;
+        height: 5.2vw;
+        font-size: 2.2vw;
+    }
 }
 
 .go-contact-form input::placeholder {
@@ -37,18 +45,33 @@
 }
 
 .go-submit {
-    height: 9.6vw;
     display: grid;
+    height: 18vw;
     align-items: end;
 }
 
-.go-contact-form button {
-    width: 11vw;
-    height: 6vw;
-    outline: none;
-    border: 0;
-    background-color: white;
-    font-weight: 900;
-    font-size: 3vw;
+@media (min-width: 900px) {
+    .go-submit {
+        height: 9.6vw;
+        align-items: end;
+    }
 }
 
+.go-contact-form button {
+    outline: none;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    border: 0;
+    width: 18vw;
+    height: 10vw;
+    font-size: 5.5vw;
+}
+
+@media (min-width: 900px) {
+    .go-contact-form button {
+        width: 11vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+}
