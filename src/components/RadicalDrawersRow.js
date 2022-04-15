@@ -15,11 +15,11 @@ const RadicalDrawersRow = () => {
                 cubeColor='white'
                 fontColor='black'
             >
-                <div className={beanContainer}>
-                    <CoffeeBeanIcon className={bean}/>
-                    {/*<CoffeeBeanIcon className={bean}/>*/}
-                    {/*<CoffeeBeanIcon className={bean}/>*/}
-                </div>
+                    <CoffeeBeanIcon className={beanContainer}/>
+                {/*<div className={beanContainer}>*/}
+                {/*    /!*<CoffeeBeanIcon className={bean}/>*!/*/}
+                {/*    /!*<CoffeeBeanIcon className={bean}/>*!/*/}
+                {/*</div>*/}
             </DrawerCuboidStatic>
             <DrawerCuboidStatisGradient
                 cubeColor='orange'
@@ -45,8 +45,8 @@ const RadicalDrawersRow = () => {
             >
                 <div className={beanContainer}>
                     <CoffeeBeanIcon className={bean}/>
-                    <CoffeeBeanIcon className={bean}/>
-                    <CoffeeBeanIcon className={bean}/>
+                    {/*<CoffeeBeanIcon className={bean}/>*/}
+                    {/*<CoffeeBeanIcon className={bean}/>*/}
                 </div>
             </DrawerCuboidStatic>
             <DrawerCuboidStatic

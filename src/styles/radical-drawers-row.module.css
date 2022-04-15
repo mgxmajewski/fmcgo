@@ -1,15 +1,17 @@
 .bean-container {
-    width: 22vw;
-    display: -webkit-flex;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: space-evenly;
+    width: 6vw;
+    /*width: 22vw;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*justify-self: center;*/
+    /*align-self: center;*/
+    /*justify-content: space-evenly;*/
 }
 
 @media (min-width: 900px) {
     .bean-container {
-        width: 7vw;
+        width: 1.7vw;
+        /*width: 7vw;*/
     }
 }
 
