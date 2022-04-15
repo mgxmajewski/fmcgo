@@ -1,6 +1,8 @@
 .bean-container {
     width: 22vw;
     display: flex;
+    justify-self: center;
+    align-self: center;
     justify-content: space-evenly;
 }
 
