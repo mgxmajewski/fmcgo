@@ -90,6 +90,7 @@
 @media (min-width: 900px) {
     .contact-form {
         grid-template-columns: 57.6vw 20vw;
+        grid-template-rows: auto;
         top: 3vw;
         width: 92vw;
         font-size: var(--copy-font-size-desktop);
@@ -144,6 +145,7 @@
                 "details-contact"
                 "details-social";
     font-weight: 300;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-row-gap: 5vw;
     align-items: end;
@@ -154,6 +156,7 @@
 @media (min-width: 900px) {
     .form-details-col {
         line-height: 1.1;
+        height: 40vw;
         grid-row-gap: 0;
         grid-template-rows: 9vw 6vw 5vw 4vw;
     }
