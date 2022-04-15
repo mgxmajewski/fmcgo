@@ -85,8 +85,7 @@
     padding-top: 4vw;
     grid-area: radical-drawers;
     display: flex;
-    margin-left: -57vw;
-    width: 157vw;
+    width: 100vw;
     gap: 8vw;
 }
 

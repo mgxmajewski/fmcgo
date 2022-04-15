@@ -1,11 +1,23 @@
 .bean-container {
-    width: 7vw;
+    width: 22vw;
     display: flex;
     justify-content: space-evenly;
 }
 
+@media (min-width: 900px) {
+    .bean-container {
+        width: 7vw;
+    }
+}
+
 .bean {
-    width: 1.7vw
+    width: 6vw;
+}
+
+@media (min-width: 900px) {
+    .bean {
+        width: 1.7vw;
+    }
 }
 
 .bottle {
