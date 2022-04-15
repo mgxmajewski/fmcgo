@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa'
 import {MobileIcon, Nav, NavBarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu} from "./NavbarElements";
+import Hamb from "../Hamb";
 
 const Navbar = ({toggle}) => {
     const [isNavFontBright, setIsNavFontBright] = useState('false');
@@ -52,7 +53,8 @@ const Navbar = ({toggle}) => {
                     {/*    LANGUAGE*/}
                     {/*</NavLogo>*/}
                     <MobileIcon isbright={isNavFontBright} onClick={toggle}>
-                        <FaBars/>
+                        {/*<FaBars />*/}
+                        <Hamb />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
