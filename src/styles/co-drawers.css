@@ -1,103 +1,103 @@
-/*const drawerHeight = breakPoint > 900 ? '4.2vw' : '9vw';*/
-/*const drawerDepth = breakPoint > 900 ? '4vw' : '10vw';*/
+/*!*const drawerHeight = breakPoint > 900 ? '4.2vw' : '9vw';*!*/
+/*!*const drawerDepth = breakPoint > 900 ? '4vw' : '10vw';*!*/
 
 
-.carrefour {
-    width: 24vw;
-}
+/*.carrefour {*/
+/*    width: 24vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .carrefour {
-        width: 11.5vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .carrefour {*/
+/*        width: 11.5vw;*/
+/*    }*/
+/*}*/
 
-.pepsi {
-    width: 17vw;
-}
+/*.pepsi {*/
+/*    width: 17vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .pepsi {
-        width: 8.2vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .pepsi {*/
+/*        width: 8.2vw;*/
+/*    }*/
+/*}*/
 
-.desperados {
-    width: 28vw;
-}
+/*.desperados {*/
+/*    width: 28vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .pepsi {
-        width: 11.2vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .pepsi {*/
+/*        width: 11.2vw;*/
+/*    }*/
+/*}*/
 
-.heineken {
-    width: 24vw;
-}
+/*.heineken {*/
+/*    width: 24vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .heineken {
-        width: 11.1vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .heineken {*/
+/*        width: 11.1vw;*/
+/*    }*/
+/*}*/
 
-.develey {
-    width: 22vw;
-}
+/*.develey {*/
+/*    width: 22vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .develey {
-        width: 11vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .develey {*/
+/*        width: 11vw;*/
+/*    }*/
+/*}*/
 
-.costa {
-    width: 32vw;
-}
+/*.costa {*/
+/*    width: 32vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .costa {
-        width: 14vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .costa {*/
+/*        width: 14vw;*/
+/*    }*/
+/*}*/
 
-.tchibo {
-    width: 20vw;
-}
+/*.tchibo {*/
+/*    width: 20vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .tchibo {
-        width: 10vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .tchibo {*/
+/*        width: 10vw;*/
+/*    }*/
+/*}*/
 
-.stock {
-    width: 17vw;
-}
+/*.stock {*/
+/*    width: 17vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .stock {
-        width: 8.2vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .stock {*/
+/*        width: 8.2vw;*/
+/*    }*/
+/*}*/
 
-.sephora {
-    width: 22vw;
-}
+/*.sephora {*/
+/*    width: 22vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .sephora {
-        width: 11vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .sephora {*/
+/*        width: 11vw;*/
+/*    }*/
+/*}*/
 
-.clarins {
-    width: 21vw;
-}
+/*.clarins {*/
+/*    width: 21vw;*/
+/*}*/
 
-@media (min-width: 900px) {
-    .clarins {
-        width: 10.5vw;
-    }
-}
+/*@media (min-width: 900px) {*/
+/*    .clarins {*/
+/*        width: 10.5vw;*/
+/*    }*/
+/*}*/
