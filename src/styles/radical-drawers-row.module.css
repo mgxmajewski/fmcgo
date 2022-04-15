@@ -1,17 +1,21 @@
 .bean-container {
-    width: 6vw;
-    /*width: 22vw;*/
+    width: 22vw;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 7vw);
+    justify-self: center;
+    justify-content: space-evenly;
+    /*width: 6vw;*/
     /*display: -webkit-flex;*/
     /*display: flex;*/
-    /*justify-self: center;*/
     /*align-self: center;*/
     /*justify-content: space-evenly;*/
 }
 
 @media (min-width: 900px) {
     .bean-container {
-        width: 1.7vw;
-        /*width: 7vw;*/
+        grid-template-columns: repeat(3, 2vw);
+        /*width: 1.7vw;*/
+        width: 7vw;
     }
 }
 
