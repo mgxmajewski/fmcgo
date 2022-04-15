@@ -17,8 +17,8 @@ const RadicalDrawersRow = () => {
             >
                 <div className={beanContainer}>
                     <CoffeeBeanIcon className={bean}/>
-                    <CoffeeBeanIcon className={bean}/>
-                    <CoffeeBeanIcon className={bean}/>
+                    {/*<CoffeeBeanIcon className={bean}/>*/}
+                    {/*<CoffeeBeanIcon className={bean}/>*/}
                 </div>
             </DrawerCuboidStatic>
             <DrawerCuboidStatisGradient
