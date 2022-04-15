@@ -3,7 +3,7 @@
     background-color: black;
     display: grid;
     height: 103vw;
-    padding-left: 8vw;
+    padding-left: var(--left-padding-mobile);
     grid-template:
             "board-tagline"
             "board-copy";
@@ -16,7 +16,7 @@
 @media (min-width: 900px) {
     .board-section {
         height: 76vw;
-        padding-left: 16vw;
+        padding-left: var(--left-padding-desktop);
         grid-template:
             "board-tagline"
             "board-copy"

@@ -2,7 +2,7 @@
     margin-top: -48px;
     grid-area: go-hero;
     display: grid;
-    padding-left: 8vw;
+    padding-left: var(--left-padding-mobile);
     height: 148vw;
     grid-template:
             "fmcgo-logo"
@@ -16,7 +16,7 @@
 
 @media (min-width: 900px) {
     .go-hero-section {
-        padding-left: 16vw;
+        padding-left: var(--left-padding-desktop);
         height: 42vw;
         grid-template:
             "fmcgo-logo fmcgo-tagline"

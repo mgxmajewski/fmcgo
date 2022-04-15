@@ -2,7 +2,7 @@
     grid-area: contact-section;
     height: 181vw;
     display: grid;
-    padding-left: 8vw;
+    padding-left: var(--left-padding-mobile);
     grid-template:
             "contact-tagline"
             "contact-form";
@@ -38,7 +38,7 @@
 @media (min-width: 900px) {
     .contact-tagline {
         padding-bottom: 0;
-        padding-left: 8vw;
+        padding-left: var(--left-padding-mobile);
         font-size: var(--section-tagline-size-desktop);
         grid-template-columns: 49.6vw auto;
     }

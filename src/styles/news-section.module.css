@@ -2,7 +2,7 @@
     grid-area: news-section;
     display: grid;
     justify-items: center;
-    padding-left: 8vw;
+    padding-left: var(--left-padding-mobile);
     height: 155vw;
     grid-template:
             "news-tagline"
@@ -13,7 +13,7 @@
 
 @media (min-width: 900px) {
     .news-section {
-        padding-left: 16vw;
+        padding-left: var(--left-padding-desktop);
         height: 72vw;
         grid-template:
             "news-tagline"

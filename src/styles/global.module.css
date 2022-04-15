@@ -157,6 +157,8 @@ body {
     --padding-left-desktop: 16vw;
     --row-gap-mobile: 4vw;
     --row-gap-desktop: 2vw;
+    --left-padding-mobile: 8vw;
+    --left-padding-desktop: 16vw;
 }
 
 .layout {

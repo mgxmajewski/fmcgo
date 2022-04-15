@@ -4,7 +4,7 @@
     height: 150vw;
     background-color: black;
     justify-items: center;
-    padding-left: 8vw;
+    padding-left: var(--left-padding-mobile);
     grid-template:
             "radical-icons"
             "radical-tagline"
@@ -18,7 +18,7 @@
 @media (min-width: 900px) {
     .radical-section {
         height: 50vw;
-        padding-left: 16vw;
+        padding-left: var(--left-padding-desktop);
         grid-template:
             "radical-icons"
             "radical-tagline"
