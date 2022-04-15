@@ -6,10 +6,12 @@ export const Nav = styled.nav`
   background: transparent;
   height: 20vw;
   //margin-top: -80px;
-  display: flex;
+  display: grid;
   align-items: center;
+  justify-items: end;
   font-size: 1rem;
   position: sticky;
+  width: 92vw;
   top: 0;
   z-index: 10;
 
@@ -25,7 +27,7 @@ export const NavBarContainer = styled.div`
   //justify-self: right;
   height: 16vw;
   z-index: 1;
-  width: 92vw;
+  width: 100%;
   //padding: 0 8vw;
 
   @media screen and (min-width: 900px) {
