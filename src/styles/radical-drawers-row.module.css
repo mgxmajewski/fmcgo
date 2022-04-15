@@ -1,5 +1,6 @@
 .bean-container {
     width: 22vw;
+    display: -webkit-flex;
     display: flex;
     justify-self: center;
     align-self: center;
