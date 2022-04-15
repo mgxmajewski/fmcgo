@@ -9,7 +9,6 @@ import {
     newsTaglineGradient,
     desktopOnlyNews
 } from '../styles/news-section.module.css'
-import {carrefour, container} from "../styles/drawer-container.module.css";
 
 
 const NewsSection = () => {
