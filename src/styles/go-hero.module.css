@@ -1,5 +1,5 @@
 .go-hero-section {
-    margin-top: -48px;
+    margin-top: -12vw;
     grid-area: go-hero;
     display: grid;
     padding-left: var(--left-padding-mobile);
@@ -16,6 +16,7 @@
 
 @media (min-width: 900px) {
     .go-hero-section {
+        margin-top: -3vw;
         padding-left: var(--left-padding-desktop);
         height: 42vw;
         grid-template:

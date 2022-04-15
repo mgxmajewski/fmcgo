@@ -13,41 +13,47 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (min-width: 900px) {
+    height: 6vw;
     transition: .8s all ease;
   }
 `;
 
 export const NavBarContainer = styled.div`
-  display: flex;
-  justify-content: right;
-  height: 20vw;
+  display: grid;
+  justify-items: right;
+  height: 16vw;
   z-index: 1;
   width: 100%;
   padding: 0 8vw;
+
+  @media screen and (min-width: 900px) {
+    height: 6vw;
+    transition: .8s all ease;
+  }
   //max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  //margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-`
+// export const NavLogo = styled(LinkR)`
+//   color: #fff;
+//   justify-self: flex-start;
+//   cursor: pointer;
+//   font-size: 1rem;
+//   display: flex;
+//   align-items: center;
+//   //margin-left: 24px;
+//   font-weight: bold;
+//   text-decoration: none;
+// `
 
 export const MobileIcon = styled.div`
   display: none;
-  
+
   @media screen and (max-width: 900px) {
     display: block;
     position: absolute;
     float: right;
-    top: 10vw;
+    top: 10.5vw;
     //right: 0;
     //transform: translate(-50%, 60%);
     font-size: 1.8rem;
@@ -84,7 +90,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  
+
   &.active {
     font-weight: 900;
     background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
