@@ -22,12 +22,14 @@ export const Nav = styled.nav`
 export const NavBarContainer = styled.div`
   display: grid;
   justify-items: right;
+  //justify-self: right;
   height: 16vw;
   z-index: 1;
-  width: 100%;
-  padding: 0 8vw;
+  width: 92vw;
+  //padding: 0 8vw;
 
   @media screen and (min-width: 900px) {
+    width: 92vw;
     height: 6vw;
     transition: .8s all ease;
   }
@@ -50,9 +52,10 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 900px) {
-    display: block;
+    display: grid;
     position: absolute;
-    float: right;
+    justify-self: right;
+    //float: right;
     top: 10.5vw;
     //right: 0;
     //transform: translate(-50%, 60%);
