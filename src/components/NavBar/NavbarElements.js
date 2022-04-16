@@ -3,7 +3,7 @@ import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-  --nav-font-size: 1.2vw;
+  --nav-font-size: 1vw;
   background: transparent;
   height: 20vw;
   //margin-top: -80px;
