@@ -3,7 +3,7 @@
     grid-area: go-hero;
     display: grid;
     padding-left: var(--left-padding-mobile);
-    height: 148vw;
+    /*height: 148vw;*/
     grid-template:
             "fmcgo-logo"
             "fmcgo-tagline"
@@ -12,6 +12,7 @@
     grid-template-rows: 26vw 24vw auto;
     grid-row-gap: 5vw;
     grid-column-gap: 3vw;
+    padding-bottom: 7vw;
 }
 
 @media (min-width: 900px) {

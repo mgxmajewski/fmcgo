@@ -2,15 +2,17 @@
     grid-area: board-section;
     background-color: black;
     display: grid;
-    height: 103vw;
+    /*height: 103vw;*/
     padding-left: var(--left-padding-mobile);
     grid-template:
             "board-tagline"
             "board-copy";
     grid-row-gap: var(--row-gap-mobile);
     grid-template-columns: var(--single-column-width-mobile);
-    grid-template-rows: 20vw;
+    grid-template-rows: auto auto;
     justify-items: center;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
 }
 
 @media (min-width: 900px) {

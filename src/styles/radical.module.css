@@ -1,7 +1,7 @@
 .radical-section {
     grid-area: radical-section;
     display: grid;
-    height: 150vw;
+    /*height: 150vw;*/
     background-color: black;
     justify-items: center;
     padding-left: var(--left-padding-mobile);
@@ -12,7 +12,8 @@
             "radical-drawers";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: 4vw;
-    grid-template-rows: 20vw 8.5vw 80vw auto;
+    grid-template-rows: 20vw 8.5vw auto 30vw;
+    /*padding-bottom: 5vw;*/
 }
 
 @media (min-width: 900px) {
