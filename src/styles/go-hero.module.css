@@ -54,6 +54,7 @@
     font-weight: 900;
     line-height: 1.05;
     justify-self: left;
+    white-space: nowrap;
     font-size: 10vw;
     align-self: start;
 }
