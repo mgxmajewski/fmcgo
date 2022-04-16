@@ -53,16 +53,16 @@
 /* Hide checkbox */
 
 /* Toggle menu icon */
-.hamb-checkbox:checked ~ nav {
-  /*background-color: var(--cat-blue);*/
-  border-top: 1px solid var(--hamb-color);
-  background-color: white;
-  top: 5vw;
-  padding-top: 2vw;
-  padding-bottom: .5vw;
-  max-height: 100%;
-  transform: translateY(-100%);
-}
+/*.hamb-checkbox:checked ~ nav {*/
+/*  !*background-color: var(--cat-blue);*!*/
+/*  border-top: 1px solid var(--hamb-color);*/
+/*  background-color: black;*/
+/*  top: 5vw;*/
+/*  padding-top: 2vw;*/
+/*  padding-bottom: .5vw;*/
+/*  max-height: 100%;*/
+/*  transform: translateY(100%);*/
+/*}*/
 
 .hamb-checkbox:checked ~ .hamb .hamb-line {
   background: transparent;
@@ -70,10 +70,12 @@
 
 .hamb-checkbox:checked ~ .hamb .hamb-line::before {
   transform: rotate(-45deg);
+  background-color: white;
   top: 0;
 }
 
 .hamb-checkbox:checked ~ .hamb .hamb-line::after {
   transform: rotate(45deg);
+  background-color: white;
   top: 0;
 }

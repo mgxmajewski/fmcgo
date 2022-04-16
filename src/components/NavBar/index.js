@@ -12,7 +12,7 @@ import {
 } from "./NavbarElements";
 import Hamb from "../Hamb";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({isOpen, toggle}) => {
     const [currentLang, setCurrentLang] = useState('pl');
 
     const toggleCurrentLanguage = () => {
@@ -150,9 +150,9 @@ const Navbar = ({toggle}) => {
                             </NavLangaugeToggle>
                         </NavItem>
                     </NavMenu>
-                    <MobileIcon isbright={isNavFontBright} onClick={toggle}>
+                    <MobileIcon isbright={isNavFontBright}>
                         {/*<FaBars />*/}
-                        <Hamb/>
+                        <Hamb isOpen={isOpen} toggle={toggle}/>
                     </MobileIcon>
                 </NavBarContainer>
             </Nav>

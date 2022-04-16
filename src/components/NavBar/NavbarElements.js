@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   width: 92vw;
   top: 0;
-  z-index: 10;
+  z-index: 999999;
 
   @media screen and (min-width: 900px) {
     height: auto;
@@ -26,7 +26,7 @@ export const NavBarContainer = styled.div`
   justify-items: right;
   //justify-self: right;
   height: 16vw;
-  z-index: 1;
+  z-index: 999999;
   width: 100%;
   //padding: 0 8vw;
 
@@ -41,6 +41,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 900px) {
+    z-index: 999999;
     display: grid;
     position: absolute;
     justify-self: right;
