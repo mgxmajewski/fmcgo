@@ -27,22 +27,18 @@ const Navbar = ({toggle}) => {
 
     const [isNavFontBright, setIsNavFontBright] = useState('false');
 
-    const getNavBarHeight = () => {
-
-        const getElementHeight = name => document.getElementById(name).clientHeight;
-        const navBarHeight = getElementHeight('nav-bar');
-        return -Math.abs(navBarHeight)
-    }
 
     const toggleNavFontColor = () => {
 
         const getElementHeight = name => document.getElementById(name).clientHeight;
+
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
-        const navBarFontBottomEdge = 0
-        const navBarHeight = getElementHeight('nav-bar');
+
+        // NavBar edge offset adjustment
+        const navBarFontBottomEdge = - window.innerWidth * .01
 
         // This is offset for contact form pseudo-element (gradient background)
-        const contactFormPseudoElementOffset = window.innerWidth * .0145 + window.innerWidth * .03
+        const contactFormPseudoElementOffset = window.innerWidth * .145 + window.innerWidth * .03
 
         // Calculations to get the right context for navBar font changes.
         const goSectionHeight = getElementHeight('go-section');
@@ -73,8 +69,6 @@ const Navbar = ({toggle}) => {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleNavFontColor)
-        // console.log(getNavBarHeight())
-        // window.addEventListener('load', getNavBarHeight)
     }, []);
 
     return (
@@ -139,7 +133,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={getNavBarHeight()}
+                                // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
