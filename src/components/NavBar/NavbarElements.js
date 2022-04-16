@@ -3,14 +3,13 @@ import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-  --nav-font-size: 1vw;
+  --nav-font-size: 1em;
   background: transparent;
   height: 20vw;
   //margin-top: -80px;
   display: grid;
   align-items: center;
   justify-items: end;
-  font-size: var(--nav-font-size);
   position: sticky;
   width: 92vw;
   top: 0;
@@ -68,6 +67,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
+  font-size: var(--nav-font-size);
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: 1fr;
@@ -92,7 +92,7 @@ export const NavLinks = styled(LinkS)`
 `
 
 export const NavLangaugeToggle = styled(LinkR)`
-  align-self: end;
+  align-self: center;
   background: transparent;
   font-size: calc(var(--nav-font-size) * .8);
   white-space: nowrap;
