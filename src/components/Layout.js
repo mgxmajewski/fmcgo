@@ -15,7 +15,7 @@ const Layout = ({children}) => {
 
     return (
         <>
-            <SideBar isOpen={isOpen} toggle={toggle} />
+            {/*<SideBar isOpen={isOpen} toggle={toggle} />*/}
             <NavBar toggle={toggle}/>
             <div className={layout}>
                 {/*content for each page*/}
