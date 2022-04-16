@@ -50,7 +50,7 @@ export const MobileIcon = styled.div`
     //transform: translate(-50%, 60%);
     //font-size: 1.8rem;
     cursor: pointer;
-    color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
+    --hamb-color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   }
 `
 

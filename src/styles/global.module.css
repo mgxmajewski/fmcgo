@@ -157,6 +157,7 @@ body {
     --row-gap-desktop: 2vw;
     --left-padding-mobile: 8vw;
     --left-padding-desktop: 16vw;
+    --hamb-color: black;
 }
 
 .layout {

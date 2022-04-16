@@ -1,5 +1,4 @@
 .hamb {
-  --hamb-color: black;
   cursor: pointer;
   display: grid;
   justify-self: center;
@@ -17,7 +16,7 @@
 .hamb-line {
   background: var(--hamb-color);
   display: block;
-  height: .8vw;
+  height: 4px;
   /*height: 2vw;*/
   position: relative;
   /*width: 24px;*/
