@@ -10,13 +10,12 @@
     /*grid-column-gap: 3.5vw;*/
     /*grid-template-rows: auto;*/
     justify-items: center;
-    padding-top: 6vw;
     padding-bottom: 86vw;
 }
 
 @media (min-width: 900px) {
     .contact-section {
-        padding-top: 8.5vw;
+        /*padding-top: 8.5vw;*/
         padding-bottom: 3vw;
         /*height: auto;*/
     }
@@ -25,6 +24,7 @@
 .contact-tagline {
     display: grid;
     grid-area: contact-tagline;
+    padding-top: 8vw;
     font-weight: 900;
     color: white;
     line-height: 1.05;
@@ -113,7 +113,7 @@
     height: 186vw;
     width: 100vw;
     background-color: chocolate;
-    top: -18vw;
+    top: -20.5vw;
     left: -8vw;
 }
 
