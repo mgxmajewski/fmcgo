@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {FaBars} from 'react-icons/fa'
 import {
+    LangENG,
+    LangPL,
     MobileIcon,
     Nav,
     NavBarContainer,
-    NavLangaugeToggle,
     NavItem,
+    NavLangaugeToggle,
     NavLinks,
-    NavMenu,
-    LangPL,
-    LangENG
+    NavMenu
 } from "./NavbarElements";
 import Hamb from "../Hamb";
 
@@ -28,11 +27,19 @@ const Navbar = ({toggle}) => {
 
     const [isNavFontBright, setIsNavFontBright] = useState('false');
 
+    const getNavBarHeight = () => {
+
+        const getElementHeight = name => document.getElementById(name).clientHeight;
+        const navBarHeight = getElementHeight('nav-bar');
+        return -Math.abs(navBarHeight)
+    }
+
     const toggleNavFontColor = () => {
 
         const getElementHeight = name => document.getElementById(name).clientHeight;
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
         const navBarFontBottomEdge = 0
+        const navBarHeight = getElementHeight('nav-bar');
 
         // This is offset for contact form pseudo-element (gradient background)
         const contactFormPseudoElementOffset = window.innerWidth * .0145 + window.innerWidth * .03
@@ -63,15 +70,16 @@ const Navbar = ({toggle}) => {
         }
     }
 
+
     useEffect(() => {
         window.addEventListener('scroll', toggleNavFontColor)
-        // window.addEventListener('click', toggleCurrentLanguage)
-        // console.log(`currentLang: ` + JSON.stringify(currentLang));
+        // console.log(getNavBarHeight())
+        // window.addEventListener('load', getNavBarHeight)
     }, []);
 
     return (
         <>
-            <Nav>
+            <Nav id='nav-bar'>
                 <NavBarContainer>
                     {/*<NavLogo to='/'>*/}
                     {/*    LANGUAGE*/}
@@ -83,7 +91,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="go-section"
                                 isbright={isNavFontBright}
@@ -95,7 +103,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="radical-section"
                                 isbright={isNavFontBright}
@@ -107,7 +115,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="co-section"
                                 isbright={isNavFontBright}
@@ -119,7 +127,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="board-section"
                                 isbright={isNavFontBright}
@@ -131,7 +139,7 @@ const Navbar = ({toggle}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                offset={-60}
+                                offset={getNavBarHeight()}
                                 // exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
@@ -141,7 +149,6 @@ const Navbar = ({toggle}) => {
                             <NavLangaugeToggle
                                 onClick={() => toggleCurrentLanguage()}
                                 isbright={isNavFontBright}
-                                // language={currentLang}
                                 to="/">
                                 <LangPL currentLang={currentLang}>PL</LangPL>
                                 /
