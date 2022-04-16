@@ -13,8 +13,8 @@
 
 @media (min-width: 900px) {
     .news-section {
-        padding-top: 4vw;
-        padding-bottom: 3vw;
+        padding-top: var(--padding-top-desktop);
+        padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--left-padding-desktop);
         /*height: 72vw;*/
         grid-template:

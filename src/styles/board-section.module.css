@@ -17,14 +17,16 @@
 
 @media (min-width: 900px) {
     .board-section {
-        height: 76vw;
+        /*height: 76vw;*/
+        padding-top: var(--padding-top-desktop);
+        padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--left-padding-desktop);
         grid-template:
             "board-tagline"
             "board-copy"
             "board-pictures";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: 12.7vw 5.7vw auto;
+        grid-template-rows: auto auto auto;
         justify-items: center;
     }
 }
