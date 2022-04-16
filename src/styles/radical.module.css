@@ -18,7 +18,9 @@
 
 @media (min-width: 900px) {
     .radical-section {
-        height: 50vw;
+        /*height: 50vw;*/
+        padding-top: var(--padding-top-desktop);
+        padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--left-padding-desktop);
         grid-template:
             "radical-icons"
@@ -27,7 +29,8 @@
             "radical-drawers";
         grid-template-columns: var(--single-column-width-desktop);
         grid-row-gap: 2vw;
-        grid-template-rows: 6vw 8.5vw 10.5vw auto;
+        /*grid-template-rows: 6vw 8.5vw 10.5vw auto;*/
+        grid-template-rows: auto auto auto auto;
         /*grid-column-gap: 3vw;*/
     }
 }
@@ -39,14 +42,14 @@
     grid-template:
             "mouse-go social-icons";
     justify-self: left;
-    align-self: start;
     /*padding-top: 2vw;*/
 }
 
 @media (min-width: 900px) {
     .radical-icons {
         width: var(--main-content-column-width-desktop);
-        padding-top: 0.4vw;
+        /*padding-top: 0.4vw;*/
+        padding-bottom: 6.5vw;
     }
 }
 
@@ -78,6 +81,7 @@
 @media (min-width: 900px) {
     .radical-copy {
         font-size: var(--copy-font-size-desktop);
+        padding-bottom: 6.5vw;
     }
 }
 
@@ -96,6 +100,7 @@
         margin-left: -16.5vw;
         width: 100vw;
         gap: 3.8vw;
+        padding-bottom: 6.5vw;
     }
 }
 

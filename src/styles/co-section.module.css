@@ -19,15 +19,17 @@
 
 @media (min-width: 900px) {
     .co-section {
+        padding-top: var(--padding-top-desktop);
+        padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--padding-left-desktop);
-        height: 91vw;
+        /*height: 91vw;*/
         grid-template:
             "co-tagline"
             "co-copy"
             "co-drawers"
             "co-slider";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: 10vw 7vw 16.9vw auto;
+        grid-template-rows: auto auto auto auto;
         grid-column-gap: 3vw;
     }
 }
