@@ -52,7 +52,7 @@ export const SideBarMenu = styled.ul`
 
 export const SideBarLink = styled(LinkS)`
   //left: -10px;
-  font-weight: 900;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,20 +60,17 @@ export const SideBarLink = styled(LinkS)`
   text-decoration: none;
   list-style: none;
   transition: .2s ease-in-out;
-  color: white;
+  color: #7b7b7b;
   cursor: pointer;
 
-  &.active{
+  &.active {
+    color: white;
     font-weight: 900;
-    background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    //transition: 0.2s ease-in-out;
   }
-  
+
   &:hover {
     font-weight: 900;
-    color: grey;
+    color: white;
     //-webkit-background-clip: text;
     //-webkit-text-fill-color: transparent;
     transition: 0.2s ease-in-out;

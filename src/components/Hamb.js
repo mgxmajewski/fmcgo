@@ -9,6 +9,7 @@ const Hamb = ({isOpen, toggle}) => {
             <input
                 className={hambCheckbox}
                 checked={isOpen}
+                onClick={() => toggle()}
                 type="checkbox"
                 id="hamb-checkbox"
             />
@@ -19,7 +20,6 @@ const Hamb = ({isOpen, toggle}) => {
                 <span
                     className={hambLine}
                     role="button"
-                    onClick={() => toggle()}
                 >
                 </span>
             </label>

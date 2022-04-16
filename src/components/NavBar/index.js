@@ -26,6 +26,7 @@ const Navbar = ({isOpen, toggle}) => {
 
 
     const [isNavFontBright, setIsNavFontBright] = useState('false');
+    const [areSocialIconsVisible, setAreSocialIconsVisible] = useState('true');
 
 
     const toggleNavFontColor = () => {
@@ -60,6 +61,7 @@ const Navbar = ({isOpen, toggle}) => {
         const navBarIsOverContactForm = window.scrollY >= contactSectionFormEdge
 
         if (navBarIsOverRadicalSection || navBarIsOverBoardSection || navBarIsOverContactForm) {
+            setAreSocialIconsVisible('false')
             setIsNavFontBright('true')
         } else {
             setIsNavFontBright('false')
@@ -150,8 +152,10 @@ const Navbar = ({isOpen, toggle}) => {
                             </NavLangaugeToggle>
                         </NavItem>
                     </NavMenu>
-                    <MobileIcon isbright={isNavFontBright}>
-                        {/*<FaBars />*/}
+                    <MobileIcon
+                        // onClick={() => toggle()}
+                        isbright={isNavFontBright}
+                    >
                         <Hamb isOpen={isOpen} toggle={toggle}/>
                     </MobileIcon>
                 </NavBarContainer>
