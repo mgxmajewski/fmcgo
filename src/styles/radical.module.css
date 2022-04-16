@@ -11,9 +11,9 @@
             "radical-copy"
             "radical-drawers";
     grid-template-columns: var(--single-column-width-mobile);
-    grid-row-gap: 4vw;
-    grid-template-rows: 20vw 8.5vw auto 30vw;
-    /*padding-bottom: 5vw;*/
+    grid-row-gap: var(--row-gap-mobile);
+    grid-template-rows: auto auto auto 30vw;
+    padding-top: 4vw;
 }
 
 @media (min-width: 900px) {
@@ -40,7 +40,7 @@
             "mouse-go social-icons";
     justify-self: left;
     align-self: start;
-    padding-top: 2vw;
+    /*padding-top: 2vw;*/
 }
 
 @media (min-width: 900px) {
