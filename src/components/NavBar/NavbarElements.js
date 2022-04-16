@@ -3,20 +3,21 @@ import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
+  --nav-font-size: 1.2vw;
   background: transparent;
   height: 20vw;
   //margin-top: -80px;
   display: grid;
   align-items: center;
   justify-items: end;
-  font-size: 1rem;
+  font-size: var(--nav-font-size);
   position: sticky;
   width: 92vw;
   top: 0;
   z-index: 10;
 
   @media screen and (min-width: 900px) {
-    height: 6vw;
+    height: auto;
     transition: .8s all ease;
   }
 `;
@@ -32,23 +33,10 @@ export const NavBarContainer = styled.div`
 
   @media screen and (min-width: 900px) {
     width: 92vw;
-    height: 6vw;
+    height: auto;
     transition: .8s all ease;
   }
-  //max-width: 1100px;
 `
-
-// export const NavLogo = styled(LinkR)`
-//   color: #fff;
-//   justify-self: flex-start;
-//   cursor: pointer;
-//   font-size: 1rem;
-//   display: flex;
-//   align-items: center;
-//   //margin-left: 24px;
-//   font-weight: bold;
-//   text-decoration: none;
-// `
 
 export const MobileIcon = styled.div`
   display: none;
@@ -61,18 +49,18 @@ export const MobileIcon = styled.div`
     top: 10.5vw;
     //right: 0;
     //transform: translate(-50%, 60%);
-    font-size: 1.8rem;
+    //font-size: 1.8rem;
     cursor: pointer;
     color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   }
 `
 
 export const NavMenu = styled.ul`
-  display: flex;
+  display: grid;
+  grid-column-gap: 3vw;
   align-items: center;
   list-style: none;
   text-align: center;
-  //margin-right: -22px;
 
   @media screen and (max-width: 900px) {
     display: none;
@@ -80,19 +68,18 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-  display: flex;
-  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2vw;
+  //height: 80px;
 `
 
 export const NavLinks = styled(LinkS)`
-  //color: black;
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   display: flex;
-  //font-weight: 900;
-  //flex-direction: row;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
@@ -104,31 +91,24 @@ export const NavLinks = styled(LinkS)`
   }
 `
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-`
-
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: cornflowerblue;
+export const NavLangaugeToggle = styled(LinkR)`
+  align-self: end;
+  background: transparent;
+  font-size: calc(var(--nav-font-size) * .8);
   white-space: nowrap;
-  padding: 8px 18px;
-  color: darkblue;
-  font-size: 10px;
+  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-out;
   text-decoration: none;
+`
 
-  &:hover {
-    transition: all 0.2s ease-out;
-    background: coral;
-    color: crimson;
-  }
+export const LangPL = styled.span`
+  text-decoration: ${({currentLang}) => currentLang === 'pl' ? 'underline' : 'none'};
+  font-weight: ${({currentLang}) => currentLang === 'pl' ? '900' : '300'};
+`
+
+export const LangENG = styled.span`
+  text-decoration: ${({currentLang}) => currentLang === 'eng' ? 'underline' : 'none'};
+  font-weight: ${({currentLang}) => currentLang === 'eng' ? '900' : '300'};
 `

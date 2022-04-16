@@ -1,9 +1,31 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa'
-import {MobileIcon, Nav, NavBarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu} from "./NavbarElements";
+import {
+    MobileIcon,
+    Nav,
+    NavBarContainer,
+    NavLangaugeToggle,
+    NavItem,
+    NavLinks,
+    NavMenu,
+    LangPL,
+    LangENG
+} from "./NavbarElements";
 import Hamb from "../Hamb";
 
 const Navbar = ({toggle}) => {
+    const [currentLang, setCurrentLang] = useState('pl');
+
+    const toggleCurrentLanguage = () => {
+        currentLang === 'pl'
+            ?
+            setCurrentLang('eng')
+            :
+            setCurrentLang('pl')
+        console.log(`currentLang: ` + JSON.stringify(currentLang));
+    }
+
+
     const [isNavFontBright, setIsNavFontBright] = useState('false');
 
     const toggleNavFontColor = () => {
@@ -32,7 +54,7 @@ const Navbar = ({toggle}) => {
         // Booleans checking if NavBar is over dark sections to change font color to white
         const navBarIsOverRadicalSection = window.scrollY >= radicalSectionTopEdge && window.scrollY <= radicalSectionBottomEdge
         const navBarIsOverBoardSection = window.scrollY >= boardSectionTopEdge && window.scrollY <= boardSectionBottemEdge
-        const navBarIsOverContactForm =  window.scrollY >= contactSectionFormEdge
+        const navBarIsOverContactForm = window.scrollY >= contactSectionFormEdge
 
         if (navBarIsOverRadicalSection || navBarIsOverBoardSection || navBarIsOverContactForm) {
             setIsNavFontBright('true')
@@ -43,6 +65,8 @@ const Navbar = ({toggle}) => {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleNavFontColor)
+        // window.addEventListener('click', toggleCurrentLanguage)
+        // console.log(`currentLang: ` + JSON.stringify(currentLang));
     }, []);
 
     return (
@@ -52,10 +76,6 @@ const Navbar = ({toggle}) => {
                     {/*<NavLogo to='/'>*/}
                     {/*    LANGUAGE*/}
                     {/*</NavLogo>*/}
-                    <MobileIcon isbright={isNavFontBright} onClick={toggle}>
-                        {/*<FaBars />*/}
-                        <Hamb />
-                    </MobileIcon>
                     <NavMenu>
                         <NavItem>
                             <NavLinks
@@ -118,11 +138,21 @@ const Navbar = ({toggle}) => {
                             >
                                 Contact
                             </NavLinks>
+                            <NavLangaugeToggle
+                                onClick={() => toggleCurrentLanguage()}
+                                isbright={isNavFontBright}
+                                // language={currentLang}
+                                to="/">
+                                <LangPL currentLang={currentLang}>PL</LangPL>
+                                /
+                                <LangENG currentLang={currentLang}>ENG</LangENG>
+                            </NavLangaugeToggle>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/">PL</NavBtnLink>
-                    </NavBtn>
+                    <MobileIcon isbright={isNavFontBright} onClick={toggle}>
+                        {/*<FaBars />*/}
+                        <Hamb/>
+                    </MobileIcon>
                 </NavBarContainer>
             </Nav>
         </>
