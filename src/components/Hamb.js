@@ -9,7 +9,7 @@ const Hamb = ({isOpen, toggle}) => {
             <input
                 className={hambCheckbox}
                 checked={isOpen}
-                onChange={() => toggle()}
+                onChange={toggle}
                 type="checkbox"
                 id="hamb-checkbox"
             />
