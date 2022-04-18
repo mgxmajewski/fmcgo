@@ -91,25 +91,3 @@ export const NavLinks = styled(LinkS)`
     -webkit-text-fill-color: transparent;
   }
 `
-
-export const NavLangaugeToggle = styled(LinkR)`
-  align-self: center;
-  background: transparent;
-  font-size: calc(var(--nav-font-size) * .8);
-  white-space: nowrap;
-  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
-  outline: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-`
-
-export const LangPL = styled.span`
-  text-decoration: ${({currentLang}) => currentLang === 'pl' ? 'underline' : 'none'};
-  font-weight: ${({currentLang}) => currentLang === 'pl' ? '900' : '300'};
-`
-
-export const LangENG = styled.span`
-  text-decoration: ${({currentLang}) => currentLang === 'eng' ? 'underline' : 'none'};
-  font-weight: ${({currentLang}) => currentLang === 'eng' ? '900' : '300'};
-`

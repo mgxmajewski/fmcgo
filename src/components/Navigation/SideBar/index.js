@@ -1,19 +1,14 @@
 import React from 'react';
 
-import {
-    SideBarContainer,
-    SideBarLink,
-    SideBarMenu,
-    SideBarRoute,
-    SideBarWrapper,
-    SideBtnWrap,
-} from "./SideBarElements";
+import {FmcgoVectorLogoWhite, SideBarContainer, SideBarLink, SideBarMenu, SideBarWrapper} from "./SideBarElements";
+import LangaugeToggle from "../LanguageToggle";
 
 const SideBar = ({isOpen, toggle}) => {
 
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <SideBarWrapper>
+                <FmcgoVectorLogoWhite/>
                 <SideBarMenu>
                     <SideBarLink
                         activeClass="active"
@@ -71,12 +66,10 @@ const SideBar = ({isOpen, toggle}) => {
                     >
                         Contact
                     </SideBarLink>
+                    <LangaugeToggle
+                        isbright={'true'}
+                    />
                 </SideBarMenu>
-                <SideBtnWrap>
-                    <SideBarRoute to="/">
-                        language
-                    </SideBarRoute>
-                </SideBtnWrap>
             </SideBarWrapper>
         </SideBarContainer>
     );

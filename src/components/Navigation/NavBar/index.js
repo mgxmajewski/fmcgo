@@ -1,29 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {
-    LangENG,
-    LangPL,
     MobileIcon,
     Nav,
     NavBarContainer,
     NavItem,
-    NavLangaugeToggle,
     NavLinks,
     NavMenu
 } from "./NavbarElements";
-import Hamb from "../Hamb";
+import Hamb from "../../Hamb";
+import LangaugeToggle from "../LanguageToggle"
 
 const Navbar = ({isOpen, toggle}) => {
-    const [currentLang, setCurrentLang] = useState('pl');
-
-    const toggleCurrentLanguage = () => {
-        currentLang === 'pl'
-            ?
-            setCurrentLang('eng')
-            :
-            setCurrentLang('pl')
-        console.log(`currentLang: ` + JSON.stringify(currentLang));
-    }
-
 
     const [isNavFontBright, setIsNavFontBright] = useState('false');
     const [areSocialIconsVisible, setAreSocialIconsVisible] = useState('true');
@@ -142,14 +129,9 @@ const Navbar = ({isOpen, toggle}) => {
                             >
                                 Contact
                             </NavLinks>
-                            <NavLangaugeToggle
-                                onClick={() => toggleCurrentLanguage()}
+                            <LangaugeToggle
                                 isbright={isNavFontBright}
-                                to="/">
-                                <LangPL currentLang={currentLang}>PL</LangPL>
-                                /
-                                <LangENG currentLang={currentLang}>ENG</LangENG>
-                            </NavLangaugeToggle>
+                            />
                         </NavItem>
                     </NavMenu>
                     <MobileIcon

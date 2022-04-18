@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import '../styles/normalize.css'
 import {layout} from "../styles/global.module.css";
-import NavBar from "./NavBar";
+import NavBar from "./Navigation/NavBar";
 // import '../styles/layout.css'
 import PropTypes from "prop-types";
-import SideBar from "./SideBar";
+import SideBar from "./Navigation/SideBar";
 
 const Layout = ({children}) => {
     const [isOpen, setIsOpen] = useState(false);

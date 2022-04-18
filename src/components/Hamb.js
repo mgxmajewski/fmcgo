@@ -1,6 +1,6 @@
 import React from 'react';
 import {hamb, hambCheckbox, hambLine} from '../styles/hamb.module.css'
-import SideBar from "./SideBar";
+import SideBar from "./Navigation/SideBar";
 const Hamb = ({isOpen, toggle}) => {
 
 
@@ -9,7 +9,7 @@ const Hamb = ({isOpen, toggle}) => {
             <input
                 className={hambCheckbox}
                 checked={isOpen}
-                onClick={() => toggle()}
+                onChange={() => toggle()}
                 type="checkbox"
                 id="hamb-checkbox"
             />

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa';
 import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
+import Logo from "../../../assets/fmcgologo.svg";
+
 
 export const SideBarContainer = styled.aside`
   position: fixed;
@@ -10,7 +12,7 @@ export const SideBarContainer = styled.aside`
   height: 100%;
   background: #0d0d0d;
   display: grid;
-  align-items: center;
+  //align-items: center;
   top: 0;
   left: 0;
   transition: .3s ease-in-out;
@@ -101,4 +103,11 @@ export const SideBarRoute = styled(LinkR)`
     background: white;
     color: crimson;
   }
+`
+
+export const FmcgoVectorLogoWhite = styled(Logo)`
+  padding-top: 8vw;
+  padding-left: 8vw;
+  width: 66vw;
+  filter: invert(100%);
 `
