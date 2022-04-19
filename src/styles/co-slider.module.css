@@ -196,5 +196,11 @@
 }
 
 .arrow {
-    width: 1vw;
+    width: 2vw;
+}
+
+@media (min-width: 900px) {
+    .arrow {
+        width: 1vw;
+    }
 }
