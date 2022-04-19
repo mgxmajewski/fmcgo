@@ -26,7 +26,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                // offset={getNavBarHeight()}
+                                offset={-50}
                                 // exact='true'
                                 to="go-section"
                                 isbright={isNavFontBright}
