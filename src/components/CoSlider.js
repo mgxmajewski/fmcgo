@@ -19,23 +19,6 @@ import {
     whiteDot
 } from '../styles/co-slider.module.css'
 
-// export const query = graphql`
-//     query {
-//         slideOne: file(relativePath: { eq: "images/filip.jpg" }) {
-//             childImageSharp {
-//                 gatsbyImageData(layout: FULL_WIDTH)
-//             }
-//         },
-//         slideTwo: file(relativePath: { eq: "images/marcel.jpg" }) {
-//             childImageSharp {
-//                 gatsbyImageData(layout: FULL_WIDTH)
-//             }
-//         },
-//     }
-// `
-//
-// "cover" | "fill" | "inside" | "outside" | "contain";
-
 const CoSlider = ({data}) => {
 
     const [sliderState, setSliderState] = useState(true);
@@ -71,9 +54,6 @@ const CoSlider = ({data}) => {
         setTouchPosition(null)
     }
 
-
-    console.log(`sliderState: ` + JSON.stringify(sliderState));
-
     return (
         <div className={coSlider}
              onTouchStart={handleTouchStart}
@@ -86,22 +66,12 @@ const CoSlider = ({data}) => {
                         className={sliderImage}
                         alt={'Filip Szperl Photo'}
                         src="../images/filip.jpg"
-                        transformOptions={{
-                            // fit: "outside",
-                            // cropFocus: "attention"
-                            // cropFocus: 90
-                        }}
                     />
                     :
                     <StaticImage
                         className={sliderImage}
                         alt={'Marcel Cegliński Photo'}
                         src="../images/marcel.jpg"
-                        transformOptions={{
-                            // fit: "outside",
-                            // cropFocus: "attention"
-                            // cropFocus: 90
-                        }}
                     />
                 }
             </div>
