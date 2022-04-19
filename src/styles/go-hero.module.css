@@ -17,15 +17,18 @@
 
 @media (min-width: 900px) {
     .go-hero-section {
-        margin-top: -3vw;
+        margin-top: 0;
         padding-left: var(--left-padding-desktop);
-        height: 42vw;
+        /*height: 42vw;*/
         grid-template:
             "fmcgo-logo fmcgo-tagline"
             "fmcgo-copy fmcgo-copy";
         grid-template-columns: 21.4vw 43vw;
+        grid-template-rows: auto auto;
         grid-row-gap: 4.9vw;
         grid-column-gap: 3vw;
+        padding-top: 10vw;
+        padding-bottom: 8vw;
     }
 }
 
