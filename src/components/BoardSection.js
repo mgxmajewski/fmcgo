@@ -3,14 +3,11 @@ import {
     boardCopy,
     boardPersonContainer,
     boardPersonPictureLeft,
-    boardPersonPictureRight,
     boardPictures,
     boardSection,
     boardTagline
 } from '../styles/board-section.module.css'
-
-import directorOne from '../assets/director1.png'
-import directorTwo from '../assets/director2.png'
+import {StaticImage} from "gatsby-plugin-image";
 
 const BoardSection = () => {
     return (
@@ -27,10 +24,30 @@ const BoardSection = () => {
             </div>
             <div className={boardPictures}>
                 <div className={boardPersonContainer}>
-                    <div className={boardPersonPictureLeft} style={Object.assign({backgroundImage: `url(${directorOne})`}, {backgroundSize: `cover`})}> </div>
+                    <div className={boardPersonPictureLeft}>
+                        <StaticImage
+                            alt={'Ana Maria Szutowicz Photo'}
+                            src="../images/director1.png"
+                            transformOptions={{
+                                fit: "cover",
+                                // cropFocus: "attention"
+                                // cropFocus: 90
+                            }}
+                        />
+                    </div>
                 </div>
                 <div className={boardPersonContainer}>
-                    <div className={boardPersonPictureRight}style={Object.assign({backgroundImage: `url(${directorTwo})`}, {backgroundSize: `cover`})}> </div>
+                    <div className={boardPersonPictureLeft}>
+                        <StaticImage
+                            alt={'Henryk Klawe Photo'}
+                            src="../images/director2.png"
+                            transformOptions={{
+                                fit: "cover",
+                                // cropFocus: "attention"
+                                // cropFocus: 90
+                            }}
+                        />
+                    </div>
                 </div>
                 <div>
                     <b>Ana Maria Szutowicz<br/>TGTH</b><br/> We’ve served as heads of departments, creative
