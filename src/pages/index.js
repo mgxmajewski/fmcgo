@@ -31,10 +31,10 @@ const IndexPage = () => {
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
 
         // NavBar edge offset adjustment
-        const navBarFontBottomEdge = - window.innerWidth * .01
+        const navBarFontBottomEdge = window.innerWidth * .01
 
         // This is offset for contact form pseudo-element (gradient background)
-        const contactFormPseudoElementOffset = window.innerWidth * .145 + window.innerWidth * .03
+        const contactFormPseudoElementOffset = window.innerWidth * .145 - window.innerWidth * .01
 
         // Calculations to get the right context for navBar font changes.
         const goSectionHeight = getElementHeight('go-section');
@@ -43,6 +43,10 @@ const IndexPage = () => {
         const radicalSectionBottomEdge = radicalSectionTopEdge + radicalSectionHeight
         const coSectionHeight = getElementHeight('co-section');
         const boardSectionTopEdge = radicalSectionBottomEdge + coSectionHeight
+        const sliderPictureHeight = getElementHeight('slider-picture')
+        const sliderContainerHeight = getElementHeight('slider-container')
+        const sliderTopEdge = boardSectionTopEdge - sliderContainerHeight - window.innerWidth * .06
+        const sliderBottomEdge = sliderTopEdge + sliderPictureHeight
         const boardSectionHeight = getElementHeight('board-section');
         const boardSectionBottemEdge = boardSectionTopEdge + boardSectionHeight
         const newsSectionHeight = getElementHeight('news-section');
@@ -52,10 +56,11 @@ const IndexPage = () => {
 
         // Booleans checking if NavBar is over dark sections to change font color to white
         const navBarIsOverRadicalSection = window.scrollY >= radicalSectionTopEdge && window.scrollY <= radicalSectionBottomEdge
+        const navBarIsOverSlider = window.scrollY >= sliderTopEdge && window.scrollY <= sliderBottomEdge
         const navBarIsOverBoardSection = window.scrollY >= boardSectionTopEdge && window.scrollY <= boardSectionBottemEdge
         const navBarIsOverContactForm = window.scrollY >= contactSectionFormEdge
 
-        if (navBarIsOverRadicalSection || navBarIsOverBoardSection || navBarIsOverContactForm) {
+        if (navBarIsOverRadicalSection || navBarIsOverBoardSection || navBarIsOverContactForm || navBarIsOverSlider) {
             setAreSocialIconsVisible('false')
             setIsNavFontBright('true')
         } else {

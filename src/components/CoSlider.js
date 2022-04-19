@@ -55,11 +55,11 @@ const CoSlider = ({data}) => {
     }
 
     return (
-        <div className={coSlider}
+        <div id="slider-container" className={coSlider}
              onTouchStart={handleTouchStart}
              onTouchMove={handleTouchMove}
         >
-            <div className={sliderPictureContainer}>
+            <div id="slider-picture" className={sliderPictureContainer}>
                 {sliderState
                     ?
                     <StaticImage
