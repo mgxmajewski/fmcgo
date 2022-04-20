@@ -66,6 +66,7 @@
     width: 18vw;
     height: 10vw;
     font-size: 5.5vw;
+    cursor: pointer;
 }
 
 @media (min-width: 900px) {
