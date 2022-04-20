@@ -13,29 +13,29 @@ import styled from "styled-components";
 const handleCustomWidthMobile = brand => {
     switch (brand) {
         case "carrefour":
-            return "24vw";
-        case "pepsi":
-            return "17vw";
-        case "desperados":
-            return "28vw";
-        case "heineken":
-            return "24vw";
-        case "develey":
-            return "22vw";
-        case "costa":
             return "32vw";
+        case "pepsi":
+            return "23vw";
+        case "desperados":
+            return "34vw";
+        case "heineken":
+            return "30vw";
+        case "develey":
+            return "28vw";
+        case "costa":
+            return "36vw";
         case "tchibo":
-            return "20vw";
+            return "26vw";
         case "stock":
-            return "17vw";
+            return "23vw";
         case "sephora":
-            return "22vw";
+            return "28vw";
         case "clarins":
-            return "21vw";
+            return "27vw";
         case "slider":
             return "9vw"
         default:
-            return "32vw";
+            return "36vw";
     }
 };
 
@@ -80,7 +80,7 @@ const handleCustomDepthMobile = section => {
 const handleCustomHeightMobile = section => {
     switch (section) {
         case "co-section":
-            return "9vw";
+            return "10vw";
         default:
             return "14vw";
     }
