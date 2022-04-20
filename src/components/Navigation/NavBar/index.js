@@ -30,6 +30,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="go-section"
                                 isbright={isNavFontBright}
+                                title="go"
                             >
                                 go
                             </NavLinks>
@@ -42,6 +43,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="radical-section"
                                 isbright={isNavFontBright}
+                                title="Radical"
                             >
                                 Radical
                             </NavLinks>
@@ -54,6 +56,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="co-section"
                                 isbright={isNavFontBright}
+                                title="Co"
                             >
                                 Co
                             </NavLinks>
@@ -66,6 +69,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="board-section"
                                 isbright={isNavFontBright}
+                                title="Board"
                             >
                                 Board
                             </NavLinks>
@@ -78,6 +82,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
+                                title="Contact"
                             >
                                 Contact
                             </NavLinks>

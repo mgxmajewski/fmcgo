@@ -70,7 +70,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   font-size: var(--nav-font-size);
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: 1.8em 4em 2em 3.4em 4.5em 3em;
   grid-template-rows: 1fr;
   grid-column-gap: 2vw;
   //height: 80px;
@@ -78,8 +78,11 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
-  display: flex;
+  display:flex;
+  padding-right: .5vw;
+  padding-left: .5vw;
   align-items: center;
+  justify-items: center;
   text-decoration: none;
   height: 100%;
   cursor: pointer;
@@ -90,4 +93,14 @@ export const NavLinks = styled(LinkS)`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  //&.active::before {
+  //  display: flex;
+  //  content: attr(title);
+  //  font-weight: bold;
+  //  height: 0;
+  //  overflow: hidden;
+  //  visibility: hidden;
+  //}
+  
 `

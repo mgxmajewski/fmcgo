@@ -19,7 +19,7 @@ export const NavLangaugeToggle = styled(LinkR)`
   justify-content: center;
   font-size: 1.5rem;
   list-style: none;
-  transition: .2s ease-in-out;
+  //transition: .2s ease-in-out;
   width: 90%;
   border-top: 2px solid white;
   padding-top: 4vw;
