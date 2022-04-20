@@ -133,6 +133,7 @@
 
 .right-z-animation {
     animation: moveRightSide 2s infinite ease-in-out alternate;
+    -webkit-animation: moveRightSide 2s infinite ease-in-out alternate;
 }
 
 .left {
@@ -152,6 +153,7 @@
 
 .left-z-animation {
     animation: moveLeftSide 2s infinite ease-in-out alternate;
+    -webkit-animation: moveLeftSide 2s infinite ease-in-out alternate;;
 }
 
 @keyframes moveFront {
