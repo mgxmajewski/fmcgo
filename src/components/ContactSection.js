@@ -43,7 +43,7 @@ const ContactSection = () => {
                             office@fmcgo.pl
                         </div>
                         <div className={detailsSocial}>
-                            <a href="https://www.facebook.com/fmcgoagencja" target="_blank" style={{textDecoration: "none"}}>
+                            <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noopener" style={{textDecoration: "none"}}>
                                 <div className={iconBox}>f</div>
                             </a>
                             <a href="mailto: go@fmcgo.pl" style={{textDecoration: "none"}}>
