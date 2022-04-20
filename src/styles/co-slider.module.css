@@ -135,6 +135,7 @@
     margin-left: -2vw;
     justify-self: left;
     align-self: center;
+    cursor: pointer;
 }
 
 .slider-right-arrow {
@@ -142,6 +143,7 @@
     margin-left: 2vw;
     justify-self: left;
     align-self: center;
+    cursor: pointer;
 }
 
 .slider-dots {
@@ -202,5 +204,9 @@
 @media (min-width: 900px) {
     .arrow {
         width: 1vw;
+    }
+
+    .arrow:hover {
+        width: 1.2vw;
     }
 }
