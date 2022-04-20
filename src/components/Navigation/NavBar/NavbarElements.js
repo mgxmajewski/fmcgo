@@ -79,8 +79,6 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkS)`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   display:flex;
-  padding-right: .5vw;
-  padding-left: .5vw;
   align-items: center;
   justify-items: center;
   text-decoration: none;
