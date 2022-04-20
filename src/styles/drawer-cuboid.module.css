@@ -123,6 +123,7 @@
     border-top: var(--border-width-sides) solid var(--cube-color);
     border-bottom: var(--border-width-sides) solid var(--cube-color);
     transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
+    -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
 }
 
@@ -141,6 +142,7 @@
     border-top: var(--border-width-sides) solid var(--cube-color);
     border-bottom: var(--border-width-sides) solid var(--cube-color);
     transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
+    -webkit-transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
     transform-origin: left;
 }
 
@@ -176,9 +178,11 @@
     from {
         width: var(--cube-depth);
         transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
     to {
         width: 0;
         transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
 }
