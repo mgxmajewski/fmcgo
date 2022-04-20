@@ -5,17 +5,18 @@ import LangaugeToggle from "../LanguageToggle"
 
 const Navbar = ({isOpen, toggle, isNavFontBright}) => {
 
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        setIsLoading(false)
-    }, [])
+    // const [isLoading, setIsLoading] = useState(true);
+    //
+    // useEffect(() => {
+    //     setIsLoading(false)
+    // }, [])
 
     return (
         <>
-            {isLoading
-                ? <NavLoadingPlaceHolder/>
-                : <Nav id='nav-bar'>
+            {/*{isLoading*/}
+            {/*    ? <NavLoadingPlaceHolder/>*/}
+            {/*    : */}
+                <Nav id='nav-bar'>
                     <NavBarContainer>
                         {/*<NavLogo to='/'>*/}
                         {/*    LANGUAGE*/}
@@ -100,7 +101,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                         </MobileIcon>
                     </NavBarContainer>
                 </Nav>
-            }
+            {/*}*/}
         </>
     );
 };
