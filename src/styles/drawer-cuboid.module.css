@@ -84,6 +84,11 @@
 
 .front-z-animation {
     animation: moveFront 2s infinite ease-in-out alternate;
+    -webkit-animation-name: moveFrontWebkit;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
 }
 
 /*.hacky-div-gradient-back-top {*/
@@ -133,8 +138,7 @@
 
 .right-z-animation {
     animation: moveRightSide 2s infinite ease-in-out alternate;
-    -webkit-animation: moveRightSide 2s infinite ease-in-out alternate;
-    -webkit-animation-name: moveRightSide;
+    -webkit-animation-name: moveRightSideWebkit;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -158,7 +162,7 @@
 
 .left-z-animation {
     animation: moveLeftSide 2s infinite ease-in-out alternate;
-    -webkit-animation-name: moveLeftSide;
+    -webkit-animation-name: moveLeftSideWebkit;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -174,7 +178,7 @@
     }
 }
 
-@-webkit-keyframes moveFront {
+@-webkit-keyframes moveFrontWebkit {
     from {
         -webkit-transform: translateZ(calc(var(--cube-depth)));
     }
@@ -195,7 +199,7 @@
     }
 }
 
-@-webkit-keyframes moveLeftSide {
+@-webkit-keyframes moveLeftSideWebkit {
     from {
         -webkit-transform: rotateY(-90deg) translateX(0);
         width: calc(var(--cube-depth));
@@ -217,7 +221,7 @@
     }
 }
 
-@-webkit-keyframes moveRightSide {
+@-webkit-keyframes moveRightSideWebkit {
     from {
         width: var(--cube-depth);
         -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
