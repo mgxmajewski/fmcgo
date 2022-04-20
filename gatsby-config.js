@@ -11,7 +11,12 @@ module.exports = {
         },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
-        "gatsby-plugin-postcss",
+        {
+            resolve: `gatsby-plugin-postcss`,
+            options: {
+                postCssPlugins: [require(`autoprefixer`)],
+            }
+        },
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
