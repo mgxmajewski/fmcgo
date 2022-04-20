@@ -91,7 +91,7 @@ const CoSlider = ({data}) => {
                 onClick={() => toggleSlider()}
                 onKeyDown={(e)=> handleKeyDown(e)}
                 role="button"
-                tabIndex="0"
+                tabIndex="-1"
             >
                 <DrawerCuboidStatic
                     section='co-section'
@@ -112,7 +112,7 @@ const CoSlider = ({data}) => {
                 onClick={() => toggleSlider()}
                 onKeyDown={(e)=> handleKeyDown(e)}
                 role="button"
-                tabIndex="0"
+                tabIndex="-1"
             >
                 <DrawerCuboidStatic
                     section='co-section'
@@ -135,7 +135,7 @@ const CoSlider = ({data}) => {
                             onClick={() => toggleSlider()}
                             onKeyDown={(e)=> handleKeyDown(e)}
                             role="button"
-                            tabIndex="0"
+                            tabIndex="-1"
                         >
                         </div>
                     </>
@@ -146,7 +146,7 @@ const CoSlider = ({data}) => {
                             onClick={() => toggleSlider()}
                             onKeyDown={(e)=> handleKeyDown(e)}
                             role="button"
-                            tabIndex="0"
+                            tabIndex="-1"
                         >
                         </div>
                         <div
