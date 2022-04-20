@@ -28,6 +28,13 @@ const CoSlider = ({data}) => {
         setSliderState(!sliderState);
     }
 
+    const handleKeyDown = (e) => {
+          // check keys if you want
+        if (e.keyCode === 39 || e.keyCode === 37) {
+            toggleSlider()
+         }
+      }
+
     const handleTouchStart = (e) => {
         const touchDown = e.touches[0].clientX
         setTouchPosition(touchDown)
@@ -82,11 +89,13 @@ const CoSlider = ({data}) => {
             <div
                 className={sliderLeftArrow}
                 onClick={() => toggleSlider()}
+                onKeyDown={(e)=> handleKeyDown(e)}
+                role="button"
+                tabIndex="0"
             >
                 <DrawerCuboidStatic
                     section='co-section'
                     brand='slider'
-
                 >
                     <SliderArrowLeft className={arrow}/>
                 </DrawerCuboidStatic>
@@ -101,6 +110,9 @@ const CoSlider = ({data}) => {
             <div
                 className={sliderRightArrow}
                 onClick={() => toggleSlider()}
+                onKeyDown={(e)=> handleKeyDown(e)}
+                role="button"
+                tabIndex="0"
             >
                 <DrawerCuboidStatic
                     section='co-section'
@@ -114,13 +126,33 @@ const CoSlider = ({data}) => {
                 {sliderState
                     ?
                     <>
-                        <div className={whiteDot}></div>
-                        <div className={emptyDot} onClick={() => toggleSlider()}></div>
+                        <div
+                            className={whiteDot}
+                        >
+                        </div>
+                        <div
+                            className={emptyDot}
+                            onClick={() => toggleSlider()}
+                            onKeyDown={(e)=> handleKeyDown(e)}
+                            role="button"
+                            tabIndex="0"
+                        >
+                        </div>
                     </>
                     :
                     <>
-                        <div className={emptyDot} onClick={() => toggleSlider()}></div>
-                        <div className={whiteDot}></div>
+                        <div
+                            className={emptyDot}
+                            onClick={() => toggleSlider()}
+                            onKeyDown={(e)=> handleKeyDown(e)}
+                            role="button"
+                            tabIndex="0"
+                        >
+                        </div>
+                        <div
+                            className={whiteDot}
+                        >
+                        </div>
                     </>
                 }
 
