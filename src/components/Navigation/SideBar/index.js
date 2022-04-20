@@ -9,10 +9,10 @@ const SideBar = ({isOpen, toggle}) => {
 
     useEffect(() => {
         setIsLoading(false)
-    },[])
+    }, [])
 
-    return (<>
-
+    return (
+        <>
             {isLoading
                 ? <></>
                 :
