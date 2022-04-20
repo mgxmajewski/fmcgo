@@ -134,6 +134,11 @@
 .right-z-animation {
     animation: moveRightSide 2s infinite ease-in-out alternate;
     -webkit-animation: moveRightSide 2s infinite ease-in-out alternate;
+    -webkit-animation-name: moveRightSide;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
 }
 
 .left {
@@ -153,7 +158,11 @@
 
 .left-z-animation {
     animation: moveLeftSide 2s infinite ease-in-out alternate;
-    -webkit-animation: moveLeftSide 2s infinite ease-in-out alternate;;
+    -webkit-animation-name: moveLeftSide;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
 }
 
 @keyframes moveFront {
