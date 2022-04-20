@@ -22,15 +22,15 @@ export const NavLangaugeToggle = styled(LinkR)`
   //transition: .2s ease-in-out;
   width: 90%;
   border-top: 2px solid white;
-  padding-top: 4vw;
-
-
+  padding-top: 8vw;
+  margin-top: 4vw;
+  
   @media screen and (min-width: 900px) {
     font-size: calc(var(--nav-font-size) * .8);
     padding-top: 0;
+    margin-top: 0;
     border-top: none;
     width: 100%;
-
   }
 `
 
