@@ -42,7 +42,6 @@
     grid-template:
             "mouse-go social-icons";
     justify-self: left;
-    /*padding-top: 2vw;*/
 }
 
 @media (min-width: 900px) {
@@ -50,6 +49,7 @@
         width: var(--main-content-column-width-desktop);
         /*padding-top: 0.4vw;*/
         padding-bottom: 6.5vw;
+        margin-top: -2vw;
     }
 }
 
