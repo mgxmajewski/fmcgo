@@ -84,7 +84,7 @@
 
 .front-z-animation {
     animation: moveFront 2s infinite ease-in-out alternate;
-    -webkit-animation-name: moveFrontWebkit;
+    -webkit-animation-name: moveFront;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -138,7 +138,7 @@
 
 .right-z-animation {
     animation: moveRightSide 2s infinite ease-in-out alternate;
-    -webkit-animation-name: moveRightSideWebkit;
+    -webkit-animation-name: moveRightSide;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -162,7 +162,7 @@
 
 .left-z-animation {
     animation: moveLeftSide 2s infinite ease-in-out alternate;
-    -webkit-animation-name: moveLeftSideWebkit;
+    -webkit-animation-name: moveLeftSide;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -178,7 +178,7 @@
     }
 }
 
-@-webkit-keyframes moveFrontWebkit {
+@-webkit-keyframes moveFront {
     from {
         -webkit-transform: translateZ(calc(var(--cube-depth)));
     }
@@ -199,7 +199,7 @@
     }
 }
 
-@-webkit-keyframes moveLeftSideWebkit {
+@-webkit-keyframes moveLeftSide {
     from {
         -webkit-transform: rotateY(-90deg) translateX(0);
         width: calc(var(--cube-depth));
@@ -221,7 +221,7 @@
     }
 }
 
-@-webkit-keyframes moveRightSideWebkit {
+@-webkit-keyframes moveRightSide {
     from {
         width: var(--cube-depth);
         -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
