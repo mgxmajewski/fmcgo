@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
 
+export const NavLoadingPlaceHolder = styled.div`
+  height: 20vw;
+  width: 92vw;
+`
+
 export const Nav = styled.nav`
   --nav-font-size: 1em;
   background: transparent;
