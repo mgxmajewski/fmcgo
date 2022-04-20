@@ -78,7 +78,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
-  display:flex;
+  display: inline-flex;
   align-items: center;
   justify-items: center;
   text-decoration: none;
@@ -90,6 +90,7 @@ export const NavLinks = styled(LinkS)`
     background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 #00000000;
   }
 
   //&.active::before {
