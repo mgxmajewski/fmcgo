@@ -43,8 +43,12 @@ const ContactSection = () => {
                             office@fmcgo.pl
                         </div>
                         <div className={detailsSocial}>
-                            <div className={iconBox}>f</div>
-                            <div className={iconBox}>@</div>
+                            <a href="https://www.facebook.com/fmcgoagencja" target="_blank" style={{textDecoration: "none"}}>
+                                <div className={iconBox}>f</div>
+                            </a>
+                            <a href="mailto: go@fmcgo.pl" style={{textDecoration: "none"}}>
+                                <div className={iconBox}>@</div>
+                            </a>
                         </div>
                     </div>
                 </div>

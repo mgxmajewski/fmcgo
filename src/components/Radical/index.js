@@ -24,8 +24,12 @@ const Index = ({areSocialIconsVisible}) => {
                     go
                 </div>
                 <div className={socialIcons}>
+                    <a href="https://www.facebook.com/fmcgoagencja" target="_blank" style={{textDecoration: "none"}}>
                         <SocialMediaIconBox isvisible={areSocialIconsVisible}>f</SocialMediaIconBox>
+                    </a>
+                    <a href="mailto: go@fmcgo.pl" style={{textDecoration: "none"}}>
                         <SocialMediaIconBox isvisible={areSocialIconsVisible}>@</SocialMediaIconBox>
+                    </a>
                 </div>
             </div>
             <div className={radicalTagline}>#Radical Advertising</div>
