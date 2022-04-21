@@ -224,12 +224,12 @@
 }
 
 @-webkit-keyframes moveRightSide {
-    from {
+    0% {
         width: var(--cube-depth);
-        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -6)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -4)) translateX(0);
     }
-    to {
+    100% {
         width: 0;
-        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -6)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -4)) translateX(0);
     }
 }
