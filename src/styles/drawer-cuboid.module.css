@@ -242,8 +242,10 @@
 /*default - to be overridden with props*/
 .default-drawer-dimension {
     --cube-width: 6vw;
+    --negative-cube-width: -6vw;
     --cube-height: 4.2vw;
     --cube-depth: 4vw;
+    --negative-cube-depth: -4vw;
     --cube-color: black;
     --font-color: white;
     --border-width: .6vw;
@@ -348,8 +350,8 @@
     border-right: 0;
     border-top: var(--border-width-sides) solid var(--cube-color);
     border-bottom: var(--border-width-sides) solid var(--cube-color);
-    -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
-    transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(calc(var(--cube-depth) * -1));
+    -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(var(--negative-cube-depth));
+    transform: rotateY(90deg) translateZ(calc(var(--cube-width))) translateX(var(--negative-cube-depth));
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
@@ -370,8 +372,8 @@
     border-right: 0;
     border-top: var(--border-width-sides) solid var(--cube-color);
     border-bottom: var(--border-width-sides) solid var(--cube-color);
-    -webkit-transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
-            transform: rotateY(90deg) translateX(calc(var(--cube-depth) * -1));
+    -webkit-transform: rotateY(90deg) translateX(var(--negative-cube-depth));
+            transform: rotateY(90deg) translateX(var(--negative-cube-depth));
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
@@ -439,25 +441,25 @@
 @-webkit-keyframes moveRightSide {
     from {
         width: var(--cube-depth);
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
-                transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
+                transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
     }
     to {
         width: 0;
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
-                transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
+                transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
     }
 }
 
 @keyframes moveRightSide {
     from {
         width: var(--cube-depth);
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
-                transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
+                transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
     }
     to {
         width: 0;
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
-                transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
+                transform: rotateY(-90deg) translateZ(var(--negative-cube-width)) translateX(0);
     }
 }
