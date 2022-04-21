@@ -128,6 +128,7 @@ const fadeOutLeft = keyframes`
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
+  display: -webkit-inline-flex;
   display: inline-flex;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
