@@ -31,7 +31,7 @@ const IndexPage = () => {
         // This is offset which makes the font to change the color when it exceeds half of its height into new section.
 
         // NavBar edge offset adjustment
-        const navBarFontBottomEdge = window.innerWidth * .01
+        const navBarFontBottomEdge = window.innerWidth >= 900 ? window.innerWidth * .01 : -window.innerWidth * .04
 
         // This is offset for contact form pseudo-element (gradient background)
         const contactFormPseudoElementOffset = window.innerWidth * .145 - window.innerWidth * .01
