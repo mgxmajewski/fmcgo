@@ -27,7 +27,7 @@ const Index = ({areSocialIconsVisible}) => {
                     <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <SocialMediaIconBox isvisible={areSocialIconsVisible}>f</SocialMediaIconBox>
                     </a>
-                    <a href="mailto: go@fmcgo.pl" style={{textDecoration: "none"}}>
+                    <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>
                         <SocialMediaIconBox isvisible={areSocialIconsVisible}>@</SocialMediaIconBox>
                     </a>
                 </div>

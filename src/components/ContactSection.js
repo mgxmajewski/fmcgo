@@ -46,7 +46,7 @@ const ContactSection = () => {
                             <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                                 <div className={iconBox}>f</div>
                             </a>
-                            <a href="mailto: go@fmcgo.pl" style={{textDecoration: "none"}}>
+                            <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>
                                 <div className={iconBox}>@</div>
                             </a>
                         </div>
