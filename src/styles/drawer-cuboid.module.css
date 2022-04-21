@@ -1,6 +1,7 @@
 /*default - to be overridden with props*/
 .default-drawer-dimension {
     --cube-width: 6vw;
+    --negative-cube-width: -6vw;
     --cube-height: 4.2vw;
     --cube-depth: 4vw;
     --cube-color: black;
@@ -225,10 +226,10 @@
 @-webkit-keyframes moveRightSide {
     from {
         width: var(--cube-depth);
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -2)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -1)) translateX(0);
     }
     to {
         width: 0;
-        -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -2)) translateX(0);
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -1)) translateX(0);
     }
 }
