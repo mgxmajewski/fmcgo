@@ -5,12 +5,6 @@ import LangaugeToggle from "../LanguageToggle"
 
 const Navbar = ({isOpen, toggle, isNavFontBright}) => {
 
-    // const [isLoading, setIsLoading] = useState(true);
-    //
-    // useEffect(() => {
-    //     setIsLoading(false)
-    // }, [])
-
     return (
         <>
             {/*{isLoading*/}
