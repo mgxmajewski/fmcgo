@@ -2,8 +2,20 @@ import React, {useEffect, useState} from 'react';
 import '../styles/normalize.css'
 import {layout} from "../styles/global.module.css";
 import NavBar from "./Navigation/NavBar";
-import NavLoadingPlaceHolder from "./Navigation/NavBar";
 import PropTypes from "prop-types";
+
+
+const NavLoadingPlaceHolder = () => {
+    const placeHolderStyle = {
+        height: "20vw",
+        width: "92vw"
+    };
+    return (
+        <div style={placeHolderStyle}></div>
+    )
+
+}
+
 
 const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
 
@@ -16,10 +28,9 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
     return (
         <>
             {isLoading
-                ? <NavLoadingPlaceHolder/>
+                ? <NavLoadingPlaceHolder>Loading</NavLoadingPlaceHolder>
                 : <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}/>
             }
-
             <div className={layout}>
                 {children}
                 <footer>
@@ -27,8 +38,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                 </footer>
             </div>
         </>
-    )
-        ;
+    );
 };
 
 Layout.propTypes = {
