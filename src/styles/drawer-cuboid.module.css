@@ -210,16 +210,6 @@
     }
 }
 
-@-webkit-keyframes moveRightSide {
-    from {
-        width: var(--cube-depth);
-        -webkit-transform: rotateY(90deg) translateX(-webkit-calc(var(--cube-width))) translateZ(0);
-    }
-    to {
-        width: 0;
-        -webkit-transform: rotateY(90deg) translateX(-webkit-calc(var(--cube-width))) translateZ(0);
-    }
-}
 
 @keyframes moveRightSide {
     from {
@@ -229,5 +219,16 @@
     to {
         width: 0;
         transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
+    }
+}
+
+@-webkit-keyframes moveRightSide {
+    from {
+        width: var(--cube-depth);
+        -webkit-transform: rotateY(90deg) translateX(-webkit-calc(var(--cube-width))) translateZ(0);
+    }
+    to {
+        width: 0;
+        -webkit-transform: rotateY(90deg) translateX(-webkit-calc(var(--cube-width))) translateZ(0);
     }
 }
