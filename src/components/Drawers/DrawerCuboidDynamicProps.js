@@ -151,7 +151,7 @@ export const AdjustedDrawer = styled.div`
   --cube-color: ${({cubeColor}) => cubeColor};
   --font-color: ${({fontColor}) => fontColor};
 
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     --cube-width: ${({brand}) => handleCustomWidthDesktop(brand)};
     --cube-height: 4.2vw;
     --cube-depth: 4vw;
