@@ -225,7 +225,7 @@
 
 @-webkit-keyframes moveRightSide {
     0% {
-        width: var(--cube-depth);
+        width: -webkit-calc(var(--cube-depth) * 2);
         -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -4)) translateX(0);
     }
     100% {
