@@ -1,4 +1,5 @@
 import * as React from "react"
+import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 // import DrawersContainer from "../components/DrawersContainer";
 import GoHero from "../components/GoHero";
@@ -8,7 +9,6 @@ import BoardSection from "../components/BoardSection";
 import NewsSection from "../components/NewsSection";
 import ContactSection from "../components/ContactSection";
 import Radical from "../components/Radical"
-import {useEffect, useState} from "react";
 
 // markup
 const IndexPage = () => {
@@ -23,6 +23,35 @@ const IndexPage = () => {
     const [areSocialIconsVisible, setAreSocialIconsVisible] = useState('true');
 
     // console.log(`children.props: ` + JSON.stringify(children));
+
+    const toggleRadicalIcons = () => {
+
+        const getElementHeight = name => document.getElementById(name).clientHeight;
+
+        // This is offset which makes the font to change the color when it exceeds half of its height into new section.
+
+        // NavBar edge offset adjustment
+        const navBarFontBottomEdge = window.innerWidth >= 900 ? window.innerWidth * .01 : -window.innerWidth * .04
+
+        // This is offset for contact form pseudo-element (gradient background)
+        const contactFormPseudoElementOffset = window.innerWidth * .145 - window.innerWidth * .01
+
+        // Calculations to get the right context for navBar font changes.
+        const goSectionHeight = getElementHeight('go-section');
+        const radicalSectionTopEdge = goSectionHeight + navBarFontBottomEdge
+        const radicalSectionHeight = getElementHeight('radical-section');
+        const radicalSectionBottomEdge = radicalSectionTopEdge + radicalSectionHeight
+        const navBarIsOverRadicalSection = window.scrollY >= radicalSectionTopEdge && window.scrollY <= radicalSectionBottomEdge
+
+        if (navBarIsOverRadicalSection) {
+            setAreSocialIconsVisible('false')
+            setIsNavFontBright('true')
+        } else {
+            setAreSocialIconsVisible('true')
+            setIsNavFontBright('false')
+        }
+
+    }
 
     const toggleNavFontColor = () => {
 
@@ -72,14 +101,15 @@ const IndexPage = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleNavFontColor)
+        window.addEventListener('scroll', toggleRadicalIcons)
     }, []);
 
     return (
-        <Layout isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}>
-            <GoHero />
+        <Layout isNavFontBright={isNavFontBright} RadicalIcons isOpen={isOpen} toggle={toggle}>
+            <GoHero/>
             <Radical areSocialIconsVisible={areSocialIconsVisible}/>
-            <CoSection />
-            <BoardSection />
+            <CoSection/>
+            <BoardSection/>
             <NewsSection/>
             <ContactSection/>
         </Layout>
