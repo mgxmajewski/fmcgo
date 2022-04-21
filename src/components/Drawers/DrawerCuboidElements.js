@@ -89,9 +89,9 @@ export const DefaultDrawerDimensionsProvider = styled.div`
   --side-font-size: 4.5vw;
 
   @media screen and (min-width: 900px) {
-      --border-width: .3vw;
-      --border-width-sides: .35vw;
-      --side-font-size: 1.7vw;
+    --border-width: .3vw;
+    --border-width-sides: .35vw;
+    --side-font-size: 1.7vw;
 `
 
 // export const AdjustedDrawer = styled(DefaultDrawerDimensionsProvider)`
@@ -250,6 +250,16 @@ export const Side = styled.div`
 export const FrontSide = styled(Side)`
   background-color: var(--cube-color);
   transform: translateZ(calc(var(--cube-depth)));
+`
+
+export const FrontSideWithHover = styled(FrontSide)`
+  
+  @media screen and (min-width: 900px) {
+    &:hover > * {
+      //width: 1.2vw;
+      transform: scale(1.2);
+    }
+  }
 `
 
 export const BackSide = styled(Side)`

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import DrawerCuboidStatic from "./Drawers/DrawerCuboidStatic";
+import DrawerCuboidStaticWithHover from "./Drawers/DrawerCuboidStaticWithHover";
 import SliderArrowLeft from '../assets/slider-arrow-left.svg'
 import SliderArrowRight from '../assets/slider-arrow-right.svg'
 import {StaticImage} from "gatsby-plugin-image";
@@ -93,12 +93,12 @@ const CoSlider = ({data}) => {
                 role="button"
                 tabIndex="-1"
             >
-                <DrawerCuboidStatic
+                <DrawerCuboidStaticWithHover
                     section='co-section'
                     brand='slider'
                 >
                     <SliderArrowLeft className={arrow}/>
-                </DrawerCuboidStatic>
+                </DrawerCuboidStaticWithHover>
             </div>
             <div className={sliderCopy}>
                 <b>There’s 40 years of experience in advertising between us.</b> We’ve served as heads of departments,
@@ -114,13 +114,12 @@ const CoSlider = ({data}) => {
                 role="button"
                 tabIndex="-1"
             >
-                <DrawerCuboidStatic
+                <DrawerCuboidStaticWithHover
                     section='co-section'
                     brand='slider'
-
                 >
                     <SliderArrowRight className={arrow}/>
-                </DrawerCuboidStatic>
+                </DrawerCuboidStaticWithHover>
             </div>
             <div className={sliderDots}>
                 {sliderState
