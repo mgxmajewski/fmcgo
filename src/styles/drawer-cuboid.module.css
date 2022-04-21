@@ -225,10 +225,10 @@
 @-webkit-keyframes moveRightSide {
     from {
         width: var(--cube-depth);
-        -webkit-transform: rotateY(-90deg) translateX(-webkit-calc(var(--cube-width) * -2)) translateZ(-webkit-calc(var(--cube-width) * -1));
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -2) translateX(0));
     }
     to {
         width: 0;
-        -webkit-transform: rotateY(-90deg) translateX(-webkit-calc(var(--cube-width) * -2)) translateZ(-webkit-calc(var(--cube-width) * -1));
+        -webkit-transform: rotateY(-90deg) translateZ(-webkit-calc(var(--cube-width) * -2) translateX(0));
     }
 }
