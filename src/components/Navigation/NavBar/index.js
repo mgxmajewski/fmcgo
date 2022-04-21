@@ -1,5 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import {MobileIcon, Nav, NavBarContainer, NavItem, NavLinks, NavLoadingPlaceHolder, NavMenu} from "./NavbarElements";
+import React from 'react';
+// import {useEffect, useState} from 'react';
+import {
+    MobileIcon,
+    Nav,
+    NavBarContainer,
+    NavItem,
+    NavLinks,
+    // NavLoadingPlaceHolder,
+    NavMenu
+} from "./NavbarElements";
 import Hamb from "../../Hamb";
 import LangaugeToggle from "../LanguageToggle"
 
