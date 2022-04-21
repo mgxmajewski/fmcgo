@@ -239,7 +239,6 @@
 * Browsers: last 4 version
 */
 
-/*default - to be overridden with props*/
 .default-drawer-dimension {
     --cube-width: 6vw;
     --negative-cube-width: -6vw;
@@ -250,7 +249,6 @@
     --font-color: white;
     --border-width: .6vw;
     --border-width-sides: .7vw;
-    /*--side-font-size: 3.8vw;*/
     --side-font-size: 4.5vw;
 }
 
@@ -312,18 +310,13 @@
 }
 
 .gradient-front {
-    /*background: rgb(229, 40, 77);*/
-    /*background: linear-gradient(45deg, rgba(226, 38, 81, 1) 0%, rgba(188, 31, 109, 1) 33%, rgba(242, 173, 16, 1) 100%);*/
     border: 0;
 
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e22651+0,bc1f6d+25,f2ad10+100 */
     background: #e22651; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
     background: -webkit-gradient(linear, left top, right top, from(#e22651), color-stop(25%, #bc1f6d), to(#f2ad10));
     background: -o-linear-gradient(left, #e22651 0%, #bc1f6d 25%, #f2ad10 100%);
     background: linear-gradient(to right, #e22651 0%, #bc1f6d 25%, #f2ad10 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e22651', endColorstr='#f2ad10', GradientType=1); /* IE6-9 */
-    /*-webkit-background-clip: text;*/
-    /*-webkit-text-fill-color: transparent;*/
 }
 
 .back {
