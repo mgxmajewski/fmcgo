@@ -128,24 +128,27 @@ const fadeOutLeft = keyframes`
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
-  display: block;
-  //grid-template-columns: auto auto;
-  //grid-template-rows: 1fr;
-  //grid-gap: 1.5vw;;
+  display: -webkit-box;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-gap: 1.5vw;;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
   transition: visibility .4s linear;
   align-items: center;
-  background: -webkit-linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
+  //background: -webkit-linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   background: linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
+  //background: linear-gradient(90deg, rgba(144, 58, 68, 1) 0%, rgba(227, 147, 0, 1) 35%);
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 #00000000;
+  //text-shadow: 0 0 #00000000;
   /*margin-top: -.3vw;*/
   font-size: 6vw;
   font-weight: 900;
   
-  z-index: 9999;
+  //z-index: 9999;
   
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
