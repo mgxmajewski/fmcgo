@@ -1,4 +1,4 @@
-import styled, {keyframes, css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
 
 export const RadicalSection = styled.section`
   grid-area: radical-section;
@@ -134,15 +134,17 @@ export const MouseGo = styled.div`
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
   transition: visibility .4s linear;
   align-items: center;
+  background: -webkit-linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   background: linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 #00000000;
   /*margin-top: -.3vw;*/
   font-size: 6vw;
   font-weight: 900;
   gap: 1.5vw;
   z-index: 9999;
-
+  
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
     gap: .8vw;
@@ -197,12 +199,12 @@ export const IconBox = styled.div`
 
 const flashIn = keyframes`
   from {
-      opacity: 0;
-      }
+    opacity: 0;
+  }
 
-      to {
-      opacity: 1;
-      }
+  to {
+    opacity: 1;
+  }
 `;
 
 const styles = css`
@@ -234,16 +236,16 @@ const fadeOutRight = keyframes`
   }
 `;
 
-  //display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
-  // animation: ${({isvisible}) => isvisible === 'true' ? flash `0.3s linear 3` : `null`};
-  // animation: ${({isvisible}) => (isvisible === 'true'? styles : "")};
-  // display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
+//display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
+// animation: ${({isvisible}) => isvisible === 'true' ? flash `0.3s linear 3` : `null`};
+// animation: ${({isvisible}) => (isvisible === 'true'? styles : "")};
+// display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
 export const SocialMediaIconBox = styled.div`
   display: flex;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
   transition: visibility .4s linear;
-  //animation: ${flashIn} 0.3s linear 1;
+    //animation: ${flashIn} 0.3s linear 1;
   color: white;
   font-weight: bold;
   align-items: center;
