@@ -128,8 +128,10 @@ const fadeOutLeft = keyframes`
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-gap: 1.5vw;;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
   transition: visibility .4s linear;
@@ -142,7 +144,7 @@ export const MouseGo = styled.div`
   /*margin-top: -.3vw;*/
   font-size: 6vw;
   font-weight: 900;
-  gap: 1.5vw;
+  
   z-index: 9999;
   
   @media screen and (min-width: 900px) {

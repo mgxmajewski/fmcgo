@@ -52,6 +52,21 @@
     width: 100%;
 }
 
+.fmcgo-copy {
+    grid-area: fmcgo-copy;
+    color: #7b7b7b;
+    font-weight: 300;
+    justify-self: left;
+    line-height: var(--copy-line-height);
+    font-size: 4.6vw;
+}
+
+@media (min-width: 900px) {
+    .fmcgo-copy {
+        font-size: 1.13vw;
+    }
+}
+
 .fmcgo-tagline {
     grid-area: fmcgo-tagline;
     font-weight: 900;
@@ -66,21 +81,6 @@
     .fmcgo-tagline {
         font-size: 5vw;
         align-self: end;
-    }
-}
-
-.fmcgo-copy {
-    grid-area: fmcgo-copy;
-    color: #7b7b7b;
-    font-weight: 300;
-    justify-self: left;
-    line-height: var(--copy-line-height);
-    font-size: 4.6vw;
-}
-
-@media (min-width: 900px) {
-    .fmcgo-copy {
-        font-size: 1.13vw;
     }
 }
 
