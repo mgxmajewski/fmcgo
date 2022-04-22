@@ -141,6 +141,7 @@ export const MouseGo = styled.div`
   font-size: 6vw;
   font-weight: 900;
   gap: 1.5vw;
+  z-index: 9999;
 
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
