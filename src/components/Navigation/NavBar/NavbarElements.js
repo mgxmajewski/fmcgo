@@ -82,7 +82,8 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
-  display: inline-flex;
+  display: block;
+  float: left;
   align-items: center;
   justify-items: center;
   text-decoration: none;
