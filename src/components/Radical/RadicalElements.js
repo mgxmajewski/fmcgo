@@ -128,10 +128,10 @@ const fadeOutLeft = keyframes`
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  grid-gap: 1.5vw;;
+  display: block;
+  //grid-template-columns: auto auto;
+  //grid-template-rows: 1fr;
+  //grid-gap: 1.5vw;;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
   transition: visibility .4s linear;
