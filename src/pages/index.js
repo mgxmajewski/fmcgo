@@ -105,9 +105,9 @@ const IndexPage = ({ref}) => {
 
 
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
-    const [radicalSectionRef, radicalSectionInView] = useInView();
+    const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
-    const [coAboveSliderRef, coAboveSliderInView] = useInView();
+    const [coAboveSliderRef, coAboveSliderInView] = useInView({rootMargin: '-36px'});
     const [coSliderRef, coSliderInView] = useInView();
     const [boardSectionRef, boardSectionInView] = useInView({rootMargin: '-36px'});
     const [newsSectionRef, newsSectionInView] = useInView({rootMargin: '-36px'});
@@ -126,6 +126,13 @@ const IndexPage = ({ref}) => {
     console.log(`inView: ` + JSON.stringify(radicalSectionInView));
 
     useEffect(() => {
+
+        if (!heroSectionInView && radicalSectionInView){
+            setAreSocialIconsVisible('false')
+        } else {
+            setAreSocialIconsVisible('true')
+        }
+
         if (
             (!heroSectionInView && radicalSectionInView) ||
             (!coAboveSliderInView && coSliderInView) ||
@@ -133,13 +140,18 @@ const IndexPage = ({ref}) => {
             (!newsSectionInView && contactSectionInView)
         ) {
             setIsNavFontBright('true')
-            setAreSocialIconsVisible('false')
         } else {
             setIsNavFontBright('false')
-            setAreSocialIconsVisible('true')
         }
 
-    }, [heroSectionInView, radicalSectionInView, coSectionInView, coAboveSliderInView, coSliderInView, newsSectionInView, contactSectionInView])
+    }, [
+        heroSectionInView,
+        radicalSectionInView,
+        coSectionInView,
+        coAboveSliderInView,
+        coSliderInView,
+        newsSectionInView,
+        contactSectionInView])
 
     return (
         <Layout

@@ -62,11 +62,11 @@ const CoSlider = ({data, coSliderRef}) => {
     }
 
     return (
-        <div ref={coSliderRef} id="slider-container" className={coSlider}
+        <div  id="slider-container" className={coSlider}
              onTouchStart={handleTouchStart}
              onTouchMove={handleTouchMove}
         >
-            <div id="slider-picture" className={sliderPictureContainer}>
+            <div ref={coSliderRef} id="slider-picture" className={sliderPictureContainer}>
                 {sliderState
                     ?
                     <StaticImage
