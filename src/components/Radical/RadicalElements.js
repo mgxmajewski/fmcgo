@@ -132,7 +132,7 @@ export const MouseGo = styled.div`
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
   transition: visibility .4s linear;
-  align-items: center;
+  //align-items: center;
   //background: -webkit-linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   background: linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   //background: linear-gradient(90deg, rgba(144, 58, 68, 1) 0%, rgba(227, 147, 0, 1) 35%);
@@ -209,32 +209,32 @@ const flashIn = keyframes`
   }
 `;
 
-const styles = css`
-  animation: ${flashIn} 0.3s ease-in-out 1;
-  //transition: all .2s ease-in-out;
-`;
+// const styles = css`
+//   animation: ${flashIn} 0.3s ease-in-out 1;
+//   //transition: all .2s ease-in-out;
+// `;
 
 const fadeInRight = keyframes`
   from {
     transform: translateX(100px);
-    opacity: 0;
+    opacity: 1;
   }
 
   to {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0;
   }
 `;
 
 const fadeOutRight = keyframes`
   from {
     transform: translateX(0);
-    opacity: 0;
+    opacity: 1;
   }
 
   to {
     transform: translateX(100px);
-    opacity: 1;
+    opacity: 0;
   }
 `;
 
@@ -242,12 +242,12 @@ const fadeOutRight = keyframes`
 // animation: ${({isvisible}) => isvisible === 'true' ? flash `0.3s linear 3` : `null`};
 // animation: ${({isvisible}) => (isvisible === 'true'? styles : "")};
 // display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
+    //animation: ${flashIn} 0.3s linear 1;
 export const SocialMediaIconBox = styled.div`
   display: flex;
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
   transition: visibility .4s linear;
-    //animation: ${flashIn} 0.3s linear 1;
   color: white;
   font-weight: bold;
   align-items: center;

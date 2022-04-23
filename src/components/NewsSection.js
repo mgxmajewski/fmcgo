@@ -11,9 +11,9 @@ import {
 } from '../styles/news-section.module.css'
 
 
-const NewsSection = () => {
+const NewsSection = ({newsSectionRef}) => {
     return (
-        <section className={newsSection} id="news-section">
+        <section ref={newsSectionRef} className={newsSection} id="news-section">
             <div className={newsTagline}>So, <span className={newsTaglineGradient}>let's GO!</span></div>
             <div className={newsArticlesContainer}>
                 <div className={newsArticle}>

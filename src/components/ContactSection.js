@@ -15,9 +15,9 @@ import {
 import {iconBox} from "../styles/radical.module.css";
 import GoContactForm from "./GoContactForm";
 
-const ContactSection = () => {
+const ContactSection = ({contactSectionRef}) => {
     return (
-        <section className={contactSection}  id="contact-section">
+        <section ref={contactSectionRef} className={contactSection}  id="contact-section">
             <div className={contactFormContainer}>
                 <div className={contactTagline}>
                     <div>Contact</div>

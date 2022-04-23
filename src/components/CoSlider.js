@@ -19,7 +19,7 @@ import {
     whiteDot
 } from '../styles/co-slider.module.css'
 
-const CoSlider = ({data}) => {
+const CoSlider = ({data, coSliderRef}) => {
 
     const [sliderState, setSliderState] = useState(true);
     const [touchPosition, setTouchPosition] = useState(null)
@@ -62,7 +62,7 @@ const CoSlider = ({data}) => {
     }
 
     return (
-        <div id="slider-container" className={coSlider}
+        <div ref={coSliderRef} id="slider-container" className={coSlider}
              onTouchStart={handleTouchStart}
              onTouchMove={handleTouchMove}
         >

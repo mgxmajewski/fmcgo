@@ -9,9 +9,9 @@ import {
 } from '../styles/board-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 
-const BoardSection = () => {
+const BoardSection = ({boardSectionRef}) => {
     return (
-        <section className={boardSection} id="board-section">
+        <section ref={boardSectionRef} className={boardSection} id="board-section">
             <div className={boardTagline}>
                 Our Network<br/>
                 and Board of Directors

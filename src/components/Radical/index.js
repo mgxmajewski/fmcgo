@@ -12,10 +12,10 @@ import {
 } from "./RadicalElements";
 
 
-const Index = ({areSocialIconsVisible}) => {
+const Index = ({areSocialIconsVisible, radicalRef}) => {
 
     return (
-        <RadicalSection id="radical-section">
+        <RadicalSection ref={radicalRef} id="radical-section">
             <RadicalIcons>
                 <MouseGo isvisible={areSocialIconsVisible}>
                     <MouseIconDiv><MouseIcon/></MouseIconDiv>

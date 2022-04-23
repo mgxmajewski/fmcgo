@@ -11,9 +11,9 @@ import {
     goHeroSection
 } from "../styles/go-hero.module.css";
 
-const GoHero = () => {
+const GoHero = ({heroSectionRef}) => {
     return (
-        <section className={goHeroSection} id="go-section">
+        <section ref={heroSectionRef} className={goHeroSection} id="go-section">
             <div className={fmcgoLogo}>
                 <Logo className={fmcgoVectorLogo}/>
             </div>
