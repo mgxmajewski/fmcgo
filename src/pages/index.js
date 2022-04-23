@@ -73,19 +73,9 @@ const IndexPage = ({ref}) => {
                 coAboveSliderRef={coAboveSliderRef}
                 coSliderRef={coSliderRef}
             />
-            {coSectionInView
-                ? <BoardSection boardSectionRef={boardSectionRef}/>
-                : <></>
-
-            }
-            {boardSectionInView
-                ? <NewsSection newsSectionRef={newsSectionRef}/>
-                : <></>
-            }
-            {newsSectionInView
-                ? <ContactSection contactSectionRef={contactSectionRef}/>
-                : <></>
-            }
+            <BoardSection boardSectionRef={boardSectionRef}/>
+            <NewsSection newsSectionRef={newsSectionRef}/>
+            <ContactSection contactSectionRef={contactSectionRef}/>
         </Layout>
     )
 }
