@@ -1,37 +1,44 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
+    desktopOnlyNews,
     newsArticle,
     newsArticlesContainer,
     newsCopy,
     newsDate,
     newsSection,
     newsTagline,
-    newsTaglineGradient,
-    desktopOnlyNews
+    newsTaglineGradient
 } from '../styles/news-section.module.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NewsSection = ({newsSectionRef}) => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
+
     return (
         <section ref={newsSectionRef} className={newsSection} id="news-section">
             <div className={newsTagline}>So, <span className={newsTaglineGradient}>let's GO!</span></div>
             <div className={newsArticlesContainer}>
-                <div className={newsArticle}>
+                <div data-aos="fade-up" className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={newsArticle}>
+                <div data-aos="fade-up" className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>
                         Catamaran Bio expands<br/>
@@ -44,12 +51,12 @@ const NewsSection = ({newsSectionRef}) => {
                         technologies
                     </p>
                 </div>
-                <div className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div className={newsArticle}>
+                <div data-aos="fade-up" className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>

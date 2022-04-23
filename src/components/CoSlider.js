@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import DrawerCuboidStaticWithHover from "./Drawers/DrawerCuboidStaticWithHover";
 import SliderArrowLeft from '../assets/slider-arrow-left.svg'
 import SliderArrowRight from '../assets/slider-arrow-right.svg'
 import {StaticImage} from "gatsby-plugin-image";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
     arrow,
@@ -20,6 +21,11 @@ import {
 } from '../styles/co-slider.module.css'
 
 const CoSlider = ({data, coSliderRef}) => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
 
     const [sliderState, setSliderState] = useState(true);
     const [touchPosition, setTouchPosition] = useState(null)
@@ -62,7 +68,7 @@ const CoSlider = ({data, coSliderRef}) => {
     }
 
     return (
-        <div  id="slider-container" className={coSlider}
+        <div data-aos="fade-up" id="slider-container" className={coSlider}
              onTouchStart={handleTouchStart}
              onTouchMove={handleTouchMove}
         >

@@ -17,13 +17,13 @@ const CoSection = ({ coSectionRef, coAboveSliderRef, coSliderRef}) => {
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
             <div className={coTagline}>Filip<sup>&</sup>Marcel<sup>&</sup>Co<sup>Go</sup></div>
-            <div className={coCopy}>
+            <div data-aos="fade-up" className={coCopy}>
                 <b>There’s 40 years of experience in advertising between us.</b> We’ve served as heads of departments,
                 creative directors, senior creatives. For last 7 years we’ve been working together on hundreds of
                 campaigns for brands from all categories imaginable. Along this way, we’ve discovered that what really
                 turns us on is adverting that is meant to sell.
             </div>
-            <div ref={coAboveSliderRef} className={coDrawers}>
+            <div data-aos="fade-right" ref={coAboveSliderRef} className={coDrawers}>
                 <DrawerCuboidZAnimation
                     brand='carrefour'
                     section='co-section'
