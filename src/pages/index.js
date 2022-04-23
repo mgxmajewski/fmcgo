@@ -31,7 +31,7 @@ const IndexPage = ({ref}) => {
 
     useEffect(() => {
 
-        if (!heroSectionInView && radicalSectionInView){
+        if (!heroSectionInView && radicalSectionInView) {
             setAreSocialIconsVisible('false')
         } else {
             setAreSocialIconsVisible('true')
@@ -73,9 +73,19 @@ const IndexPage = ({ref}) => {
                 coAboveSliderRef={coAboveSliderRef}
                 coSliderRef={coSliderRef}
             />
-            <BoardSection boardSectionRef={boardSectionRef}/>
-            <NewsSection newsSectionRef={newsSectionRef}/>
-            <ContactSection contactSectionRef={contactSectionRef}/>
+            {coSectionInView
+                ? <BoardSection boardSectionRef={boardSectionRef}/>
+                : <></>
+
+            }
+            {boardSectionInView
+                ? <NewsSection newsSectionRef={newsSectionRef}/>
+                : <></>
+            }
+            {newsSectionInView
+                ? <ContactSection contactSectionRef={contactSectionRef}/>
+                : <></>
+            }
         </Layout>
     )
 }
