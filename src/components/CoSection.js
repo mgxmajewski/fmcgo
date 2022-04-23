@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const CoSection = ({ coSectionRef, coAboveSliderRef, coSliderRef}) => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
 
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
