@@ -16,7 +16,7 @@ const IndexPage = ({ref}) => {
     const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
     const [coAboveSliderRef, coAboveSliderInView] = useInView({rootMargin: '-36px'});
     const [coSliderRef, coSliderInView] = useInView();
-    const [boardSectionRef, boardSectionInView] = useInView();
+    const [boardSectionRef, boardSectionInView] = useInView({rootMargin: '-36px'});
     const [newsSectionRef, newsSectionInView] = useInView({rootMargin: '-36px'});
     const [contactSectionRef, contactSectionInView] = useInView();
 
@@ -55,6 +55,7 @@ const IndexPage = ({ref}) => {
         coAboveSliderInView,
         coSliderInView,
         newsSectionInView,
+        boardSectionInView,
         contactSectionInView])
 
     return (
