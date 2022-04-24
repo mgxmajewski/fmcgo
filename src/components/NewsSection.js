@@ -23,7 +23,11 @@ const NewsSection = ({newsSectionRef}) => {
         <section ref={newsSectionRef} className={newsSection} id="news-section">
             <div className={newsTagline}>So, <span className={newsTaglineGradient}>let's GO!</span></div>
             <div className={newsArticlesContainer}>
-                <div data-aos="fade-up" className={newsArticle}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={newsArticle}
+                >
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
