@@ -83,22 +83,43 @@ export const RadicalCopy = styled.div`
   }
 `
 
+// const bannerMove = keyframes`
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     transform: translate(-50%, 0);
+//   }
+// `
+
 export const RadicalDrawersContainer = styled.div`
   overflow: hidden;
+  position: relative;
   padding-top: 4vw;
-  grid-area: radical-drawers;
-  display: flex;
-  width: 100vw;
-  gap: 8vw;
 
+  grid-area: radical-drawers;
+  width: 100vw;
+  
   @media screen and (min-width: 900px) {
     padding-top: 0;
-    margin-left: -16.5vw;
+    margin-left: -16.5vw;  
+    margin-right: -10vw;
     width: 100vw;
     gap: 3.8vw;
     padding-bottom: 6.5vw;
   }
 `
+
+// export const RadicalDrawersBanner = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   white-space: nowrap;
+//   animation: ${bannerMove} 10s linear infinite;
+// `
+
+
 //
 // const fadeInLeft = keyframes`
 //   from {
@@ -124,9 +145,9 @@ export const RadicalDrawersContainer = styled.div`
 //   }
 // `;
 
-  //visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
-  // animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
-  // transition: visibility .4s linear;
+//visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+// animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
+// transition: visibility .4s linear;
 
 export const MouseGo = styled.div`
   grid-area: mouse-go;
@@ -141,9 +162,9 @@ export const MouseGo = styled.div`
   //text-shadow: 0 0 #00000000;
   font-size: 6vw;
   font-weight: 900;
-  
+
   //z-index: 9999;
-  
+
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
     gap: .8vw;
@@ -242,9 +263,9 @@ export const IconBox = styled.div`
 // animation: ${({isvisible}) => isvisible === 'true' ? flash `0.3s linear 3` : `null`};
 // animation: ${({isvisible}) => (isvisible === 'true'? styles : "")};
 // display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
-    //animation: ${flashIn} 0.3s linear 1;
-  // visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
-  // animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
+//animation: ${flashIn} 0.3s linear 1;
+// visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+// animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
 
 export const SocialMediaIconBox = styled.div`
   display: flex;

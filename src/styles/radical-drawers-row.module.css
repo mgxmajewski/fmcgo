@@ -71,3 +71,31 @@
         top: -.5vw;
     }
 }
+
+.drawers-banner {
+    display: flex;
+    /*width: 100%;*/
+    height: 100%;
+    gap: 9vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    animation: bannerMove 30s linear infinite;
+}
+
+@media (min-width: 900px) {
+    .drawers-banner {
+        gap: 3vw;
+    }
+}
+
+@keyframes bannerMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
