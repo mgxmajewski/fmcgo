@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import DrawerCuboidStaticWithHover from "./Drawers/DrawerCuboidStaticWithHover";
 import SliderArrowLeft from '../assets/slider-arrow-left.svg'
 import SliderArrowRight from '../assets/slider-arrow-right.svg'
@@ -35,11 +35,11 @@ const CoSlider = ({data, coSliderRef}) => {
     }
 
     const handleKeyDown = (e) => {
-          // check keys if you want
+        // check keys if you want
         if (e.keyCode === 39 || e.keyCode === 37) {
             toggleSlider()
-         }
-      }
+        }
+    }
 
     const handleTouchStart = (e) => {
         const touchDown = e.touches[0].clientX
@@ -68,9 +68,13 @@ const CoSlider = ({data, coSliderRef}) => {
     }
 
     return (
-        <div data-aos="fade-up" id="slider-container" className={coSlider}
-             onTouchStart={handleTouchStart}
-             onTouchMove={handleTouchMove}
+        <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            id="slider-container"
+            className={coSlider}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
         >
             <div ref={coSliderRef} id="slider-picture" className={sliderPictureContainer}>
                 {sliderState
@@ -95,7 +99,7 @@ const CoSlider = ({data, coSliderRef}) => {
             <div
                 className={sliderLeftArrow}
                 onClick={() => toggleSlider()}
-                onKeyDown={(e)=> handleKeyDown(e)}
+                onKeyDown={(e) => handleKeyDown(e)}
                 role="button"
                 tabIndex="-1"
             >
@@ -116,7 +120,7 @@ const CoSlider = ({data, coSliderRef}) => {
             <div
                 className={sliderRightArrow}
                 onClick={() => toggleSlider()}
-                onKeyDown={(e)=> handleKeyDown(e)}
+                onKeyDown={(e) => handleKeyDown(e)}
                 role="button"
                 tabIndex="-1"
             >
@@ -138,7 +142,7 @@ const CoSlider = ({data, coSliderRef}) => {
                         <div
                             className={emptyDot}
                             onClick={() => toggleSlider()}
-                            onKeyDown={(e)=> handleKeyDown(e)}
+                            onKeyDown={(e) => handleKeyDown(e)}
                             role="button"
                             tabIndex="-1"
                         >
@@ -149,7 +153,7 @@ const CoSlider = ({data, coSliderRef}) => {
                         <div
                             className={emptyDot}
                             onClick={() => toggleSlider()}
-                            onKeyDown={(e)=> handleKeyDown(e)}
+                            onKeyDown={(e) => handleKeyDown(e)}
                             role="button"
                             tabIndex="-1"
                         >

@@ -21,7 +21,7 @@ export const Nav = styled.nav`
 
   @media screen and (min-width: 900px) {
     height: auto;
-    transition: .8s all ease;
+    //transition: .8s all ease;
   }
 `;
 
@@ -37,7 +37,7 @@ export const NavBarContainer = styled.div`
   @media screen and (min-width: 900px) {
     width: 92vw;
     height: auto;
-    transition: .8s all ease;
+    //transition: .8s all ease;
   }
 `
 
@@ -96,6 +96,7 @@ export const NavLinks = styled(LinkS)`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 #00000000;
+    transition: .2s all ease;
   }
 
   //&.active::before {
