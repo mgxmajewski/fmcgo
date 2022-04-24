@@ -18,7 +18,7 @@
     "@emotion/react": "^11.9.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "aos": "^2.3.4",
+    "aos": "^3.0.0-beta.6",
     "gatsby": "^4.11.0",
     "gatsby-plugin-google-analytics": "^4.11.0",
     "gatsby-plugin-image": "^2.11.0",
