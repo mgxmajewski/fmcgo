@@ -99,43 +99,39 @@ export const RadicalDrawersContainer = styled.div`
     padding-bottom: 6.5vw;
   }
 `
+//
+// const fadeInLeft = keyframes`
+//   from {
+//     transform: translateX(-100px);
+//     opacity: 0;
+//   }
+//
+//   to {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// `;
+//
+// const fadeOutLeft = keyframes`
+//   from {
+//     transform: translateX(0);
+//     opacity: 0;
+//   }
+//
+//   to {
+//     transform: translateX(-100px);
+//     opacity: 1;
+//   }
+// `;
 
-const fadeInLeft = keyframes`
-  from {
-    transition-property: transform, opacity;
-    //transform: translateX(-100px);
-    opacity: 0;
-  }
+  //visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+  // animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
+  // transition: visibility .4s linear;
 
-  to {
-    //transform: translateX(0);
-    opacity: 1;
-  }
-`;
-
-const fadeOutLeft = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    transition: visibility .4s linear;
-    opacity: 1;
-  }
-`;
-
-// transition: visibility .4s linear;
-
-// animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
-//visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
   display: block;
-  //visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
-  animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
-  
-
   //align-items: center;
   //background: -webkit-linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
   background: linear-gradient(90deg, rgba(169, 45, 70, 1) 42%, rgba(227, 147, 0, 1) 100%);
@@ -145,9 +141,9 @@ export const MouseGo = styled.div`
   //text-shadow: 0 0 #00000000;
   font-size: 6vw;
   font-weight: 900;
-
+  
   //z-index: 9999;
-
+  
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
     gap: .8vw;
@@ -246,9 +242,9 @@ export const IconBox = styled.div`
 // animation: ${({isvisible}) => isvisible === 'true' ? flash `0.3s linear 3` : `null`};
 // animation: ${({isvisible}) => (isvisible === 'true'? styles : "")};
 // display: ${({isvisible}) => isvisible === 'true' ? 'flex' : 'none'};
-//animation: ${flashIn} 0.3s linear 1;
-// visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
-// animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
+    //animation: ${flashIn} 0.3s linear 1;
+  // visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+  // animation: ${({isvisible}) => isvisible === 'true' ? fadeInRight : fadeOutRight} .4s linear;
 
 export const SocialMediaIconBox = styled.div`
   display: flex;
