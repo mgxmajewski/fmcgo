@@ -11,6 +11,7 @@
     /*grid-template-rows: auto;*/
     justify-items: center;
     padding-bottom: 86vw;
+    overflow-x: hidden;
 }
 
 @media (min-width: 900px) {

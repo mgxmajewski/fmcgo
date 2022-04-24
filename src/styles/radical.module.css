@@ -14,6 +14,8 @@
     grid-row-gap: var(--row-gap-mobile);
     grid-template-rows: auto auto auto 30vw;
     padding-top: 4vw;
+    overflow-x: hidden;
+
 }
 
 @media (min-width: 900px) {
