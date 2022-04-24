@@ -32,10 +32,11 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 smooth={true}
                                 duration={500}
                                 offset={-80}
-                                // exact='true'
+                                exact='true'
                                 to="go-section"
                                 isbright={isNavFontBright}
                                 title="go"
+                                isDynamic={true}
                             >
                                 go
                             </NavLinks>
@@ -47,8 +48,10 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                isDynamic={true}
+                                offset={0}
                                 // offset={getNavBarHeight()}
-                                // exact='true'
+                                exact='true'
                                 to="radical-section"
                                 isbright={isNavFontBright}
                                 title="Radical"
@@ -63,8 +66,11 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                // offset={10}
                                 // offset={getNavBarHeight()}
-                                // exact='true'
+                                exact='true'
                                 to="co-section"
                                 isbright={isNavFontBright}
                                 title="Co"
@@ -79,6 +85,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                // offset={-10}
                                 // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="board-section"
@@ -95,6 +104,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                // offset={50}
                                 // offset={getNavBarHeight()}
                                 // exact='true'
                                 to="contact-section"
