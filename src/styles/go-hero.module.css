@@ -13,7 +13,6 @@
     grid-row-gap: 5vw;
     grid-column-gap: 3vw;
     padding-bottom: 7vw;
-    overflow-x: hidden;
 }
 
 @media (min-width: 900px) {

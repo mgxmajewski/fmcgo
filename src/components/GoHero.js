@@ -16,7 +16,7 @@ import "aos/dist/aos.css";
 const GoHero = ({heroSectionRef}) => {
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({disable: 'mobile'});
         AOS.refresh();
     }, [])
 
