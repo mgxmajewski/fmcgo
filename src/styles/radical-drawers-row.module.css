@@ -84,7 +84,7 @@
     left: 0;
     overflow: hidden;
     /*white-space: nowrap;*/
-    animation: bannerMove 20s linear infinite;
+    animation: bannerMove 35s linear infinite;
 }
 
 @media (min-width: 900px) {
