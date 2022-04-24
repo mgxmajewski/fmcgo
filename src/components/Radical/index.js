@@ -48,8 +48,8 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                 we’ll never hesitate <br/>
                 to use them. We believe that the only true measurement for successful advertising is sales.
             </RadicalCopy>
-            <RadicalDrawersContainer data-aos="fade-right">
-                <RadicalDrawersRow  />
+            <RadicalDrawersContainer>
+                <RadicalDrawersRow/>
             </RadicalDrawersContainer>
         </RadicalSection>
     );
