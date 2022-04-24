@@ -74,7 +74,9 @@
 
 .drawers-banner {
     display: flex;
-    /*width: 100%;*/
+    /*width: 206%;*/
+    /*width: 720%;*/
+    width: 720%;
     height: 100%;
     gap: 9vw;
     position: absolute;
@@ -82,12 +84,14 @@
     left: 0;
     overflow: hidden;
     /*white-space: nowrap;*/
-    animation: bannerMove 30s linear infinite;
+    animation: bannerMove 20s linear infinite;
 }
 
 @media (min-width: 900px) {
     .drawers-banner {
-        gap: 3vw;
+        width: 205%;
+        gap: 3.8vw;
+        /*padding-right: 3.8vw;*/
     }
 }
 

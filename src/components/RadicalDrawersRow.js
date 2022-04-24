@@ -3,7 +3,7 @@ import DrawerCuboidStatic from "./Drawers/DrawerCuboidStatic";
 import BottleIcon from "../assets/bottle.svg"
 import CoffeeBeanIcon from "../assets/coffee-bean.svg"
 import FmcgoTagIcon from "../assets/fmcgotag.svg"
-import {drawersBanner, bean, beanContainer, bottle, fmcgoTag, priceTag} from "../styles/radical-drawers-row.module.css"
+import {bean, beanContainer, bottle, drawersBanner, fmcgoTag, priceTag} from "../styles/radical-drawers-row.module.css"
 import DrawerCuboidStatisGradient from "./Drawers/DrawerCuboidStatisGradient";
 
 
