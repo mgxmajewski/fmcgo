@@ -12,7 +12,6 @@
     grid-template-rows: auto auto auto;
     grid-template-columns: 18vw 55vw auto;
     grid-row-gap: 4.2vw;
-    overflow-x: hidden;
 
 
     /*justify-self: left;*/
