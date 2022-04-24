@@ -97,8 +97,14 @@
     top: 90%;
     width: 97%;
     left: .2vw;
-    height: 0.3vw;
+    height: .8vw;
     background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
+}
+
+@media (min-width: 900px) {
+    .fmcgo-tagline-gradient-tricolor::before {
+        height: .3vw;
+    }
 }
 
 .fmcgo-tagline-gradient-secondary {
@@ -113,7 +119,13 @@
     top: 90%;
     width: 97%;
     left: .2vw;
-    height: 0.3vw;
+    height: .8vw;
     background: linear-gradient(90deg, rgba(144, 58, 68, 1) 0%, rgba(227, 147, 0, 1) 35%);
 }
 
+
+@media (min-width: 900px) {
+    .fmcgo-tagline-gradient-secondary::before {
+        height: .3vw;
+    }
+}
