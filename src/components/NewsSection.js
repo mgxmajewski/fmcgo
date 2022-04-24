@@ -28,17 +28,26 @@ const NewsSection = ({newsSectionRef}) => {
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div data-aos="fade-up" className={newsArticle}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>
                         Catamaran Bio expands<br/>
@@ -51,12 +60,18 @@ const NewsSection = ({newsSectionRef}) => {
                         technologies
                     </p>
                 </div>
-                <div data-aos="fade-up" className={`${newsArticle} ${desktopOnlyNews}`}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={`${newsArticle} ${desktopOnlyNews}`}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>
                 </div>
-                <div data-aos="fade-up" className={newsArticle}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    className={newsArticle}>
                     <div className={newsDate}>11.11.22</div>
                     <p className={newsCopy}>CorWave to set up its<br/>manufacturing facility and<br/>
                         expand to a new site next<br/>to Paris</p>

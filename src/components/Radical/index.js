@@ -39,16 +39,24 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     </a>
                 </SocialIcons>
             </RadicalIcons>
-            <RadicalTagline>#Radical Advertising</RadicalTagline>
+            <RadicalTagline
+                data-aos="fade-down"
+                data-aos-once="true"
+            >
+                #Radical Advertising
+            </RadicalTagline>
             <RadicalCopy
                 data-aos="fade-up"
+                data-aos-once="true"
             >
                 If a creative idea can’t be fit into an e&#8209;commerce banner, it’s not advertising.<br/>
                 We are here to sell your products not just our services. We love our pack-shots and price-tags, and
                 we’ll never hesitate <br/>
                 to use them. We believe that the only true measurement for successful advertising is sales.
             </RadicalCopy>
-            <RadicalDrawersContainer>
+            <RadicalDrawersContainer
+                data-aos="fade-right"
+                data-aos-once="true">
                 <RadicalDrawersRow/>
             </RadicalDrawersContainer>
         </RadicalSection>

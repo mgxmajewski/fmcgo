@@ -27,16 +27,25 @@ const ContactSection = ({contactSectionRef}) => {
 
     return (
         <section ref={contactSectionRef} className={contactSection} id="contact-section">
-            <div className={contactFormContainer}>
+            <div data-aos="fade-down"
+                 data-aos-once="true"
+                 className={contactFormContainer}>
                 <div className={contactTagline}>
                     <div>Contact</div>
                     <div className={desktopOnlyGo}>Go</div>
                 </div>
                 <div className={contactForm}>
-                    <div data-aos="fade-right" className={formInputCol}>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-once="true"
+                        className={formInputCol}>
                         <GoContactForm/>
                     </div>
-                    <div data-aos="fade-left" className={formDetailsCol}>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-once="true"
+                        className={formDetailsCol}
+                    >
                         <div className={detailsName}>
                             <b>FMC_GO</b><br/>
                             30-333 Warszawa,<br/>
