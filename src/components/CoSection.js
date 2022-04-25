@@ -33,7 +33,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
     const flipFinish = () => null
 
 
-    const intervalsArray = [flipStart, flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipFinish, flipFinish, flipFinish]
+    const intervalsArray = [flipStart, flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipFinish, flipFinish, flipFinish, flipFinish]
 
 
     const flipAll = () => {
@@ -58,22 +58,25 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
     useEffect(() => {
 
         const interval = setInterval(() => {
-            const isInArray = iterator <= intervalsArray.length - 1
-            intervalsArray[iterator]()
+
+            console.log(iterator)
+            const isInArray = iterator <= intervalsArray.length
+
             if (isInArray) {
-                // console.log(`isInArray: ` + JSON.stringify(isInArray));
+                intervalsArray[iterator]()
                 intervalsArray[iterator + 1]()
             }
 
             if (iterator === 11) {
                 flipAll()
-            } else if (iterator === 12){
-                flipAll()
-            } else if (iterator === 13) {
-                setIterator(0)
             }
-            else {
-                setIterator(iterator + 1)
+            if (iterator === 12){
+                flipAll()
+            }
+            setIterator(iterator + 1)
+
+            if (iterator === 13) {
+                setIterator(0)
             }
         }, 2000)
 
