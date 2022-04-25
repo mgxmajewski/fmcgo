@@ -50,12 +50,12 @@
 }
 
 .price-tag {
-    width: 37vw;
+    width: 22vw;
 }
 
 @media (min-width: 900px) {
     .price-tag {
-         width: 7vw;
+         width: 10vw;
     }
 }
 

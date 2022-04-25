@@ -138,6 +138,7 @@ textarea {
 
 body {
     font-family: "Satoshi", sans-serif;
+    font-display: swap;
     color: black;
     overflow-x: hidden;
     --section-tagline-size-desktop: 2.8vw;
