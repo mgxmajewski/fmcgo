@@ -23,24 +23,28 @@ const RadicalDrawersRow = () => {
                     <CoffeeBeanIcon className={bean}/>
                 </div>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatisGradient
                 cubeColor='orange'
                 fontColor='black'
             >
                 <FmcgoTagIcon className={fmcgoTag}/>
             </DrawerCuboidStatisGradient>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <BottleIcon className={bottle}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <PriceTag142 className={priceTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
@@ -51,24 +55,28 @@ const RadicalDrawersRow = () => {
                     <CoffeeBeanIcon className={bean}/>
                 </div>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <FmcgoTagIcon className={fmcgoTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <PriceTag566 className={priceTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <BottleIcon className={bottle}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
@@ -79,24 +87,28 @@ const RadicalDrawersRow = () => {
                     <CoffeeBeanIcon className={bean}/>
                 </div>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatisGradient
                 cubeColor='orange'
                 fontColor='black'
             >
                 <FmcgoTagIcon className={fmcgoTag}/>
             </DrawerCuboidStatisGradient>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <BottleIcon className={bottle}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <PriceTag142 className={priceTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
@@ -107,18 +119,21 @@ const RadicalDrawersRow = () => {
                     <CoffeeBeanIcon className={bean}/>
                 </div>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <FmcgoTagIcon className={fmcgoTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
             >
                 <PriceTag566 className={priceTag}/>
             </DrawerCuboidStatic>
+
             <DrawerCuboidStatic
                 cubeColor='white'
                 fontColor='black'
