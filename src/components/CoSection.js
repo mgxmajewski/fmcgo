@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
 import CoSlider from "./CoSlider";
@@ -20,23 +20,24 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
     const [isRunningTen, setIsRunningTen] = useState('paused')
 
     const flipStart = () => null
-    const flipOne = () => setIsRunningOne(isRunningOne === 'paused' ? 'running' : 'paused')
-    const flipTwo = () => setIsRunningTwo(isRunningTwo === 'paused' ? 'running' : 'paused')
-    const flipThree = () => setIsRunningThree(isRunningThree === 'paused' ? 'running' : 'paused')
-    const flipFour = () => setIsRunningFour(isRunningFour === 'paused' ? 'running' : 'paused')
-    const flipFive = () => setIsRunningFive(isRunningFive === 'paused' ? 'running' : 'paused')
-    const flipSix = () => setIsRunningSix(isRunningSix === 'paused' ? 'running' : 'paused')
-    const flipSeven = () => setIsRunningSeven(isRunningSeven === 'paused' ? 'running' : 'paused')
-    const flipEight = () => setIsRunningEight(isRunningEight === 'paused' ? 'running' : 'paused')
-    const flipNine = () => setIsRunningNine(isRunningNine === 'paused' ? 'running' : 'paused')
-    const flipTen = () => setIsRunningTen(isRunningTen === 'paused' ? 'running' : 'paused')
+    const flipOne = useCallback(() => {setIsRunningOne(isRunningOne === 'paused' ? 'running' : 'paused')},[isRunningOne])
+    const flipTwo = useCallback(() => {setIsRunningTwo(isRunningTwo === 'paused' ? 'running' : 'paused')     },[isRunningTwo])
+    const flipThree = useCallback(() =>{ setIsRunningThree(isRunningThree === 'paused' ? 'running' : 'paused') },[isRunningThree])
+    const flipFour = useCallback(() => {setIsRunningFour(isRunningFour === 'paused' ? 'running' : 'paused')   },[isRunningFour])
+    const flipFive = useCallback(() => {setIsRunningFive(isRunningFive === 'paused' ? 'running' : 'paused')   },[isRunningFive])
+    const flipSix = useCallback(() =>{ setIsRunningSix(isRunningSix === 'paused' ? 'running' : 'paused')     },[isRunningSix])
+    const flipSeven = useCallback(() => {setIsRunningSeven(isRunningSeven === 'paused' ? 'running' : 'paused') },[isRunningSeven])
+    const flipEight = useCallback(() => {setIsRunningEight(isRunningEight === 'paused' ? 'running' : 'paused') },[isRunningEight])
+    const flipNine = useCallback(() =>{ setIsRunningNine(isRunningNine === 'paused' ? 'running' : 'paused')   },[isRunningNine])
+    const flipTen = useCallback(() => {setIsRunningTen(isRunningTen === 'paused' ? 'running' : 'paused')}, [isRunningTen])
     const flipFinish = () => null
 
+    const createIntervalsArray = () => [flipStart, flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipFinish, flipFinish, flipFinish, flipFinish]
 
-    const intervalsArray = [flipStart, flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipFinish, flipFinish, flipFinish, flipFinish]
+    const intervalsArray = useMemo(createIntervalsArray,[flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen])
 
 
-    const flipAll = () => {
+    const flipAll = useCallback(() => {
         flipOne()
         flipTwo()
         flipThree()
@@ -47,7 +48,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
         flipEight()
         flipNine()
         flipTen()
-    }
+    },[flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]);
 
     // useEffect(() => {
     //     flipOne()
@@ -72,6 +73,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
             }
             if (iterator === 12){
                 flipAll()
+                setIterator(0)
             }
             setIterator(iterator + 1)
 
@@ -81,7 +83,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
         }, 2000)
 
         return () => clearTimeout(interval)
-    }, [iterator])
+    }, [iterator, flipAll, intervalsArray])
 
 
     //
