@@ -2,8 +2,8 @@ import React from 'react';
 import DrawerCuboidStatic from "./Drawers/DrawerCuboidStatic";
 import BottleIcon from "../assets/bottle.svg"
 import CoffeeBeanIcon from "../assets/coffee-bean.svg"
-import PriceTag142 from "../assets/one-four-two.svg"
-import PriceTag566 from "../assets/five-six-six.svg"
+import PriceTag142 from "../assets/onefourtwo.svg"
+import PriceTag566 from "../assets/fivesixsix.svg"
 import FmcgoTagIcon from "../assets/fmcgotag.svg"
 import {bean, beanContainer, bottle, drawersBanner, fmcgoTag, priceTag} from "../styles/radical-drawers-row.module.css"
 import DrawerCuboidStatisGradient from "./Drawers/DrawerCuboidStatisGradient";
