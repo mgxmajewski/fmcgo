@@ -107,6 +107,8 @@ export const DefaultDrawerDimensionsProvider = styled.div`
 //     --cube-depth: 4vw;
 //   }
 // `;
+//   --drawer-animation-delay: ${({drawerDelay}) => drawerDelay};
+//   --drawer-animation-delay: ${({drawerDelay}) => drawerDelay};
 
 export const DrawerContainer = styled.div`
   --cube-width: ${({brand}) => handleCustomWidthMobile(brand)};
@@ -114,6 +116,9 @@ export const DrawerContainer = styled.div`
   --cube-depth: ${({section}) => handleCustomDepthMobile(section)};
   --cube-color: ${({cubeColor}) => cubeColor};
   --font-color: ${({fontColor}) => fontColor};
+  //--drawer-animation-delay: 4s;
+  --drawer-animation-delay: ${({drawerDelay}) => drawerDelay};
+  --is-animation-running: ${({pause}) => pause};
 
   @media screen and (min-width: 900px) {
     --cube-width: ${({brand}) => handleCustomWidthDesktop(brand)};
@@ -179,12 +184,15 @@ export const Side = styled.div`
   }
 
   &.front-z-animation {
-    animation: moveFront 2s infinite ease-in-out alternate;
     -webkit-animation-name: moveFront;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
+    -webkit-animation-delay: var(--drawer-animation-delay);
+    animation: moveFront 2s infinite ease-in-out alternate;
+    animation-delay: var(--drawer-animation-delay);
+    animation-play-state: var(--is-animation-running);
   }
 
 
@@ -198,7 +206,10 @@ export const Side = styled.div`
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
+    -webkit-animation-delay: var(--drawer-animation-delay);
     animation: moveRightSide 2s infinite ease-in-out alternate;
+    animation-delay: var(--drawer-animation-delay);
+    animation-play-state: var(--is-animation-running);
   }
 
 
@@ -212,36 +223,39 @@ export const Side = styled.div`
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
+    -webkit-animation-delay: var(--drawer-animation-delay);
     animation: moveLeftSide 2s infinite ease-in-out alternate;
+    animation-delay: var(--drawer-animation-delay);
+    animation-play-state: var(--is-animation-running);
   }
 
   @keyframes moveFront {
     from {
-      transform: translateZ(calc(var(--cube-depth)));
+      transform: translateZ(0);
     }
     to {
-      transform: translateZ(0);
+      transform: translateZ(calc(var(--cube-depth)));
     }
   }
 
   @keyframes moveLeftSide {
     from {
       transform: rotateY(-90deg) translateX(0);
-      width: calc(var(--cube-depth));
+      width: 0;
     }
     to {
       transform: rotateY(-90deg) translateX(0);
-      width: 0;
+      width: calc(var(--cube-depth));
     }
   }
 
   @keyframes moveRightSide {
     from {
-      width: var(--cube-depth);
+      width: 0;
       transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
     to {
-      width: 0;
+      width: var(--cube-depth);
       transform: rotateY(-90deg) translateZ(calc(var(--cube-width) * -1)) translateX(0);
     }
   }
@@ -253,7 +267,7 @@ export const FrontSide = styled(Side)`
 `
 
 export const FrontSideWithHover = styled(FrontSide)`
-  
+
   @media screen and (min-width: 900px) {
     &:hover > * {
       //width: 1.2vw;
