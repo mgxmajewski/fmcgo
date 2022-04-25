@@ -2,6 +2,8 @@ import React from 'react';
 import DrawerCuboidStatic from "./Drawers/DrawerCuboidStatic";
 import BottleIcon from "../assets/bottle.svg"
 import CoffeeBeanIcon from "../assets/coffee-bean.svg"
+import PriceTag142 from "../assets/one-four-two.svg"
+import PriceTag566 from "../assets/five-six-six.svg"
 import FmcgoTagIcon from "../assets/fmcgotag.svg"
 import {bean, beanContainer, bottle, drawersBanner, fmcgoTag, priceTag} from "../styles/radical-drawers-row.module.css"
 import DrawerCuboidStatisGradient from "./Drawers/DrawerCuboidStatisGradient";
@@ -37,7 +39,7 @@ const RadicalDrawersRow = () => {
                 cubeColor='white'
                 fontColor='black'
             >
-                <span className={priceTag}>142<sup><u>99</u></sup></span>
+                <PriceTag142 className={priceTag}/>
             </DrawerCuboidStatic>
             <DrawerCuboidStatic
                 cubeColor='white'
@@ -59,7 +61,7 @@ const RadicalDrawersRow = () => {
                 cubeColor='white'
                 fontColor='black'
             >
-                <span className={priceTag}>566<sup><u>60</u></sup></span>
+                <PriceTag566 className={priceTag}/>
             </DrawerCuboidStatic>
             <DrawerCuboidStatic
                 cubeColor='white'
@@ -93,7 +95,7 @@ const RadicalDrawersRow = () => {
                 cubeColor='white'
                 fontColor='black'
             >
-                <span className={priceTag}>142<sup><u>99</u></sup></span>
+                <PriceTag142 className={priceTag}/>
             </DrawerCuboidStatic>
             <DrawerCuboidStatic
                 cubeColor='white'
@@ -115,7 +117,7 @@ const RadicalDrawersRow = () => {
                 cubeColor='white'
                 fontColor='black'
             >
-                <span className={priceTag}>566<sup><u>60</u></sup></span>
+                <PriceTag566 className={priceTag}/>
             </DrawerCuboidStatic>
             <DrawerCuboidStatic
                 cubeColor='white'
