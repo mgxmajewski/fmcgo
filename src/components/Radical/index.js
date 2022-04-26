@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import MouseIcon from '../../assets/mouse-icon.svg'
 import RadicalDrawersRow from "../RadicalDrawersRow";
 import {
@@ -12,20 +12,17 @@ import {
     SocialIcons,
     SocialMediaIconBox
 } from "./RadicalElements";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Index = ({areSocialIconsVisible, radicalRef}) => {
 
     return (
         <RadicalSection ref={radicalRef} id="radical-section">
-            <RadicalIcons
-            >
-                <MouseGo
-                    isvisible={areSocialIconsVisible}>
-                    <MouseIconDiv><MouseIcon/></MouseIconDiv>
-                    go
-                </MouseGo>
+            <RadicalIcons>
+                    <MouseGo isvisible={areSocialIconsVisible}>
+                        <MouseIconDiv><MouseIcon/></MouseIconDiv>
+                        go
+                    </MouseGo>
                 <SocialIcons isvisible={areSocialIconsVisible}>
                     <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer"
                        style={{textDecoration: "none"}}>
