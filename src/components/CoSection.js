@@ -19,23 +19,69 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
     const [isRunningNine, setIsRunningNine] = useState('paused')
     const [isRunningTen, setIsRunningTen] = useState('paused')
 
-    const flipStart = () => null
-    const flipOne = useCallback(() => {setIsRunningOne(isRunningOne === 'paused' ? 'running' : 'paused')},[isRunningOne])
-    const flipTwo = useCallback(() => {setIsRunningTwo(isRunningTwo === 'paused' ? 'running' : 'paused')     },[isRunningTwo])
-    const flipThree = useCallback(() =>{ setIsRunningThree(isRunningThree === 'paused' ? 'running' : 'paused') },[isRunningThree])
-    const flipFour = useCallback(() => {setIsRunningFour(isRunningFour === 'paused' ? 'running' : 'paused')   },[isRunningFour])
-    const flipFive = useCallback(() => {setIsRunningFive(isRunningFive === 'paused' ? 'running' : 'paused')   },[isRunningFive])
-    const flipSix = useCallback(() =>{ setIsRunningSix(isRunningSix === 'paused' ? 'running' : 'paused')     },[isRunningSix])
-    const flipSeven = useCallback(() => {setIsRunningSeven(isRunningSeven === 'paused' ? 'running' : 'paused') },[isRunningSeven])
-    const flipEight = useCallback(() => {setIsRunningEight(isRunningEight === 'paused' ? 'running' : 'paused') },[isRunningEight])
-    const flipNine = useCallback(() =>{ setIsRunningNine(isRunningNine === 'paused' ? 'running' : 'paused')   },[isRunningNine])
-    const flipTen = useCallback(() => {setIsRunningTen(isRunningTen === 'paused' ? 'running' : 'paused')}, [isRunningTen])
-    const flipFinish = () => null
+    const flipBlankFrame = () => null
 
-    const createIntervalsArray = () => [flipStart, flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipFinish, flipFinish, flipFinish, flipFinish]
+    const flipOne = useCallback(() => {
+        setIsRunningOne(isRunningOne === 'paused' ? 'running' : 'paused')
+    }, [isRunningOne])
 
-    const intervalsArray = useMemo(createIntervalsArray,[flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen])
+    const flipTwo = useCallback(() => {
+        setIsRunningTwo(isRunningTwo === 'paused' ? 'running' : 'paused')
+    }, [isRunningTwo])
 
+    const flipThree = useCallback(() => {
+        setIsRunningThree(isRunningThree === 'paused' ? 'running' : 'paused')
+    }, [isRunningThree])
+
+    const flipFour = useCallback(() => {
+        setIsRunningFour(isRunningFour === 'paused' ? 'running' : 'paused')
+    }, [isRunningFour])
+
+    const flipFive = useCallback(() => {
+        setIsRunningFive(isRunningFive === 'paused' ? 'running' : 'paused')
+    }, [isRunningFive])
+
+    const flipSix = useCallback(() => {
+        setIsRunningSix(isRunningSix === 'paused' ? 'running' : 'paused')
+    }, [isRunningSix])
+
+    const flipSeven = useCallback(() => {
+        setIsRunningSeven(isRunningSeven === 'paused' ? 'running' : 'paused')
+    }, [isRunningSeven])
+
+    const flipEight = useCallback(() => {
+        setIsRunningEight(isRunningEight === 'paused' ? 'running' : 'paused')
+    }, [isRunningEight])
+
+    const flipNine = useCallback(() => {
+        setIsRunningNine(isRunningNine === 'paused' ? 'running' : 'paused')
+    }, [isRunningNine])
+
+    const flipTen = useCallback(() => {
+        setIsRunningTen(isRunningTen === 'paused' ? 'running' : 'paused')
+    }, [isRunningTen])
+
+    const createIntervalsArray = () => [
+        flipBlankFrame,
+        flipOne,
+        flipTwo,
+        flipThree,
+        flipFour,
+        flipFive,
+        flipSix,
+        flipSeven,
+        flipEight,
+        flipNine,
+        flipTen,
+        flipBlankFrame,
+        flipBlankFrame
+    ]
+
+    const intervalsArray = useMemo(createIntervalsArray,
+        [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]
+    )
+
+    const initialIteratorValue = 0
 
     const flipAll = useCallback(() => {
         flipOne()
@@ -48,11 +94,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
         flipEight()
         flipNine()
         flipTen()
-    },[flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]);
-
-    // useEffect(() => {
-    //     flipOne()
-    // }, [])
+    }, [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]);
 
     const [iterator, setIterator] = useState(0)
 
@@ -61,105 +103,28 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
         const interval = setInterval(() => {
 
             console.log(iterator)
-            const isInArray = iterator <= intervalsArray.length
+            const isInArray = iterator <= 11
+            console.log(isInArray)
 
             if (isInArray) {
                 intervalsArray[iterator]()
                 intervalsArray[iterator + 1]()
-            }
-
-            if (iterator === 11) {
+            } else {
                 flipAll()
             }
-            if (iterator === 12){
-                flipAll()
-                setIterator(0)
-            }
-            setIterator(iterator + 1)
 
-            if (iterator === 13) {
-                setIterator(0)
-            }
-        }, 2000)
+            setIterator(prevIterator => prevIterator + 1)
 
-        return () => clearTimeout(interval)
+            if (iterator > 12) {
+                setIterator(initialIteratorValue)
+            }
+
+        }, 1000)
+
+        return () => {
+            interval && clearInterval(interval);
+        }
     }, [iterator, flipAll, intervalsArray])
-
-
-    //
-    // setTimeout(() => {
-    //         flipTwo()
-    //     }, 4000)
-    //
-    //     setTimeout(() => {
-    //         flipThree()
-    //     }, 6000)
-    //
-    //     setTimeout(() => {
-    //         flipFour()
-    //     }, 8000)
-    //
-    //     setTimeout(() => {
-    //         flipFive()
-    //     }, 10000)
-    //
-    //     setTimeout(() => {
-    //         flipSix()
-    //     }, 12000)
-    //
-    //     setTimeout(() => {
-    //         flipSeven()
-    //     }, 14000)
-    //
-    //     setTimeout(() => {
-    //         flipEight()
-    //     }, 16000)
-    //
-    //     setTimeout(() => {
-    //         flipNine()
-    //     }, 18000)
-    //
-    //     setTimeout(() => {
-    //         flipTen()
-    //     }, 20000)
-
-
-    //
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         flipThree()
-    //     }, 8000)
-    // }, [])
-    //
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         flipFour()
-    //     }, 10000)
-    // }, [])
-    //
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         flipFive()
-    //     }, 2000)
-    // }, [])
-
-
-    // useEffect(() => {
-    //     let interval
-    //     setTimeout(() => {
-    //         flipTwo()
-    //     }, 8000)
-    //     setTimeout(() => {
-    //         flipOne()
-    //         // interval = setInterval(() => {
-    //         //     flipOne()
-    //         // }, 18000);
-    //     }, 16000)
-    //
-    //     return () => clearInterval(interval);
-    // }, [isRunningTwo])
-
-    // [isRunningOne, isRunningTwo, isRunningThree, isRunningFour, isRunningFive, isRunningSix, isRunningSeven, isRunningEight, isRunningNine, isRunningTen]
 
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
