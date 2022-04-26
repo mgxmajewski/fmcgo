@@ -151,7 +151,7 @@ export const RadicalDrawersContainer = styled.div`
 
 const fadeIn = keyframes`
   from {
-    transform: scale(.25);
+    transform: scale(0);
     opacity: 0;
   }
 
@@ -168,10 +168,11 @@ const fadeOut = keyframes`
   }
 
   to {
-    transform: scale(.25);
+    transform: scale(0);
     opacity: 1;
   }
 `;
+
 
 export const MouseGo = styled.div`
   grid-area: mouse-go;
@@ -190,7 +191,7 @@ export const MouseGo = styled.div`
 
   visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
   animation: ${({isvisible}) => isvisible === 'true' ? fadeIn : fadeOut} .2s linear;
-  transition: visibility .2s linear;
+  transition: all .2s linear;
   //
   //opacity: 0;
   //transition-property: opacity, transform;

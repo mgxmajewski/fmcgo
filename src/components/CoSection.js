@@ -4,9 +4,12 @@ import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.modu
 import CoSlider from "./CoSlider";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
+import {usePageVisibility} from './useVisibilityHook'
 
 
 const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
+
+    const isVisible = usePageVisibility()
 
     const [isRunningOne, setIsRunningOne] = useState('paused')
     const [isRunningTwo, setIsRunningTwo] = useState('paused')
@@ -100,11 +103,13 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
 
     useEffect(() => {
 
-        const interval = setInterval(() => {
+        console.log(isVisible)
+
+        const interval = setTimeout(() => {
 
             console.log(iterator)
             const isInArray = iterator <= 11
-            console.log(isInArray)
+            // console.log(isInArray)
 
             if (isInArray) {
                 intervalsArray[iterator]()
@@ -121,10 +126,16 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
 
         }, 2000)
 
-        return () => {
-            interval && clearInterval(interval);
+        if (!isVisible) {
+            intervalsArray[iterator]()
+            setIterator(initialIteratorValue)
+            clearTimeout(interval)
         }
-    }, [iterator, flipAll, intervalsArray])
+
+        return () => {
+            interval && clearTimeout(interval);
+        }
+    }, [iterator, flipAll, intervalsArray, isVisible])
 
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
@@ -143,93 +154,98 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 campaigns for brands from all categories imaginable. Along this way, we’ve discovered that what really
                 turns us on is adverting that is meant to sell.
             </div>
-            <div
-                data-aos="fade-right"
-                data-aos-once="true"
-                ref={coAboveSliderRef}
-                className={coDrawers}
-            >
-                <DrawerCuboidZAnimation
-                    brand='carrefour'
-                    section='co-section'
-                    drawerDelay='0s'
-                    pause={isRunningOne}
+
+            {isVisible ?
+                <div
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    ref={coAboveSliderRef}
+                    className={coDrawers}
                 >
-                    Carrefour
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='pepsi'
-                    section='co-section'
-                    // drawerDelay='4s'
-                    pause={isRunningTwo}
-                >
-                    Pepsi
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='desperados'
-                    section='co-section'
-                    //drawerDelay='4s'
-                    pause={isRunningThree}
-                >
-                    Desperados
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='heineken'
-                    section='co-section'
-                    //drawerDelay='6s'
-                    pause={isRunningFour}
-                >
-                    Heineken
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='develey'
-                    section='co-section'
-                    //drawerDelay='8s'
-                    pause={isRunningFive}
-                >
-                    Develey
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='costa'
-                    section='co-section'
-                    //drawerDelay='10s'
-                    pause={isRunningSix}
-                >
-                    Costa Coffee
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='tchibo'
-                    section='co-section'
-                    //drawerDelay='12s'
-                    pause={isRunningSeven}
-                >
-                    Tchibo
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='stock'
-                    section='co-section'
-                    //drawerDelay='14s'
-                    pause={isRunningEight}
-                >
-                    Stock
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='sephora'
-                    section='co-section'
-                    //drawerDelay='16s'
-                    pause={isRunningNine}
-                >
-                    Sephora
-                </DrawerCuboidZAnimation>
-                <DrawerCuboidZAnimation
-                    brand='clarins'
-                    section='co-section'
-                    //drawerDelay='18s'
-                    pause={isRunningTen}
-                >
-                    Clarins
-                </DrawerCuboidZAnimation>
-            </div>
+                    <DrawerCuboidZAnimation
+                        brand='carrefour'
+                        section='co-section'
+                        drawerDelay='0s'
+                        pause={isRunningOne}
+                    >
+                        Carrefour
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='pepsi'
+                        section='co-section'
+                        // drawerDelay='4s'
+                        pause={isRunningTwo}
+                    >
+                        Pepsi
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='desperados'
+                        section='co-section'
+                        //drawerDelay='4s'
+                        pause={isRunningThree}
+                    >
+                        Desperados
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='heineken'
+                        section='co-section'
+                        //drawerDelay='6s'
+                        pause={isRunningFour}
+                    >
+                        Heineken
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='develey'
+                        section='co-section'
+                        //drawerDelay='8s'
+                        pause={isRunningFive}
+                    >
+                        Develey
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='costa'
+                        section='co-section'
+                        //drawerDelay='10s'
+                        pause={isRunningSix}
+                    >
+                        Costa Coffee
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='tchibo'
+                        section='co-section'
+                        //drawerDelay='12s'
+                        pause={isRunningSeven}
+                    >
+                        Tchibo
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='stock'
+                        section='co-section'
+                        //drawerDelay='14s'
+                        pause={isRunningEight}
+                    >
+                        Stock
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='sephora'
+                        section='co-section'
+                        //drawerDelay='16s'
+                        pause={isRunningNine}
+                    >
+                        Sephora
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='clarins'
+                        section='co-section'
+                        //drawerDelay='18s'
+                        pause={isRunningTen}
+                    >
+                        Clarins
+                    </DrawerCuboidZAnimation>
+                </div>
+                :
+                <></>
+            }
             <CoSlider coSliderRef={coSliderRef}/>
         </section>
     );
