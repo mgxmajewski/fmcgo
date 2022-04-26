@@ -56,7 +56,8 @@ const IndexPage = ({ref}) => {
         coSliderInView,
         newsSectionInView,
         boardSectionInView,
-        contactSectionInView])
+        contactSectionInView,
+        areSocialIconsVisible])
 
     return (
         <Layout

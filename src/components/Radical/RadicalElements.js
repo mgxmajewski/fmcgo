@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const RadicalSection = styled.section`
   grid-area: radical-section;
@@ -99,10 +99,10 @@ export const RadicalDrawersContainer = styled.div`
 
   grid-area: radical-drawers;
   width: 100vw;
-  
+
   @media screen and (min-width: 900px) {
     padding-top: 0;
-    margin-left: -16.5vw;  
+    margin-left: -16.5vw;
     margin-right: -10vw;
     width: 100vw;
     gap: 3.8vw;
@@ -149,6 +149,30 @@ export const RadicalDrawersContainer = styled.div`
 // animation: ${({isvisible}) => isvisible === 'true' ? fadeInLeft : fadeOutLeft} .4s linear;
 // transition: visibility .4s linear;
 
+const fadeIn = keyframes`
+  from {
+    transform: scale(.25);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(.25);
+    opacity: 1;
+  }
+`;
+
 export const MouseGo = styled.div`
   grid-area: mouse-go;
   justify-self: left;
@@ -162,8 +186,19 @@ export const MouseGo = styled.div`
   //text-shadow: 0 0 #00000000;
   font-size: 6vw;
   font-weight: 900;
-
   //z-index: 9999;
+
+  visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+  animation: ${({isvisible}) => isvisible === 'true' ? fadeIn : fadeOut} .2s linear;
+  transition: visibility .2s linear;
+  //
+  //opacity: 0;
+  //transition-property: opacity, transform;
+  //
+  //&.aos-animate {
+  //  opacity: 1;
+  //  transform: translate3d(0, 0, 0) scale(1);
+  //}
 
   @media screen and (min-width: 900px) {
     font-size: 2.2vw;
@@ -191,6 +226,10 @@ export const SocialIcons = styled.div`
   align-self: center;
   padding-top: 2vw;
   gap: 2vw;
+
+  visibility: ${({isvisible}) => isvisible === 'true' ? 'visible' : 'hidden'};
+  animation: ${({isvisible}) => isvisible === 'true' ? fadeIn : fadeOut} .2s linear;
+  transition: visibility .2s linear;
 
   @media (min-width: 900px) {
     padding-top: 1vw;

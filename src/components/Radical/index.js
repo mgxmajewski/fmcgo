@@ -17,19 +17,16 @@ import "aos/dist/aos.css";
 
 const Index = ({areSocialIconsVisible, radicalRef}) => {
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
-
     return (
         <RadicalSection ref={radicalRef} id="radical-section">
-            <RadicalIcons>
-                <MouseGo isvisible={areSocialIconsVisible}>
+            <RadicalIcons
+            >
+                <MouseGo
+                    isvisible={areSocialIconsVisible}>
                     <MouseIconDiv><MouseIcon/></MouseIconDiv>
                     go
                 </MouseGo>
-                <SocialIcons>
+                <SocialIcons isvisible={areSocialIconsVisible}>
                     <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer"
                        style={{textDecoration: "none"}}>
                         <SocialMediaIconBox isvisible={areSocialIconsVisible}>f</SocialMediaIconBox>
