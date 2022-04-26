@@ -119,7 +119,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 setIterator(initialIteratorValue)
             }
 
-        }, 1000)
+        }, 2000)
 
         return () => {
             interval && clearInterval(interval);

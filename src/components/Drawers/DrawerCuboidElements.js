@@ -185,12 +185,12 @@ export const Side = styled.div`
 
   &.front-z-animation {
     -webkit-animation-name: moveFront;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
     -webkit-animation-delay: var(--drawer-animation-delay);
-    animation: moveFront 1s infinite ease-in-out alternate;
+    animation: moveFront 2s infinite ease-in-out alternate;
     animation-delay: var(--drawer-animation-delay);
     animation-play-state: var(--is-animation-running);
   }
@@ -202,12 +202,12 @@ export const Side = styled.div`
 
   &.right-z-animation {
     -webkit-animation-name: moveRightSide;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
     -webkit-animation-delay: var(--drawer-animation-delay);
-    animation: moveRightSide 1s infinite ease-in-out alternate;
+    animation: moveRightSide 2s infinite ease-in-out alternate;
     animation-delay: var(--drawer-animation-delay);
     animation-play-state: var(--is-animation-running);
   }
@@ -219,12 +219,12 @@ export const Side = styled.div`
 
   &.left-z-animation {
     -webkit-animation-name: moveLeftSide;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
     -webkit-animation-delay: var(--drawer-animation-delay);
-    animation: moveLeftSide 1s infinite ease-in-out alternate;
+    animation: moveLeftSide 2s infinite ease-in-out alternate;
     animation-delay: var(--drawer-animation-delay);
     animation-play-state: var(--is-animation-running);
   }
