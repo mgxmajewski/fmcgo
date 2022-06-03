@@ -1,11 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import DrawerCuboidStaticWithHover from "./Drawers/DrawerCuboidStaticWithHover";
 import SliderArrowLeft from '../assets/slider-arrow-left.svg'
 import SliderArrowRight from '../assets/slider-arrow-right.svg'
 import {StaticImage} from "gatsby-plugin-image";
-import AOS from "aos";
 import "aos/dist/aos.css";
-
 import {
     arrow,
     coSlider,
@@ -22,16 +20,20 @@ import {
 
 const CoSlider = ({data, coSliderRef}) => {
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
 
-    const [sliderState, setSliderState] = useState(true);
+    // const [sliderStateOne, setSliderStateOne] = useState(true);
+    // const [sliderStateTwo, setSliderStateTwo] = useState(false);
+    const [sliderState, setSliderState] = useState('filip');
     const [touchPosition, setTouchPosition] = useState(null)
 
+    // useEffect(() => {
+    //
+    // }, [sliderStateOne, sliderStateTwo, setSliderState])
+
     const toggleSlider = () => {
-        setSliderState(!sliderState);
+        // setSliderStateOne(!sliderStateOne);
+        // setSliderStateTwo(!sliderStateTwo);
+        setSliderState(sliderState === 'filip' ? 'marcel' : 'filip');
     }
 
     const handleKeyDown = (e) => {
@@ -77,22 +79,32 @@ const CoSlider = ({data, coSliderRef}) => {
             onTouchMove={handleTouchMove}
         >
             <div ref={coSliderRef} id="slider-picture" className={sliderPictureContainer}>
-                {sliderState
+                {sliderState === 'filip'
                     ?
                     <StaticImage
+                        data-aos="fade-in" data-aos-duration="4000"
                         className={sliderImage}
                         alt={'Filip Szperl Photo'}
                         src="../images/filip.jpg"
                     />
                     :
                     <StaticImage
+                        data-aos="fade-in" data-aos-duration="4000"
                         className={sliderImage}
                         alt={'Marcel Cegliński Photo'}
                         src="../images/marcel.jpg"
                     />
                 }
+                {/*<SliderImageContainer className={sliderImage} sliderState={false}>*/}
+                {/*    {sliderState &&*/}
+                {/*        <StaticImage*/}
+                {/*        alt={'Filip Szperl Photo'}*/}
+                {/*        src={`../images/marcel.jpg`}*/}
+                {/*        />*/}
+                {/*    }*/}
+                {/*</SliderImageContainer>*/}
             </div>
-            {sliderState
+            {sliderState === 'filip'
                 ? <div className={sliderName}>Filip<sup>Szperl</sup></div>
                 : <div className={sliderName}>Marcel<sup>Cegliński</sup></div>
             }
@@ -132,7 +144,7 @@ const CoSlider = ({data, coSliderRef}) => {
                 </DrawerCuboidStaticWithHover>
             </div>
             <div className={sliderDots}>
-                {sliderState
+                {sliderState === 'filip'
                     ?
                     <>
                         <div
