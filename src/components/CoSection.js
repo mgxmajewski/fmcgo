@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 
 import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
-import CoSlider from "./CoSlider";
+import CoFounders from "./CoFounders";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
@@ -153,7 +153,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
-
+            <CoFounders coSliderRef={coSliderRef}/>
             {isVisible ?
                 <div
                     data-aos="fade-right"
@@ -245,7 +245,6 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 :
                 <></>
             }
-            <CoSlider coSliderRef={coSliderRef}/>
         </section>
     );
 };
