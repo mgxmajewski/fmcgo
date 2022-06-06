@@ -76,7 +76,7 @@ const IndexPage = ({ref}) => {
                 coSliderRef={coSliderRef}
             />
             <BoardSection boardSectionRef={boardSectionRef}/>
-            <NewsSection newsSectionRef={newsSectionRef}/>
+            {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}
             <ContactSection contactSectionRef={contactSectionRef}/>
         </Layout>
     )
