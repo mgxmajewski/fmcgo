@@ -15,11 +15,6 @@ import "aos/dist/aos.css";
 
 const GoHero = ({heroSectionRef}) => {
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
-
     return (
         <section ref={heroSectionRef} className={goHeroSection} id="go-section">
             <div
@@ -38,13 +33,7 @@ const GoHero = ({heroSectionRef}) => {
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                className={fmcgoCopy}>We are FMC_Go – newly established advertising agency specialized in work for FMCG
-                and retail brands.<br/>
-                We are a team of specialists and managers with many years of experience gathered in the biggest
-                international and local agencies.<br/> Our mission is to deliver high-end strategic and creative
-                thinking
-                into everyday advertising for
-                everyday brands.
+                className={fmcgoCopy}>Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, <br/>retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania sprzedaży czerpie <br/>w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji produktu czy usługi. <br/>Advertising nie jest religią, żeby miał się karmić wyłącznie misją i lifestylem.
             </div>
         </section>
     );
