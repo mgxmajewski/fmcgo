@@ -9,6 +9,7 @@
     grid-template-columns: var(--single-column-width-mobile);
     grid-template-rows: auto;
     grid-row-gap: var(--row-gap-mobile);
+    padding-bottom: 7vw;
 }
 
 @media (min-width: 900px) {
@@ -45,7 +46,7 @@
 
 @media (min-width: 900px) {
     .manifest-point-bullet {
-         font-size: calc(1.8 * var(--copy-font-size-desktop));
+        font-size: calc(1.8 * var(--copy-font-size-desktop));
         padding-top: 1.4vw;
     }
 }
@@ -53,7 +54,7 @@
 .manifest-point-copy {
     color: white;
     /*font-size: 4vw;*/
-      font-size: var(--copy-font-size-mobile);
+    font-size: var(--copy-font-size-mobile);
 
     font-weight: 300;
 }
