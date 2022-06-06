@@ -144,15 +144,14 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 data-aos-once="true"
                 className={coTagline}
             >
-                Filip<sup>&</sup>Marcel<sup>&</sup>Co<sup>Go</sup></div>
+                Go with experience!
+            </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
                 className={coCopy}>
-                <b>There’s 40 years of experience in advertising between us.</b> We’ve served as heads of departments,
-                creative directors, senior creatives. For last 7 years we’ve been working together on hundreds of
-                campaigns for brands from all categories imaginable. Along this way, we’ve discovered that what really
-                turns us on is adverting that is meant to sell.
+                Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
+                się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
 
             {isVisible ?
