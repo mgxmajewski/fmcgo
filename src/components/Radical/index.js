@@ -13,6 +13,7 @@ import {
     SocialMediaIconBox
 } from "./RadicalElements";
 import "aos/dist/aos.css";
+import RadicalManifest from "../RadicalManifest";
 
 const Index = ({areSocialIconsVisible, radicalRef}) => {
 
@@ -50,7 +51,7 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                 data-aos-once="true">
                 <RadicalDrawersRow/>
             </RadicalDrawersContainer>
-
+            <RadicalManifest/>
         </RadicalSection>
     );
 };
