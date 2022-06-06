@@ -9,7 +9,6 @@
     grid-template-columns: var(--single-column-width-mobile);
     grid-template-rows: auto;
     grid-row-gap: var(--row-gap-mobile);
-    padding-top: 3vw;
     padding-bottom: 7vw;
 }
 
@@ -22,6 +21,7 @@
         grid-template-rows: auto auto;
         grid-column-gap: 2.8vw;
         grid-row-gap: 6.4vw;
+        padding-top: 3vw;
         padding-bottom: 0;
     }
 }
