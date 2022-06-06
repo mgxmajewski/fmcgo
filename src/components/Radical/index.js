@@ -37,22 +37,20 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                 data-aos="fade-down"
                 data-aos-once="true"
             >
-                #Radical Advertising
+                Go #Radical Advertising
             </RadicalTagline>
             <RadicalCopy
                 data-aos="fade-up"
                 data-aos-once="true"
             >
-                If a creative idea can’t be fit into an e&#8209;commerce banner, it’s not advertising.<br/>
-                We are here to sell your products not just our services. We love our pack-shots and price-tags, and
-                we’ll never hesitate <br/>
-                to use them. We believe that the only true measurement for successful advertising is sales.
+                Rozumiemy i lubimy produkty, sklepy i usługi, które reklamujemy. Potrafimy wgryźć się w dane, etnografie, badania, <br/>by znaleźć insighty o największym potencjale biznesowym i formułować adekwatne brand purpose. <br/>Ale równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena, promocja, sezon.
             </RadicalCopy>
             <RadicalDrawersContainer
                 data-aos="fade-right"
                 data-aos-once="true">
                 <RadicalDrawersRow/>
             </RadicalDrawersContainer>
+
         </RadicalSection>
     );
 };
