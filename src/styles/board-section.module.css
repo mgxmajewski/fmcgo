@@ -41,6 +41,12 @@
     align-self: end;
 }
 
+.board-tagline > span {
+    background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 900px) {
     .board-tagline {
         font-size: var(--section-tagline-size-desktop);
@@ -115,10 +121,10 @@
         position: absolute;
         background: rgb(139, 37, 86);
         background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
+        background-color: chocolate;
         height: 4vw;
         width: 21.8vw;
         z-index: -2000000;
-        background-color: chocolate;
         top: -1vw;
     }
 

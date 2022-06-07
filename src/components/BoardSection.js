@@ -8,16 +8,10 @@ import {
     boardTagline
 } from '../styles/board-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 
 const BoardSection = ({boardSectionRef}) => {
-
-    // useEffect(() => {
-    //     AOS.init();
-    //     AOS.refresh();
-    // }, [])
 
     return (
         <section ref={boardSectionRef} className={boardSection} id="board-section">
@@ -26,7 +20,7 @@ const BoardSection = ({boardSectionRef}) => {
                 data-aos-once="true"
                 className={boardTagline}
             >
-                Go Network!
+                Go <span>Network!</span>
             </div>
             <div
                 data-aos="fade-up"
