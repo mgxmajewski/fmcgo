@@ -12,7 +12,8 @@ import {
 
 const CoFounders = ({data, coSliderRef}) => {
 
-    return (<>
+    return (
+        <>
             <div className={coFoundersContainer}>
                 <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={coFounder}>
                     <div className={founderPictureContainer}>
@@ -53,7 +54,7 @@ const CoFounders = ({data, coSliderRef}) => {
                         Autor setek kampanii reklamowych <br/>
                         dla najpopularniejszych produktów i usług. <br/>
                         Twórca strategii komunikacji, platform kreatywnych <br/>
-                        i innowacji produktowych
+                        i innowacji produktowych.
                     </div>
                 </div>
             </div>
