@@ -5,7 +5,6 @@ import CoFounders from "./CoFounders";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
-import {founderImage} from "../styles/co-founders.module.css";
 
 
 const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
@@ -147,12 +146,12 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 className={coTagline}
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
-                <StaticImage
-                            class={plusStar}
-                            data-aos="fade-in" data-aos-duration="4000"
-                            alt={'star graphic'}
-                            src="../images/starplus.png"
-                        />
+                    <StaticImage
+                        class={plusStar}
+                        data-aos="fade-in" data-aos-duration="4000"
+                        alt={'star graphic'}
+                        src="../images/starplus.png"
+                    />
             </div>
             <div
                 data-aos="fade-up"

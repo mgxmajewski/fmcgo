@@ -18,6 +18,7 @@ const CoFounders = ({data, coSliderRef}) => {
                     <div className={founderPictureContainer}>
                         <StaticImage
                             className={founderImage}
+                            objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Marcel Cegliński Photo'}
                             src="../images/marcel.jpg"
@@ -27,9 +28,9 @@ const CoFounders = ({data, coSliderRef}) => {
                     <div className={founderCopy}>
                         Designer, art director z 12-letnim doświadczeniem<br/>
                         w największych agencjach reklamowych.<br/>
-                        Autor setek kampanii wizerunkowych i sprzedażowych.<br/>
-                        Zrealizował dziesiątki projektów kreatywnych dedykowanych<br/>
-                        kanałom społecznościowym. Twórca systemów identyfikacji<br/>
+                        Autor setek kampanii wizerunkowych i sprzedażowych. <br/>
+                        Zrealizował dziesiątki projektów kreatywnych dedykowanych <br/>
+                        kanałom społecznościowym. Twórca systemów identyfikacji <br/>
                         wizualnej, architektury UX/UI, ekspert design-to-print <br/>
                         i design-to-digital.
                     </div>
@@ -38,6 +39,7 @@ const CoFounders = ({data, coSliderRef}) => {
                     <div className={founderPictureContainer}>
                         <StaticImage
                             className={founderImage}
+                            objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Filip Szperl Photo'}
                             src="../images/filip.jpg"
