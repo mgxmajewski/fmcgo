@@ -34,6 +34,8 @@
 
 .co-tagline {
     grid-area: co-tagline;
+    display: grid;
+    align-items: end;
     font-weight: 900;
     color: black;
     justify-self: left;
@@ -41,12 +43,24 @@
     line-height: 1.05;
     padding-top: 1vw;
     font-size: var(--section-tagline-size-mobile);
+    grid-template-columns: auto auto;
 }
 
 @media (min-width: 900px) {
     .co-tagline {
         padding-top: 1vw;
         font-size: var(--section-tagline-size-desktop);
+    }
+}
+
+.plus-star {
+    margin-left: -5vw;
+}
+
+@media (min-width: 900px) {
+    .plus-star {
+        margin-top: -5vw;
+        margin-left: 20vw;
     }
 }
 

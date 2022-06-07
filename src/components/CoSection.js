@@ -1,10 +1,11 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
-
-import {coCopy, coDrawers, coSection, coTagline} from '../styles/co-section.module.css'
+import {StaticImage} from "gatsby-plugin-image";
+import {coCopy, coDrawers, coSection, coTagline, plusStar} from '../styles/co-section.module.css'
 import CoFounders from "./CoFounders";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
+import {founderImage} from "../styles/co-founders.module.css";
 
 
 const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
@@ -139,12 +140,19 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
 
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
+            <CoFounders coSliderRef={coSliderRef}/>
             <div
                 data-aos="fade-down"
                 data-aos-once="true"
                 className={coTagline}
             >
-                Go with experience!
+                <div>Go&nbsp;with&nbsp;experience!</div>
+                <StaticImage
+                            class={plusStar}
+                            data-aos="fade-in" data-aos-duration="4000"
+                            alt={'star graphic'}
+                            src="../images/starplus.png"
+                        />
             </div>
             <div
                 data-aos="fade-up"
@@ -153,7 +161,6 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
-            <CoFounders coSliderRef={coSliderRef}/>
             {isVisible ?
                 <div
                     data-aos="fade-right"
