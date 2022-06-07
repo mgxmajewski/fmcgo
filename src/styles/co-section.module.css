@@ -48,6 +48,7 @@
 
 @media (min-width: 900px) {
     .co-tagline {
+        grid-template-columns: auto 35vw;
         padding-top: 1vw;
         font-size: var(--section-tagline-size-desktop);
     }
