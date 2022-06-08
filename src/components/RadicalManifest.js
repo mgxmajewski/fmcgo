@@ -34,8 +34,7 @@ const RadicalManifest = () => {
             </div>
             <div data-aos="fade-up" data-aos-once="true" className={manifestPoint}>
                 <div className={manifestPointBullet}>Radykalna Szczerość</div>
-                <p className={manifestPointCopy}>
-                    Prowadzimy nieustanny monitoring efektywności prowadzonych<br/>
+                <p className={manifestPointCopy}>Prowadzimy nieustanny monitoring efektywności prowadzonych<br/>
                     działań, na bierząco reagujemy na „zwrot z rynku” i potrafimy<br/>
                     uczciwie ocenić własną pracę.
                 </p>
