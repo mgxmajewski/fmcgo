@@ -5,7 +5,7 @@ import GoHero from "../components/GoHero";
 import CoSection from "../components/CoSection";
 import BoardSection from "../components/BoardSection";
 import NewsSection from "../components/NewsSection";
-import ContactSection from "../components/ContactSection";
+import GoContactSection from "../components/GoContactSection";
 import Radical from "../components/Radical"
 import {useInView} from "react-intersection-observer";
 
@@ -77,7 +77,7 @@ const IndexPage = ({ref}) => {
             />
             <BoardSection boardSectionRef={boardSectionRef}/>
             {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}
-            <ContactSection contactSectionRef={contactSectionRef}/>
+            <GoContactSection contactSectionRef={contactSectionRef}/>
         </Layout>
     )
 }
