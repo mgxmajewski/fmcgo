@@ -74,8 +74,8 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   font-size: var(--nav-font-size);
   display: grid;
-  grid-template-columns: 1.8em 4em 2em 3.4em 4.5em 3em;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1.8em 8.1em 4.1em 5em 4em 3.6em 3.2em;
+  grid-template-rows: auto;
   grid-column-gap: 2vw;
   //height: 80px;
 `
