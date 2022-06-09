@@ -41,7 +41,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 to="radical-section"
                                 onClick={toggle}
                             >
-                                Radical
+                                RadicalAdvertising
                             </SideBarLink>
                             <SideBarLink
                                 activeClass="active"
@@ -52,7 +52,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 to="co-section"
                                 onClick={toggle}
                             >
-                                Co
+                                Founders
                             </SideBarLink>
                             <SideBarLink
                                 activeClass="active"
@@ -63,7 +63,18 @@ const SideBar = ({isOpen, toggle}) => {
                                 to="board-section"
                                 onClick={toggle}
                             >
-                                Board
+                                Experience
+                            </SideBarLink>
+                             <SideBarLink
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                // offset={-80}
+                                to="board-section"
+                                onClick={toggle}
+                            >
+                                Network
                             </SideBarLink>
                             <SideBarLink
                                 activeClass="active"
@@ -74,7 +85,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 to="contact-section"
                                 onClick={toggle}
                             >
-                                Contact
+                                Let's Go
                             </SideBarLink>
                             <LangaugeToggle
                                 isbright={'true'}

@@ -54,9 +54,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 exact='true'
                                 to="radical-section"
                                 isbright={isNavFontBright}
-                                title="Radical"
+                                title="RadicalAdvertising"
                             >
-                                Radical
+                                RadicalAdvertising
                             </NavLinks>
                             <NavLinks
                                 // data-aos="fade-down"
@@ -73,9 +73,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 exact='true'
                                 to="co-section"
                                 isbright={isNavFontBright}
-                                title="Co"
+                                title="Founders"
                             >
-                                Co
+                                Founders
                             </NavLinks>
                             <NavLinks
                                 // data-aos="fade-down"
@@ -92,9 +92,28 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // exact='true'
                                 to="board-section"
                                 isbright={isNavFontBright}
-                                title="Board"
+                                title="Experience"
                             >
-                                Board
+                                Experience
+                            </NavLinks>
+                            <NavLinks
+                                // data-aos="fade-down"
+                                // data-aos-once="true"
+                                // data-aos-delay="150"
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                // offset={-10}
+                                // offset={getNavBarHeight()}
+                                // exact='true'
+                                to="board-section"
+                                isbright={isNavFontBright}
+                                title="Network"
+                            >
+                                Network
                             </NavLinks>
                             <NavLinks
                                 // data-aos="fade-down"
