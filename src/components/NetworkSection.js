@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
 import {
-    boardCopy,
-    boardPersonContainer,
-    boardPersonPictureLeft,
-    boardPictures,
-    boardSection,
-    boardTagline
-} from '../styles/board-section.module.css'
+    networkCopy,
+    networkPersonContainer,
+    networkPersonPictureLeft,
+    networkPictures,
+    networkSection,
+    networkTagline
+} from '../styles/network-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
 
@@ -14,29 +14,29 @@ import "aos/dist/aos.css";
 const NetworkSection = ({boardSectionRef}) => {
 
     return (
-        <section ref={boardSectionRef} className={boardSection} id="board-section">
+        <section ref={boardSectionRef} className={networkSection} id="network-section">
             <div
                 data-aos="fade-down"
                 data-aos-once="true"
-                className={boardTagline}
+                className={networkTagline}
             >
                 Go <span>Network!</span>
             </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                className={boardCopy}>
+                className={networkCopy}>
                 Rekomendacje strategiczne i rozwiązania kreatywne tworzymy w oparciu o unikalną na rynku wiedzę i
                 doświadczenie naszych ekspertów - strategów, badaczy, semiotyków, mediowców, specjalistów od komunikacji
                 digital. W gronie naszych ekspertów są zarówno właściciele topowych firm badawczych i strategicznych,
                 jak i profesorowie i wykładowcy najlepszych uniwersytetów.
             </div>
-            <div className={boardPictures}>
+            <div className={networkPictures}>
                 <div
                     data-aos="fade-right"
                     data-aos-once="true"
-                    className={boardPersonContainer}>
-                    <div className={boardPersonPictureLeft}>
+                    className={networkPersonContainer}>
+                    <div className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Ana Maria Szutowicz Photo'}
                             src="../images/anamariaszutowicz.png"
@@ -54,11 +54,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         uzależnionych od fidbeku i lajków badaczy.
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
                             src="../images/kaludynakaminska.png"
@@ -74,11 +74,11 @@ const NetworkSection = ({boardSectionRef}) => {
 
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
                             src="../images/henrykklawe.png"
@@ -99,8 +99,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 <div
                     data-aos="fade-right"
                     data-aos-once="true"
-                    className={boardPersonContainer}>
-                    <div className={boardPersonPictureLeft}>
+                    className={networkPersonContainer}>
+                    <div className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={''}
                             src="../images/bartoszbalewski.png"
@@ -117,11 +117,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         Wschodzie. Swoje projekty prowadzi zgodnie z założeniami metodologii Design Thinking.
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
                             src="../images/miloszjacyna.png"
@@ -136,11 +136,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         <b>Miłosz Jacyna<br/>Social...</b><br/>
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Łukasz Kepiński Photo'}
                             src="../images/lukaszkepinski.png"
@@ -159,8 +159,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 <div
                     data-aos="fade-right"
                     data-aos-once="true"
-                    className={boardPersonContainer}>
-                    <div className={boardPersonPictureLeft}>
+                    className={networkPersonContainer}>
+                    <div className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Professor Mirosław Filiciak Photo'}
                             src="../images/miroslawfiliciak.png"
@@ -179,11 +179,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         Współtwórca techno-kulturowego projektu Kultura 2.0.
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Kacper Kaźmierowicz Photo'}
                             src="../images/kacperkazmierowicz.png"
@@ -200,11 +200,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         zwolennikiem kampanii performanceowych, czyli tych nastawionych na efekt.
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Wojciech Morawski Photo'}
                             src="../images/wojciechmorawski.png"
@@ -222,11 +222,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         SEMcamp University czy Marketing Masters).
                     </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Daria Afeltowicz Photo'}
                             src="../images/dariaafeltowicz.png"
@@ -243,11 +243,11 @@ const NetworkSection = ({boardSectionRef}) => {
                         wspierając firmy w budowaniu i rozwijaniu ich marek. Od 2013 roku pracowała jako specjalista
                         badań wspierając wiedzą na temat </p>
                 </div>
-                <div className={boardPersonContainer}>
+                <div className={networkPersonContainer}>
                     <div
                         data-aos="fade-left"
                         data-aos-once="true"
-                        className={boardPersonPictureLeft}>
+                        className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Karolina Semiotyczka Photo'}
                             src="../images/karolinasemiotyczka.png"
