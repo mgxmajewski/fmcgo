@@ -11,7 +11,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
 
 
-const BoardSection = ({boardSectionRef}) => {
+const NetworkSection = ({boardSectionRef}) => {
 
     return (
         <section ref={boardSectionRef} className={boardSection} id="board-section">
@@ -268,4 +268,4 @@ const BoardSection = ({boardSectionRef}) => {
     );
 };
 
-export default BoardSection;
+export default NetworkSection;

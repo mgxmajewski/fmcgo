@@ -3,7 +3,7 @@ import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/GoHero";
 import CoSection from "../components/CoSection";
-import BoardSection from "../components/BoardSection";
+import NetworkSection from "../components/NetworkSection";
 import NewsSection from "../components/NewsSection";
 import GoContactSection from "../components/GoContactSection";
 import Radical from "../components/Radical"
@@ -75,7 +75,7 @@ const IndexPage = ({ref}) => {
                 coAboveSliderRef={coAboveSliderRef}
                 coSliderRef={coSliderRef}
             />
-            <BoardSection boardSectionRef={boardSectionRef}/>
+            <NetworkSection boardSectionRef={boardSectionRef}/>
             {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}
             <GoContactSection contactSectionRef={contactSectionRef}/>
         </Layout>
