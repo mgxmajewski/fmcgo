@@ -5,7 +5,7 @@ import {
     networkPersonPictureLeft,
     networkPictures,
     networkSection,
-    networkTagline
+    networkTagline,
 } from '../styles/network-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
@@ -40,11 +40,6 @@ const NetworkSection = ({boardSectionRef}) => {
                         <StaticImage
                             alt={'Ana Maria Szutowicz Photo'}
                             src="../images/anamariaszutowicz.png"
-                            transformOptions={{
-                                fit: "cover",
-                                // cropFocus: "attention"
-                                // cropFocus: 90
-                            }}
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
