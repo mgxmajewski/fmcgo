@@ -103,11 +103,11 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
 
     useEffect(() => {
 
-        console.log(isVisible)
+        // console.log(isVisible)
 
         const interval = setTimeout(() => {
 
-            console.log(iterator)
+            // console.log(iterator)
             const isInArray = iterator <= 11
             // console.log(isInArray)
 
@@ -147,7 +147,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
                     <StaticImage
-                        class={plusStar}
+                        className={plusStar}
                         data-aos="fade-in" data-aos-duration="4000"
                         alt={'star graphic'}
                         src="../images/starplus.png"
