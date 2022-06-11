@@ -50,7 +50,7 @@ const NetworkSection = ({boardSectionRef}) => {
             </div>
             <div className={networkPictures}>
                 <div
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-once="true"
                     className={networkPersonContainer}>
                     <div className={networkPersonPictureLeft}>
@@ -104,7 +104,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 {isShowMore
                     ? <>
                         <div
-                            data-aos="fade-right"
+                            data-aos="fade-up"
                             data-aos-once="true"
                             className={networkPersonContainer}>
                             <div className={networkPersonPictureLeft}>
@@ -152,7 +152,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             </p>
                         </div>
                         <div
-                            data-aos="fade-right"
+                            data-aos="fade-up"
                             data-aos-once="true"
                             className={networkPersonContainer}>
                             <div className={networkPersonPictureLeft}>
