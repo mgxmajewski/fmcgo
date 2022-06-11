@@ -135,6 +135,9 @@ textarea {
 /* ==========================================================================
    THE END of "Base styles: opinionated defaults"
    ========================================================================== */
+* {
+  outline: 1px solid #f00 !important;
+}
 
 body {
     font-family: "Satoshi", sans-serif;
@@ -163,7 +166,7 @@ body {
 
 .layout {
     scrollbar-gutter: stable both-edges;
-    width: 100%;
+    /*width: 100%;*/
     display: grid;
     /*grid-gap: .5em;*/
     /*grid-row-gap: .5em;*/
