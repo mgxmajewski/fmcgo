@@ -52,7 +52,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -72,7 +72,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -115,7 +115,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -134,7 +134,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -177,7 +177,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -198,7 +198,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -220,7 +220,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
@@ -241,7 +241,7 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
