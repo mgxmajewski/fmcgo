@@ -9,6 +9,7 @@ import {
 } from '../styles/network-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
+import NetworkPlusStub from "./NetworkPlusStub";
 
 
 const NetworkSection = ({boardSectionRef}) => {
@@ -257,8 +258,8 @@ const NetworkSection = ({boardSectionRef}) => {
                         <b>Karolina<br/>Semiotyczka</b><br/> ..l.
                     </p>
                 </div>
+                <NetworkPlusStub/>
             </div>
-
         </section>
     );
 };
