@@ -25,10 +25,10 @@ const NetworkSection = ({boardSectionRef}) => {
     useEffect(() => {
         if (windowSize.width > 900) {
             setIsShowMore(true);
-        } else {
+        } else if (windowSize.width <= 900) {
             setIsShowMore(false);
         }
-    }, [windowSize])
+    }, [windowSize.width])
 
     return (
         <section ref={boardSectionRef} className={networkSection} id="network-section">
