@@ -1,15 +1,17 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {PlusContainer, MobileOnlyInfo} from "./NetworkPlusStubElement";
+import {MobileOnlyInfo, PlusContainer} from "./NetworkPlusStubElement";
 
-const Index = () => {
+const Index = ({isShowMore, toggleNetwork}) => {
     return (
-        <PlusContainer>
-            <MobileOnlyInfo>Pokaż&nbsp;więcej...</MobileOnlyInfo>
+        <PlusContainer isShowMore={isShowMore} onClick={toggleNetwork}>
+            <MobileOnlyInfo isShowMore={isShowMore}>
+             Pokaż&nbsp;więcej...
+            </MobileOnlyInfo>
             <StaticImage
                 alt={'plus'}
                 src="../../images/pluscube.png"
-                objectFit={'contain'}
+                objectFit='contain'
             />
         </PlusContainer>
     );
