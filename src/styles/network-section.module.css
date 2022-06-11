@@ -69,13 +69,14 @@
 .network-pictures {
     display: grid;
     grid-area: network-pictures;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-row-gap: 4vw;
     font-weight: 300;
     padding-top: 5.3vw;
     font-size: var(--copy-font-size-mobile);
-    width: var(--main-content-column-width-mobile);
+    width: 100%;
+    /*width: var(--main-content-column-width-mobile);*/
     line-height: var(--copy-line-height);
     color: black;
     justify-self: left;
@@ -121,8 +122,6 @@
 .network-person-picture-left {
     display: block;
     position: relative;
-    width: var(--main-content-column-width-mobile);
-    background-color: grey;
 }
 
 @media (min-width: 900px) {
