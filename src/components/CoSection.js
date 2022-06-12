@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
+const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderInView}) => {
 
     const isVisible = usePageVisibility()
 
@@ -103,7 +103,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
 
     useEffect(() => {
 
-        // console.log(isVisible)
+        console.log(coAboveSliderInView)
 
         const interval = setTimeout(() => {
 
@@ -124,9 +124,9 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 setIterator(initialIteratorValue)
             }
 
-        }, 2000)
+        }, 1000)
 
-        if (!isVisible) {
+        if (!isVisible || !coAboveSliderInView) {
             intervalsArray[iterator]()
             setIterator(initialIteratorValue)
             clearTimeout(interval)
@@ -135,7 +135,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
         return () => {
             interval && clearTimeout(interval);
         }
-    }, [iterator, flipAll, intervalsArray, isVisible])
+    }, [iterator, flipAll, intervalsArray, isVisible, coAboveSliderInView])
 
     return (
         <section ref={coSectionRef} className={coSection} id="co-section">
@@ -146,25 +146,25 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef}) => {
                 className={coTagline}
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
-                    <StaticImage
-                        className={plusStar}
-                        data-aos="fade-in" data-aos-duration="4000"
-                        alt={'star graphic'}
-                        src="../images/starplus.png"
-                    />
+                <StaticImage
+                    className={plusStar}
+                    data-aos="fade-in" data-aos-duration="4000"
+                    alt={'star graphic'}
+                    src="../images/starplus.png"
+                />
             </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                className={coCopy}>
+                className={coCopy}
+                ref={coAboveSliderRef}>
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
-            {isVisible ?
+            {isVisible && coAboveSliderInView ?
                 <div
                     data-aos="fade-right"
                     data-aos-once="true"
-                    ref={coAboveSliderRef}
                     className={coDrawers}
                 >
                     <DrawerCuboidZAnimation

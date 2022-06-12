@@ -14,15 +14,14 @@ const IndexPage = ({ref}) => {
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
-    const [coAboveSliderRef, coAboveSliderInView] = useInView({rootMargin: '-36px'});
+    const [drawersInNetworkSectionRef, drawersInNetworkInView] = useInView({rootMargin: '-36px'});
     const [coSliderRef, coSliderInView] = useInView();
-    const [boardSectionRef, boardSectionInView] = useInView({rootMargin: '-36px'});
-    const [newsSectionRef, newsSectionInView] = useInView({rootMargin: '-36px'});
+    const [networkSectionRef, networkSectionInView] = useInView({rootMargin: '-36px'});
     const [contactSectionRef, contactSectionInView] = useInView();
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
+    const toggleNavState = () => {
         setIsOpen(!isOpen);
     }
 
@@ -39,9 +38,9 @@ const IndexPage = ({ref}) => {
 
         if (
             (!heroSectionInView && radicalSectionInView) ||
-            (!coAboveSliderInView && coSliderInView) ||
-            (!coSectionInView && boardSectionInView) ||
-            (!newsSectionInView && contactSectionInView)
+            (!drawersInNetworkInView && coSliderInView)
+            // (!coSectionInView && boardSectionInView)
+            // (!newsSectionInView && contactSectionInView)
         ) {
             setIsNavFontBright('true')
         } else {
@@ -52,10 +51,10 @@ const IndexPage = ({ref}) => {
         heroSectionInView,
         radicalSectionInView,
         coSectionInView,
-        coAboveSliderInView,
+        drawersInNetworkInView,
         coSliderInView,
-        newsSectionInView,
-        boardSectionInView,
+        // newsSectionInView,
+        networkSectionInView,
         contactSectionInView,
         areSocialIconsVisible])
 
@@ -63,7 +62,7 @@ const IndexPage = ({ref}) => {
         <Layout
             isNavFontBright={isNavFontBright}
             isOpen={isOpen}
-            toggle={toggle}
+            toggle={toggleNavState}
         >
             <GoHero heroSectionRef={heroSectionRef}/>
             <Radical
@@ -72,10 +71,12 @@ const IndexPage = ({ref}) => {
             />
             <CoSection
                 coSectionRef={coSectionRef}
-                coAboveSliderRef={coAboveSliderRef}
+                coAboveSliderRef={drawersInNetworkSectionRef}
                 coSliderRef={coSliderRef}
+                drawersInNetworkSectionRef={drawersInNetworkSectionRef}
+                coAboveSliderInView={drawersInNetworkInView}
             />
-            <NetworkSection boardSectionRef={boardSectionRef}/>
+            <NetworkSection boardSectionRef={networkSectionRef}/>
             {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}
             <GoContactSection contactSectionRef={contactSectionRef}/>
         </Layout>
