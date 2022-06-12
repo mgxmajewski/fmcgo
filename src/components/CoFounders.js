@@ -10,13 +10,13 @@ import {
     founderPictureContainer
 } from '../styles/co-founders.module.css'
 
-const CoFounders = ({data, founderOneRef}) => {
+const CoFounders = ({data, founderOneRef, founderTwoRef}) => {
 
     return (
         <>
             <div className={coFoundersContainer}>
                 <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={coFounder}>
-                    <div className={founderPictureContainer}>
+                    <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
                             className={founderImage}
                             objectPosition="75%"
@@ -37,10 +37,9 @@ const CoFounders = ({data, founderOneRef}) => {
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-once="true" className={coFounder}>
-                    <div className={founderPictureContainer}>
+                    <div className={founderPictureContainer} ref={founderTwoRef}>
                         <StaticImage
                             className={founderImage}
-                            ref={founderOneRef}
                             objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Filip Szperl Photo'}

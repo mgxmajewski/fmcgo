@@ -1,13 +1,13 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {coCopy, coDrawers, coSection, coTagline, plusStar, coDrawersPlaceholder} from '../styles/co-section.module.css'
+import {coCopy, coDrawers, coSection, coTagline, plusStar} from '../styles/co-section.module.css'
 import CoFounders from "./CoFounders";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneRef, foundersExperienceInView}) => {
+const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneRef, founderTwoRef, foundersExperienceInView}) => {
 
     const isVisibleAndActiveTab = usePageVisibility()
 
@@ -139,7 +139,10 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
 
     return (
         <section ref={foundersSectionRef} className={coSection} id="co-section">
-            <CoFounders founderOneRef={founderOneRef}/>
+            <CoFounders
+                founderOneRef={founderOneRef}
+                founderTwoRef={founderTwoRef}
+            />
             <div
                 data-aos="fade-down"
                 data-aos-once="true"

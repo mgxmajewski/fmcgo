@@ -8,7 +8,8 @@ export const NavLoadingPlaceHolder = styled.div`
 
 export const Nav = styled.nav`
   --nav-font-size: 1em;
-  background: transparent;
+  mix-blend-mode: exclusion;
+  color: white;
   height: 20vw;
   //margin-top: -80px;
   display: grid;
@@ -107,5 +108,5 @@ export const NavLinks = styled(LinkS)`
   //  overflow: hidden;
   //  visibility: hidden;
   //}
-  
+
 `

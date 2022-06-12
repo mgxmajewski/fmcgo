@@ -13,9 +13,10 @@ const IndexPage = ({ref}) => {
 
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
-    const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
+    const [foundersSectionRef, foundersSectionInView] = useInView({rootMargin: '-36px'});
     const [foundersExperienceRef, foundersExperienceInView] = useInView({rootMargin: '400px'});
-    const [founderOneRef, founderOneInView] = useInView();
+    const [founderOneRef, founderOneInView] = useInView({rootMargin: '-36px'});
+    const [founderTwoRef, founderTwoInView] = useInView({rootMargin: '-36px'});
     const [networkSectionRef, networkSectionInView] = useInView({rootMargin: '-36px'});
     const [contactSectionRef, contactSectionInView] = useInView();
 
@@ -38,7 +39,9 @@ const IndexPage = ({ref}) => {
 
         if (
             (!heroSectionInView && radicalSectionInView) ||
-            (!foundersExperienceInView && founderOneInView)
+            (founderOneInView) ||
+            (founderTwoInView)
+            // (founderTwoInView)
             // (!coSectionInView && boardSectionInView)
             // (!newsSectionInView && contactSectionInView)
         ) {
@@ -50,9 +53,10 @@ const IndexPage = ({ref}) => {
     }, [
         heroSectionInView,
         radicalSectionInView,
-        coSectionInView,
+        foundersSectionInView,
         foundersExperienceInView,
         founderOneInView,
+        founderTwoInView,
         // newsSectionInView,
         networkSectionInView,
         contactSectionInView,
@@ -70,9 +74,10 @@ const IndexPage = ({ref}) => {
                 areSocialIconsVisible={areSocialIconsVisible}
             />
             <FoundersSection
-                foundersSectionRef={coSectionRef}
+                foundersSectionRef={foundersSectionRef}
                 foundersExperienceRef={foundersExperienceRef}
                 founderOneRef={founderOneRef}
+                founderTwoRef={founderTwoRef}
                 foundersExperienceInView={foundersExperienceInView}
             />
             <NetworkSection boardSectionRef={networkSectionRef}/>
