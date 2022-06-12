@@ -38,7 +38,7 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                 data-aos="fade-down"
                 data-aos-once="true"
             >
-                Go #Radical Advertising
+                Go #Radical Advertising!
             </RadicalTagline>
             <RadicalCopy
                 data-aos="fade-up"
