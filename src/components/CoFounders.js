@@ -10,7 +10,7 @@ import {
     founderPictureContainer
 } from '../styles/co-founders.module.css'
 
-const CoFounders = ({data, coSliderRef}) => {
+const CoFounders = ({data, founderOneRef}) => {
 
     return (
         <>
@@ -40,6 +40,7 @@ const CoFounders = ({data, coSliderRef}) => {
                     <div className={founderPictureContainer}>
                         <StaticImage
                             className={founderImage}
+                            ref={founderOneRef}
                             objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Filip Szperl Photo'}

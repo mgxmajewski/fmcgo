@@ -2,7 +2,7 @@ import * as React from "react"
 import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/GoHero";
-import CoSection from "../components/CoSection";
+import FoundersSection from "../components/FoundersSection";
 import NetworkSection from "../components/NetworkSection";
 import NewsSection from "../components/NewsSection";
 import GoContactSection from "../components/GoContactSection";
@@ -14,8 +14,8 @@ const IndexPage = ({ref}) => {
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
-    const [drawersInNetworkSectionRef, drawersInNetworkInView] = useInView({rootMargin: '400px'});
-    const [coSliderRef, coSliderInView] = useInView();
+    const [foundersExperienceRef, foundersExperienceInView] = useInView({rootMargin: '400px'});
+    const [founderOneRef, founderOneInView] = useInView();
     const [networkSectionRef, networkSectionInView] = useInView({rootMargin: '-36px'});
     const [contactSectionRef, contactSectionInView] = useInView();
 
@@ -38,7 +38,7 @@ const IndexPage = ({ref}) => {
 
         if (
             (!heroSectionInView && radicalSectionInView) ||
-            (!drawersInNetworkInView && coSliderInView)
+            (!foundersExperienceInView && founderOneInView)
             // (!coSectionInView && boardSectionInView)
             // (!newsSectionInView && contactSectionInView)
         ) {
@@ -51,8 +51,8 @@ const IndexPage = ({ref}) => {
         heroSectionInView,
         radicalSectionInView,
         coSectionInView,
-        drawersInNetworkInView,
-        coSliderInView,
+        foundersExperienceInView,
+        founderOneInView,
         // newsSectionInView,
         networkSectionInView,
         contactSectionInView,
@@ -69,12 +69,11 @@ const IndexPage = ({ref}) => {
                 radicalRef={radicalSectionRef}
                 areSocialIconsVisible={areSocialIconsVisible}
             />
-            <CoSection
-                coSectionRef={coSectionRef}
-                coAboveSliderRef={drawersInNetworkSectionRef}
-                coSliderRef={coSliderRef}
-                drawersInNetworkSectionRef={drawersInNetworkSectionRef}
-                coAboveSliderInView={drawersInNetworkInView}
+            <FoundersSection
+                foundersSectionRef={coSectionRef}
+                foundersExperienceRef={foundersExperienceRef}
+                founderOneRef={founderOneRef}
+                foundersExperienceInView={foundersExperienceInView}
             />
             <NetworkSection boardSectionRef={networkSectionRef}/>
             {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}

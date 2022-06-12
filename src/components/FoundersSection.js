@@ -7,9 +7,9 @@ import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderInView,}) => {
+const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneRef, foundersExperienceInView}) => {
 
-    const isVisible = usePageVisibility()
+    const isVisibleAndActiveTab = usePageVisibility()
 
     const [isRunningOne, setIsRunningOne] = useState('paused')
     const [isRunningTwo, setIsRunningTwo] = useState('paused')
@@ -103,7 +103,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
 
     useEffect(() => {
 
-        console.log(coAboveSliderInView)
+        console.log(foundersExperienceInView)
 
         const interval = setTimeout(() => {
 
@@ -126,7 +126,7 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
 
         }, 1000)
 
-        if (!isVisible || !coAboveSliderInView) {
+        if (!isVisibleAndActiveTab || !foundersExperienceInView) {
             intervalsArray[iterator]()
             setIterator(initialIteratorValue)
             clearTimeout(interval)
@@ -135,11 +135,11 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
         return () => {
             interval && clearTimeout(interval);
         }
-    }, [iterator, flipAll, intervalsArray, isVisible, coAboveSliderInView])
+    }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, foundersExperienceInView])
 
     return (
-        <section ref={coSectionRef} className={coSection} id="co-section">
-            <CoFounders coSliderRef={coSliderRef}/>
+        <section ref={foundersSectionRef} className={coSection} id="co-section">
+            <CoFounders founderOneRef={founderOneRef}/>
             <div
                 data-aos="fade-down"
                 data-aos-once="true"
@@ -157,12 +157,12 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
                 data-aos="fade-up"
                 data-aos-once="true"
                 className={coCopy}
-                ref={coAboveSliderRef}>
+                ref={foundersExperienceRef}>
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
             {/*<div className={coDrawersPlaceholder}>*/}
-            {isVisible && coAboveSliderInView ?
+            {isVisibleAndActiveTab && foundersExperienceInView ?
                 <div
                     // data-aos="fade-right"
                     // data-aos-once="true"
@@ -256,4 +256,4 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
     );
 };
 
-export default CoSection;
+export default FoundersSection;
