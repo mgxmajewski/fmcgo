@@ -95,10 +95,12 @@ const NetworkSection = ({boardSectionRef}) => {
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
-                        <b>Henryk Klawe<br/>TGTH</b><br/>Współzałożyciel Together odpowiedzialny za strategię. Posiada
+                        <b>Henryk Klawe<br/>TGTH</b><br/>{isShowMore
+                    ? <>Współzałożyciel Together odpowiedzialny za strategię. Posiada
                         ponad 15-letnie doświadczenie w budowaniu marki i doradztwie w zakresie innowacji. Uważa, że
                         ​​najbardziej wartościowe rozwiązania pochodzą z pracy w zgranych, multidyscyplinarnych
-                        zespołach.
+                        zespołach.</>
+                        : <></>}
                     </p>
                 </div>
                 {isShowMore
