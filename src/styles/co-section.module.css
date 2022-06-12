@@ -10,7 +10,7 @@
             "co-drawers";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 79vw;
     grid-column-gap: 3vw;
     padding-top: 7vw;
     padding-bottom: 7vw;
@@ -27,7 +27,7 @@
             "co-copy"
             "co-drawers";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto 12.9vw;
         grid-column-gap: 3vw;
     }
 }
@@ -111,7 +111,6 @@
 
 @media (min-width: 900px) {
     .co-drawers {
-        height: 12.9vw;
         width: 70vw;
         gap: 2vw 2.7vw;
     }

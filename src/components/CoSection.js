@@ -1,13 +1,13 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {coCopy, coDrawers, coSection, coTagline, plusStar} from '../styles/co-section.module.css'
+import {coCopy, coDrawers, coSection, coTagline, plusStar, coDrawersPlaceholder} from '../styles/co-section.module.css'
 import CoFounders from "./CoFounders";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderInView}) => {
+const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderInView,}) => {
 
     const isVisible = usePageVisibility()
 
@@ -161,10 +161,11 @@ const CoSection = ({coSectionRef, coAboveSliderRef, coSliderRef, coAboveSliderIn
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
+            {/*<div className={coDrawersPlaceholder}>*/}
             {isVisible && coAboveSliderInView ?
                 <div
-                    data-aos="fade-right"
-                    data-aos-once="true"
+                    // data-aos="fade-right"
+                    // data-aos-once="true"
                     className={coDrawers}
                 >
                     <DrawerCuboidZAnimation

@@ -14,7 +14,7 @@ const IndexPage = ({ref}) => {
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [coSectionRef, coSectionInView] = useInView({rootMargin: '-36px'});
-    const [drawersInNetworkSectionRef, drawersInNetworkInView] = useInView({rootMargin: '-36px'});
+    const [drawersInNetworkSectionRef, drawersInNetworkInView] = useInView({rootMargin: '400px'});
     const [coSliderRef, coSliderInView] = useInView();
     const [networkSectionRef, networkSectionInView] = useInView({rootMargin: '-36px'});
     const [contactSectionRef, contactSectionInView] = useInView();
