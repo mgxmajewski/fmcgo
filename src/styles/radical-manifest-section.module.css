@@ -35,7 +35,7 @@
 
 @media (min-width: 900px) {
     .manifest-point {
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
     }
 }
 
@@ -55,9 +55,7 @@
 
 .manifest-point-copy {
     color: white;
-    /*font-size: 4vw;*/
     font-size: var(--copy-font-size-mobile);
-
     font-weight: 300;
 }
 
