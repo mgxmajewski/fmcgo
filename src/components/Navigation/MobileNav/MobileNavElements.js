@@ -5,7 +5,7 @@ import {Link as LinkS} from 'react-scroll';
 import Logo from "../../../assets/fmcgologo.svg";
 
 
-export const SideBarContainer = styled.aside`
+export const MobileNavContainer = styled.aside`
   position: fixed;
   z-index: -10;
   width: 100%;
@@ -34,11 +34,11 @@ export const Icon = styled.div`
   outline: none;
 `
 
-export const SideBarWrapper = styled.div`
+export const MobileNavWrapper = styled.div`
   color: white;
 `
 
-export const SideBarMenu = styled.ul`
+export const MobileNavMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
@@ -52,7 +52,7 @@ export const SideBarMenu = styled.ul`
   }
 `
 
-export const SideBarLink = styled(LinkS)`
+export const MobileNavLink = styled(LinkS)`
   //left: -10px;
   font-weight: 500;
   display: flex;
@@ -76,32 +76,6 @@ export const SideBarLink = styled(LinkS)`
     //-webkit-background-clip: text;
     //-webkit-text-fill-color: transparent;
     transition: 0.2s ease-in-out;
-  }
-`
-
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-export const SideBarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: chocolate;
-  white-space: nowrap;
-  padding: 16px 64px;
-  //padding: 8px 32px;
-  color: #ffffff;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: white;
-    color: crimson;
   }
 `
 

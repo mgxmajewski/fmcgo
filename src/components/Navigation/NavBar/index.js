@@ -113,7 +113,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                     <MobileIcon
                         isbright={isNavFontBright}
                     >
-                        <Hamb isOpen={isOpen} toggle={toggle}/>
+                        <Hamb isOpen={isOpen} toggle={toggle} footerInView={footerInView}/>
                     </MobileIcon>
                 </NavBarContainer>
             </Nav>

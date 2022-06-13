@@ -1,7 +1,7 @@
 import React from 'react';
 import {hamb, hambCheckbox, hambLine} from '../styles/hamb.module.css'
 import SideBar from "./Navigation/MobileNav";
-const Hamb = ({isOpen, toggle}) => {
+const Hamb = ({isOpen, toggle, footerInView}) => {
 
 
     return (
@@ -23,7 +23,7 @@ const Hamb = ({isOpen, toggle}) => {
                 >
                 </span>
             </label>
-            <SideBar isOpen={isOpen} toggle={toggle}/>
+            <SideBar isOpen={isOpen} toggle={toggle} footerInView={footerInView}/>
         </>
     );
 };

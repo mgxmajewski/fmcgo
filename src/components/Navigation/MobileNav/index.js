@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 
-import {FmcgoVectorLogoWhite, SideBarContainer, SideBarLink, SideBarMenu, SideBarWrapper} from "./SideBarElements";
+import {FmcgoVectorLogoWhite, MobileNavContainer, MobileNavLink, MobileNavMenu, MobileNavWrapper} from "./MobileNavElements";
 import LangaugeToggle from "../LanguageToggle";
 
-const SideBar = ({isOpen, toggle}) => {
+const SideBar = ({isOpen, toggle, footerInView}) => {
 
     const [isLoading, setIsLoading] = useState(true);
 
@@ -16,11 +16,11 @@ const SideBar = ({isOpen, toggle}) => {
             {isLoading
                 ? <></>
                 :
-                <SideBarContainer isOpen={isOpen} onClick={toggle}>
-                    <SideBarWrapper>
+                <MobileNavContainer isOpen={isOpen} onClick={toggle}>
+                    <MobileNavWrapper>
                         <FmcgoVectorLogoWhite/>
-                        <SideBarMenu>
-                            <SideBarLink
+                        <MobileNavMenu>
+                            <MobileNavLink
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -31,8 +31,8 @@ const SideBar = ({isOpen, toggle}) => {
                                 onClick={toggle}
                             >
                                 go
-                            </SideBarLink>
-                            <SideBarLink
+                            </MobileNavLink>
+                            <MobileNavLink
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -42,8 +42,8 @@ const SideBar = ({isOpen, toggle}) => {
                                 onClick={toggle}
                             >
                                 RadicalAdvertising
-                            </SideBarLink>
-                            <SideBarLink
+                            </MobileNavLink>
+                            <MobileNavLink
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -53,8 +53,8 @@ const SideBar = ({isOpen, toggle}) => {
                                 onClick={toggle}
                             >
                                 Founders
-                            </SideBarLink>
-                            <SideBarLink
+                            </MobileNavLink>
+                            <MobileNavLink
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -64,9 +64,9 @@ const SideBar = ({isOpen, toggle}) => {
                                 onClick={toggle}
                             >
                                 Experience
-                            </SideBarLink>
-                             <SideBarLink
-                                activeClass="active"
+                            </MobileNavLink>
+                             <MobileNavLink
+                                activeClass={`${footerInView ? "false" : "active"}`}
                                 spy={true}
                                 smooth={true}
                                 duration={500}
@@ -75,8 +75,8 @@ const SideBar = ({isOpen, toggle}) => {
                                 onClick={toggle}
                             >
                                 Network
-                            </SideBarLink>
-                            <SideBarLink
+                            </MobileNavLink>
+                            <MobileNavLink
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -84,15 +84,16 @@ const SideBar = ({isOpen, toggle}) => {
                                 // offset={-80}
                                 to="contact-section"
                                 onClick={toggle}
+                                className={`${footerInView ? "active" : ""}`}
                             >
                                 Let's Go
-                            </SideBarLink>
+                            </MobileNavLink>
                             <LangaugeToggle
                                 isbright={'true'}
                             />
-                        </SideBarMenu>
-                    </SideBarWrapper>
-                </SideBarContainer>}
+                        </MobileNavMenu>
+                    </MobileNavWrapper>
+                </MobileNavContainer>}
         </>
     );
 };
