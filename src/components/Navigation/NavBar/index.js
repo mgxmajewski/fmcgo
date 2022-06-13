@@ -5,7 +5,8 @@ import LangaugeToggle from "../LanguageToggle"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Navbar = ({isOpen, toggle, isNavFontBright}) => {
+const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -97,10 +98,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 Experience
                             </NavLinks>
                             <NavLinks
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="150"
-                                activeClass="active"
+                                // This ternary disables active when the bottom of the page is reached.
+                                // active class is disabled when the contact menu link is anabled.
+                                activeClass={`${footerInView ? "false" : "active"}`}
                                 spy={true}
                                 smooth={true}
                                 duration={500}
@@ -131,6 +131,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 to="contact-section"
                                 isbright={isNavFontBright}
                                 title="Contact"
+                                className={`${footerInView ? "active" : ""}`}
                             >
                                 Contact
                             </NavLinks>

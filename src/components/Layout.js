@@ -1,12 +1,12 @@
-import React from 'react';
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/normalize.css'
 import {layout} from "../styles/global.module.css";
 import NavBar from "./Navigation/NavBar";
 import PropTypes from "prop-types";
 import {css} from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader";
-//
+import {useInView} from "react-intersection-observer";
+
 const override = css`
   display: flex;
   align-self: center;
@@ -45,6 +45,7 @@ const placeHolderStyle = {
 const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
 
     const [isLoading, setIsLoading] = useState(true);
+    const [footerRef, footerInView] = useInView();
 
     useEffect(() => {
         setIsLoading(false)
@@ -56,11 +57,11 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                 ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>
                 :
                 <>
-                    <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}/>
+                    <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle} footerInView={footerInView}/>
                     <div className={layout}>
                         {children}
                     </div>
-                    <footer>
+                    <footer ref={footerRef}>
                         <p>&reg; 2022 fmcgo.pl</p>
                     </footer>
                 </>
