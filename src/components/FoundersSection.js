@@ -2,21 +2,21 @@ import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
 import {
-    coFounder,
-    coFoundersContainer,
+    foundersSection,
+    founderContainer,
     founderCopy,
     founderImage,
     founderName,
     founderPictureContainer,
     topPaddingDiv
-} from '../styles/co-founders.module.css'
+} from '../styles/founders-section.module.css'
 
-const FoundersPictures = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderOneRef, founderTwoRef}) => {
+const FoundersSection = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderOneRef, founderTwoRef}) => {
 
     return (
         <>
-            <div className={coFoundersContainer} id="founders-section">
-                <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={coFounder}>
+            <section className={foundersSection} id="founders-section">
+                <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
@@ -38,7 +38,7 @@ const FoundersPictures = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderO
                         i design-to-digital.
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-once="true" className={coFounder}>
+                <div data-aos="fade-up" data-aos-once="true" className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
                     <div className={founderPictureContainer} ref={founderTwoRef}>
                         <StaticImage
@@ -60,9 +60,9 @@ const FoundersPictures = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderO
                         i innowacji produktowych.
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 };
 
-export default FoundersPictures;
+export default FoundersSection;

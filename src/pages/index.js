@@ -2,10 +2,11 @@ import * as React from "react"
 import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/GoHero";
+import Radical from "../components/Radical"
+import FoundersSection from "../components/FoundersSection";
 import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
 import GoContactSection from "../components/GoContactSection";
-import Radical from "../components/Radical"
 import {useInView} from "react-intersection-observer";
 
 const IndexPage = ({ref}) => {
@@ -94,6 +95,12 @@ const IndexPage = ({ref}) => {
             <Radical
                 radicalRef={radicalSectionRef}
                 areSocialIconsVisible={areSocialIconsVisible}
+            />
+            <FoundersSection
+                aboveFounderOneRef={aboveFounderOneRef}
+                aboveFounderTwoRef={aboveFounderTwoRef}
+                founderOneRef={founderOneRef}
+                founderTwoRef={founderTwoRef}
             />
             <ExperienceSection
                 foundersSectionRef={foundersSectionRef}

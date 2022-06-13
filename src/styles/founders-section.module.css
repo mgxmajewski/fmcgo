@@ -1,29 +1,34 @@
-.co-founders-container {
-    grid-area: co-founders;
+.founders-section {
+    grid-area: founders-section;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-gap: 0;
+    justify-self: center;
     justify-items: center;
     background-color: white;
     z-index: 10;
+    padding-left: var(--padding-left-mobile);
 }
 
-.co-founder {
+@media (min-width: 900px) {
+    .founders-section {
+        padding-left: var(--padding-left-desktop);
+    }
+}
+
+.founder-container {
     display: grid;
-    /*justify-self: center;*/
     grid-template:
             "top-padding-div"
             "founder-picture"
             "founder-name"
             "founder-copy";
-    /*grid-template-columns: auto;*/
     grid-template-rows: 8vw auto auto auto;
-    /*grid-row-gap: 4.2vw;*/
 }
 
 @media (min-width: 900px) {
-    .co-founder {
+    .founder-container {
         height: 47vw;
         width: 83vw;
         margin-left: calc(-1.5 * (var(--padding-left-desktop) - .5vw));
@@ -33,7 +38,7 @@
     }
 }
 
-.top-padding-div{
+.top-padding-div {
     grid-area: top-padding-div;
 }
 
