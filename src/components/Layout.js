@@ -15,32 +15,12 @@ const override = css`
   border-color: #ffffff;
 `;
 
-// const loaderContainer = {
-//   display: "flex",
-//   align-self: "center",
-//   justify-self: "center",
-//   height: "100vh"
-// };
-
 const placeHolderStyle = {
     background: "black",
     display: "flex",
     height: "100vh",
     width: "100vw"
 };
-
-
-// const NavLoadingPlaceHolder = () => {
-//     const placeHolderStyle = {
-//         height: "20vw",
-//         width: "92vw"
-//     };
-//     return (
-//         <div style={placeHolderStyle}></div>
-//     )
-//
-// }
-
 
 const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
 

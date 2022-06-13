@@ -77,7 +77,6 @@ export const NavItem = styled.li`
   grid-template-columns: 1.8em 9em 4.5em 5.4em 4.1em 3.9em 3.2em;
   grid-template-rows: auto;
   grid-column-gap: 2vw;
-  //height: 80px;
 `
 
 export const NavLinks = styled(LinkS)`
@@ -98,14 +97,4 @@ export const NavLinks = styled(LinkS)`
     text-shadow: 0 0 #00000000;
     transition: .2s all ease;
   }
-
-  //&.active::before {
-  //  display: flex;
-  //  content: attr(title);
-  //  font-weight: bold;
-  //  height: 0;
-  //  overflow: hidden;
-  //  visibility: hidden;
-  //}
-
 `

@@ -33,10 +33,6 @@ const IndexPage = ({ref}) => {
 
     useEffect(() => {
 
-        console.log(`aboveFounderOneInView: ` + JSON.stringify(aboveFounderOneInView));
-        console.log(`founderOneInView: ` + JSON.stringify(founderOneInView));
-
-
         if (!heroSectionInView && radicalSectionInView) {
             setAreSocialIconsVisible('false')
         } else {
@@ -66,7 +62,6 @@ const IndexPage = ({ref}) => {
         founderTwoInView,
         aboveFounderOneInView,
         aboveFounderTwoInView,
-        // newsSectionInView,
         networkSectionInView,
         contactSectionInView,
         areSocialIconsVisible])
@@ -97,7 +92,6 @@ const IndexPage = ({ref}) => {
                 <NetworkSection
                     boardSectionRef={networkSectionRef}
                 />
-                {/*<NewsSection newsSectionRef={newsSectionRef}/>*/}
                 <GoContactSection contactSectionRef={contactSectionRef}/>
             </Layout>
         </>

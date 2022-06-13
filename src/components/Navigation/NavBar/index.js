@@ -12,17 +12,10 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
         AOS.refresh();
     }, [])
 
-
     return (
         <>
-            {/*{isLoading*/}
-            {/*    ? <NavLoadingPlaceHolder/>*/}
-            {/*    : */}
             <Nav id='nav-bar'>
                 <NavBarContainer>
-                    {/*<NavLogo to='/'>*/}
-                    {/*    LANGUAGE*/}
-                    {/*</NavLogo>*/}
                     <NavMenu>
                         <NavItem
                             data-aos="fade-down"
@@ -42,9 +35,6 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 go
                             </NavLinks>
                             <NavLinks
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="50"
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -60,17 +50,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 RadicalAdvertising
                             </NavLinks>
                             <NavLinks
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="100"
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                // offset={10}
-                                // offset={getNavBarHeight()}
                                 exact='true'
                                 to="founders-section"
                                 isbright={isNavFontBright}
@@ -79,18 +64,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 Founders
                             </NavLinks>
                             <NavLinks
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="150"
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                // offset={-10}
-                                // offset={getNavBarHeight()}
-                                // exact='true'
                                 to="founders-experience"
                                 isbright={isNavFontBright}
                                 title="Experience"
@@ -106,9 +85,6 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                // offset={-10}
-                                // offset={getNavBarHeight()}
-                                // exact='true'
                                 to="network-section"
                                 isbright={isNavFontBright}
                                 title="Network"
@@ -116,18 +92,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 Network
                             </NavLinks>
                             <NavLinks
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="200"
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                // offset={50}
-                                // offset={getNavBarHeight()}
-                                // exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
                                 title="Contact"
@@ -136,22 +106,17 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 Contact
                             </NavLinks>
                             <LangaugeToggle
-                                // data-aos="fade-down"
-                                // data-aos-once="true"
-                                // data-aos-delay="250"
                                 isbright={isNavFontBright}
                             />
                         </NavItem>
                     </NavMenu>
                     <MobileIcon
-                        // onClick={() => toggle()}
                         isbright={isNavFontBright}
                     >
                         <Hamb isOpen={isOpen} toggle={toggle}/>
                     </MobileIcon>
                 </NavBarContainer>
             </Nav>
-            {/*}*/}
         </>
     );
 };
