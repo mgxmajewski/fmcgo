@@ -1,6 +1,6 @@
 import React from 'react';
 import {hamb, hambCheckbox, hambLine} from '../styles/hamb.module.css'
-import SideBar from "./Navigation/SideBar";
+import SideBar from "./Navigation/MobileNav";
 const Hamb = ({isOpen, toggle}) => {
 
 

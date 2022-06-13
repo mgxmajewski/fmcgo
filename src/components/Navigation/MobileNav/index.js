@@ -49,7 +49,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="co-section"
+                                to="founders-section"
                                 onClick={toggle}
                             >
                                 Founders
@@ -60,7 +60,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="board-section"
+                                to="founders-experience"
                                 onClick={toggle}
                             >
                                 Experience
@@ -71,7 +71,7 @@ const SideBar = ({isOpen, toggle}) => {
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="board-section"
+                                to="network-section"
                                 onClick={toggle}
                             >
                                 Network
