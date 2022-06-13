@@ -1,13 +1,13 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {coCopy, coDrawers, coSection, coTagline, plusStar} from '../styles/co-section.module.css'
+import {experienceCopy, experienceDrawers, experienceSection, experienceTagline, plusStar} from '../styles/experience-section.module.css'
 import FoundersPictures from "./FoundersPictures";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const FoundersSection = ({
+const ExperienceSection = ({
                              foundersSectionRef,
                              foundersExperienceRef,
                              aboveFounderOneRef,
@@ -147,20 +147,11 @@ const FoundersSection = ({
 
 
     return (
-
-        <section ref={foundersSectionRef} className={coSection}>
-
-            <FoundersPictures
-                aboveFounderOneRef={aboveFounderOneRef}
-                aboveFounderTwoRef={aboveFounderTwoRef}
-                founderOneRef={founderOneRef}
-                founderTwoRef={founderTwoRef}
-            />
+        <section ref={foundersSectionRef} className={experienceSection} id="founders-experience">
             <div
                 data-aos="fade-down"
                 data-aos-once="true"
-                className={coTagline}
-                id="founders-experience"
+                className={experienceTagline}
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
                 <StaticImage
@@ -173,7 +164,7 @@ const FoundersSection = ({
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                className={coCopy}
+                className={experienceCopy}
                 ref={foundersExperienceRef}
             >
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
@@ -184,7 +175,7 @@ const FoundersSection = ({
                 <div
                     // data-aos="fade-right"
                     // data-aos-once="true"
-                    className={coDrawers}
+                    className={experienceDrawers}
                 >
                     <DrawerCuboidZAnimation
                         brand='carrefour'
@@ -275,4 +266,4 @@ const FoundersSection = ({
         ;
 };
 
-export default FoundersSection;
+export default ExperienceSection;

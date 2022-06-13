@@ -177,9 +177,9 @@ body {
     grid-template-areas:
       "go-hero"
       "radical-section"
-      "co-section"
+      "founders-section"
+      "experience-section"
       "network-section"
-      "news-section"
       "go-contact-section"
       "footer"
 }

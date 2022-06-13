@@ -1,16 +1,16 @@
-.co-section {
-    grid-area: co-section;
+.experience-section {
+    grid-area: experience-section;
     display: grid;
     justify-items: center;
     padding-left: var(--padding-left-mobile);
     grid-template:
-            "co-founders"
+            /*"co-founders"*/
             "co-tagline"
             "co-copy"
             "co-drawers";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: auto auto auto 79vw;
+    grid-template-rows: auto auto 79vw;
     grid-column-gap: 3vw;
     /*padding-top: 7vw;*/
     padding-bottom: 7vw;
@@ -18,22 +18,22 @@
 }
 
 @media (min-width: 900px) {
-    .co-section {
+    .experience-section {
         /*padding-top: var(--padding-top-desktop);*/
         padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--padding-left-desktop);
         grid-template:
-            "co-founders"
+            /*"co-founders"*/
             "co-tagline"
             "co-copy"
             "co-drawers";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: auto auto auto 12.9vw;
+        grid-template-rows: auto auto 12.9vw;
         grid-column-gap: 3vw;
     }
 }
 
-.co-tagline {
+.experience-tagline {
     grid-area: co-tagline;
     display: grid;
     align-items: end;
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 900px) {
-    .co-tagline {
+    .experience-tagline {
         grid-template-columns: auto 35vw;
         padding-top: 1vw;
         font-size: var(--section-tagline-size-desktop);
@@ -66,17 +66,17 @@
     }
 }
 
-.co-tagline sup {
+.experience-tagline sup {
     font-size: calc(var(--section-tagline-size-mobile) * .6);
 }
 
 @media (min-width: 900px) {
-    .co-tagline sup {
+    .experience-tagline sup {
         font-size: calc(var(--section-tagline-size-desktop) * .6);
     }
 }
 
-.co-copy {
+.experience-copy {
     grid-area: co-copy;
     font-weight: 300;
     line-height: var(--copy-line-height);
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 900px) {
-    .co-copy {
+    .experience-copy {
         padding-top: 1vw;
         justify-self: left;
         font-size: var(--copy-font-size-desktop);
@@ -94,11 +94,11 @@
     }
 }
 
-.co-copy b {
+.experience-copy b {
     font-weight: bold;
 }
 
-.co-drawers {
+.experience-drawers {
     grid-area: co-drawers;
     display: flex;
     font-weight: 900;
@@ -111,7 +111,7 @@
 }
 
 @media (min-width: 900px) {
-    .co-drawers {
+    .experience-drawers {
         width: 70vw;
         gap: 2vw 2.7vw;
     }

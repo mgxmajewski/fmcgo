@@ -2,7 +2,7 @@ import * as React from "react"
 import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/GoHero";
-import FoundersSection from "../components/FoundersSection";
+import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
 import GoContactSection from "../components/GoContactSection";
 import Radical from "../components/Radical"
@@ -95,7 +95,7 @@ const IndexPage = ({ref}) => {
                 radicalRef={radicalSectionRef}
                 areSocialIconsVisible={areSocialIconsVisible}
             />
-            <FoundersSection
+            <ExperienceSection
                 foundersSectionRef={foundersSectionRef}
                 aboveFounderOneRef={aboveFounderOneRef}
                 aboveFounderTwoRef={aboveFounderTwoRef}
