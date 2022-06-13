@@ -43,6 +43,7 @@ const IndexPage = ({ref}) => {
             (!heroSectionInView && radicalSectionInView)
             || (!aboveFounderOneInView && founderOneInView)
             || (!aboveFounderTwoInView && founderTwoInView)
+            || (!networkSectionInView && contactSectionInView)
         ) {
             setIsNavFontBright('true')
         } else {
