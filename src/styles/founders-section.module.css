@@ -8,7 +8,6 @@
     justify-items: center;
     background-color: white;
     z-index: 10;
-    /*padding-left: var(--padding-left-mobile);*/
 }
 
 @media (min-width: 900px) {
@@ -32,9 +31,7 @@
         height: 47vw;
         width: 83vw;
         margin-left: calc(-1.5 * (var(--padding-left-desktop) - .5vw));
-        /*grid-template-columns: auto;*/
         grid-template-rows: 5vw 6vw 5vw auto;
-        /*grid-row-gap: 2.2vw;*/
     }
 }
 
@@ -49,13 +46,14 @@
     justify-self: left;
     white-space: nowrap;
     align-self: center;
-    padding-bottom: 1vw;
+    padding-top: 3vw;
     color: black;
     font-size: var(--section-tagline-size-mobile);
 }
 
 @media (min-width: 900px) {
     .founder-name {
+        padding-top: 0;
         align-self: end;
         padding-left: calc(.75 * (var(--padding-left-desktop) - .5vw));
         font-size: var(--section-tagline-size-desktop);
@@ -71,7 +69,6 @@
 @media (min-width: 900px) {
     .founder-name span {
         text-decoration: none;
-        /*font-size: 1.8vw;*/
         background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -81,13 +78,16 @@
 .founder-copy {
     grid-area: founder-copy;
     font-weight: 300;
+    line-height: var(--copy-line-height);
     justify-self: left;
     font-size: var(--copy-font-size-mobile);
     color: black;
+    padding-top: 3vw;
 }
 
 @media (min-width: 900px) {
     .founder-copy {
+        padding-top: 0;
         padding-left: calc(.75 * (var(--padding-left-desktop) - .5vw));
         font-size: 1.1vw;
         color: white;
@@ -111,7 +111,6 @@
 .founder-picture-container {
     grid-area: founder-picture;
     position: relative;
-    /*width: calc((var(--single-column-width-mobile)));*/
     height: 80vw;
     z-index: -1;
     transition: 0.8ms all ease-in-out;
@@ -126,7 +125,6 @@
 }
 
 .founder-image {
-    /*clip-path: circle(60px at center);*/
     object-position: 10% 10%;
     height: 100%;
     transition: 0.8ms all ease-in-out;
