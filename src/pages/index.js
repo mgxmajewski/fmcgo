@@ -13,8 +13,8 @@ const IndexPage = ({ref}) => {
 
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
-    const [foundersSectionRef, foundersSectionInView] = useInView({rootMargin: '-36px'});
-    const [foundersExperienceRef, foundersExperienceInView] = useInView({rootMargin: '400px'});
+    const [experienceSectionRef, experienceSectionInView] = useInView({rootMargin: '-36px'});
+    const [experienceDrawersRef, experienceDrawersInView] = useInView({rootMargin: '400px'});
     const [aboveFounderOneRef, aboveFounderOneInView] = useInView({rootMargin: '-36px'});
     const [aboveFounderTwoRef, aboveFounderTwoInView] = useInView({rootMargin: '-36px'});
     const [founderOneRef, founderOneInView] = useInView({rootMargin: '-36px'});
@@ -74,8 +74,8 @@ const IndexPage = ({ref}) => {
     }, [
         heroSectionInView,
         radicalSectionInView,
-        foundersSectionInView,
-        foundersExperienceInView,
+        experienceSectionInView,
+        experienceDrawersInView,
         founderOneInView,
         founderTwoInView,
         aboveFounderOneInView,
@@ -103,13 +103,9 @@ const IndexPage = ({ref}) => {
                 founderTwoRef={founderTwoRef}
             />
             <ExperienceSection
-                foundersSectionRef={foundersSectionRef}
-                aboveFounderOneRef={aboveFounderOneRef}
-                aboveFounderTwoRef={aboveFounderTwoRef}
-                founderOneRef={founderOneRef}
-                founderTwoRef={founderTwoRef}
-                foundersExperienceRef={foundersExperienceRef}
-                foundersExperienceInView={foundersExperienceInView}
+                experienceSectionRef={experienceSectionRef}
+                experienceDrawersRef={experienceDrawersRef}
+                experienceInView={experienceDrawersInView}
             />
             <NetworkSection
                 boardSectionRef={networkSectionRef}

@@ -1,21 +1,18 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {experienceCopy, experienceDrawers, experienceSection, experienceTagline, plusStar} from '../styles/experience-section.module.css'
-import FoundersPictures from "./FoundersPictures";
+import {
+    experienceCopy,
+    experienceDrawers,
+    experienceSection,
+    experienceTagline,
+    plusStar
+} from '../styles/experience-section.module.css'
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const ExperienceSection = ({
-                             foundersSectionRef,
-                             foundersExperienceRef,
-                             aboveFounderOneRef,
-                             aboveFounderTwoRef,
-                             founderOneRef,
-                             founderTwoRef,
-                             foundersExperienceInView
-                         }) => {
+const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experienceInView}) => {
 
     const isVisibleAndActiveTab = usePageVisibility()
 
@@ -111,13 +108,9 @@ const ExperienceSection = ({
 
     useEffect(() => {
 
-        // console.log(foundersExperienceInView)
-
         const interval = setTimeout(() => {
 
-            // console.log(iterator)
             const isInArray = iterator <= 11
-            // console.log(isInArray)
 
             if (isInArray) {
                 intervalsArray[iterator]()
@@ -134,7 +127,7 @@ const ExperienceSection = ({
 
         }, 1000)
 
-        if (!isVisibleAndActiveTab || !foundersExperienceInView) {
+        if (!isVisibleAndActiveTab || !experienceInView) {
             intervalsArray[iterator]()
             setIterator(initialIteratorValue)
             clearTimeout(interval)
@@ -143,11 +136,15 @@ const ExperienceSection = ({
         return () => {
             interval && clearTimeout(interval);
         }
-    }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, foundersExperienceInView])
+    }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, experienceInView])
 
 
     return (
-        <section ref={foundersSectionRef} className={experienceSection} id="founders-experience">
+        <section
+            ref={experienceSectionRef}
+            className={experienceSection}
+            id="founders-experience"
+        >
             <div
                 data-aos="fade-down"
                 data-aos-once="true"
@@ -165,16 +162,14 @@ const ExperienceSection = ({
                 data-aos="fade-up"
                 data-aos-once="true"
                 className={experienceCopy}
-                ref={foundersExperienceRef}
+                ref={experienceDrawersRef}
             >
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
             {/*<div className={coDrawersPlaceholder}>*/}
-            {isVisibleAndActiveTab && foundersExperienceInView ?
+            {isVisibleAndActiveTab && experienceInView ?
                 <div
-                    // data-aos="fade-right"
-                    // data-aos-once="true"
                     className={experienceDrawers}
                 >
                     <DrawerCuboidZAnimation
@@ -196,7 +191,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='desperados'
                         section='co-section'
-                        //drawerDelay='4s'
                         pause={isRunningThree}
                     >
                         Desperados
@@ -204,7 +198,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='heineken'
                         section='co-section'
-                        //drawerDelay='6s'
                         pause={isRunningFour}
                     >
                         Heineken
@@ -212,7 +205,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='develey'
                         section='co-section'
-                        //drawerDelay='8s'
                         pause={isRunningFive}
                     >
                         Develey
@@ -220,7 +212,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='costa'
                         section='co-section'
-                        //drawerDelay='10s'
                         pause={isRunningSix}
                     >
                         Costa Coffee
@@ -228,7 +219,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='tchibo'
                         section='co-section'
-                        //drawerDelay='12s'
                         pause={isRunningSeven}
                     >
                         Tchibo
@@ -236,7 +226,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='stock'
                         section='co-section'
-                        //drawerDelay='14s'
                         pause={isRunningEight}
                     >
                         Stock
@@ -244,7 +233,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='sephora'
                         section='co-section'
-                        //drawerDelay='16s'
                         pause={isRunningNine}
                     >
                         Sephora
@@ -252,7 +240,6 @@ const ExperienceSection = ({
                     <DrawerCuboidZAnimation
                         brand='clarins'
                         section='co-section'
-                        //drawerDelay='18s'
                         pause={isRunningTen}
                     >
                         Clarins
