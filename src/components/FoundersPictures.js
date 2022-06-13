@@ -7,15 +7,17 @@ import {
     founderCopy,
     founderImage,
     founderName,
-    founderPictureContainer
+    founderPictureContainer,
+    topPaddingDiv
 } from '../styles/co-founders.module.css'
 
-const FoundersPictures = ({data, founderOneRef, founderTwoRef}) => {
+const FoundersPictures = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderOneRef, founderTwoRef}) => {
 
     return (
         <>
             <div className={coFoundersContainer} id="founders-section">
                 <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={coFounder}>
+                    <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
                             className={founderImage}
@@ -37,6 +39,7 @@ const FoundersPictures = ({data, founderOneRef, founderTwoRef}) => {
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-once="true" className={coFounder}>
+                    <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
                     <div className={founderPictureContainer} ref={founderTwoRef}>
                         <StaticImage
                             className={founderImage}

@@ -7,7 +7,15 @@ import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneRef, founderTwoRef, foundersExperienceInView}) => {
+const FoundersSection = ({
+                             foundersSectionRef,
+                             foundersExperienceRef,
+                             aboveFounderOneRef,
+                             aboveFounderTwoRef,
+                             founderOneRef,
+                             founderTwoRef,
+                             foundersExperienceInView
+                         }) => {
 
     const isVisibleAndActiveTab = usePageVisibility()
 
@@ -103,7 +111,7 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
 
     useEffect(() => {
 
-        console.log(foundersExperienceInView)
+        // console.log(foundersExperienceInView)
 
         const interval = setTimeout(() => {
 
@@ -137,9 +145,14 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
         }
     }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, foundersExperienceInView])
 
+
     return (
+
         <section ref={foundersSectionRef} className={coSection}>
+
             <FoundersPictures
+                aboveFounderOneRef={aboveFounderOneRef}
+                aboveFounderTwoRef={aboveFounderTwoRef}
                 founderOneRef={founderOneRef}
                 founderTwoRef={founderTwoRef}
             />
@@ -147,6 +160,7 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
                 data-aos="fade-down"
                 data-aos-once="true"
                 className={coTagline}
+                id="founders-experience"
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
                 <StaticImage
@@ -161,7 +175,6 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
                 data-aos-once="true"
                 className={coCopy}
                 ref={foundersExperienceRef}
-                id="founders-experience"
             >
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
@@ -258,7 +271,8 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
                 <></>
             }
         </section>
-    );
+    )
+        ;
 };
 
 export default FoundersSection;

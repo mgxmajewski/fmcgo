@@ -12,15 +12,14 @@
     grid-row-gap: var(--row-gap-mobile);
     grid-template-rows: auto auto auto 79vw;
     grid-column-gap: 3vw;
-    padding-top: 7vw;
+    /*padding-top: 7vw;*/
     padding-bottom: 7vw;
     background-color: white;
-    z-index: -9999;
 }
 
 @media (min-width: 900px) {
     .co-section {
-        padding-top: var(--padding-top-desktop);
+        /*padding-top: var(--padding-top-desktop);*/
         padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--padding-left-desktop);
         grid-template:
