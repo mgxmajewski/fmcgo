@@ -17,7 +17,6 @@
         font-size: var(--copy-font-size-desktop);
         grid-template-columns: 39vw auto;
         grid-template-rows: auto;
-        padding-bottom: 3vw;
     }
 }
 

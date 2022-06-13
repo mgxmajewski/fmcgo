@@ -181,5 +181,13 @@ body {
       "experience-section"
       "network-section"
       "go-contact-section"
-      "footer"
+}
+
+footer {
+    background-color: red;
+}
+
+footer > p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
