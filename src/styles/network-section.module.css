@@ -80,6 +80,7 @@
     line-height: var(--copy-line-height);
     color: black;
     justify-self: left;
+    z-index: 10;
 }
 
 @media (min-width: 900px) {
