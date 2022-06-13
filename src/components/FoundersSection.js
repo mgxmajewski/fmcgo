@@ -138,7 +138,7 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
     }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, foundersExperienceInView])
 
     return (
-        <section ref={foundersSectionRef} className={coSection} id="co-section">
+        <section ref={foundersSectionRef} className={coSection}>
             <CoFounders
                 founderOneRef={founderOneRef}
                 founderTwoRef={founderTwoRef}
@@ -160,7 +160,9 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
                 data-aos="fade-up"
                 data-aos-once="true"
                 className={coCopy}
-                ref={foundersExperienceRef}>
+                ref={foundersExperienceRef}
+                id="founders-experience"
+            >
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>

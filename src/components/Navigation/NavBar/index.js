@@ -71,7 +71,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // offset={10}
                                 // offset={getNavBarHeight()}
                                 exact='true'
-                                to="co-section"
+                                to="founders-section"
                                 isbright={isNavFontBright}
                                 title="Founders"
                             >
@@ -90,7 +90,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // offset={-10}
                                 // offset={getNavBarHeight()}
                                 // exact='true'
-                                to="board-section"
+                                to="founders-experience"
                                 isbright={isNavFontBright}
                                 title="Experience"
                             >
@@ -109,7 +109,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright}) => {
                                 // offset={-10}
                                 // offset={getNavBarHeight()}
                                 // exact='true'
-                                to="board-section"
+                                to="network-section"
                                 isbright={isNavFontBright}
                                 title="Network"
                             >

@@ -14,7 +14,7 @@ const CoFounders = ({data, founderOneRef, founderTwoRef}) => {
 
     return (
         <>
-            <div className={coFoundersContainer}>
+            <div className={coFoundersContainer} id="founders-section">
                 <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={coFounder}>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage

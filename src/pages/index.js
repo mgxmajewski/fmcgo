@@ -75,9 +75,9 @@ const IndexPage = ({ref}) => {
             />
             <FoundersSection
                 foundersSectionRef={foundersSectionRef}
-                foundersExperienceRef={foundersExperienceRef}
                 founderOneRef={founderOneRef}
                 founderTwoRef={founderTwoRef}
+                foundersExperienceRef={foundersExperienceRef}
                 foundersExperienceInView={foundersExperienceInView}
             />
             <NetworkSection boardSectionRef={networkSectionRef}/>
