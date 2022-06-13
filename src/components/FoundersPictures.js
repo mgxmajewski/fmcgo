@@ -10,7 +10,7 @@ import {
     founderPictureContainer
 } from '../styles/co-founders.module.css'
 
-const CoFounders = ({data, founderOneRef, founderTwoRef}) => {
+const FoundersPictures = ({data, founderOneRef, founderTwoRef}) => {
 
     return (
         <>
@@ -62,4 +62,4 @@ const CoFounders = ({data, founderOneRef, founderTwoRef}) => {
     );
 };
 
-export default CoFounders;
+export default FoundersPictures;

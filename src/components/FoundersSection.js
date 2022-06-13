@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {coCopy, coDrawers, coSection, coTagline, plusStar} from '../styles/co-section.module.css'
-import CoFounders from "./CoFounders";
+import FoundersPictures from "./FoundersPictures";
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
@@ -139,7 +139,7 @@ const FoundersSection = ({foundersSectionRef, foundersExperienceRef, founderOneR
 
     return (
         <section ref={foundersSectionRef} className={coSection}>
-            <CoFounders
+            <FoundersPictures
                 founderOneRef={founderOneRef}
                 founderTwoRef={founderTwoRef}
             />
