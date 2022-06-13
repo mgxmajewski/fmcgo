@@ -1,14 +1,14 @@
 .founders-section {
     grid-area: founders-section;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: var(--single-column-width-mobile);
     grid-template-rows: auto auto;
     grid-gap: 0;
     justify-self: center;
     justify-items: center;
     background-color: white;
     z-index: 10;
-    padding-left: var(--padding-left-mobile);
+    /*padding-left: var(--padding-left-mobile);*/
 }
 
 @media (min-width: 900px) {
