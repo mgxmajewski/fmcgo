@@ -10,7 +10,6 @@ const LanguageToggle = ({isbright}) => {
             setCurrentLang('eng')
             :
             setCurrentLang('pl')
-        console.log(`currentLang: ` + JSON.stringify(currentLang));
     }
 
     return (
