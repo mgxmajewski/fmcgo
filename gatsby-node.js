@@ -4,8 +4,8 @@ exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
 
   const openGraphImage = createOpenGraphImage(createPage, {
-    path: "/og-image/index.png",
-    component: path.resolve(`src/images/gobadge.png`),
+    path: "src/images/gobadge.png",
+    component: path.resolve(`src/pages/index.js`),
     size: {
       width: 400,
       height: 50,
