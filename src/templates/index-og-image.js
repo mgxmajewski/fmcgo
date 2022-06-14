@@ -4,9 +4,9 @@ import {StaticImage} from "gatsby-plugin-image";
 export default () => (
     <>
         <div>
-            <StaticImage
+            <img
                 alt={'go badge'}
-                src="../static/gabadge.png"
+                src="gabadge.png"
             />
         </div>
     </>

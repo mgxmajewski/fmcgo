@@ -12,11 +12,14 @@ module.exports = {
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-preload-fonts",
         "gatsby-plugin-polyfill-io",
+        "gatsby-plugin-advanced-sitemap",
         {
-            resolve: `gatsby-plugin-advanced-sitemap`,
+            resolve: 'gatsby-plugin-og-image-folders',
             options: {
-                exclude: [`/__generated/*`],
-            },
+                folders: [
+                    'src/og-image',
+                ]
+            }
         },
         {
             resolve: `gatsby-plugin-postcss`,
