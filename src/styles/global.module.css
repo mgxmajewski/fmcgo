@@ -180,7 +180,29 @@ body {
       "go-contact-section"
 }
 
+
+footer {
+    margin-top: -14vw;
+}
+
+@media (min-width: 900px) {
+    footer {
+        margin-top: -2.5vw;
+    }
+}
+
 footer > p {
+    /*height: 2vw;*/
+    padding-left: var(--left-padding-mobile);
+    font-weight: 300;
+    background-color: transparent;
+    color: #666666;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+@media (min-width: 900px) {
+    footer > p {
+        margin-top: -2.5vw;
+    }
 }

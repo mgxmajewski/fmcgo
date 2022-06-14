@@ -37,12 +37,16 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                 ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>
                 :
                 <>
-                    <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle} footerInView={footerInView}/>
+                    <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}
+                            footerInView={footerInView}/>
                     <div className={layout}>
                         {children}
                     </div>
                     <footer ref={footerRef}>
-                        <p>&reg; 2022 fmcgo.pl</p>
+                        <p>
+                            © 2022 by fmc_go<br/>
+                            Wszelkie prawa zastrzeżone
+                        </p>
                     </footer>
                 </>
             }
