@@ -12,29 +12,7 @@ module.exports = {
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         "gatsby-plugin-preload-fonts",
-        {
-            resolve: "gatsby-plugin-polyfill-io",
-            options: {
-                features: [
-                    "Array.from",
-                    "Array.prototype.find",
-                    "Array.prototype.filter",
-                    "Array.prototype.findIndex",
-                    "default",
-                    "Date.prototype.toISOString",
-                    "es5",
-                    "es6",
-                    "fetch",
-                    "Object.assign",
-                    "Math.trunc",
-                    "Math.sign",
-                    "Promise",
-                    "String.prototype.repeat",
-                    "Symbol",
-                    "window.fetch"
-                ]
-            }
-        },
+        "gatsby-plugin-polyfill-io",
         {
             resolve: `gatsby-plugin-postcss`,
             options: {
