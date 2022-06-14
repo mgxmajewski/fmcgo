@@ -20,7 +20,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-column-gap: 2.8vw;
-        grid-row-gap: 6.4vw;
+        grid-row-gap: 4vw;
         padding-top: 3vw;
         padding-bottom: 0;
     }
