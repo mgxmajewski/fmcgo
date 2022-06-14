@@ -13,6 +13,7 @@ module.exports = {
         "gatsby-plugin-sitemap",
         "gatsby-plugin-preload-fonts",
         "gatsby-plugin-polyfill-io",
+        "gatsby-plugin-open-graph-images",
         {
             resolve: `gatsby-plugin-postcss`,
             options: {
