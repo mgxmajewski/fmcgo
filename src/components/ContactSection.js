@@ -58,7 +58,7 @@ const ContactSection = ({contactSectionRef}) => {
                         </div>
                         <div className={detailsContact}>
                             m.<br/>
-                            office@fmcgo.pl
+                            go@fmcgo.pl
                         </div>
                         <div className={detailsSocial}>
                             <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer"
