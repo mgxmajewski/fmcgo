@@ -96,10 +96,10 @@ const NetworkSection = ({boardSectionRef}) => {
                     </div>
                     <p>
                         <b>Henryk Klawe<br/>TGTH</b><br/>{isShowMore
-                    ? <>Współzałożyciel Together odpowiedzialny za strategię. Posiada
-                        ponad 15-letnie doświadczenie w budowaniu marki i doradztwie w zakresie innowacji. Uważa, że
-                        ​​najbardziej wartościowe rozwiązania pochodzą z pracy w zgranych, multidyscyplinarnych
-                        zespołach.</>
+                        ? <>Współzałożyciel Together odpowiedzialny za strategię. Posiada
+                            ponad 15-letnie doświadczenie w budowaniu marki i doradztwie w zakresie innowacji. Uważa, że
+                            ​​najbardziej wartościowe rozwiązania pochodzą z pracy w zgranych, multidyscyplinarnych
+                            zespołach.</>
                         : <></>}
                     </p>
                 </div>
@@ -184,10 +184,10 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>Kacper Kaźmierowicz<br/>AdPeak</b><br/>Prowadzi kampanie Google Ads. Zwolennik
-                                prostych i
-                                skutecznych rozwiązań. Testuje i optymalizuje, aby osiągnąć jak najlepszy ROAS. Jestem
-                                zwolennikiem kampanii performanceowych, czyli tych nastawionych na efekt.
+                                <b>Kacper Kaźmierowicz<br/>AdPeak</b><br/>Performance i Analityka to jego dwa główne
+                                obszary działalności w ekosystemie Google. Szuka rozwiązań, optymalizuje, testuje i
+                                wyciąga wnioski. Dzieli się wiedzą w Szkole Głównej Handlowej. Prywatnie możesz go
+                                znaleźć na meczach Realu Madryt.
                             </p>
                         </div>
                         <div className={networkPersonContainer}>
