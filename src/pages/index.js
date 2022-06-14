@@ -75,7 +75,7 @@ const IndexPage = ({ref}) => {
                 <meta property="og:title" content="FMC GO"/>
                 <meta property="og:description" content="Wolcome to our page."/>
                 <meta property="og:image"
-                      content="https://fmcgomaster.gatsbyjs.io/ogimage.png"/>
+                      content="https://fmcgomaster.gatsbyjs.io/gobadge.png"/>
             </Helmet>
             <Layout
                 isNavFontBright={isNavFontBright}
