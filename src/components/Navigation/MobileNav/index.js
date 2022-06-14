@@ -38,7 +38,7 @@ const SideBar = ({isOpen, toggle, footerInView}) => {
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="radical-section"
+                                to="radical-icons"
                                 onClick={toggle}
                             >
                                 RadicalAdvertising

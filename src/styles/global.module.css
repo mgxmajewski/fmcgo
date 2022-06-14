@@ -172,6 +172,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
       "go-hero"
+      "radical-icons"
       "radical-section"
       "founders-section"
       "experience-section"

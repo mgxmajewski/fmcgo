@@ -1,54 +1,58 @@
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 
 export const RadicalSection = styled.section`
   grid-area: radical-section;
   display: grid;
-  /*height: 150vw;*/
   background-color: black;
   justify-items: center;
   padding-left: var(--left-padding-mobile);
   grid-template:
-            "radical-icons"
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
   grid-template-columns: var(--single-column-width-mobile);
   grid-row-gap: var(--row-gap-mobile);
-  grid-template-rows: auto auto auto 30vw;
+  grid-template-rows: auto auto 30vw;
   padding-top: 4vw;
 
-
   @media screen and (min-width: 900px) {
-    /*height: 50vw;*/
-    padding-top: calc(var(--padding-top-desktop) / 2);
     padding-bottom: var(--padding-bottom-destop);
     padding-left: var(--left-padding-desktop);
     grid-template:
-            "radical-icons"
             "radical-tagline"
             "radical-copy"
             "radical-drawers";
     grid-template-columns: var(--single-column-width-desktop);
     grid-row-gap: 2vw;
-    /*grid-template-rows: 6vw 8.5vw 10.5vw auto;*/
-    grid-template-rows: auto auto auto auto;
-    /*grid-column-gap: 3vw;*/
+    grid-template-rows: auto auto auto;
+  border: 1px solid black;
+  outline: 1px solid black;
   }
 `
 
 
 export const RadicalIcons = styled.div`
-  grid-area: radical-icons;
-  width: 100%;
   display: grid;
+  grid-area: radical-icons;
+  background-color: black;
+  justify-items: center;
+  padding-left: var(--left-padding-mobile);
+  padding-right: var(--left-padding-mobile);
+  padding-bottom: var(--row-gap-mobile);
+  grid-template-columns: repeat(2, calc(var(--main-content-column-width-mobile) / 2));
+  grid-row-gap: var(--row-gap-mobile);
+  width: 100%;
   grid-template:
             "mouse-go social-icons";
   justify-self: left;
+  border: 1px solid black;
+  outline: 1px solid black;
 
 
   @media screen and (min-width: 900px) {
-    width: var(--main-content-column-width-desktop);
-    /*padding-top: 0.4vw;*/
+    padding-top: calc(var(--padding-top-desktop) / 2);
+    padding-left: var(--left-padding-desktop);
+    grid-template-columns: repeat(2, calc(var(--main-content-column-width-desktop) / 2));
     padding-bottom: 6.5vw;
     margin-top: -2vw;
   }
@@ -63,6 +67,8 @@ export const RadicalTagline = styled.div`
   color: white;
   line-height: 1.05;
   font-size: var(--section-tagline-size-mobile);
+  border: none;
+  outline: none;
 
   @media (min-width: 900px) {
     font-size: var(--section-tagline-size-desktop);

@@ -17,13 +17,12 @@ import RadicalManifest from "../RadicalManifest";
 
 const Index = ({areSocialIconsVisible, radicalRef}) => {
 
-    return (
-        <RadicalSection ref={radicalRef} id="radical-section">
-            <RadicalIcons>
-                    <MouseGo isvisible={areSocialIconsVisible}>
-                        <MouseIconDiv><MouseIcon/></MouseIconDiv>
-                        go
-                    </MouseGo>
+    return (<>
+            <RadicalIcons id="radical-icons">
+                <MouseGo isvisible={areSocialIconsVisible}>
+                    <MouseIconDiv><MouseIcon/></MouseIconDiv>
+                    go
+                </MouseGo>
                 <SocialIcons isvisible={areSocialIconsVisible}>
                     <a href="https://www.facebook.com/fmcgoagencja" target="_blank" rel="noreferrer"
                        style={{textDecoration: "none"}}>
@@ -34,25 +33,30 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     </a>
                 </SocialIcons>
             </RadicalIcons>
-            <RadicalTagline
-                data-aos="fade-down"
-                data-aos-once="true"
-            >
-                Go #Radical Advertising!
-            </RadicalTagline>
-            <RadicalCopy
-                data-aos="fade-up"
-                data-aos-once="true"
-            >
-                Rozumiemy i lubimy produkty, sklepy i usługi, które reklamujemy. Potrafimy wgryźć się w dane, etnografie, badania, <br/>by znaleźć insighty o największym potencjale biznesowym i formułować adekwatne brand purpose. <br/>Ale równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena, promocja, sezon.
-            </RadicalCopy>
-            <RadicalDrawersContainer
-                data-aos="fade-right"
-                data-aos-once="true">
-                <RadicalDrawersRow/>
-            </RadicalDrawersContainer>
-            <RadicalManifest/>
-        </RadicalSection>
+            <RadicalSection ref={radicalRef} id="radical-section">
+                <RadicalTagline
+                    data-aos="fade-down"
+                    data-aos-once="true"
+                >
+                    Go #Radical Advertising!
+                </RadicalTagline>
+                <RadicalCopy
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                >
+                    Rozumiemy i lubimy produkty, sklepy i usługi, które reklamujemy. Potrafimy wgryźć się w dane,
+                    etnografie, badania, <br/>by znaleźć insighty o największym potencjale biznesowym i formułować
+                    adekwatne brand purpose. <br/>Ale równocześnie potrafimy docenić rolę, która w komunikacji
+                    marketingowej odgrywa cena, promocja, sezon.
+                </RadicalCopy>
+                <RadicalDrawersContainer
+                    data-aos="fade-right"
+                    data-aos-once="true">
+                    <RadicalDrawersRow/>
+                </RadicalDrawersContainer>
+                <RadicalManifest/>
+            </RadicalSection>
+        </>
     );
 };
 
