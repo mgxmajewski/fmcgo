@@ -13,9 +13,9 @@ module.exports = {
         "gatsby-plugin-preload-fonts",
         "gatsby-plugin-polyfill-io",
         {
-            resolve: `gatsby-plugin-sitemap`,
+            resolve: `gatsby-plugin-advanced-sitemap`,
             options: {
-                excludes: [`/__generated/*`],
+                exclude: [`/__generated/*`],
             },
         },
         {
