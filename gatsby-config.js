@@ -14,7 +14,7 @@ module.exports = {
         "gatsby-plugin-polyfill-io",
         "gatsby-plugin-advanced-sitemap",
         {
-            resolve: 'gatsby-plugin-og-image-folders',
+            resolve: 'gatsby-plugin-static-folders',
             options: {
                 folders: [
                     'src/og-image',
