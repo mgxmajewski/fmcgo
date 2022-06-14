@@ -192,7 +192,7 @@ footer {
 }
 
 footer > p {
-    /*height: 2vw;*/
+    position: absolute;
     padding-left: var(--left-padding-mobile);
     font-weight: 300;
     background-color: transparent;

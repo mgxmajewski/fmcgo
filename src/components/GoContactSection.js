@@ -1,7 +1,15 @@
 import React from 'react';
-import {goContactSection, mainLead, sideLead, socialIcons, tagLine} from '../styles/go-contact-section.module.css'
+import {
+    goBadge,
+    goContactSection,
+    mainLead,
+    sideLead,
+    socialIcons,
+    tagLine
+} from '../styles/go-contact-section.module.css'
 import {iconBox} from "../styles/radical.module.css";
 import "aos/dist/aos.css";
+import {StaticImage} from "gatsby-plugin-image";
 
 const GoContactSection = ({contactSectionRef}) => {
     return (
@@ -20,6 +28,12 @@ const GoContactSection = ({contactSectionRef}) => {
                     </a>
                     <br/>
                     530 768 598
+                </div>
+                <div className={goBadge}>
+                    <StaticImage
+                        alt={'Go Badge'}
+                        src="../images/gobadge.png"
+                    />
                 </div>
             </div>
             <div className={sideLead}>

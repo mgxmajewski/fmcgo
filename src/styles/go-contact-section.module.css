@@ -23,7 +23,8 @@
 .main-lead {
     background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
     display: grid;
-    grid-template-rows: 12vw auto auto;
+    position: relative;
+    grid-template-rows: 12vw auto auto auto;
     grid-row-gap: 8vw;
     padding-top: 8vw;
     padding-bottom: 8vw;
@@ -40,6 +41,22 @@
         padding-left: var(--left-padding-desktop);
     }
 }
+
+.go-badge {
+    position: absolute;
+    width: 30vw;
+    top: 65vw;
+    left: 55vw;
+}
+
+@media (min-width: 900px) {
+    .go-badge {
+        width: 10vw;
+        top: 10vw;
+        left: 31vw;
+    }
+}
+
 
 .tag-line {
     font-size: var(--section-tagline-size-mobile);
@@ -62,11 +79,11 @@
 
 @media (min-width: 900px) {
     .side-lead {
-    background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
-    padding-left: var(--left-padding-mobile);
-    padding-top: 10vw;
-    padding-bottom: 6vw;
-}
+        background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
+        padding-left: var(--left-padding-mobile);
+        padding-top: 10vw;
+        padding-bottom: 6vw;
+    }
 }
 
 .side-lead b {
