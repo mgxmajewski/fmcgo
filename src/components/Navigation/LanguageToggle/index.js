@@ -15,7 +15,7 @@ const LanguageToggle = ({isbright}) => {
     return (
         <>
             <NavLangaugeToggle
-                onClick={() => toggleCurrentLanguage()}
+                // onClick={() => toggleCurrentLanguage()}
                 isbright={isbright}
                 to="/">
                 <LangPL currentLang={currentLang}>PL</LangPL>

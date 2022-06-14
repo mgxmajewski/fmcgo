@@ -6,11 +6,12 @@ export const NavLangaugeToggle = styled(LinkR)`
   justify-self: center;
   background: transparent;
   white-space: nowrap;
-  //color: white;
-  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
+  color: transparent;
+  //color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   outline: none;
   border: none;
-  cursor: pointer;
+  //cursor: pointer;
+  cursor: default;
   text-decoration: none;
 
   font-weight: 500;
