@@ -83,7 +83,6 @@
 
 @media (min-width: 900px) {
     .experience-copy {
-        padding-top: 1vw;
         justify-self: left;
         font-size: var(--copy-font-size-desktop);
         width: var(--main-content-column-width-desktop);
