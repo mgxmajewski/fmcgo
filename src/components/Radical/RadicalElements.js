@@ -16,6 +16,7 @@ export const RadicalSection = styled.section`
   padding-top: 4vw;
 
   @media screen and (min-width: 900px) {
+    padding-top: 5.5vw;
     padding-bottom: var(--padding-bottom-destop);
     padding-left: var(--left-padding-desktop);
     grid-template:
@@ -53,7 +54,7 @@ export const RadicalIcons = styled.div`
     padding-top: calc(var(--padding-top-desktop) / 2);
     padding-left: var(--left-padding-desktop);
     grid-template-columns: repeat(2, calc(var(--main-content-column-width-desktop) / 2));
-    padding-bottom: 6.5vw;
+    padding-bottom: 5vw;
     margin-top: -2vw;
   }
 `

@@ -192,6 +192,7 @@ footer {
 }
 
 footer > p {
+    font-size: 1vw;
     position: absolute;
     padding-left: var(--left-padding-mobile);
     font-weight: 300;
@@ -203,6 +204,7 @@ footer > p {
 
 @media (min-width: 900px) {
     footer > p {
-        margin-top: -2.5vw;
+        font-size: .7vw;
+        margin-top: -1vw;
     }
 }
