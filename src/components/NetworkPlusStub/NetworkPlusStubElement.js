@@ -7,22 +7,23 @@ export const PlusContainer = styled.div`
   column-gap: 5vw;
   justify-content: center;
   align-items: start;
-  //width: 100%;
+  width: 101%;
   background: rgb(255, 255, 255);
-  //background: linear-gradient(0deg, rgba(255, 255, 255, 0.989233193277311) 44%, rgba(255, 255, 255, 0.9332107843137255) 80%, rgba(255, 255, 255, 0.4514180672268907) 100%);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.989233193277311) 44%, rgba(255, 255, 255, 0.4514180672268907) 100%);
   z-index: 1000;
-  height: ${({isShowMore}) => (isShowMore ? '0' : '90vw')};
-  margin-top: ${({isShowMore}) => (isShowMore ? '0' : '-90vw')};
-  padding-top: 40vw;
+  height: ${({isShowMore}) => (isShowMore ? '0' : '38vw')};
+   margin-top: ${({isShowMore}) => (isShowMore ? '0' : '-40vw')};
+   padding-top: 26vw;
   
   @media screen and (min-width: 900px) {
-    display: grid;
-    pointer-events: none;
-    padding-top: 6vw;
-    margin-top: 0;
-    height: auto;
-    grid-template-columns: auto;
+    display: none;
+    //display: grid;
+    //width: 10vw;
+    //pointer-events: none;
+    //padding-top: 6vw;
+    //margin-top: 0;
+    //height: auto;
+    //grid-template-columns: auto;
   }
 
   & > * {

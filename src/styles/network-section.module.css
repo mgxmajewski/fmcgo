@@ -30,6 +30,7 @@
 
 .network-tagline {
     grid-area: network-tagline;
+    /*padding-left: var(--left-padding-mobile);*/
     color: black;
     font-weight: 900;
     line-height: 1.05;
@@ -52,6 +53,7 @@
 
 .network-copy {
     grid-area: network-copy;
+    /*padding-left: var(--left-padding-mobile);*/
     font-size: var(--copy-font-size-mobile);
     line-height: var(--copy-line-height);
     font-weight: 300;
@@ -69,9 +71,10 @@
 .network-pictures {
     display: grid;
     grid-area: network-pictures;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-row-gap: 4vw;
+    grid-column-gap: 2vw;
     font-weight: 300;
     padding-top: 5.3vw;
     font-size: var(--copy-font-size-mobile);

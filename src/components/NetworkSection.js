@@ -95,34 +95,46 @@ const NetworkSection = ({boardSectionRef}) => {
                         />
                     </div>
                     <p>
-                        <b>Henryk Klawe<br/>TGTH</b><br/>{isShowMore
-                        ? <>Współzałożyciel Together odpowiedzialny za strategię. Posiada
-                            ponad 15-letnie doświadczenie w budowaniu marki i doradztwie w zakresie innowacji. Uważa, że
-                            ​​najbardziej wartościowe rozwiązania pochodzą z pracy w zgranych, multidyscyplinarnych
-                            zespołach.</>
-                        : <></>}
+                        {isShowMore
+                            ? <>
+                                <b>Henryk Klawe<br/>TGTH</b><br/>
+                                Współzałożyciel Together odpowiedzialny za strategię. Posiada
+                                ponad 15-letnie doświadczenie w budowaniu marki i doradztwie w zakresie innowacji.
+                                Uważa, że
+                                ​​najbardziej wartościowe rozwiązania pochodzą z pracy w zgranych, multidyscyplinarnych
+                                zespołach.
+                            </>
+                            : <></>
+                        }
                     </p>
                 </div>
-                {isShowMore
-                    ? <>
-                        <div
-                            data-aos="fade-up"
-                            data-aos-once="true"
-                            className={networkPersonContainer}>
-                            <div className={networkPersonPictureLeft}>
-                                <StaticImage
-                                    alt={''}
-                                    src="../images/bartoszbalewski.png"
-                                />
-                            </div>
-                            <p data-aos="fade-up" data-aos-once="true">
-                                <b>Bartosz Balewski<br/>TGTH</b><br/>Jest strategiem i projektantem user experience z
+                <div
+                    className={networkPersonContainer}>
+                    <div
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                        className={networkPersonPictureLeft}>
+                        <StaticImage
+                            alt={''}
+                            src="../images/bartoszbalewski.png"
+                        />
+                    </div>
+                    <p data-aos="fade-up" data-aos-once="true">
+                        {isShowMore
+                            ? <>
+                                <b>Bartosz Balewski<br/>TGTH</b><br/>
+                                Jest strategiem i projektantem user experience z
                                 12-letnim
                                 doświadczeniem, które zdobywał pracując dla klientów między innymi w USA, Hiszpanii i na
                                 Bliskim
                                 Wschodzie. Swoje projekty prowadzi zgodnie z założeniami metodologii Design Thinking.
-                            </p>
-                        </div>
+                            </>
+                            : <></>
+                        }
+                    </p>
+                </div>
+                {isShowMore
+                    ? <>
                         <div className={networkPersonContainer}>
                             <div
                                 data-aos="fade-up"
@@ -244,8 +256,8 @@ const NetworkSection = ({boardSectionRef}) => {
                     :
                     <></>
                 }
-                <NetworkPlusStub isShowMore={isShowMore} toggleNetwork={toggleNetwork}/>
             </div>
+            <NetworkPlusStub isShowMore={isShowMore} toggleNetwork={toggleNetwork}/>
         </section>
     );
 };
