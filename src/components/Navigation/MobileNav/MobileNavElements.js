@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa';
-import {Link as LinkR} from 'gatsby';
 import {Link as LinkS} from 'react-scroll';
 import Logo from "../../../assets/fmcgologo.svg";
 
@@ -12,7 +11,6 @@ export const MobileNavContainer = styled.aside`
   height: 100%;
   background: #0d0d0d;
   display: grid;
-  //align-items: center;
   top: 0;
   left: 0;
   transition: .3s ease-in-out;
@@ -53,7 +51,6 @@ export const MobileNavMenu = styled.ul`
 `
 
 export const MobileNavLink = styled(LinkS)`
-  //left: -10px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -73,8 +70,6 @@ export const MobileNavLink = styled(LinkS)`
   &:hover {
     font-weight: 900;
     color: white;
-    //-webkit-background-clip: text;
-    //-webkit-text-fill-color: transparent;
     transition: 0.2s ease-in-out;
   }
 `
