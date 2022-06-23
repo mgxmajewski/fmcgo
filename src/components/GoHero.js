@@ -1,22 +1,26 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Logo from '../assets/fmcgologo.svg'
 
 import {
     fmcgoCopy,
     fmcgoLogo,
-    fmcgoTagline,
+    fmcgoTaglineDesktop,
     fmcgoTaglineGradientSecondary,
     fmcgoTaglineGradientTricolor,
+    fmcgoTaglineMobile,
     fmcgoVectorLogo,
     goHeroSection
 } from "../styles/go-hero.module.css";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const GoHero = ({heroSectionRef}) => {
 
     return (
-        <section ref={heroSectionRef} className={goHeroSection} id="go-section">
+        <section
+            ref={heroSectionRef}
+            className={goHeroSection}
+            id="go-section"
+        >
             <div
                 data-aos="fade-right"
                 data-aos-once="true"
@@ -26,14 +30,31 @@ const GoHero = ({heroSectionRef}) => {
             <div
                 data-aos="fade-left"
                 data-aos-once="true"
-                className={fmcgoTagline}>
+                className={fmcgoTaglineMobile}
+            >
+                We <sup className={fmcgoTaglineGradientTricolor}>move</sup><br/>
+                as fast <br/>
+                as goods<br/>
+                we <sup className={fmcgoTaglineGradientSecondary}>move</sup>
+            </div>
+            <div
+                data-aos="fade-left"
+                data-aos-once="true"
+                className={fmcgoTaglineDesktop}>
                 We <sup className={fmcgoTaglineGradientTricolor}>move</sup> as fast <br/> as goods we <sup
                 className={fmcgoTaglineGradientSecondary}>move</sup>
             </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                className={fmcgoCopy}>Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, <br/>retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania sprzedaży czerpie <br/>w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji produktu czy usługi. <br/>Advertising nie jest religią, żeby miał się karmić wyłącznie misją i lifestylem.
+                className={fmcgoCopy}
+            >
+                <h2>Go FMC_Go</h2>
+                Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii
+                FMCG, <br/>retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania
+                sprzedaży czerpie <br/>w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji
+                produktu czy usługi. <br/>Advertising nie jest religią, żeby miał się karmić wyłącznie misją i
+                lifestylem.
             </div>
         </section>
     );
