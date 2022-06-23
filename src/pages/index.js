@@ -7,6 +7,7 @@ import FoundersSection from "../components/FoundersSection";
 import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
 import GoContactSection from "../components/GoContactSection";
+import ThreeSixtySection from "../components/ThreeSixtySection";
 import {useInView} from "react-intersection-observer";
 import {Helmet} from "react-helmet";
 
@@ -93,14 +94,15 @@ const IndexPage = ({ref}) => {
                     founderOneRef={founderOneRef}
                     founderTwoRef={founderTwoRef}
                 />
-                <ExperienceSection
+                <NetworkSection
+                    boardSectionRef={networkSectionRef}
+                />
+                <ThreeSixtySection
                     experienceSectionRef={experienceSectionRef}
                     experienceDrawersRef={experienceDrawersRef}
                     experienceInView={experienceDrawersInView}
                 />
-                <NetworkSection
-                    boardSectionRef={networkSectionRef}
-                />
+                <ExperienceSection/>
                 <GoContactSection contactSectionRef={contactSectionRef}/>
             </Layout>
         </>
