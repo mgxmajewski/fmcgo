@@ -109,7 +109,9 @@ const IndexPage = ({ref}) => {
                 <ExperienceSection
                     experienceSectionRef={experienceSectionRef}
                 />
-                <GoContactSection contactSectionRef={contactSectionRef}/>
+                <GoContactSection
+                    contactSectionRef={contactSectionRef}
+                />
             </Layout>
         </>
     )

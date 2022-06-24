@@ -55,6 +55,7 @@
 
 .manifest-point-copy {
     color: white;
+    line-height: var(--copy-line-height);
     font-size: var(--copy-font-size-mobile);
     font-weight: 300;
 }
