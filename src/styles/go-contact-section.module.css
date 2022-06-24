@@ -14,6 +14,7 @@
 
 @media (min-width: 900px) {
     .go-contact-section {
+        padding-top: 4vw;
         font-size: var(--copy-font-size-desktop);
         grid-template-columns: 39vw auto;
         grid-template-rows: auto;
