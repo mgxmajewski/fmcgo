@@ -39,7 +39,7 @@ export const MobileNavWrapper = styled.div`
 export const MobileNavMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(7, 80px);
   text-align: center;
 
   //overwrite default
