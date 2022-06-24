@@ -25,6 +25,7 @@
         grid-row-gap: var(--row-gap-desktop);
         grid-template-rows: auto auto;
         grid-column-gap: 3vw;
+        height: 30vw;
     }
 }
 
