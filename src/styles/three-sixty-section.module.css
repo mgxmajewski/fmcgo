@@ -8,25 +8,24 @@
             "three-sixty-drawers";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 79vw;
     grid-column-gap: 3vw;
     padding-bottom: 7vw;
     padding-top: 8vw;
     background-color: black;
-    height: 120vw;
 }
 
 @media (min-width: 900px) {
     .three-sixty-section {
+        padding-top: var(--padding-top-desktop);
         padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--padding-left-desktop);
         grid-template:
             "three-sixty-tagline"
             "three-sixty-drawers";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 12.9vw;
         grid-column-gap: 3vw;
-        height: 30vw;
     }
 }
 
@@ -62,7 +61,7 @@
 
 @media (min-width: 900px) {
     .go-orbit {
-        top: -13vw;
+        top: -10vw;
         left: 53vw;
         width: 10vw;
     }

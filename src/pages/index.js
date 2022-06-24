@@ -16,6 +16,7 @@ const IndexPage = ({ref}) => {
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [experienceSectionRef, experienceSectionInView] = useInView({rootMargin: '-36px'});
+    const [threeSixtySectionRef, threeSixtySectionInView] = useInView({rootMargin: '-36px'});
     const [experienceDrawersRef, experienceDrawersInView] = useInView({rootMargin: '400px'});
     const [aboveFounderOneRef, aboveFounderOneInView] = useInView({rootMargin: '-36px'});
     const [aboveFounderTwoRef, aboveFounderTwoInView] = useInView({rootMargin: '-36px'});
@@ -45,7 +46,7 @@ const IndexPage = ({ref}) => {
             (!heroSectionInView && radicalSectionInView)
             || (!aboveFounderOneInView && founderOneInView)
             || (!aboveFounderTwoInView && founderTwoInView)
-            || (!networkSectionInView && contactSectionInView)
+            || (!networkSectionInView && threeSixtySectionInView)
         ) {
             setIsNavFontBright('true')
         } else {
@@ -99,6 +100,7 @@ const IndexPage = ({ref}) => {
                 />
                 <ThreeSixtySection
                     experienceSectionRef={experienceSectionRef}
+                    threeSixtySectionRef={threeSixtySectionRef}
                     experienceDrawersRef={experienceDrawersRef}
                     experienceInView={experienceDrawersInView}
                 />

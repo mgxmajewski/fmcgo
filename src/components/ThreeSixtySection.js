@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import {usePageVisibility} from './useVisibilityHook'
 
 
-const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experienceInView}) => {
+const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experienceInView}) => {
 
     const isVisibleAndActiveTab = usePageVisibility()
 
@@ -142,19 +142,20 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
 
     return (
         <section
-            ref={experienceSectionRef}
+            id="three-sixty"
+            ref={threeSixtySectionRef}
             className={threeSixtySection}
-            id="founders-experience"
         >
             <div
-                data-aos="fade-up"
+                // data-aos="fade-up"
                 data-aos-once="true"
                 className={threeSixtyTagline}
             >
                 <div ref={experienceDrawersRef}>Go&nbsp;360&deg;!</div>
                 <StaticImage
                     className={goOrbit}
-                    data-aos="fade-in" data-aos-duration="4000"
+                    // data-aos="fade-in"
+                    // data-aos-duration="4000"
                     alt={'star graphic'}
                     src="../images/goorbit.png"
                 />
@@ -274,4 +275,4 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
         ;
 };
 
-export default ExperienceSection;
+export default ThreeSixtySection;

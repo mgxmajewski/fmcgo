@@ -70,21 +70,6 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                to="founders-experience"
-                                isbright={isNavFontBright}
-                                title="Experience"
-                            >
-                                Experience
-                            </NavLinks>
-                            <NavLinks
-                                // This ternary disables active when the bottom of the page is reached.
-                                // active class is disabled when the contact menu link is anabled.
-                                activeClass={`${footerInView ? "false" : "active"}`}
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                                offset={0}
                                 to="network-section"
                                 isbright={isNavFontBright}
                                 title="Network"
@@ -98,12 +83,40 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
+                                to="three-sixty"
+                                isbright={isNavFontBright}
+                                title="Experience"
+                            >
+                                360&deg;
+                            </NavLinks>
+                            <NavLinks
+                                // This ternary disables active when the bottom of the page is reached.
+                                // active class is disabled when the contact menu link is anabled.
+                                activeClass={`${footerInView ? "false" : "active"}`}
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                to="experience"
+                                isbright={isNavFontBright}
+                                title="Experience"
+                            >
+                                Experience
+                            </NavLinks>
+                            <NavLinks
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
                                 to="contact-section"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
                             >
-                                Contact
+                                Let's Go
                             </NavLinks>
                             <LangaugeToggle
                                 isbright={isNavFontBright}

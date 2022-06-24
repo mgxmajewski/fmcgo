@@ -10,7 +10,7 @@ const ExperienceSection = () => {
     return (
         <section
             className={experienceSection}
-            id="founders-experience"
+            id="experience"
         >
             <div
                 data-aos="fade-down"
