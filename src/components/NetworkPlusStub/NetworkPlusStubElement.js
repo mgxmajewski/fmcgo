@@ -7,7 +7,7 @@ export const PlusContainer = styled.div`
   column-gap: 5vw;
   justify-content: center;
   align-items: start;
-  width: 101%;
+  width: 100%;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.989233193277311) 44%, rgba(255, 255, 255, 0.4514180672268907) 100%);
   z-index: 1000;
