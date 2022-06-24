@@ -171,96 +171,105 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                     className={threeSixtyDrawers}
                 >
                     <DrawerCuboidZAnimation
-                        brand='carrefour'
+                        brand='rd'
                         section='co-section'
                         drawerDelay='0s'
                         pause={isRunningOne}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Carrefour
+                        R&D
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='pepsi'
+                        brand='innowacje-produktowe'
                         section='co-section'
                         // drawerDelay='4s'
                         pause={isRunningTwo}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Pepsi
+                        innowacje produktowe
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='desperados'
+                        brand='innowacje-marketingowe'
                         section='co-section'
                         pause={isRunningThree}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Desperados
+                        innowacje marketingowe
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='heineken'
+                        brand='design-marki'
                         section='co-section'
                         pause={isRunningFour}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Heineken
+                        design marki
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='develey'
+                        brand='strategie-marketingowe'
                         section='co-section'
                         pause={isRunningFive}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Develey
+                        strategie marketingowe
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='costa'
+                        brand='strategie-komunikacji'
                         section='co-section'
                         pause={isRunningSix}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Costa Coffee
+                        strategie komunikacji
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='tchibo'
+                        brand='platformy-komunikacji'
                         section='co-section'
                         pause={isRunningSeven}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Tchibo
+                        platformy komunikacji
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='stock'
+                        brand='kampanie-tv'
                         section='co-section'
                         pause={isRunningEight}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Stock
+                        kampanie TV/radio/outdoor
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='sephora'
+                        brand='komunikacja-digital'
                         section='co-section'
                         pause={isRunningNine}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Sephora
+                        komunikacja digital i social media
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
-                        brand='clarins'
+                        brand='aktywacje-konsumenckie'
                         section='co-section'
                         pause={isRunningTen}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        Clarins
+                        aktywacje konsumenckie
+                    </DrawerCuboidZAnimation>
+                    <DrawerCuboidZAnimation
+                        brand='komunikacja-w-sklepach'
+                        section='co-section'
+                        pause={isRunningTen}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
+                    >
+                        komunikacja w sklepach
                     </DrawerCuboidZAnimation>
                 </div>
                 :

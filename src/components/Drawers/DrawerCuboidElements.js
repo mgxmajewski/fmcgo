@@ -2,26 +2,28 @@ import styled from "styled-components";
 
 const handleCustomWidthMobile = brand => {
     switch (brand) {
-        case "carrefour":
-            return "32vw";
-        case "pepsi":
-            return "23vw";
-        case "desperados":
-            return "34vw";
-        case "heineken":
-            return "30vw";
-        case "develey":
-            return "28vw";
-        case "costa":
-            return "36vw";
-        case "tchibo":
-            return "26vw";
-        case "stock":
-            return "23vw";
-        case "sephora":
-            return "28vw";
-        case "clarins":
-            return "27vw";
+        case "rd":
+            return "12.5vw";
+        case "innowacje-produktowe":
+            return "51.5vw";
+        case "innowacje-marketingowe":
+            return "57vw";
+        case "design-marki":
+            return "33vw";
+        case "strategie-marketingowe":
+            return "54vw";
+        case "strategie-komunikacji":
+            return "50vw";
+        case "platformy-komunikacji":
+            return "52vw";
+        case "kampanie-tv":
+            return "66vw";
+        case "komunikacja-digital":
+            return "76vw";
+        case "aktywacje-konsumenckie":
+            return "58vw";
+        case "komunikacja-w-sklepach":
+            return "57vw"
         case "slider":
             return "9vw"
         default:
@@ -31,26 +33,28 @@ const handleCustomWidthMobile = brand => {
 
 const handleCustomWidthDesktop = brand => {
     switch (brand) {
-        case "carrefour":
+        case "rd":
             return "11.5vw";
-        case "pepsi":
+        case "innowacje-produktowe":
             return "8.2vw";
-        case "desperados":
+        case "innowacje-marketingowe":
             return "11.2vw";
-        case "heineken":
+        case "design-marki":
             return "11.1vw";
-        case "develey":
+        case "strategie-marketingowe":
             return "11vw";
-        case "costa":
+        case "strategie-komunikacji":
             return "14vw";
-        case "tchibo":
+        case "platformy-komunikacji":
             return "10vw";
-        case "stock":
+        case "kampanie-tv":
             return "8.2vw";
-        case "sephora":
+        case "komunikacja-digital":
             return "11vw";
-        case "clarins":
+        case "aktywacje-konsumenckie":
             return "10.5vw";
+        case "komunikacja-w-sklepach":
+            return "4.2vw"
         case "slider":
             return "4.2vw"
         default:

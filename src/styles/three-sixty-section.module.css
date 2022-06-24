@@ -8,7 +8,7 @@
             "three-sixty-drawers";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: auto 79vw;
+    grid-template-rows: auto 140vw;
     grid-column-gap: 3vw;
     padding-bottom: 7vw;
     padding-top: 8vw;
