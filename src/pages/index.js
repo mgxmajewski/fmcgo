@@ -85,7 +85,9 @@ const IndexPage = ({ref}) => {
                 isOpen={isOpen}
                 toggle={toggleNavState}
             >
-                <GoHero heroSectionRef={heroSectionRef}/>
+                <GoHero
+                    heroSectionRef={heroSectionRef}
+                />
                 <Radical
                     radicalRef={radicalSectionRef}
                     areSocialIconsVisible={areSocialIconsVisible}
@@ -100,7 +102,6 @@ const IndexPage = ({ref}) => {
                     boardSectionRef={networkSectionRef}
                 />
                 <ThreeSixtySection
-                    experienceSectionRef={experienceSectionRef}
                     threeSixtySectionRef={threeSixtySectionRef}
                     experienceDrawersRef={experienceDrawersRef}
                     experienceInView={experienceDrawersInView}
