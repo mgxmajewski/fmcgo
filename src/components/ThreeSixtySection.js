@@ -151,25 +151,21 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                 data-aos-once="true"
                 className={threeSixtyTagline}
             >
-                <div ref={experienceDrawersRef}>Go&nbsp;360&deg;!</div>
-                <StaticImage
-                    className={goOrbit}
-                    // data-aos="fade-in"
-                    // data-aos-duration="4000"
-                    alt={'star graphic'}
-                    src="../images/goorbit.png"
-                />
+                <div
+                    ref={experienceDrawersRef}
+                >
+                    Go&nbsp;360&deg;!
+                </div>
+                <div className={goOrbit}>
+                    <StaticImage
+                        // data-aos="fade-in"
+                        // data-aos-duration="4000"
+                        alt={'star graphic'}
+                        src="../images/goorbit.png"
+                    />
+                </div>
+
             </div>
-            {/*<div*/}
-            {/*    data-aos="fade-up"*/}
-            {/*    data-aos-once="true"*/}
-            {/*    className={threeSixtyCopy}*/}
-            {/*    ref={experienceDrawersRef}*/}
-            {/*>*/}
-            {/*    Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy*/}
-            {/*    się <br/>z ekspertyzą marketingową, produktową i strategiczną.*/}
-            {/*</div>*/}
-            {/*<div className={coDrawersPlaceholder}>*/}
             {isVisibleAndActiveTab && experienceInView ?
                 <div
                     className={threeSixtyDrawers}
