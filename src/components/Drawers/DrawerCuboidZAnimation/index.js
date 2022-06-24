@@ -11,7 +11,7 @@ import {
 
 const DrawerCuboidZAnimation = (props) => {
 
-    const {width, height, depth, brand, children, section, pause} = props
+    const {width, height, depth, brand, children, section, pause, cubeColor, fontColor} = props
 
     return (
         <DefaultDrawerDimensionsProvider>
@@ -22,6 +22,8 @@ const DrawerCuboidZAnimation = (props) => {
                 section={section}
                 depth={depth}
                 pause={pause}
+                cubeColor={cubeColor}
+                fontColor={fontColor}
             >
                 <Cube>
                     <FrontSide className="front-z-animation">{children}</FrontSide>

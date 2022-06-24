@@ -1,11 +1,10 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {
-    threeSixtyCopy,
+    goOrbit,
     threeSixtyDrawers,
     threeSixtySection,
-    threeSixtyTagline,
-    goOrbit
+    threeSixtyTagline
 } from '../styles/three-sixty-section.module.css'
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
@@ -138,6 +137,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
         }
     }, [iterator, flipAll, intervalsArray, isVisibleAndActiveTab, experienceInView])
 
+    const fontColor = 'black'
+    const cubeColor = 'white'
 
     return (
         <section
@@ -177,6 +178,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         section='co-section'
                         drawerDelay='0s'
                         pause={isRunningOne}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Carrefour
                     </DrawerCuboidZAnimation>
@@ -185,6 +188,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         section='co-section'
                         // drawerDelay='4s'
                         pause={isRunningTwo}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Pepsi
                     </DrawerCuboidZAnimation>
@@ -192,6 +197,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='desperados'
                         section='co-section'
                         pause={isRunningThree}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Desperados
                     </DrawerCuboidZAnimation>
@@ -199,6 +206,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='heineken'
                         section='co-section'
                         pause={isRunningFour}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Heineken
                     </DrawerCuboidZAnimation>
@@ -206,6 +215,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='develey'
                         section='co-section'
                         pause={isRunningFive}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Develey
                     </DrawerCuboidZAnimation>
@@ -213,6 +224,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='costa'
                         section='co-section'
                         pause={isRunningSix}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Costa Coffee
                     </DrawerCuboidZAnimation>
@@ -220,6 +233,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='tchibo'
                         section='co-section'
                         pause={isRunningSeven}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Tchibo
                     </DrawerCuboidZAnimation>
@@ -227,6 +242,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='stock'
                         section='co-section'
                         pause={isRunningEight}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Stock
                     </DrawerCuboidZAnimation>
@@ -234,6 +251,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='sephora'
                         section='co-section'
                         pause={isRunningNine}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Sephora
                     </DrawerCuboidZAnimation>
@@ -241,6 +260,8 @@ const ExperienceSection = ({experienceSectionRef, experienceDrawersRef, experien
                         brand='clarins'
                         section='co-section'
                         pause={isRunningTen}
+                        cubeColor={cubeColor}
+                        fontColor={fontColor}
                     >
                         Clarins
                     </DrawerCuboidZAnimation>

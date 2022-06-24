@@ -60,8 +60,8 @@
 
 @media (min-width: 900px) {
     .go-orbit {
-        margin-top: -20vw;
-        margin-left: 20vw;
+        top: -13vw;
+        left: 53vw;
         width: 10vw;
     }
 }
