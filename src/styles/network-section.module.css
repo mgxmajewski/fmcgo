@@ -1,4 +1,5 @@
 .network-section {
+    position: relative;
     grid-area: network-section;
     background-color: white;
     display: grid;
@@ -39,7 +40,7 @@
     align-self: end;
 }
 
-.network-tagline > span {
+.network-tagline span {
     background: linear-gradient(49deg, rgba(139, 37, 86, 1) 4%, rgba(206, 124, 21, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,6 +49,25 @@
 @media (min-width: 900px) {
     .network-tagline {
         font-size: var(--section-tagline-size-desktop);
+    }
+}
+
+.plus-star {
+    position: absolute;
+    top: -3vw;
+    left: 64vw;
+    width: 20vw;
+    /*margin-left: -5vw;*/
+    z-index: 100;
+}
+
+@media (min-width: 900px) {
+    .plus-star {
+        top: -2vw;
+        left: 64vw;
+        width: 12vw;
+        /*margin-top: -5vw;*/
+        /*margin-left: 20vw;*/
     }
 }
 

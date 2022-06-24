@@ -6,6 +6,7 @@ import {
     networkPictures,
     networkSection,
     networkTagline,
+    plusStar
 } from '../styles/network-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
@@ -37,7 +38,14 @@ const NetworkSection = ({boardSectionRef}) => {
                 data-aos-once="true"
                 className={networkTagline}
             >
-                Go <span>Network!</span>
+                <div>Go <span>Network!</span></div>
+                <div className={plusStar}>
+                    <StaticImage
+                        // data-aos="fade-in" data-aos-duration="4000"
+                        alt={'star graphic'}
+                        src="../images/starplus.png"
+                    />
+                </div>
             </div>
             <div
                 data-aos="fade-up"

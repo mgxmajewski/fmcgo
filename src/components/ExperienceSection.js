@@ -25,12 +25,12 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 className={experienceTagline}
             >
                 <div>Go&nbsp;with&nbsp;experience!</div>
-                <StaticImage
-                    className={plusStar}
-                    data-aos="fade-in" data-aos-duration="4000"
-                    alt={'star graphic'}
-                    src="../images/starplus.png"
-                />
+                {/*<StaticImage*/}
+                {/*    className={plusStar}*/}
+                {/*    data-aos="fade-in" data-aos-duration="4000"*/}
+                {/*    alt={'star graphic'}*/}
+                {/*    src="../images/starplus.png"*/}
+                {/*/>*/}
             </div>
             <div
                 data-aos="fade-up"
