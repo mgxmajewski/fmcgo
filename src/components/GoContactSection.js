@@ -29,12 +29,12 @@ const GoContactSection = ({contactSectionRef}) => {
                     <br/>
                     530 768 598
                 </div>
-                <div className={goBadge}>
-                    <StaticImage
-                        alt={'Go Badge'}
-                        src="../images/gobadge.png"
-                    />
-                </div>
+                {/*<div className={goBadge}>*/}
+                {/*    <StaticImage*/}
+                {/*        alt={'Go Badge'}*/}
+                {/*        src="../images/gobadge.png"*/}
+                {/*    />*/}
+                {/*</div>*/}
             </div>
             <div className={sideLead}>
                 <div>
