@@ -41,7 +41,6 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                // offset={getNavBarHeight()}
                                 exact='true'
                                 to="radical-section"
                                 isbright={isNavFontBright}
@@ -70,6 +69,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
+                                exact='true'
                                 to="network-section"
                                 isbright={isNavFontBright}
                                 title="Network"
@@ -83,9 +83,10 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
+                                exact='true'
                                 to="three-sixty-section"
                                 isbright={isNavFontBright}
-                                title="Experience"
+                                title="ThreeSixty"
                             >
                                 360&deg;
                             </NavLinks>
@@ -98,6 +99,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
+                                exact='true'
                                 to="experience-section"
                                 isbright={isNavFontBright}
                                 title="Experience"
@@ -111,6 +113,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
+                                exact='true'
                                 to="contact-section"
                                 isbright={isNavFontBright}
                                 title="Contact"
