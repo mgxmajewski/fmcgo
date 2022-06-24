@@ -96,6 +96,7 @@
 }
 
 .experience-clients {
+    width: var(--main-content-column-width-desktop);
     padding: 10vw;
     grid-area: experience-clients;
     display: grid;
