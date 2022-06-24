@@ -16,7 +16,7 @@ const IndexPage = ({ref}) => {
     const [heroSectionRef, heroSectionInView] = useInView({rootMargin: '-36px'});
     const [radicalSectionRef, radicalSectionInView] = useInView({rootMargin: '-36px'});
     const [experienceSectionRef, experienceSectionInView] = useInView({rootMargin: '-36px'});
-    const [experienceDrawersRef, experienceDrawersInView] = useInView({rootMargin: '200px'});
+    const [experienceDrawersRef, experienceDrawersInView] = useInView({rootMargin: '400px'});
     const [aboveFounderOneRef, aboveFounderOneInView] = useInView({rootMargin: '-36px'});
     const [aboveFounderTwoRef, aboveFounderTwoInView] = useInView({rootMargin: '-36px'});
     const [founderOneRef, founderOneInView] = useInView({rootMargin: '-36px'});
