@@ -4,12 +4,12 @@
     justify-items: center;
     padding-left: var(--padding-left-mobile);
     grid-template:
-            "co-tagline"
-            "co-copy"
-            "co-drawers";
+            "experience-tagline"
+            "experience-copy"
+            "experience-clients";
     grid-template-columns: var(--single-column-width-mobile);
     grid-row-gap: var(--row-gap-mobile);
-    grid-template-rows: auto auto 79vw;
+    grid-template-rows: auto auto auto;
     grid-column-gap: 3vw;
     padding-bottom: 7vw;
     background-color: white;
@@ -20,17 +20,17 @@
         padding-bottom: var(--padding-bottom-destop);
         padding-left: var(--padding-left-desktop);
         grid-template:
-            "co-tagline"
-            "co-copy"
-            "co-drawers";
+            "experience-tagline"
+            "experience-copy"
+            "experience-clients";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: auto auto 12.9vw;
+        grid-template-rows: auto auto auto;
         grid-column-gap: 3vw;
     }
 }
 
 .experience-tagline {
-    grid-area: co-tagline;
+    grid-area: experience-tagline;
     display: grid;
     align-items: end;
     font-weight: 900;
@@ -73,7 +73,7 @@
 }
 
 .experience-copy {
-    grid-area: co-copy;
+    grid-area: experience-copy;
     font-weight: 300;
     line-height: var(--copy-line-height);
     color: black;
@@ -93,22 +93,27 @@
     font-weight: bold;
 }
 
-.experience-drawers {
-    grid-area: co-drawers;
-    display: flex;
-    font-weight: 900;
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
+.experience-clients {
+    padding: 10vw;
+    grid-area: experience-clients;
+    display: grid;
+    align-self: center;
     justify-self: left;
-    width: 70vw;
-    gap: 4vw 6vw;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 10vw;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 @media (min-width: 900px) {
-    .experience-drawers {
-        width: 70vw;
-        gap: 2vw 2.7vw;
+    .experience-clients {
+        padding: 0;
+        gap: 2vw;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto;
     }
 }
 

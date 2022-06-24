@@ -1,6 +1,12 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {experienceCopy, experienceSection, experienceTagline, plusStar} from '../styles/experience-section.module.css'
+import {
+    experienceClients,
+    experienceCopy,
+    experienceSection,
+    experienceTagline,
+    plusStar
+} from '../styles/experience-section.module.css'
 import "aos/dist/aos.css";
 
 
@@ -33,6 +39,32 @@ const ExperienceSection = ({experienceSectionRef}) => {
             >
                 Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
+            </div>
+            <div className={experienceClients}>
+                <div>
+                    <StaticImage
+                        alt={'Develey logo'}
+                        src="../images/develey.png"
+                    />
+                </div>
+                <div>
+                    <StaticImage
+                        alt={'Tchibo logo'}
+                        src="../images/tchibo.png"
+                    />
+                </div>
+                <div>
+                    <StaticImage
+                        alt={'Travelist.pl logo'}
+                        src="../images/travelist.png"
+                    />
+                </div>
+                <div>
+                    <StaticImage
+                        alt={'Echo Investment logo'}
+                        src="../images/echoinvestment.png"
+                    />
+                </div>
             </div>
         </section>
     )
