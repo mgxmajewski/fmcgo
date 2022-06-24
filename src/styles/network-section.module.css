@@ -147,15 +147,13 @@
     display: block;
     position: relative;
     width: 40vw;
+    background-color: grey;
 }
 
 @media (min-width: 900px) {
     .network-person-picture-right,
     .network-person-picture-left {
-        display: block;
-        position: relative;
         width: 21.8vw;
-        background-color: grey;
     }
 }
 
