@@ -46,7 +46,7 @@ export const MobileNavMenu = styled.ul`
   padding-inline-start: 0;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(7, 60px);
   }
 `
 
