@@ -34,27 +34,27 @@ const handleCustomWidthMobile = brand => {
 const handleCustomWidthDesktop = brand => {
     switch (brand) {
         case "rd":
-            return "11.5vw";
+            return "7vw";
         case "innowacje-produktowe":
-            return "8.2vw";
+            return "21vw";
         case "innowacje-marketingowe":
-            return "11.2vw";
+            return "23vw";
         case "design-marki":
-            return "11.1vw";
+            return "13vw";
         case "strategie-marketingowe":
-            return "11vw";
+            return "22vw";
         case "strategie-komunikacji":
-            return "14vw";
+            return "20vw";
         case "platformy-komunikacji":
-            return "10vw";
+            return "21vw";
         case "kampanie-tv":
-            return "8.2vw";
+            return "25vw";
         case "komunikacja-digital":
-            return "11vw";
+            return "30vw";
         case "aktywacje-konsumenckie":
-            return "10.5vw";
+            return "24vw";
         case "komunikacja-w-sklepach":
-            return "4.2vw"
+            return "23vw"
         case "slider":
             return "4.2vw"
         default:

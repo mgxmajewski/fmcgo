@@ -25,6 +25,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
     const [isRunningEight, setIsRunningEight] = useState('paused')
     const [isRunningNine, setIsRunningNine] = useState('paused')
     const [isRunningTen, setIsRunningTen] = useState('paused')
+    const [isRunningEleven, setIsRunningEleven] = useState('paused')
 
     const flipBlankFrame = () => null
 
@@ -68,6 +69,10 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
         setIsRunningTen(isRunningTen === 'paused' ? 'running' : 'paused')
     }, [isRunningTen])
 
+    const flipEleven = useCallback(() => {
+        setIsRunningEleven(isRunningEleven === 'paused' ? 'running' : 'paused')
+    }, [isRunningEleven])
+
     const createIntervalsArray = () => [
         flipBlankFrame,
         flipOne,
@@ -80,12 +85,13 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
         flipEight,
         flipNine,
         flipTen,
+        flipEleven,
         flipBlankFrame,
         flipBlankFrame
     ]
 
     const intervalsArray = useMemo(createIntervalsArray,
-        [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]
+        [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipEleven]
     )
 
     const initialIteratorValue = 0
@@ -101,7 +107,8 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
         flipEight()
         flipNine()
         flipTen()
-    }, [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen]);
+        flipEleven()
+    }, [flipOne, flipTwo, flipThree, flipFour, flipFive, flipSix, flipSeven, flipEight, flipNine, flipTen, flipEleven]);
 
     const [iterator, setIterator] = useState(0)
 
@@ -265,7 +272,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                     <DrawerCuboidZAnimation
                         brand='komunikacja-w-sklepach'
                         section='co-section'
-                        pause={isRunningTen}
+                        pause={isRunningEleven}
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >

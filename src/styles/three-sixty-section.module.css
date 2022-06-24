@@ -24,7 +24,7 @@
             "three-sixty-tagline"
             "three-sixty-drawers";
         grid-row-gap: var(--row-gap-desktop);
-        grid-template-rows: auto 12.9vw;
+        grid-template-rows: auto 29vw;
         grid-column-gap: 3vw;
     }
 }
