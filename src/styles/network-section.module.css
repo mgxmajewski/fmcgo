@@ -71,7 +71,7 @@
 .network-pictures {
     display: grid;
     grid-area: network-pictures;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 4vw;
     grid-column-gap: 2vw;
