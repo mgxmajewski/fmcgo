@@ -83,7 +83,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                to="three-sixty"
+                                to="three-sixty-section"
                                 isbright={isNavFontBright}
                                 title="Experience"
                             >
@@ -98,7 +98,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 duration={500}
                                 isDynamic={true}
                                 offset={0}
-                                to="experience"
+                                to="experience-section"
                                 isbright={isNavFontBright}
                                 title="Experience"
                             >

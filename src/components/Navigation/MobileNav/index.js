@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react';
 
-import {FmcgoVectorLogoWhite, MobileNavContainer, MobileNavLink, MobileNavMenu, MobileNavWrapper} from "./MobileNavElements";
+import {
+    FmcgoVectorLogoWhite,
+    MobileNavContainer,
+    MobileNavLink,
+    MobileNavMenu,
+    MobileNavWrapper
+} from "./MobileNavElements";
 import LangaugeToggle from "../LanguageToggle";
 
 const SideBar = ({isOpen, toggle, footerInView}) => {
@@ -60,21 +66,32 @@ const SideBar = ({isOpen, toggle, footerInView}) => {
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="founders-experience"
+                                to="network-section"
                                 onClick={toggle}
                             >
-                                Experience
+                                Network
                             </MobileNavLink>
-                             <MobileNavLink
+                            <MobileNavLink
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                // offset={-80}
+                                to="three-sixty-section"
+                                onClick={toggle}
+                            >
+                                360&deg;
+                            </MobileNavLink>
+                            <MobileNavLink
                                 activeClass={`${footerInView ? "false" : "active"}`}
                                 spy={true}
                                 smooth={true}
                                 duration={500}
                                 // offset={-80}
-                                to="network-section"
+                                to="experience-section"
                                 onClick={toggle}
                             >
-                                Network
+                                Experience
                             </MobileNavLink>
                             <MobileNavLink
                                 activeClass="active"

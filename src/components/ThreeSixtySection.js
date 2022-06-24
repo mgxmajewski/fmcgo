@@ -142,7 +142,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
 
     return (
         <section
-            id="three-sixty"
+            id="three-sixty-section"
             ref={threeSixtySectionRef}
             className={threeSixtySection}
         >
