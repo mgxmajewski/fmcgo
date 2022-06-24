@@ -58,6 +58,7 @@ const IndexPage = ({ref}) => {
         radicalSectionInView,
         experienceSectionInView,
         experienceDrawersInView,
+        threeSixtySectionInView,
         founderOneInView,
         founderTwoInView,
         aboveFounderOneInView,
@@ -104,7 +105,9 @@ const IndexPage = ({ref}) => {
                     experienceDrawersRef={experienceDrawersRef}
                     experienceInView={experienceDrawersInView}
                 />
-                <ExperienceSection/>
+                <ExperienceSection
+                    experienceSectionRef={experienceSectionRef}
+                />
                 <GoContactSection contactSectionRef={contactSectionRef}/>
             </Layout>
         </>

@@ -4,12 +4,13 @@ import {experienceCopy, experienceSection, experienceTagline, plusStar} from '..
 import "aos/dist/aos.css";
 
 
-const ExperienceSection = () => {
+const ExperienceSection = ({experienceSectionRef}) => {
 
 
     return (
         <section
             className={experienceSection}
+            ref={experienceSectionRef}
             id="experience-section"
         >
             <div
