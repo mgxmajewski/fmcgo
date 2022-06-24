@@ -96,7 +96,6 @@
 }
 
 .experience-clients {
-    width: var(--main-content-column-width-desktop);
     padding: 10vw;
     grid-area: experience-clients;
     display: grid;
@@ -113,6 +112,7 @@
 
 @media (min-width: 900px) {
     .experience-clients {
+        width: var(--main-content-column-width-desktop);
         padding: 0;
         gap: 2vw;
         grid-template-rows: auto;
