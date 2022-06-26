@@ -104,7 +104,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             src="../images/henrykklawe.png"
                         />
                     </div>
-                    <p>
+                    <p data-aos="fade-up" data-aos-once="true">
                         {isShowMore
                             ? <>
                                 <b>Henryk Klawe<br/>TGTH</b><br/>
