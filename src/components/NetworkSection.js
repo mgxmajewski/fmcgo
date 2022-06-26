@@ -39,14 +39,15 @@ const NetworkSection = ({boardSectionRef}) => {
                 className={networkTagline}
             >
                 <div>Go <span>Network!</span></div>
-                <div className={plusStar}>
+
+            </div>
+            <div className={plusStar}>
                     <StaticImage
                         // data-aos="fade-in" data-aos-duration="4000"
                         alt={'star graphic'}
                         src="../images/starplus.png"
                     />
                 </div>
-            </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
@@ -95,8 +96,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 <div className={networkPersonContainer}>
                     <div
-                        // data-aos="fade-up"
-                        // data-aos-once="true"
+                        data-aos="fade-up"
+                        data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
@@ -119,8 +120,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 <div
                     className={networkPersonContainer}>
                     <div
-                        // data-aos="fade-up"
-                        // data-aos-once="true"
+                        data-aos="fade-up"
+                        data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={''}
