@@ -154,11 +154,13 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
             className={threeSixtySection}
         >
             <div
-                // data-aos="fade-up"
-                data-aos-once="true"
+                // // data-aos="fade-up"
+                // data-aos-once="true"
                 className={threeSixtyTagline}
             >
                 <div
+                    data-aos="fade-down"
+                    data-aos-once="true"
                     ref={experienceDrawersRef}
                 >
                     Go&nbsp;360&deg;!
