@@ -154,8 +154,6 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
             className={threeSixtySection}
         >
             <div
-                // // data-aos="fade-up"
-                // data-aos-once="true"
                 className={threeSixtyTagline}
             >
                 <div

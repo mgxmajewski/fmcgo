@@ -5,7 +5,7 @@ import {
     experienceCopy,
     experienceSection,
     experienceTagline,
-    plusStar
+    // plusStar
 } from '../styles/experience-section.module.css'
 import "aos/dist/aos.css";
 

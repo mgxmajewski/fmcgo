@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    goBadge,
+    // goBadge,
     goContactSection,
     mainLead,
     sideLead,
@@ -9,7 +9,7 @@ import {
 } from '../styles/go-contact-section.module.css'
 import {iconBox} from "../styles/radical.module.css";
 import "aos/dist/aos.css";
-import {StaticImage} from "gatsby-plugin-image";
+// import {StaticImage} from "gatsby-plugin-image";
 
 const GoContactSection = ({contactSectionRef}) => {
     return (
