@@ -42,12 +42,12 @@ const NetworkSection = ({boardSectionRef}) => {
 
             </div>
             <div className={plusStar}>
-                    <StaticImage
-                        // data-aos="fade-in" data-aos-duration="4000"
-                        alt={'star graphic'}
-                        src="../images/starplus.png"
-                    />
-                </div>
+                <StaticImage
+                    // data-aos="fade-in" data-aos-duration="4000"
+                    alt={'star graphic'}
+                    src="../images/starplus.png"
+                />
+            </div>
             <div
                 data-aos="fade-up"
                 data-aos-once="true"
@@ -69,7 +69,8 @@ const NetworkSection = ({boardSectionRef}) => {
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
-                        <b>Ana Maria Szutowicz<br/>Y&Lovers</b><br/>
+                        <b>Ana Maria Szutowicz</b>
+                        <br/>
                         CEO&Founder agencji badawczo-strategicznej Y&LOVERS
                         Strateżka, badaczka, etnografka konsumenckiego życia naszych, ekspertka zmiany pokoleniowej i
                         marketingu do młodych. Jurorka Effie. Członkini PTBRiO.
@@ -86,7 +87,8 @@ const NetworkSection = ({boardSectionRef}) => {
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
-                        <b>Klaudyna Kamińska<br/>Y&Lovers</b><br/>
+                        <b>Klaudyna Kamińska</b>
+                        <br/>
                         Copywriter, Dyrektor Kreatywny,
                         Założyciel agencji reklamowej FMC_Go,
                         Twórca strategii i platform komunikacji
@@ -107,7 +109,8 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         {isShowMore
                             ? <>
-                                <b>Henryk Klawe<br/>TGTH</b><br/>
+                                <b>Henryk Klawe</b>
+                                <br/>
                                 Copywriter, Dyrektor Kreatywny,
                                 Założyciel agencji reklamowej FMC_Go,
                                 Twórca strategii i platform komunikacji
@@ -131,7 +134,8 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         {isShowMore
                             ? <>
-                                <b>Bartosz Balewski<br/>TGTH</b><br/>
+                                <b>Bartosz Balewski</b>
+                                <br/>
                                 Copywriter, Dyrektor Kreatywny,
                                 Założyciel agencji reklamowej FMC_Go,
                                 Twórca strategii i platform komunikacji
@@ -143,20 +147,6 @@ const NetworkSection = ({boardSectionRef}) => {
                 </div>
                 {isShowMore
                     ? <>
-                        {/*<div className={networkPersonContainer}>*/}
-                        {/*    <div*/}
-                        {/*        data-aos="fade-up"*/}
-                        {/*        data-aos-once="true"*/}
-                        {/*        className={networkPersonPictureLeft}>*/}
-                        {/*        <StaticImage*/}
-                        {/*            alt={'Miłosz Jacyna Photo'}*/}
-                        {/*            src="../images/miloszjacyna.png"*/}
-                        {/*        />*/}
-                        {/*    </div>*/}
-                        {/*    <p data-aos="fade-up" data-aos-once="true">*/}
-                        {/*        <b>Miłosz Jacyna<br/>Social...</b><br/>*/}
-                        {/*    </p>*/}
-                        {/*</div>*/}
                         <div className={networkPersonContainer}>
                             <div
                                 data-aos="fade-up"
@@ -168,7 +158,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>Łukasz Kępiński<br/>Tears of Joy / influencer&gaming</b><br/>
+                                <b>Łukasz Kępiński</b>
+                                <br/>
                                 Copywriter, Dyrektor Kreatywny,
                                 Założyciel agencji reklamowej FMC_Go,
                                 Twórca strategii i platform komunikacji
@@ -187,7 +178,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>Wojciech Morawski<br/>AdPeak</b><br/>
+                                <b>Wojciech Morawski</b>
+                                <br/>
                                 Założyciel agencji mediowej AdPeak i Certyfikowany Trener Google. Specjalista SEM,
                                 Prowadzi szkolenia w ramach Akademii Google Partners, SEMcamp University czy Marketing
                                 Masters.
@@ -204,7 +196,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>Kacper Kaźmierowicz<br/>AdPeak</b><br/>
+                                <b>Kacper Kaźmierowicz</b>
+                                <br/>
                                 Współwłaściciel agencji mediowej AdPeak. Prowadzi kampanie Google Ads. Zwolennik
                                 prostych i skutecznych rozwiązań performanceowych. Testuje i optymalizuje, aby
                                 osiągnąć jak najlepszy ROAS.
@@ -221,29 +214,12 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>dr hab., prof. Uniwersytetu SWPS<br/>Mirosław Filiciak</b><br/>
+                                <b>
+                                Mirosław Filiciak</b>
+                                <br/>
                                 Profesor Uniwersytetu SWPS, kulturoznawca, zajmuje się badaniami mediów.
                             </p>
                         </div>
-
-                        {/*<div className={networkPersonContainer}>*/}
-                        {/*    <div*/}
-                        {/*        data-aos="fade-up"*/}
-                        {/*        data-aos-once="true"*/}
-                        {/*        className={networkPersonPictureLeft}>*/}
-                        {/*        <StaticImage*/}
-                        {/*            alt={'Daria Afeltowicz Photo'}*/}
-                        {/*            src="../images/dariaafeltowicz.png"*/}
-                        {/*        />*/}
-                        {/*    </div>*/}
-                        {/*    <p data-aos="fade-up" data-aos-once="true">*/}
-                        {/*        <b>Daria Afeltowicz</b><br/>Psycholog, badacz z wykształcenia i zamiłowania. Z badaniami*/}
-                        {/*        marketingowymi związana od 2006 roku. Przez 7 lat pracowała jako badacz w Domu Badawczym*/}
-                        {/*        Maison*/}
-                        {/*        wspierając firmy w budowaniu i rozwijaniu ich marek. Od 2013 roku pracowała jako*/}
-                        {/*        specjalista*/}
-                        {/*        badań wspierając wiedzą na temat </p>*/}
-                        {/*</div>*/}
                         <div className={networkPersonContainer}>
                             <div
                                 data-aos="fade-up"
@@ -255,7 +231,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
-                                <b>Karolina<br/>Semiotyczka</b><br/>
+                                <b>Karolina Balmas</b>
+                                <br/>
                                 Semiotyczka, antropolożka, badaczka. Analizuje internetowy, medialny i popkulturowy
                                 dyskurs konsumencki oraz komunikację marek. Badając znaki językowe i wizualne, szuka
                                 kodów kulturowych. Łowi trendy i kierunki zmian.
