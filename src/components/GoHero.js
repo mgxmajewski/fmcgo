@@ -49,7 +49,7 @@ const GoHero = ({heroSectionRef}) => {
                 data-aos-once="true"
                 className={fmcgoCopy}
             >
-                <h2>Go FMC_Go</h2>
+                <h2>Go FMC_Go!</h2>
                 Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii
                 FMCG, <br/>retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania
                 sprzedaży czerpie <br/>w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji

@@ -24,13 +24,7 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 data-aos-once="true"
                 className={experienceTagline}
             >
-                <div>Go&nbsp;with&nbsp;experience!</div>
-                {/*<StaticImage*/}
-                {/*    className={plusStar}*/}
-                {/*    data-aos="fade-in" data-aos-duration="4000"*/}
-                {/*    alt={'star graphic'}*/}
-                {/*    src="../images/starplus.png"*/}
-                {/*/>*/}
+                <div>Go&nbsp;experience!</div>
             </div>
             <div
                 data-aos="fade-up"
