@@ -97,7 +97,7 @@
     grid-column-gap: 2vw;
     font-weight: 300;
     padding-top: 5.3vw;
-    font-size: var(--copy-font-size-mobile);
+    font-size: calc(.8 * var(--copy-font-size-mobile));
     width: 100%;
     /*width: var(--main-content-column-width-mobile);*/
     line-height: var(--copy-line-height);
