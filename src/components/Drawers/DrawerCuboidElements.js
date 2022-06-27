@@ -136,7 +136,7 @@ export const DrawerContainer = styled.div`
   justify-content: center;
   align-items: center;
   perspective: 2000px;
-  perspective-origin: -450px -450px;
+  perspective-origin: -600px -450px;
 `
 
 
