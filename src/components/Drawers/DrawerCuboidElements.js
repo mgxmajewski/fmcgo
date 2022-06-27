@@ -1,5 +1,68 @@
 import styled from "styled-components";
 
+
+const handleCustomWidthPerspectiveMobile = brand => {
+    switch (brand) {
+        case "rd":
+            return "-450px";
+        case "innowacje-produktowe":
+            return "-450px";
+        case "innowacje-marketingowe":
+            return "-450px";
+        case "design-marki":
+            return "-450px";
+        case "strategie-marketingowe":
+            return "-450px";
+        case "strategie-komunikacji":
+            return "-450px";
+        case "platformy-komunikacji":
+            return "-450px";
+        case "kampanie-tv":
+            return "-450px";
+        case "komunikacja-digital":
+            return "-450px";
+        case "aktywacje-konsumenckie":
+            return "-450px";
+        case "komunikacja-w-sklepach":
+            return "-450px"
+        case "slider":
+            return "-450px"
+        default:
+            return "-450px";
+    }
+};
+
+const handleCustomWidthPerspectiveDesktop = brand => {
+    switch (brand) {
+        case "rd":
+            return "-450px";
+        case "innowacje-produktowe":
+            return "-450px";
+        case "innowacje-marketingowe":
+            return "-450px";
+        case "design-marki":
+            return "-450px";
+        case "strategie-marketingowe":
+            return "-450px";
+        case "strategie-komunikacji":
+            return "-450px";
+        case "platformy-komunikacji":
+            return "-450px";
+        case "kampanie-tv":
+            return "-450px";
+        case "komunikacja-digital":
+            return "-450px";
+        case "aktywacje-konsumenckie":
+            return "-450px";
+        case "komunikacja-w-sklepach":
+            return "-450px"
+        case "slider":
+            return "-450px"
+        default:
+            return "-450px";
+    }
+};
+
 const handleCustomWidthMobile = brand => {
     switch (brand) {
         case "rd":
@@ -120,12 +183,14 @@ export const DrawerContainer = styled.div`
   --cube-depth: ${({section}) => handleCustomDepthMobile(section)};
   --cube-color: ${({cubeColor}) => cubeColor};
   --font-color: ${({fontColor}) => fontColor};
+  --cube-horizontal-perpective-origin: ${({brand}) => handleCustomWidthPerspectiveMobile(brand)};
   //--drawer-animation-delay: 4s;
   --drawer-animation-delay: ${({drawerDelay}) => drawerDelay};
   --is-animation-running: ${({pause}) => pause};
 
   @media screen and (min-width: 900px) {
     --cube-width: ${({brand}) => handleCustomWidthDesktop(brand)};
+    --cube-horizontal-perpective-origin: ${({brand}) => handleCustomWidthPerspectiveDesktop(brand)};
     --cube-height: 4.2vw;
     --cube-depth: 4vw;
   }
@@ -135,8 +200,8 @@ export const DrawerContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 2000px;
-  perspective-origin: -600px -450px;
+  perspective: 2250px;
+  perspective-origin: calc(var(--cube-horizontal-perpective-origin) * 1) -450px;
 `
 
 
