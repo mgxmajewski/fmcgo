@@ -111,10 +111,11 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Henryk Klawe</b>
                                 <br/>
-                                Copywriter, Dyrektor Kreatywny,
-                                Założyciel agencji reklamowej FMC_Go,
-                                Twórca strategii i platform komunikacji
-                                dla branży FMCG, retail i commodity services.
+                                Współzałożyciel agencji consultingowej Together
+                                strateg, brand consultant,
+                                prowadzi procesy innowacji, poszukiwania celów
+                                i transformacji cyfrowej największych korporacji
+                                i organizacji non-profit.
                             </>
                             : <></>
                         }
@@ -136,10 +137,10 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Bartosz Balewski</b>
                                 <br/>
-                                Copywriter, Dyrektor Kreatywny,
-                                Założyciel agencji reklamowej FMC_Go,
-                                Twórca strategii i platform komunikacji
-                                dla branży FMCG, retail i commodity services.
+                                Współzałożyciel agencji consultingowej Together
+                                Ux expert, twórca strategii customer experience
+                                Mentor w Google for Startup Accelerator,
+                                Uczy procesów design m.in na SWPS.
                             </>
                             : <></>
                         }
@@ -160,10 +161,11 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Łukasz Kępiński</b>
                                 <br/>
-                                Copywriter, Dyrektor Kreatywny,
-                                Założyciel agencji reklamowej FMC_Go,
-                                Twórca strategii i platform komunikacji
-                                dla branży FMCG, retail i commodity services.
+                                CEO & Founder agencji Tears of Joy
+                                Ekspert w sprawach influencer marketingu,
+                                Social mediów i gamingu,
+                                Organizator największego cyklicznego
+                                wydarzenia dla twórców - Środa, #dzienbloga.
                             </p>
                         </div>
 
@@ -215,7 +217,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>
-                                Mirosław Filiciak</b>
+                                    Mirosław Filiciak</b>
                                 <br/>
                                 Profesor Uniwersytetu SWPS, kulturoznawca, zajmuje się badaniami mediów.
                             </p>
