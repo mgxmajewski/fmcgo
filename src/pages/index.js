@@ -73,12 +73,18 @@ const IndexPage = ({ref}) => {
                 <meta charSet="utf-8"/>
                 <title>fmc_go</title>
                 <meta property="og:url"
-                      content="https://fmcgomaster.gatsbyjs.io"/>
+                      content="https://fmcgo.pl"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="FMC GO"/>
-                <meta property="og:description" content="Wolcome to our page."/>
-                <meta property="og:image"
-                      content="https://fmcgomaster.gatsbyjs.io/gobadge.png"/>
+                <meta
+                    property="og:description"
+                    content="Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla
+                            marek z kategorii FMCG, retail i commodity services. Tworzymy komunikację marketingową,
+                            która swoją moc wspierania sprzedaży czerpie w równym stopniu ze społecznego zaangażowania
+                            marki, jak i unikalnej propozycji produktu czy usługi. Advertising nie jest religią,
+                            żeby miał się karmić wyłącznie misją i lifestylem."
+                />
+                <meta property="og:image" content="https://fmcgo.pl/gobadge.png"/>
             </Helmet>
             <Layout
                 isNavFontBright={isNavFontBright}
