@@ -80,7 +80,7 @@ const handleCustomWidthMobile = brand => {
         case "platformy-komunikacji":
             return "52vw";
         case "kampanie-tv":
-            return "66vw";
+            return "58vw";
         case "komunikacja-digital":
             return "76vw";
         case "aktywacje-konsumenckie":
@@ -111,7 +111,7 @@ const handleCustomWidthDesktop = brand => {
         case "platformy-komunikacji":
             return "21vw";
         case "kampanie-tv":
-            return "25vw";
+            return "23vw";
         case "komunikacja-digital":
             return "30vw";
         case "aktywacje-konsumenckie":
