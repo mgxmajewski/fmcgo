@@ -6,7 +6,8 @@ import {
     networkPictures,
     networkSection,
     networkTagline,
-    plusStar
+    plusStar,
+    rwdBr
 } from '../styles/network-section.module.css'
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
@@ -160,7 +161,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Łukasz Kępiński</b>
                                 <br/>
-                                CEO & Founder agencji Tears of Joy.
+                                CEO & Founder agencji Tears of Joy.<br className={rwdBr}/>
                                 Ekspert w&nbsp;sprawach influencer marketingu,
                                 social mediów i gamingu.
                                 Organizator największego cyklicznego

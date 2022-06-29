@@ -17,17 +17,17 @@ const GoContactSection = ({contactSectionRef}) => {
             <div className={mainLead}>
                 <div className={tagLine}>Let's Go!</div>
                 <div>
-                    <a href="mailto:filip@fmcgo.pl" style={{textDecoration: "none"}}>
-                        <u>filip@fmcgo.pl</u>
-                    </a><br/>
-                    575 331 827
-                </div>
-                <div>
                     <a href="mailto:marcel@fmcgo.pl" style={{textDecoration: "none"}}>
                         <u>marcel@fmcgo.pl</u>
                     </a>
                     <br/>
                     530 768 598
+                </div>
+                <div>
+                    <a href="mailto:filip@fmcgo.pl" style={{textDecoration: "none"}}>
+                        <u>filip@fmcgo.pl</u>
+                    </a><br/>
+                    575 331 827
                 </div>
                 {/*<div className={goBadge}>*/}
                 {/*    <StaticImage*/}
