@@ -45,7 +45,11 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                     <footer ref={footerRef}>
                         <p>
                             © 2022 by fmc_go<br/>
-                            Wszelkie prawa zastrzeżone
+                            Wszelkie prawa zastrzeżone<br/>
+                            built by
+                            <a href="https://agilecat.io/" style={{textDecoration: "none"}}>
+                                &nbsp;{"Agile >◊﬩◊< cat"}
+                            </a>
                         </p>
                     </footer>
                 </>

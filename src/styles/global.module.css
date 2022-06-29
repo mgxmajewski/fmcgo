@@ -181,7 +181,6 @@ body {
       "go-contact-section"
 }
 
-
 footer {
     margin-top: -14vw;
 }
@@ -201,6 +200,11 @@ footer > p {
     color: #666666;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+footer a{
+    color: #666666;;
+    text-decoration: none;
 }
 
 @media (min-width: 900px) {
