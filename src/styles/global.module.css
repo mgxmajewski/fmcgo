@@ -192,7 +192,7 @@ footer {
 }
 
 footer > p {
-    font-size: 1vw;
+    font-size: 3vw;
     position: absolute;
     padding-left: var(--left-padding-mobile);
     font-weight: 300;
