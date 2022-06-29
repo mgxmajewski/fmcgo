@@ -138,7 +138,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 <b>Bartosz Balewski</b>
                                 <br/>
                                 Współzałożyciel agencji consultingowej Together.
-                                UX expert, twórca strategii customer experience
+                                UX expert, twórca strategii customer experience.
                                 Mentor w Google for&nbsp;Startup Accelerator.
                                 Uczy procesów design m.in na&nbsp;SWPS.
                             </>

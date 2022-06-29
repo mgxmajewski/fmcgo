@@ -42,7 +42,7 @@ const GoContactSection = ({contactSectionRef}) => {
                     03-916 Warszawa,<br/>
                     ul. Walecznych 18 lok 1<br/>
                     <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>
-                        go@fmcgo.pl
+                        <u>go@fmcgo.pl</u>
                     </a>
                 </div>
                 <div className={socialIcons}>
