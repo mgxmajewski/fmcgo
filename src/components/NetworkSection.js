@@ -52,10 +52,11 @@ const NetworkSection = ({boardSectionRef}) => {
                 data-aos="fade-up"
                 data-aos-once="true"
                 className={networkCopy}>
-                Rekomendacje strategiczne i rozwiązania kreatywne tworzymy w oparciu o unikalną na rynku wiedzę i
+                Rekomendacje strategiczne i&nbsp;rozwiązania kreatywne tworzymy w oparciu o unikalną na rynku wiedzę i
                 doświadczenie naszych ekspertów - strategów, badaczy, semiotyków, mediowców, specjalistów od komunikacji
-                digital. W gronie naszych ekspertów są zarówno właściciele topowych firm badawczych i strategicznych,
-                jak i profesorowie i wykładowcy najlepszych uniwersytetów.
+                digital. W gronie naszych ekspertów są zarówno właściciele topowych firm badawczych
+                i&nbsp;strategicznych,
+                jak i&nbsp;wykładowcy najlepszych uniwersytetów.
             </div>
             <div className={networkPictures}>
                 <div
@@ -71,9 +72,9 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         <b>Ana Maria Szutowicz</b>
                         <br/>
-                        CEO&Founder agencji badawczo-strategicznej Y&LOVERS
-                        Strateżka, badaczka, etnografka konsumenckiego życia naszych, ekspertka zmiany pokoleniowej i
-                        marketingu do młodych. Jurorka Effie. Członkini PTBRiO.
+                        CEO & Founder agencji badawczo-strategicznej Y&LOVERS.
+                        Strateżka, badaczka, etnografka konsumenckiego życia naszych, ekspertka zmiany pokoleniowej
+                        i&nbsp;marketingu do&nbsp;młodych. Jurorka Effie. Członkini PTBRiO.
                     </p>
                 </div>
                 <div className={networkPersonContainer}>
@@ -89,9 +90,9 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         <b>Klaudyna Kamińska</b>
                         <br/>
-                        Dyrektorka Badań w Agencji Y&LOVERS.
-                        Badaczka, etnografka i lingwistka. Specjalizuje się w badaniach eksploracyjnych pod poszukiwanie
-                        insightów konsumenckich ku innowacyjnym rozwiązaniom dla branży FMCG.
+                        Dyrektorka Badań w&nbsp;agencji Y&LOVERS.
+                        Badaczka, etnografka i&nbsp;lingwistka. Specjalizuje się w badaniach eksploracyjnych - poszukuje
+                        efektywnych insightów konsumenckich oraz&nbsp;innowacyjnych rozwiązań dla branży FMCG.
                     </p>
                 </div>
                 <div className={networkPersonContainer}>
@@ -109,11 +110,11 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Henryk Klawe</b>
                                 <br/>
-                                Współzałożyciel agencji consultingowej Together
-                                strateg, brand consultant,
-                                prowadzi procesy innowacji, poszukiwania celów
-                                i transformacji cyfrowej największych korporacji
-                                i organizacji non-profit.
+                                Współzałożyciel agencji consultingowej Together.
+                                Strateg, brand consultant.
+                                Prowadzi procesy innowacji, poszukiwania celów
+                                i&nbsp;transformacji cyfrowej największych korporacji
+                                i&nbsp;organizacji non-profit.
                             </>
                             : <></>
                         }
@@ -135,10 +136,10 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Bartosz Balewski</b>
                                 <br/>
-                                Współzałożyciel agencji consultingowej Together
-                                Ux expert, twórca strategii customer experience
-                                Mentor w Google for Startup Accelerator,
-                                Uczy procesów design m.in na SWPS.
+                                Współzałożyciel agencji consultingowej Together.
+                                UX expert, twórca strategii customer experience
+                                Mentor w Google for&nbsp;Startup Accelerator.
+                                Uczy procesów design m.in na&nbsp;SWPS.
                             </>
                             : <></>
                         }
@@ -159,11 +160,11 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Łukasz Kępiński</b>
                                 <br/>
-                                CEO & Founder agencji Tears of Joy
-                                Ekspert w sprawach influencer marketingu,
-                                Social mediów i gamingu,
+                                CEO & Founder agencji Tears of Joy.
+                                Ekspert w&nbsp;sprawach influencer marketingu,
+                                social mediów i gamingu.
                                 Organizator największego cyklicznego
-                                wydarzenia dla twórców - Środa, #dzienbloga.
+                                wydarzenia dla&nbsp;twórców - Środa, #dzienbloga.
                             </p>
                         </div>
 
@@ -180,9 +181,9 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Wojciech Morawski</b>
                                 <br/>
-                                Założyciel agencji mediowej AdPeak i Certyfikowany Trener Google. Specjalista SEM,
-                                Prowadzi szkolenia w ramach Akademii Google Partners, SEMcamp University czy Marketing
-                                Masters.
+                                Założyciel agencji mediowej AdPeak i&nbsp;Certyfikowany Trener Google. Specjalista SEM,
+                                Prowadzi szkolenia w&nbsp;ramach Akademii Google Partners, SEMcamp University
+                                czy&nbsp;Marketing Masters.
                             </p>
                         </div>
                         <div className={networkPersonContainer}>
@@ -199,8 +200,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 <b>Kacper Kaźmierowicz</b>
                                 <br/>
                                 Współwłaściciel agencji mediowej AdPeak. Prowadzi kampanie Google Ads. Zwolennik
-                                prostych i skutecznych rozwiązań performanceowych. Testuje i optymalizuje, aby
-                                osiągnąć jak najlepszy ROAS.
+                                prostych i skutecznych rozwiązań performanceowych. Testuje i optymalizuje,
+                                aby&nbsp;osiągnąć jak najlepszy ROAS.
                             </p>
                         </div>
                         <div
@@ -233,9 +234,10 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Karolina Balmas</b>
                                 <br/>
-                                Semiotyczka, antropolożka, badaczka. Analizuje internetowy, medialny i popkulturowy
-                                dyskurs konsumencki oraz komunikację marek. Badając znaki językowe i wizualne, szuka
-                                kodów kulturowych. Łowi trendy i kierunki zmian.
+                                Semiotyczka, antropolożka, badaczka. Analizuje internetowy, medialny i&nbsp;popkulturowy
+                                dyskurs konsumencki oraz komunikację marek. Badając znaki językowe i&nbsp;wizualne,
+                                szuka
+                                kodów kulturowych. Łowi trendy i&nbsp;kierunki zmian.
                             </p>
                         </div>
                     </>

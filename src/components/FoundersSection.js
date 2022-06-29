@@ -51,13 +51,13 @@ const FoundersSection = ({data, aboveFounderOneRef,aboveFounderTwoRef, founderOn
                     </div>
                     <div className={founderName}><span>Go</span> Filip!</div>
                     <div className={founderCopy}>
-                        Copywriter z 18-letnim doświadczeniem w pracy <br/>
+                        Copywriter z 18-letnim doświadczeniem w&nbsp;pracy <br/>
                         dla największych marek FMCG, retail <br/>
-                        i commodity services. <br/>
+                        i&nbsp;commodity services.
                         Autor setek kampanii reklamowych <br/>
-                        dla najpopularniejszych produktów i usług. <br/>
+                        dla&nbsp;najpopularniejszych produktów oraz&nbsp;usług. <br/>
                         Twórca strategii komunikacji, platform kreatywnych <br/>
-                        i innowacji produktowych.
+                        i&nbsp;innowacji produktowych.
                     </div>
                 </div>
             </section>
