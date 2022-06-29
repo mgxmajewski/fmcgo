@@ -89,6 +89,10 @@ export const RadicalCopy = styled.div`
     font-size: var(--copy-font-size-desktop);
     padding-bottom: 3.5vw;
   }
+  
+  & b {
+    
+  }
 `
 
 export const RadicalDrawersContainer = styled.div`

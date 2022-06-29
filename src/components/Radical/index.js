@@ -45,9 +45,12 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     data-aos-once="true"
                 >
                     Rozumiemy i lubimy produkty, sklepy i usługi, które reklamujemy. Potrafimy wgryźć się w dane,
-                    etnografie, badania, <br/>by znaleźć insighty o największym potencjale biznesowym i formułować
-                    adekwatne brand purpose. <br/>Ale równocześnie potrafimy docenić rolę, która w komunikacji
-                    marketingowej odgrywa cena, promocja, sezon.
+                    etnografie, badania,
+                    <br/>
+                    by znaleźć insighty o największym potencjale biznesowym i formułować adekwatne brand purpose.
+                    <br/>
+                    Równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena, promocja,
+                    sezon.
                 </RadicalCopy>
                 <RadicalDrawersContainer
                     data-aos="fade-right"
