@@ -48,7 +48,7 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     w&nbsp;dane,
                     etnografie, badania,
                     by&nbsp;znaleźć insighty o&nbsp;największym potencjale biznesowym i formułować adekwatne brand purpose.
-                    Równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena,&nbsp;promocja,
+                    Równocześnie potrafimy docenić rolę, którą w komunikacji marketingowej odgrywa cena,&nbsp;promocja,
                     sezon.
                 </RadicalCopy>
                 <RadicalDrawersContainer
