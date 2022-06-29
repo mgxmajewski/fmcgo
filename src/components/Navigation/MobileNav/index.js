@@ -47,7 +47,7 @@ const SideBar = ({isOpen, toggle, footerInView}) => {
                                 to="radical-icons"
                                 onClick={toggle}
                             >
-                                RadicalAdvertising
+                                #RadicalAdvertising
                             </MobileNavLink>
                             <MobileNavLink
                                 activeClass="active"

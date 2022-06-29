@@ -46,7 +46,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isbright={isNavFontBright}
                                 title="RadicalAdvertising"
                             >
-                                RadicalAdvertising
+                                #RadicalAdvertising
                             </NavLinks>
                             <NavLinks
                                 activeClass="active"

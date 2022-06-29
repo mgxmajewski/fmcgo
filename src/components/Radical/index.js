@@ -38,18 +38,17 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     data-aos="fade-down"
                     data-aos-once="true"
                 >
-                    Go #Radical Advertising!
+                    Go #RadicalAdvertising!
                 </RadicalTagline>
                 <RadicalCopy
                     data-aos="fade-up"
                     data-aos-once="true"
                 >
-                    Rozumiemy i lubimy produkty, sklepy i usługi, które reklamujemy. Potrafimy wgryźć się w dane,
+                    Rozumiemy i&nbsp;lubimy produkty, sklepy i&nbsp;usługi, które reklamujemy. Potrafimy wgryźć się
+                    w&nbsp;dane,
                     etnografie, badania,
-                    <br/>
-                    by znaleźć insighty o największym potencjale biznesowym i formułować adekwatne brand purpose.
-                    <br/>
-                    Równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena, promocja,
+                    by&nbsp;znaleźć insighty o&nbsp;największym potencjale biznesowym i formułować adekwatne brand purpose.
+                    Równocześnie potrafimy docenić rolę, która w komunikacji marketingowej odgrywa cena,&nbsp;promocja,
                     sezon.
                 </RadicalCopy>
                 <RadicalDrawersContainer

@@ -161,7 +161,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                     data-aos-once="true"
                     ref={experienceDrawersRef}
                 >
-                    Go&nbsp;360&deg;!
+                    Go&nbsp;360&deg;
                 </div>
                 <div className={goOrbit}>
                     <StaticImage
@@ -249,7 +249,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        kampanie TV/radio/outdoor
+                        kampanie TV/radio/OOH
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
                         brand='komunikacja-digital'
