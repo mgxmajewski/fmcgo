@@ -31,7 +31,7 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 data-aos-once="true"
                 className={experienceCopy}
             >
-                Każda platforma komunikacji, każda kampania może „przekręcić licznik’, jeśli tylko kreatywność połączy
+                Każda platforma komunikacji, każda kampania może "przekręcić licznik", jeśli tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i strategiczną.
             </div>
             <div className={experienceClients}>
