@@ -89,11 +89,9 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         <b>Klaudyna Kamińska</b>
                         <br/>
-                        Copywriter, Dyrektor Kreatywny,
-                        Założyciel agencji reklamowej FMC_Go,
-                        Twórca strategii i platform komunikacji
-                        dla branży FMCG, retail i commodity services.
-
+                        Dyrektorka Badań w Agencji Y&LOVERS.
+                        Badaczka, etnografka i lingwistka. Specjalizuje się w badaniach eksploracyjnych pod poszukiwanie
+                        insightów konsumenckich ku innowacyjnym rozwiązaniom dla branży FMCG.
                     </p>
                 </div>
                 <div className={networkPersonContainer}>
