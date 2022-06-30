@@ -44,12 +44,11 @@ const Index = ({areSocialIconsVisible, radicalRef}) => {
                     data-aos="fade-up"
                     data-aos-once="true"
                 >
-                    Rozumiemy i&nbsp;lubimy produkty, sklepy i&nbsp;usługi, które reklamujemy. Potrafimy wgryźć się
-                    w&nbsp;dane,
-                    etnografie, badania,
-                    by&nbsp;znaleźć insighty o&nbsp;największym potencjale biznesowym i formułować adekwatne brand purpose.
-                    Równocześnie potrafimy docenić rolę, którą w komunikacji marketingowej odgrywa cena,&nbsp;promocja,
-                    sezon.
+                    Rozumiemy i&nbsp;lubimy produkty, sklepy i&nbsp;usługi. Potrafimy wgryźć się w dane rynkowe, badania
+                    konsumenckie i&nbsp;trendy kulturowe, by&nbsp;znaleźć insighty o&nbsp;największym potencjale
+                    biznesowym i&nbsp;formułować adekwatne brand purpose. Kreatywne rozwiązania wylewamy na&nbsp;mocnych
+                    fundamentach pozycjonowania cenowego, wspieramy promocjami i&nbsp;przygotowujemy na&nbsp;sezonowe
+                    zawirowania.
                 </RadicalCopy>
                 <RadicalDrawersContainer
                     data-aos="fade-right"

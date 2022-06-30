@@ -32,7 +32,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 title="go"
                                 isDynamic={true}
                             >
-                                go
+                                Go
                             </NavLinks>
                             <NavLinks
                                 activeClass="active"

@@ -54,7 +54,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 data-aos-once="true"
                 className={networkCopy}>
                 Rekomendacje strategiczne i&nbsp;rozwiązania kreatywne tworzymy w oparciu o unikalną na rynku wiedzę i
-                doświadczenie naszych ekspertów - strategów, badaczy, semiotyków, mediowców, specjalistów od&nbsp;komunikacji
+                doświadczenie naszych ekspertów - strategów, badaczy, semiotyków, mediowców, specjalistów
+                od&nbsp;komunikacji
                 digital. W gronie naszych ekspertów są zarówno właściciele topowych firm badawczych
                 i&nbsp;strategicznych,
                 jak&nbsp;i&nbsp;wykładowcy najlepszych uniwersytetów.
@@ -219,7 +220,8 @@ const NetworkSection = ({boardSectionRef}) => {
                                 <b>
                                     Mirosław Filiciak</b>
                                 <br/>
-                                Profesor Uniwersytetu SWPS, kulturoznawca, zajmuje się badaniami mediów.
+                                Profesor Uniwersytetu SWPS, kulturoznawca, kierownik Katedry Kultury i&nbsp;Mediów. Badacz
+                                mediów, gier, smartfonów i&nbsp;platform streamingowych. Specjalista future studies.
                             </p>
                         </div>
                         <div className={networkPersonContainer}>

@@ -36,7 +36,7 @@ const SideBar = ({isOpen, toggle, footerInView}) => {
                                 to="go-section"
                                 onClick={toggle}
                             >
-                                go
+                                Go
                             </MobileNavLink>
                             <MobileNavLink
                                 activeClass="active"

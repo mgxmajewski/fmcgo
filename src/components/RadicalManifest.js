@@ -13,8 +13,7 @@ const RadicalManifest = () => {
             <div data-aos="fade-up" data-aos-once="true" className={manifestPoint}>
                 <div className={manifestPointBullet}>Radykalna Empatia</div>
                 <p className={manifestPointCopy}>
-                    Dostrzegamy najbardziej podstawowe motywacje, napięcia,
-                    paradoksy poznawcze.
+                    Widzimy w konsumentach ludzi. Dostrzegamy i&nbsp;adresujemy ich potrzeby i&nbsp;napięcia.
                 </p>
             </div>
             <div data-aos="fade-up" data-aos-once="true" className={manifestPoint}>
@@ -27,10 +26,8 @@ const RadicalManifest = () => {
             <div data-aos="fade-up" data-aos-once="true" className={manifestPoint}>
                 <div className={manifestPointBullet}>Radykalna Kreatywność</div>
                 <p className={manifestPointCopy}>
-                    Tworzymy rozwiązania komunikacyjne i&nbsp;innowacje marketingowe,
-                    które najefektywniej wykorzystują specyfikę konkretnych mediów,
-                    potencjał najnowocześniejszych technologii
-                    oraz&nbsp;możliwości budżetowych.
+                    Tworzymy rozwiązania komunikacyjne i&nbsp;innowacje marketingowe, które&nbsp;najefektywniej wykorzystują
+                    specyfikę konkretnych mediów i&nbsp;potencjał nowych technologii.
                 </p>
             </div>
             <div data-aos="fade-up" data-aos-once="true" className={manifestPoint}>
