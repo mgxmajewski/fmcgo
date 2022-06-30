@@ -40,7 +40,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                     <div className={founderTagline}>
                         <span className={founderTaglinePrefix}>Go</span>
                         &nbsp;
-                        <span className={founderTaglineName}>Marcel!</span>
+                        <span className={founderTaglineName}>Marcel Cegliński!</span>
                     </div>
                     <div className={founderCopy}>
                         Designer, art director z 12-letnim doświadczeniem <br/>
@@ -66,7 +66,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                     <div className={founderTagline}>
                         <span className={founderTaglinePrefix}>Go</span>
                         &nbsp;
-                        <span className={founderTaglineName}>Filip!</span>
+                        <span className={founderTaglineName}>Filip Szperl!</span>
                     </div>
                     <div
                         className={founderCopy}
