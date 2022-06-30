@@ -72,7 +72,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
-                        <b>Ana Maria Szutowicz</b>
+                        <b>Anna Maria Szutowicz</b>
                         <br/>
                         CEO & Founder agencji badawczo-strategicznej Y&LOVERS.
                         Strateżka, badaczka, etnografka konsumenckiego życia naszych, ekspertka zmiany pokoleniowej
@@ -231,7 +231,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Karolina Semiotyczka Photo'}
-                                    src="../images/karolinasemiotyczka.png"
+                                    src="../images/karolinabalmas.jpg"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
