@@ -68,7 +68,7 @@ const NetworkSection = ({boardSectionRef}) => {
                     <div className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Ana Maria Szutowicz Photo'}
-                            src="../images/anamariaszutowicz.png"
+                            src="../images/01annamaria.png"
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -86,7 +86,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Klaudyna Kamińska Photo'}
-                            src="../images/kaludynakaminska.png"
+                            src="../images/02klaudyna.png"
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -104,7 +104,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
-                            src="../images/henrykklawe.png"
+                            src="../images/03henryk.png"
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -130,7 +130,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={''}
-                            src="../images/bartoszbalewski.png"
+                            src="../images/04bartosz.png"
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -156,7 +156,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
-                                    src="../images/lukaszkepinski.png"
+                                    src="../images/05lukasz.png"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -177,7 +177,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Wojciech Morawski Photo'}
-                                    src="../images/wojciechmorawski.png"
+                                    src="../images/06wojtek.png"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -195,7 +195,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Kacper Kaźmierowicz Photo'}
-                                    src="../images/kacperkazmierowicz.png"
+                                    src="../images/07kacper.png"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -213,7 +213,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             <div className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Professor Mirosław Filiciak Photo'}
-                                    src="../images/miroslawfiliciak.png"
+                                    src="../images/08miroslaw.png"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -231,7 +231,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Karolina Semiotyczka Photo'}
-                                    src="../images/karolinabalmas.jpg"
+                                    src="../images/09karolina.png"
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
