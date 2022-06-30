@@ -44,12 +44,12 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                     </div>
                     <footer ref={footerRef}>
                         <p>
-                            © 2022 by fmc_go<br/>
-                            Wszelkie prawa zastrzeżone<br/>
-                            built by
+                            © 2022 by fmc_go, built by
                             <a href="https://agilecat.io/" style={{textDecoration: "none"}}>
                                 &nbsp;{"Agile >◊﬩◊< cat"}
                             </a>
+                            <br/>
+                            Wszelkie prawa zastrzeżone
                         </p>
                     </footer>
                 </>
