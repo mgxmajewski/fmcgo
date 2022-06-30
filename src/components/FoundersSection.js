@@ -5,9 +5,11 @@ import {
     founderContainer,
     founderCopy,
     founderImage,
-    founderName,
     founderPictureContainer,
     foundersSection,
+    founderTagline,
+    founderTaglineName,
+    founderTaglinePrefix,
     topPaddingDiv
 } from '../styles/founders-section.module.css'
 
@@ -35,7 +37,11 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                             src="../images/marcel.jpg"
                         />
                     </div>
-                    <div className={founderName}><span>Go</span> Marcel!</div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Marcel!</span>
+                    </div>
                     <div className={founderCopy}>
                         Designer, art director z 12-letnim doświadczeniem <br/>
                         w największych agencjach reklamowych. <br/>
@@ -57,7 +63,11 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                             src="../images/filip.jpg"
                         />
                     </div>
-                    <div className={founderName}><span>Go</span> Filip!</div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Filip!</span>
+                    </div>
                     <div
                         className={founderCopy}
                     >

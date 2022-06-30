@@ -39,7 +39,7 @@
     grid-area: top-padding-div;
 }
 
-.founder-name {
+.founder-tagline {
     grid-area: founder-name;
     font-weight: 900;
     line-height: 1.05;
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 900px) {
-    .founder-name {
+    .founder-tagline {
         padding-top: 0;
         align-self: end;
         padding-left: calc(.75 * (var(--padding-left-desktop) - .5vw));
@@ -62,14 +62,30 @@
     }
 }
 
-.founder-name span {
+.founder-tagline-prefix {
     color: black;
 }
 
 @media (min-width: 900px) {
-    .founder-name span {
+    .founder-tagline-prefix {
         text-decoration: none;
         background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.founder-tagline-name {
+     text-decoration: none;
+        background: linear-gradient(90deg, rgba(232, 46, 89, 1) 12%, rgba(95, 74, 229, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 900px) {
+    .founder-tagline-name {
+        text-decoration: white;
+        background: white;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
