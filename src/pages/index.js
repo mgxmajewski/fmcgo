@@ -67,16 +67,14 @@ const IndexPage = ({ref}) => {
         contactSectionInView,
         areSocialIconsVisible])
 
-    const ogDescription = `Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania sprzedaży czerpie w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji produktu czy usługi. Advertising nie jest religią, żeby miał się karmić wyłącznie misją i lifestylem.`
-
     return (
         <>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>fmc_go #RadicalAdvertising</title>
+                <title>fmc_go - #RadicalAdvertising - FMCG/retail/commodity services</title>
                 <meta
                     name="description"
-                    content={ogDescription}
+                    content="Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, retail i commodity services."
                 />
                 <meta property="og:url"
                       content="https://fmcgo.pl"/>
@@ -84,12 +82,12 @@ const IndexPage = ({ref}) => {
                 <meta property="og:title" content="fmc_go #RadicalAdvertising"/>
                 <meta
                     property="og:description"
-                    content={ogDescription}
+                    content="Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, retail i commodity services."
                 />
                 <meta property="og:image" content="https://fmcgo.pl/gobadge.png"/>
                 <meta property="og:site_name" content="fmc_go" />
                 <link rel="canonical" href="https://fmcgo.pl" />
-                <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+                <meta name='robots' content='index, follow'/>
             </Helmet>
             <Layout
                 isNavFontBright={isNavFontBright}
