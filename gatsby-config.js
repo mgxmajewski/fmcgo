@@ -1,13 +1,15 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`
+        siteUrl: `https://fmcgo.pl`
     },
     plugins: [
-        "gatsby-plugin-image", {
-            resolve: 'gatsby-plugin-google-analytics',
+        "gatsby-plugin-image",
+        {
+            resolve: `gatsby-plugin-google-analytics`,
             options: {
-                "trackingId": "GTM-WB5FL6B"
-            }
+                // The property ID; the tracking code won't be generated without it
+                trackingId: "UA-233454609-1",
+            },
         },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-preload-fonts",
