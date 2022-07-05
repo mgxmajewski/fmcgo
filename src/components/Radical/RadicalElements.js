@@ -87,7 +87,7 @@ export const RadicalCopy = styled.div`
 
   @media screen and (min-width: 900px) {
     font-size: var(--copy-font-size-desktop);
-    width: 70vw;
+    width: 66vw;
     padding-bottom: 3.5vw;
   }
   
