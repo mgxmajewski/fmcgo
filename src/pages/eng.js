@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import GoHero from "../components/eng/GoHero";
 import Radical from "../components/eng/Radical"
 import FoundersSection from "../components/eng/FoundersSection";
-import NetworkSection from "../components/NetworkSection";
+import NetworkSection from "../components/eng/NetworkSection";
 import ThreeSixtySection from "../components/ThreeSixtySection";
 import ExperienceSection from "../components/eng/ExperienceSection";
 import GoContactSection from "../components/GoContactSection";
