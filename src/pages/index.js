@@ -4,10 +4,11 @@ import Layout from "../components/Layout";
 import GoHero from "../components/GoHero";
 import Radical from "../components/Radical"
 import FoundersSection from "../components/FoundersSection";
-import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
-import GoContactSection from "../components/GoContactSection";
 import ThreeSixtySection from "../components/ThreeSixtySection";
+import ExperienceSection from "../components/ExperienceSection";
+import GoContactSection from "../components/GoContactSection";
+
 import {useInView} from "react-intersection-observer";
 import {Helmet} from "react-helmet";
 
