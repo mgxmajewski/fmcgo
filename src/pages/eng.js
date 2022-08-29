@@ -3,7 +3,7 @@ import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/eng/GoHero";
 import Radical from "../components/eng/Radical"
-import FoundersSection from "../components/FoundersSection";
+import FoundersSection from "../components/eng/FoundersSection";
 import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
 import GoContactSection from "../components/GoContactSection";
