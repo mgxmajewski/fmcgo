@@ -2,7 +2,7 @@ import * as React from "react"
 import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
 import GoHero from "../components/eng/GoHero";
-import Radical from "../components/Radical"
+import Radical from "../components/eng/Radical"
 import FoundersSection from "../components/FoundersSection";
 import ExperienceSection from "../components/ExperienceSection";
 import NetworkSection from "../components/NetworkSection";
