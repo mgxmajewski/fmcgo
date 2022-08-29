@@ -8,7 +8,7 @@ import {
 } from '../styles/three-sixty-section.module.css'
 import DrawerCuboidZAnimation from "./Drawers/DrawerCuboidZAnimation";
 import "aos/dist/aos.css";
-import {usePageVisibility} from './useVisibilityHook'
+import {usePageVisibility} from '../hooks/useVisibilityHook'
 
 
 const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experienceInView}) => {

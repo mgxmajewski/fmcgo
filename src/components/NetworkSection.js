@@ -12,7 +12,7 @@ import {
 import {StaticImage} from "gatsby-plugin-image";
 import "aos/dist/aos.css";
 import NetworkPlusStub from "./NetworkPlusStub";
-import {useWindowSize} from "./useWindowSize";
+import {useWindowSize} from "../hooks/useWindowSize";
 
 
 const NetworkSection = ({boardSectionRef}) => {
