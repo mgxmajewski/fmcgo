@@ -11,7 +11,7 @@ import {
     RadicalTagline,
     SocialIcons,
     SocialMediaIconBox
-} from "./RadicalElements";
+} from "../../Radical/RadicalElements";
 import "aos/dist/aos.css";
 import RadicalManifest from "../RadicalManifest";
 
