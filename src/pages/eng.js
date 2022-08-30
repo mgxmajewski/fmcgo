@@ -1,12 +1,12 @@
 import * as React from "react"
 import {useEffect, useState} from "react"
 import Layout from "../components/Layout";
-import GoHero from "../components/eng/GoHero";
-import Radical from "../components/eng/Radical"
-import FoundersSection from "../components/eng/FoundersSection";
-import NetworkSection from "../components/eng/NetworkSection";
-import ThreeSixtySection from "../components/eng/ThreeSixtySection";
-import ExperienceSection from "../components/eng/ExperienceSection";
+import GoHero from "../components/en/GoHero";
+import Radical from "../components/en/Radical"
+import FoundersSection from "../components/en/FoundersSection";
+import NetworkSection from "../components/en/NetworkSection";
+import ThreeSixtySection from "../components/en/ThreeSixtySection";
+import ExperienceSection from "../components/en/ExperienceSection";
 import GoContactSection from "../components/GoContactSection";
 
 import {useInView} from "react-intersection-observer";
