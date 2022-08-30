@@ -1,32 +1,31 @@
 import styled from "styled-components";
 
-
 const handleCustomWidthPerspectiveMobile = brand => {
     switch (brand) {
         case "rd":
             return "-450px";
-        case "innowacje-produktowe":
+        case "product-innovation":
             return "-450px";
-        case "innowacje-marketingowe":
+        case "marketing-innovation":
             return "-450px";
-        case "design-marki":
+        case "brand-design":
             return "-450px";
-        case "strategie-marketingowe":
+        case "marketing-strategies":
             return "-450px";
-        case "strategie-komunikacji":
+        case "communication-strategies":
             return "-450px";
-        case "platformy-komunikacji":
+        case "communication-platforms":
             return "-450px";
-        case "kampanie-tv":
+        case "tv-campaigns":
             return "-450px";
-        case "komunikacja-digital":
+        case "digital-communication":
             return "-450px";
-        case "aktywacje-konsumenckie":
+        case "consumer-activations":
             return "-450px";
-        case "komunikacja-w-sklepach":
-            return "-450px"
+        case "in-store":
+            return "-450px";
         case "slider":
-            return "-450px"
+            return "-450px";
         default:
             return "-450px";
     }
@@ -36,28 +35,28 @@ const handleCustomWidthPerspectiveDesktop = brand => {
     switch (brand) {
         case "rd":
             return "-450px";
-        case "innowacje-produktowe":
+        case "product-innovation":
             return "-450px";
-        case "innowacje-marketingowe":
+        case "marketing-innovation":
             return "-450px";
-        case "design-marki":
+        case "brand-design":
             return "-450px";
-        case "strategie-marketingowe":
+        case "marketing-strategies":
             return "-450px";
-        case "strategie-komunikacji":
+        case "communication-strategies":
             return "-450px";
-        case "platformy-komunikacji":
+        case "communication-platforms":
             return "-450px";
-        case "kampanie-tv":
+        case "tv-campaigns":
             return "-450px";
-        case "komunikacja-digital":
+        case "digital-communication":
             return "-450px";
-        case "aktywacje-konsumenckie":
+        case "consumer-activations":
             return "-450px";
-        case "komunikacja-w-sklepach":
-            return "-450px"
+        case "in-store":
+            return "-450px";
         case "slider":
-            return "-450px"
+            return "-450px";
         default:
             return "-450px";
     }
