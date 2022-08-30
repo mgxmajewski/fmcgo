@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {MobileIcon, Nav, NavBarContainer, NavItem, NavLinks, NavMenu} from "./NavbarElements";
+import {MobileIcon, Nav, NavBarContainer, NavItem, NavLinks, NavLinksG, NavMenu} from "./NavbarElements";
 import Hamb from "../../Hamb";
 import LangaugeToggle from "../LanguageToggle"
 import AOS from "aos";
@@ -121,6 +121,51 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                             >
                                 Let's Go
                             </NavLinks>
+                            <NavLinksG
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                exact='true'
+                                to="/eng"
+                                isbright={isNavFontBright}
+                                title="Contact"
+                                className={`${footerInView ? "active" : ""}`}
+                            >
+                                eng
+                            </NavLinksG>
+                            <NavLinksG
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                exact='true'
+                                to="/fra"
+                                isbright={isNavFontBright}
+                                title="Contact"
+                                className={`${footerInView ? "active" : ""}`}
+                            >
+                                fra
+                            </NavLinksG>
+                            <NavLinksG
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                exact='true'
+                                to="/ger"
+                                isbright={isNavFontBright}
+                                title="Contact"
+                                className={`${footerInView ? "active" : ""}`}
+                            >
+                                ger
+                            </NavLinksG>
                             <LangaugeToggle
                                 isbright={isNavFontBright}
                             />

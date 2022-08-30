@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
+import { Link as LinkG } from "gatsby"
 
 export const NavLoadingPlaceHolder = styled.div`
   height: 20vw;
@@ -80,6 +81,26 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
+  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
+  display: block;
+  float: left;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(74, 90, 211, 1) 0%, rgba(212, 49, 73, 1) 50%, rgba(99, 14, 105, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 #00000000;
+    transition: .2s all ease;
+  }
+`
+
+export const NavLinksG = styled(LinkG)`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   display: block;
   float: left;
