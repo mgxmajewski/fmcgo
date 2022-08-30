@@ -166,6 +166,21 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                             >
                                 de
                             </NavLinksG>
+                            <NavLinksG
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                isDynamic={true}
+                                offset={0}
+                                exact='true'
+                                to="/"
+                                isbright={isNavFontBright}
+                                title="Contact"
+                                className={`${footerInView ? "active" : ""}`}
+                            >
+                                pl
+                            </NavLinksG>
                             <LangaugeToggle
                                 isbright={isNavFontBright}
                             />
