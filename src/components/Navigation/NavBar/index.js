@@ -129,12 +129,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/eng"
+                                to="/en"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
                             >
-                                eng
+                                en
                             </NavLinksG>
                             <NavLinksG
                                 activeClass="active"
@@ -144,12 +144,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/fra"
+                                to="/fr"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
                             >
-                                fra
+                                fr
                             </NavLinksG>
                             <NavLinksG
                                 activeClass="active"
@@ -159,12 +159,12 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/ger"
+                                to="/de"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
                             >
-                                ger
+                                de
                             </NavLinksG>
                             <LangaugeToggle
                                 isbright={isNavFontBright}
