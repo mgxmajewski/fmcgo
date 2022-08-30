@@ -129,7 +129,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/en"
+                                to="/en/"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
@@ -144,7 +144,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/fr"
+                                to="/fr/"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
@@ -159,7 +159,7 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                                 isDynamic={true}
                                 offset={0}
                                 exact='true'
-                                to="/de"
+                                to="/de/"
                                 isbright={isNavFontBright}
                                 title="Contact"
                                 className={`${footerInView ? "active" : ""}`}
