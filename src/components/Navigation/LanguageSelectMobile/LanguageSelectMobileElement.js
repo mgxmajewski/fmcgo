@@ -6,7 +6,7 @@ export const NavLangaugeToggle = styled(LinkR)`
   justify-self: center;
   background: transparent;
   white-space: nowrap;
-  color: transparent;
+  color: white;
   //color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   outline: none;
   border: none;
@@ -35,16 +35,33 @@ export const NavLangaugeToggle = styled(LinkR)`
   }
 `
 
+export const MobileNavLinkG = styled(LinkR)`
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  text-decoration: none;
+  list-style: none;
+  transition: .2s ease-in-out;
+  color: #7b7b7b;
+  cursor: pointer;
+
+  &.active {
+    color: white;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    font-weight: 900;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+`
+
 export const NavLangaugeToggleMobile = styled(NavLangaugeToggle)`
   color: white;
-`
-
-export const LangPL = styled.span`
-  text-decoration: ${({currentLang}) => currentLang === 'pl' ? 'underline' : 'none'};
-  font-weight: ${({currentLang}) => currentLang === 'pl' ? '900' : '300'};
-`
-
-export const LangENG = styled.span`
-  text-decoration: ${({currentLang}) => currentLang === 'eng' ? 'underline' : 'none'};
-  font-weight: ${({currentLang}) => currentLang === 'eng' ? '900' : '300'};
 `

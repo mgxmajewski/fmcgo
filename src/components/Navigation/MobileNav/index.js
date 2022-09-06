@@ -7,7 +7,7 @@ import {
     MobileNavMenu,
     MobileNavWrapper
 } from "./MobileNavElements";
-import LangaugeToggle from "../LanguageToggle";
+import LanguageSelectMobile from "../LanguageSelectMobile";
 
 const SideBar = ({isOpen, toggle, footerInView}) => {
 
@@ -105,7 +105,8 @@ const SideBar = ({isOpen, toggle, footerInView}) => {
                             >
                                 Let's Go
                             </MobileNavLink>
-                            <LangaugeToggle
+                            <LanguageSelectMobile
+                                toggle={toggle}
                                 isbright={'true'}
                             />
                         </MobileNavMenu>
