@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   font-size: var(--nav-font-size);
   display: grid;
-  grid-template-columns: 1.8em 10em 4.5em 4.1em 2.5em 5.4em 4.1em;
+  grid-template-columns: 1.8em 10em 4.5em 4.1em 2.5em 5.4em 4.1em 2.5em;
   grid-template-rows: auto;
   grid-column-gap: 2vw;
 `
@@ -118,4 +118,10 @@ export const NavLinksG = styled(LinkG)`
     text-shadow: 0 0 #00000000;
     transition: .2s all ease;
   }
+`
+
+export const LanguageSelect = styled.select`
+  outline: none;
+  border: none;
+  background-color: white;
 `

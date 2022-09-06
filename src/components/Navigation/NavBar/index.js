@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import {MobileIcon, Nav, NavBarContainer, NavItem, NavLinks, NavLinksG, NavMenu} from "./NavbarElements";
+import {LanguageSelect, MobileIcon, Nav, NavBarContainer, NavItem, NavLinks, NavMenu} from "./NavbarElements";
 import Hamb from "../../Hamb";
-import LangaugeToggle from "../LanguageToggle"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {navigate} from "gatsby";
 
 const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
 
@@ -121,69 +121,14 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                             >
                                 Let's Go
                             </NavLinks>
-                            <NavLinksG
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                                offset={0}
-                                exact='true'
-                                to="/en/"
-                                isbright={isNavFontBright}
-                                title="Contact"
-                                className={`${footerInView ? "active" : ""}`}
-                            >
-                                en
-                            </NavLinksG>
-                            <NavLinksG
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                                offset={0}
-                                exact='true'
-                                to="/fr/"
-                                isbright={isNavFontBright}
-                                title="Contact"
-                                className={`${footerInView ? "active" : ""}`}
-                            >
-                                fr
-                            </NavLinksG>
-                            <NavLinksG
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                                offset={0}
-                                exact='true'
-                                to="/de/"
-                                isbright={isNavFontBright}
-                                title="Contact"
-                                className={`${footerInView ? "active" : ""}`}
-                            >
-                                de
-                            </NavLinksG>
-                            <NavLinksG
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                                offset={0}
-                                exact='true'
-                                to="/"
-                                isbright={isNavFontBright}
-                                title="Contact"
-                                className={`${footerInView ? "active" : ""}`}
-                            >
-                                pl
-                            </NavLinksG>
-                            <LangaugeToggle
-                                isbright={isNavFontBright}
-                            />
+                            <LanguageSelect value="pl" onChange={e => {
+                                navigate(`/${e.target.value}`)
+                            }}>
+                                <option disabled="true" value="pl" hidden={true}>pl</option>
+                                <option value="en/">en</option>
+                                <option value="fr/">fr</option>
+                                <option value="de/">de</option>
+                            </LanguageSelect>
                         </NavItem>
                     </NavMenu>
                     <MobileIcon
