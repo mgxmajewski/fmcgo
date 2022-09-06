@@ -255,7 +255,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        communication via les médias numériques et sociaux
+                        médias numériques et sociaux
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
                         brand='consumer-activations'
@@ -264,7 +264,7 @@ const ThreeSixtySection = ({threeSixtySectionRef, experienceDrawersRef, experien
                         cubeColor={cubeColor}
                         fontColor={fontColor}
                     >
-                        activation marketing visant à engager les consommateurs
+                        activation marketing
                     </DrawerCuboidZAnimation>
                     <DrawerCuboidZAnimation
                         brand='in-store'

@@ -72,21 +72,21 @@ const handleCustomWidthMobile = brand => {
         case "marketing-innovation":
             return "52vw";
         case "brand-design":
-            return "36vw";
+            return "45vw";
         case "marketing-strategies":
             return "51vw";
         case "communication-strategies":
-            return "62vw";
+            return "70vw";
         case "communication-platforms":
-            return "67vw";
+            return "75vw";
         case "tv-campaigns":
-            return "72vw";
+            return "64vw";
         case "digital-communication":
-            return "80vw";
+            return "73vw";
         case "consumer-activations":
-            return "62vw";
+            return "52vw";
         case "in-store":
-            return "60vw"
+            return "66vw"
         case "slider":
             return "9vw"
         default:
@@ -105,19 +105,19 @@ const handleCustomWidthDesktop = brand => {
         case "brand-design":
             return "18vw";
         case "marketing-strategies":
-            return "21vw";
+            return "19vw";
         case "communication-strategies":
-            return "29vw";
+            return "26vw";
         case "communication-platforms":
-            return "32vw";
+            return "29vw";
         case "tv-campaigns":
-            return "28vw";
+            return "24vw";
         case "digital-communication":
-            return "28vw";
+            return "27vw";
         case "consumer-activations":
-            return "25vw";
+            return "19vw";
         case "in-store":
-            return "24vw"
+            return "25vw"
         case "slider":
             return "4.2vw"
         default:
