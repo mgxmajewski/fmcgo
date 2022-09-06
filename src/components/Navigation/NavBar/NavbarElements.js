@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
-import { Link as LinkG } from "gatsby"
+import {Link as LinkG} from "gatsby"
 
 export const NavLoadingPlaceHolder = styled.div`
   height: 20vw;
@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   font-size: var(--nav-font-size);
   display: grid;
-  grid-template-columns: 1.8em 10em 4.5em 4.1em 2.5em 5.4em 4.1em 2.5em;
+  grid-template-columns: 1.8em 10em 4.5em 4.1em 2.5em 5.4em 4.1em 3em;
   grid-template-rows: auto;
   grid-column-gap: 2vw;
 `
@@ -121,7 +121,13 @@ export const NavLinksG = styled(LinkG)`
 `
 
 export const LanguageSelect = styled.select`
+  color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   outline: none;
   border: none;
-  background-color: white;
+  background-color: transparent;
+
+  option {
+    color: black;
+    background-color: transparent;
+  }
 `

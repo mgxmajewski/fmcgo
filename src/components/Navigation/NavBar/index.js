@@ -121,7 +121,9 @@ const Navbar = ({isOpen, toggle, isNavFontBright, footerInView}) => {
                             >
                                 Let's Go
                             </NavLinks>
-                            <LanguageSelect value="pl" onChange={e => {
+                            <LanguageSelect
+                                isbright={isNavFontBright}
+                                value="pl" onChange={e => {
                                 navigate(`/${e.target.value}`)
                             }}>
                                 <option disabled="true" value="pl" hidden={true}>pl</option>
