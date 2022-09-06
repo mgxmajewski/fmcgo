@@ -1,6 +1,6 @@
 import * as React from "react"
 import {useEffect, useState} from "react"
-import Layout from "../components/Layout";
+import Layout from "../components/fr/Layout";
 import GoHero from "../components/fr/GoHero";
 import Radical from "../components/fr/Radical"
 import FoundersSection from "../components/fr/FoundersSection";
