@@ -6,7 +6,7 @@ export const NavLangaugeToggle = styled(LinkR)`
   justify-self: center;
   background: transparent;
   white-space: nowrap;
-  color: white;
+  color: #7b7b7b;
   //color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   outline: none;
   border: none;

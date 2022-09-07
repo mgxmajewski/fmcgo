@@ -19,8 +19,9 @@ const LanguageSelectMobile = ({isbright, toggle}) => {
                     // className={`${footerInView ? "active" : ""}`
                     active={true}
                 >
-                    PL/
+                    PL
                 </MobileNavLinkG>
+                /
                 <MobileNavLinkG
                     activeClass="active"
                     spy={true}
@@ -31,8 +32,9 @@ const LanguageSelectMobile = ({isbright, toggle}) => {
                     onClick={toggle}
                     // className={`${footerInView ? "active" : ""}`}
                 >
-                    EN/
+                    EN
                 </MobileNavLinkG>
+                /
                 <MobileNavLinkG
                     activeClass="active"
                     spy={true}
@@ -44,8 +46,9 @@ const LanguageSelectMobile = ({isbright, toggle}) => {
                     onClick={toggle}
                     // className={`${footerInView ? "active" : ""}`}
                 >
-                    FR/
+                    FR
                 </MobileNavLinkG>
+                /
                 <MobileNavLinkG
                     activeClass="active"
                     spy={true}

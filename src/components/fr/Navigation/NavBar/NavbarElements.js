@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
-import { Link as LinkG } from "gatsby"
+import {Link as LinkG} from "gatsby"
 
 export const NavLoadingPlaceHolder = styled.div`
   height: 20vw;
@@ -122,10 +122,9 @@ export const NavLinksG = styled(LinkG)`
 
 export const LanguageSelect = styled.select`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
-  outline: none;
-  border: none;
   background-color: transparent;
-  
+  border: 1px solid black;
+
   option {
     color: black;
     background-color: transparent;
