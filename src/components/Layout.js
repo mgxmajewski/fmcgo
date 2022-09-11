@@ -20,7 +20,7 @@ const placeHolderStyle = {
     display: "flex",
     height: "100vh",
     width: "100vw",
-    zIndex: "1000000",
+    zIndex: "2147483647",
     position: "absolute"
 };
 
@@ -30,7 +30,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
     const [footerRef, footerInView] = useInView();
 
     useEffect(() => {
-        setIsLoading(false)
+        setIsLoading(true)
     }, [])
 
     return (
@@ -39,6 +39,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                 ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>
                 : <></>
             }
+            <div style={{position: "relative"}}>
                 <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}
                         footerInView={footerInView}/>
                 <div className={layout}>
@@ -54,6 +55,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                         Wszelkie prawa zastrzeżone
                     </p>
                 </footer>
+            </div>
         </>
 
     );
