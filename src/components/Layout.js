@@ -33,9 +33,9 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
 
     return (
         <>
-            {/*{isLoading*/}
-            {/*    ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>*/}
-            {/*    :*/}
+            {isLoading
+                ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>
+                :
                 <>
                     <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}
                             footerInView={footerInView}/>
@@ -53,7 +53,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
                         </p>
                     </footer>
                 </>
-            {/*}*/}
+            }
         </>
     );
 };
