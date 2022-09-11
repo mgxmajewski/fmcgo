@@ -19,7 +19,8 @@ const placeHolderStyle = {
     background: "black",
     display: "flex",
     height: "100vh",
-    width: "100vw"
+    width: "100vw",
+    zIndex: "10000"
 };
 
 const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
