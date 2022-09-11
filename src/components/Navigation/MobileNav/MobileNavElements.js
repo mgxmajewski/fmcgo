@@ -15,12 +15,11 @@ export const MobileNavContainer = styled.aside`
   left: 0;
   transition: .3s ease-in-out;
   opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
-  top: ${({isOpen}) => (isOpen ? '0' : '-100%')}
+  top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
   
   @media screen and (min-width: 900px) {
     display: none;
   }
-  
 `
 
 export const CloseIcon = styled(FaTimes)`
