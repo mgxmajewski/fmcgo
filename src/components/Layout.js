@@ -35,26 +35,25 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
         <>
             {isLoading
                 ? <div style={placeHolderStyle}><ClipLoader loading={true} css={override} size={100}/></div>
-                :
-                <>
-                    <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}
-                            footerInView={footerInView}/>
-                    <div className={layout}>
-                        {children}
-                    </div>
-                    <footer ref={footerRef}>
-                        <p>
-                            © 2022 by fmc_go, built by
-                            <a href="https://agilecat.io/" style={{textDecoration: "none"}}>
-                                &nbsp;{"Agile >◊﬩◊< cat"}
-                            </a>
-                            <br/>
-                            Wszelkie prawa zastrzeżone
-                        </p>
-                    </footer>
-                </>
+                : <></>
             }
+            <NavBar isNavFontBright={isNavFontBright} isOpen={isOpen} toggle={toggle}
+                    footerInView={footerInView}/>
+            <div className={layout}>
+                {children}
+            </div>
+            <footer ref={footerRef}>
+                <p>
+                    © 2022 by fmc_go, built by
+                    <a href="https://agilecat.io/" style={{textDecoration: "none"}}>
+                        &nbsp;{"Agile >◊﬩◊< cat"}
+                    </a>
+                    <br/>
+                    Wszelkie prawa zastrzeżone
+                </p>
+            </footer>
         </>
+
     );
 };
 
