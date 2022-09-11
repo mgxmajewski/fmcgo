@@ -30,7 +30,7 @@ const Layout = ({children, isOpen, isNavFontBright, toggle}) => {
     const [footerRef, footerInView] = useInView();
 
     useEffect(() => {
-        setIsLoading(true)
+        setIsLoading(false)
     }, [])
 
     return (
