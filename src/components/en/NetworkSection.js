@@ -149,6 +149,28 @@ const NetworkSection = ({boardSectionRef}) => {
                                 data-aos-once="true"
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
+                                    alt={'Artur Kotowski Photo'}
+                                    src="../images/05artur.png"
+                                />
+                            </div>
+                            <p data-aos="fade-up" data-aos-once="true">
+                                <b>Artur Kotowski</b>
+                                <br/>
+                                He has been involved in&nbsp;feature,
+                                documentary and&nbsp;advertising production
+                                since 1996. Long-time head of&nbsp;the&nbsp;production
+                                department at&nbsp;A. Wajda's Master School of&nbsp;Film
+                                Directing and&nbsp;CUT/CUT Production House. Graduate
+                                and&nbsp;Lecturer at&nbsp;the&nbsp;National Film School in&nbsp;Łódź.
+                            </p>
+                        </div>
+
+                        <div className={networkPersonContainer}>
+                            <div
+                                data-aos="fade-up"
+                                data-aos-once="true"
+                                className={networkPersonPictureLeft}>
+                                <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
                                     src="../images/05lukasz.png"
                                 />

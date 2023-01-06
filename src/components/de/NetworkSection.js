@@ -54,7 +54,8 @@ const NetworkSection = ({boardSectionRef}) => {
                 className={networkCopy}>
                 Wir entwickeln strategische Empfehlungen und kreative Lösungen auf der Grundlage des einzigartigen
                 Wissens und der Erfahrung unserer Experten - Strategen, Forscher, Semiotiker, Medienspezialisten und
-                Spezialisten für digitale Kommunikation. Unsere Experten reichen von&nbsp;Inhabern führender Forschungs- und
+                Spezialisten für digitale Kommunikation. Unsere Experten reichen von&nbsp;Inhabern führender Forschungs-
+                und
                 Strategieunternehmen bis hin zu Lehrern an Spitzenuniversitäten.
             </div>
             <div className={networkPictures}>
@@ -71,7 +72,9 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         <b>Anna Maria Szutowicz</b>
                         <br/>
-                        CEO und Gründerin der Forschungs- und Strategieagentur Y&LOVERS. Strategin, Forscherin, Ethnografin unseres Konsumlebens, Expertin für Generationswechsel und Marketing für junge Menschen. Jurorin von Effie. Mitglied von PTBRiO.
+                        CEO und Gründerin der Forschungs- und Strategieagentur Y&LOVERS. Strategin, Forscherin,
+                        Ethnografin unseres Konsumlebens, Expertin für Generationswechsel und Marketing für junge
+                        Menschen. Jurorin von Effie. Mitglied von PTBRiO.
                     </p>
                 </div>
                 <div className={networkPersonContainer}>
@@ -87,7 +90,9 @@ const NetworkSection = ({boardSectionRef}) => {
                     <p data-aos="fade-up" data-aos-once="true">
                         <b>Klaudyna Kamińska</b>
                         <br/>
-                        Direktorin für Forschung bei der Agentur Y&LOVERS. Forscherin, Ethnographin und Linguistin. Sie hat sich auf explorative Forschung spezialisiert - auf der Suche nach effektiven Verbrauchererkenntnissen und innovativen Lösungen für die FMCG-Branche.
+                        Direktorin für Forschung bei der Agentur Y&LOVERS. Forscherin, Ethnographin und Linguistin. Sie
+                        hat sich auf explorative Forschung spezialisiert - auf der Suche nach effektiven
+                        Verbrauchererkenntnissen und innovativen Lösungen für die FMCG-Branche.
                     </p>
                 </div>
                 <div className={networkPersonContainer}>
@@ -105,7 +110,9 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Henryk Klawe</b>
                                 <br/>
-                                Mitbegründer der Beratungsagentur Together. Stratege, Brand Consultant. Er leitet die Prozesse der Innovation, der Zielfindung und der digitalen Transformation bei Großunternehmen und gemeinnützigen Organisationen.
+                                Mitbegründer der Beratungsagentur Together. Stratege, Brand Consultant. Er leitet die
+                                Prozesse der Innovation, der Zielfindung und der digitalen Transformation bei
+                                Großunternehmen und gemeinnützigen Organisationen.
                             </>
                             : <></>
                         }
@@ -127,7 +134,9 @@ const NetworkSection = ({boardSectionRef}) => {
                             ? <>
                                 <b>Bartosz Balewski</b>
                                 <br/>
-                                Mitbegründer der Beratungsagentur Together. UX-Experte, Schöpfer von Kundenerfahrungsstrategien. Mentor bei Google für Startup Accelerator. Er unterrichtet Designprozesse unter anderem an der SWPS.
+                                Mitbegründer der Beratungsagentur Together. UX-Experte, Schöpfer von
+                                Kundenerfahrungsstrategien. Mentor bei Google für Startup Accelerator. Er unterrichtet
+                                Designprozesse unter anderem an der SWPS.
                             </>
                             : <></>
                         }
@@ -141,6 +150,27 @@ const NetworkSection = ({boardSectionRef}) => {
                                 data-aos-once="true"
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
+                                    alt={'Artur Kotowski Photo'}
+                                    src="../images/05artur.png"
+                                />
+                            </div>
+                            <p data-aos="fade-up" data-aos-once="true">
+                                <b>Artur Kotowski</b>
+                                <br/>
+                                Er ist seit 1996 in&nbsp;der&nbsp;Spielfilm-,
+                                Dokumentarfilm- und&nbsp;Werbeproduktion tätig.
+                                Langjähriger Leiter der&nbsp;Produktionsabteilung
+                                in&nbsp;Mistrzowska Szkoła Reżyserii Filmowej A.Wajdy
+                                und&nbsp;CUT/CUT Production House. Absolvent und&nbsp;Lehrer
+                                an&nbsp;PWSFTViT in&nbsp;Lodz.
+                            </p>
+                        </div>
+                        <div className={networkPersonContainer}>
+                            <div
+                                data-aos="fade-up"
+                                data-aos-once="true"
+                                className={networkPersonPictureLeft}>
+                                <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
                                     src="../images/05lukasz.png"
                                 />
@@ -148,8 +178,9 @@ const NetworkSection = ({boardSectionRef}) => {
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Łukasz Kępiński</b>
                                 <br/>
-                              CEO und Gründer der Agentur Tears of Joy.
-Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der größten zyklischen Veranstaltung für Schöpfer - Środa, #dzienbloga.
+                                CEO und Gründer der Agentur Tears of Joy.
+                                Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der größten
+                                zyklischen Veranstaltung für Schöpfer - Środa, #dzienbloga.
                             </p>
                         </div>
 
@@ -166,7 +197,9 @@ Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der grö
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Wojciech Morawski</b>
                                 <br/>
-                                Gründer der Medienagentur AdPeak und zertifizierter Google-Trainer. SEM-Spezialist, führt Schulungen im Rahmen von Google Partners Academy, SEMcamp University oder Marketing Masters durch.
+                                Gründer der Medienagentur AdPeak und zertifizierter Google-Trainer. SEM-Spezialist,
+                                führt Schulungen im Rahmen von Google Partners Academy, SEMcamp University oder
+                                Marketing Masters durch.
                             </p>
                         </div>
                         <div className={networkPersonContainer}>
@@ -182,7 +215,9 @@ Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der grö
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Kacper Kaźmierowicz</b>
                                 <br/>
-                                Miteigentümer der Medienagentur AdPeak. Er führt Google Ads-Kampagnen durch. Befürworter einfacher und wirksamer Performance-Lösungen. Er testet und optimiert, um den bestmöglichen ROAS zu erreichen.
+                                Miteigentümer der Medienagentur AdPeak. Er führt Google Ads-Kampagnen durch. Befürworter
+                                einfacher und wirksamer Performance-Lösungen. Er testet und optimiert, um den
+                                bestmöglichen ROAS zu erreichen.
                             </p>
                         </div>
                         <div
@@ -199,7 +234,9 @@ Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der grö
                                 <b>
                                     Mirosław Filiciak</b>
                                 <br/>
-                                Professor an der Universität SWPS, Kulturwissenschaftler, Leiter des Fachbereichs Kultur und Medien. Forscher von Medien, Spielen, Smartphones und Streaming-Plattformen. Spezialist für Future Studies.
+                                Professor an der Universität SWPS, Kulturwissenschaftler, Leiter des Fachbereichs Kultur
+                                und Medien. Forscher von Medien, Spielen, Smartphones und Streaming-Plattformen.
+                                Spezialist für Future Studies.
                             </p>
                         </div>
                         <div className={networkPersonContainer}>
@@ -215,7 +252,10 @@ Experte für Influencer Marketing, Sozialmedien und Gaming. Organisator der grö
                             <p data-aos="fade-up" data-aos-once="true">
                                 <b>Karolina Balmas</b>
                                 <br/>
-                                Semiotikerin, Anthropologin, Forscherin. Sie analysiert Online-, Medien- und Popkultur- und Verbraucherdiskurse sowie Markenkommunikation. Durch die Untersuchung von sprachlichen und visuellen Zeichen sucht sie nach kulturellen Codes. Sie fängt Trends und Richtungen des Wandels ein.
+                                Semiotikerin, Anthropologin, Forscherin. Sie analysiert Online-, Medien- und Popkultur-
+                                und Verbraucherdiskurse sowie Markenkommunikation. Durch die Untersuchung von
+                                sprachlichen und visuellen Zeichen sucht sie nach kulturellen Codes. Sie fängt Trends
+                                und Richtungen des Wandels ein.
                             </p>
                         </div>
                     </>

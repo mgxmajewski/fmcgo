@@ -149,6 +149,27 @@ const NetworkSection = ({boardSectionRef}) => {
                                 data-aos-once="true"
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
+                                    alt={'Artur Kotowski Photo'}
+                                    src="../images/05artur.png"
+                                />
+                            </div>
+                            <p data-aos="fade-up" data-aos-once="true">
+                                <b>Artur Kotowski</b>
+                                <br/>
+                                Impliqué dans la&nbsp;production de&nbsp;longs métrages,
+                                de&nbsp;documentaires et&nbsp;de&nbsp;publicités depuis 1996.
+                                Il a&nbsp;longtemps dirigé le&nbsp;département de&nbsp;production
+                                de&nbsp;l’École de&nbsp;cinéma Andrzej-Wajda et&nbsp;de CUT/CUT Production House.
+                                Diplômé et&nbsp;chargée de&nbsp;cours à&nbsp;École nationale supérieure
+                                de&nbsp;cinéma, télévision&nbsp;et théâtre de&nbsp;Łódź (PWSFTViT).
+                            </p>
+                        </div>
+                        <div className={networkPersonContainer}>
+                            <div
+                                data-aos="fade-up"
+                                data-aos-once="true"
+                                className={networkPersonPictureLeft}>
+                                <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
                                     src="../images/05lukasz.png"
                                 />
