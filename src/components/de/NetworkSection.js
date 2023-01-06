@@ -13,6 +13,16 @@ import "aos/dist/aos.css";
 import NetworkPlusStub from "./NetworkPlusStub";
 import {useWindowSize} from "../../hooks/useWindowSize";
 
+const anna = '../images/anna_szutowicz.png'
+const klaudyna = '../images/klaudyna_kaminska.png'
+const henryk = '../images/henryk_klawe.png'
+const bartosz = '../images/bartosz_balewski.png'
+const artur = '../images/artur_kotowski.png'
+const lukasz = '../images/lukasz_kepinski.png'
+const wojtek = '../images/wojtek_morawski.png'
+const kacper = '../images/kacper_kazmierowski.png'
+const miroslaw = '../images/miroslaw_filiciak.png'
+const karolina = '../images/karolina_balmas.png'
 
 const NetworkSection = ({boardSectionRef}) => {
 
@@ -66,7 +76,7 @@ const NetworkSection = ({boardSectionRef}) => {
                     <div className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Ana Maria Szutowicz Photo'}
-                            src="../images/01annamaria.png"
+                            src={anna}
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -84,7 +94,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Klaudyna Kamińska Photo'}
-                            src="../images/02klaudyna.png"
+                            src={klaudyna}
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -102,7 +112,7 @@ const NetworkSection = ({boardSectionRef}) => {
                         className={networkPersonPictureLeft}>
                         <StaticImage
                             alt={'Henryk Klawe Photo'}
-                            src="../images/03henryk.png"
+                            src={henryk}
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -125,8 +135,8 @@ const NetworkSection = ({boardSectionRef}) => {
                         data-aos-once="true"
                         className={networkPersonPictureLeft}>
                         <StaticImage
-                            alt={''}
-                            src="../images/04bartosz.png"
+                            alt={'Bartosz Balewski Photo'}
+                            src={bartosz}
                         />
                     </div>
                     <p data-aos="fade-up" data-aos-once="true">
@@ -151,7 +161,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Artur Kotowski Photo'}
-                                    src="../images/05artur.png"
+                                    src={artur}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -172,7 +182,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
-                                    src="../images/05lukasz.png"
+                                    src={lukasz}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -191,7 +201,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Wojciech Morawski Photo'}
-                                    src="../images/06wojtek.png"
+                                    src={wojtek}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -209,7 +219,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Kacper Kaźmierowicz Photo'}
-                                    src="../images/07kacper.png"
+                                    src={kacper}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -227,7 +237,7 @@ const NetworkSection = ({boardSectionRef}) => {
                             <div className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Professor Mirosław Filiciak Photo'}
-                                    src="../images/08miroslaw.png"
+                                    src={miroslaw}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
@@ -246,7 +256,7 @@ const NetworkSection = ({boardSectionRef}) => {
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
                                     alt={'Karolina Semiotyczka Photo'}
-                                    src="../images/09karolina.png"
+                                    src={karolina}
                                 />
                             </div>
                             <p data-aos="fade-up" data-aos-once="true">
