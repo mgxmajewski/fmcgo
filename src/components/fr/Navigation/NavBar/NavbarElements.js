@@ -123,7 +123,7 @@ export const NavLinksG = styled(LinkG)`
 export const LanguageSelect = styled.select`
   color: ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid ${({isbright}) => isbright === 'true' ? 'white' : 'black'};
 
   option {
     color: black;
