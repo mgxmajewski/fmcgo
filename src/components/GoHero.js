@@ -50,11 +50,11 @@ const GoHero = ({heroSectionRef}) => {
                 className={fmcgoCopy}
             >
                 <h2>Go FMC_Go!</h2>
-                Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii
-                FMCG, <br/>retail i commodity services. Tworzymy komunikację marketingową, która swoją moc wspierania
-                sprzedaży czerpie <br/>w równym stopniu ze społecznego zaangażowania marki, jak i unikalnej propozycji
-                produktu czy usługi. <br/>Advertising nie jest religią, żeby miał się karmić wyłącznie misją i
-                lifestylem.
+                We Are FMCgo! Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji
+                dla marek z kategorii FMCG, retail i commodity services. Tworzymy komunikację marketingową, która
+                swoją moc wspierania sprzedaży czerpie w równym stopniu ze społecznego zaangażowania marki,
+                jak i unikalnej propozycji produktu czy usługi. W FMCgo wierzymy, że advertising musi karmić się
+                czymś więcej niż wyłącznie misją i lifestylem. Inaczej byłby po prostu religią.
             </div>
         </section>
     );
