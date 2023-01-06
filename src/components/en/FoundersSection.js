@@ -13,6 +13,10 @@ import {
     topPaddingDiv
 } from '../../styles/founders-section.module.css'
 
+const filip = '../../images/filip_szperl.jpg'
+const marcel = '../../images/marcel_ceglinski.jpg'
+const ania = '../../images/anna_turek.png'
+
 const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderOneRef, founderTwoRef}) => {
 
     return (
@@ -29,7 +33,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                             objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Marcel Cegliński Photo'}
-                            src="../images/marcel.jpg"
+                            src={marcel}
                         />
                     </div>
                     <div className={founderTagline}>
@@ -55,7 +59,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                             objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Filip Szperl Photo'}
-                            src="../images/filip.jpg"
+                            src={filip}
                         />
                     </div>
                     <div className={founderTagline}>
@@ -81,7 +85,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                             objectPosition="75%"
                             data-aos="fade-in" data-aos-duration="4000"
                             alt={'Anna Turek Photo'}
-                            src="../images/aniaturek.png"
+                            src={ania}
                         />
                     </div>
                     <div className={founderTagline}>
