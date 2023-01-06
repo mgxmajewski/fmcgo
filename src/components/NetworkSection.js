@@ -155,6 +155,27 @@ const NetworkSection = ({boardSectionRef}) => {
                                 data-aos-once="true"
                                 className={networkPersonPictureLeft}>
                                 <StaticImage
+                                    alt={'Artur Kotowski Photo'}
+                                    src="../images/05artur.png"
+                                />
+                            </div>
+                            <p data-aos="fade-up" data-aos-once="true">
+                                <b>Artur Kotowski</b>
+                                <br/>
+                                Od 1996 roku związany z&nbsp;produkcją
+                                fabularną, dokumentalną i&nbsp;reklamową. Wieloletni
+                                szef działu produkcji w&nbsp;Mistrzowskiej Szkole
+                                Reżyserii Filmowej A.Wajdy i CUT/CUT Production House.
+                                Absolwent i&nbsp;Wykładowca PWSFTViT w&nbsp;Łodzi.
+                            </p>
+                        </div>
+
+                        <div className={networkPersonContainer}>
+                            <div
+                                data-aos="fade-up"
+                                data-aos-once="true"
+                                className={networkPersonPictureLeft}>
+                                <StaticImage
                                     alt={'Łukasz Kepiński Photo'}
                                     src="../images/05lukasz.png"
                                 />
