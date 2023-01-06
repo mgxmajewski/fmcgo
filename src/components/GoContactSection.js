@@ -40,7 +40,7 @@ const GoContactSection = ({contactSectionRef}) => {
             </div>
             <div className={sideLead}>
                 <div>
-                    <b>fmc_go</b><br/>
+                    <b>FMCgo</b><br/>
                     ul. Walecznych 18 lok 1<br/>
                     03-916 Warszawa<br/>
                     <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>

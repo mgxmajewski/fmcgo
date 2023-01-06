@@ -72,7 +72,7 @@ const IndexPage = ({ref}) => {
         <>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>fmc_go - #RadicalAdvertising - FMCG/retail/commodity services</title>
+                <title>FMCgo - #RadicalAdvertising - FMCG/retail/commodity services</title>
                 <meta
                     name="description"
                     content="Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, retail i commodity services."
@@ -80,13 +80,13 @@ const IndexPage = ({ref}) => {
                 <meta property="og:url"
                       content="https://fmcgo.pl"/>
                 <meta property="og:type" content="website"/>
-                <meta property="og:title" content="fmc_go #RadicalAdvertising"/>
+                <meta property="og:title" content="FMCgo #RadicalAdvertising"/>
                 <meta
                     property="og:description"
                     content="Jesteśmy agencją reklamową full-service specjalizującą się w tworzeniu komunikacji dla marek z kategorii FMCG, retail i commodity services."
                 />
                 <meta property="og:image" content="https://fmcgo.pl/gobadge.png"/>
-                <meta property="og:site_name" content="fmc_go" />
+                <meta property="og:site_name" content="FMCgo" />
                 <link rel="canonical" href="https://fmcgo.pl" />
                 <meta name='robots' content='index, follow'/>
             </Helmet>
