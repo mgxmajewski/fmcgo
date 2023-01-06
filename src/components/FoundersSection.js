@@ -21,12 +21,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                 className={foundersSection}
                 id="founders-section"
             >
-                <div
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    id="slider-container"
-                    className={founderContainer}
-                >
+                <div id="slider-container" data-aos="fade-up" data-aos-once="true"  className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
@@ -68,15 +63,39 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                         &nbsp;
                         <span className={founderTaglineName}>Filip Szperl!</span>
                     </div>
-                    <div
-                        className={founderCopy}
-                    >
+                    <div className={founderCopy}>
                         Copywriter z 18-letnim doświadczeniem w&nbsp;pracy <br/>
                         dla największych marek FMCG, retail <br/>
                         i&nbsp;commodity services. Autor setek kampanii reklamowych <br/>
                         dla&nbsp;najpopularniejszych produktów oraz&nbsp;usług. <br/>
                         Twórca strategii komunikacji, platform kreatywnych <br/>
                         i&nbsp;innowacji produktowych.
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" className={founderContainer}>
+                    <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
+                    <div className={founderPictureContainer} ref={founderTwoRef}>
+                        <StaticImage
+                            className={founderImage}
+                            objectPosition="75%"
+                            data-aos="fade-in" data-aos-duration="4000"
+                            alt={'Anna Turek Photo'}
+                            src="../images/aniaturek.png"
+                        />
+                    </div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Anna Turek!</span>
+                    </div>
+                    <div className={founderCopy}>
+                        Account, Client Service Director z&nbsp;ponad 10 letnim <br/>
+                        doświadczeniem w&nbsp;pracy dla&nbsp;najbardziej wymagających polskich <br/>
+                        i&nbsp;międzynarodowych Klientów. Odpowiedzialna za&nbsp;zarządzanie <br/>
+                        kampaniami 360 stopni oraz za budowanie długotrwałych relacji <br/>
+                        z&nbsp;Klientami agencji. Znawczyni problematyki złożonych procesów <br/>
+                        marketingowych - loterii, innowacji produktowych <br/>
+                        i&nbsp;innowacji technologicznych.
                     </div>
                 </div>
             </section>
