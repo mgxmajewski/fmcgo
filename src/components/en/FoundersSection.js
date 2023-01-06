@@ -21,12 +21,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                 className={foundersSection}
                 id="founders-section"
             >
-                <div
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    id="slider-container"
-                    className={founderContainer}
-                >
+                <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
@@ -76,6 +71,32 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                         Author of hundreds of advertising campaigns for the most <br/>
                         popular products and services. Creator of communication <br/>
                         strategies, creative platforms and product innovations.
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" className={founderContainer}>
+                    <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
+                    <div className={founderPictureContainer} ref={founderTwoRef}>
+                        <StaticImage
+                            className={founderImage}
+                            objectPosition="75%"
+                            data-aos="fade-in" data-aos-duration="4000"
+                            alt={'Anna Turek Photo'}
+                            src="../images/aniaturek.png"
+                        />
+                    </div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Anna Turek!</span>
+                    </div>
+                    <div className={founderCopy}>
+                        Go Anna Turek! Account, Client Service Director <br/>
+                        with over 10 years of experience working <br/>
+                        for&nbsp;the&nbsp;most demanding Polish and&nbsp;international clients. <br/>
+                        Responsible for&nbsp;managing 360-degree campaigns and&nbsp;building <br/>
+                        long-term relationships with&nbsp;agency clients. She is&nbsp;familiar <br/>
+                        with the&nbsp;issues of&nbsp;complex marketing processes – lotteries, <br/>
+                        product innovation and&nbsp;technological innovation.
                     </div>
                 </div>
             </section>

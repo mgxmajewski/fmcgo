@@ -21,12 +21,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                 className={foundersSection}
                 id="founders-section"
             >
-                <div
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    id="slider-container"
-                    className={founderContainer}
-                >
+                <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
@@ -82,6 +77,34 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                         Créateur de stratégies de communication, <br/>
                         de plateformes créatives et d’innovations <br/>
                         en matière de produit.
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" className={founderContainer}>
+                    <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
+                    <div className={founderPictureContainer} ref={founderTwoRef}>
+                        <StaticImage
+                            className={founderImage}
+                            objectPosition="75%"
+                            data-aos="fade-in" data-aos-duration="4000"
+                            alt={'Anna Turek Photo'}
+                            src="../images/aniaturek.png"
+                        />
+                    </div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Anna Turek!</span>
+                    </div>
+                    <div className={founderCopy}>
+                        Directeur des&nbsp;comptes et&nbsp;du&nbsp;service clientèle <br/>
+                        (Account, Client Service Director), avec plus <br/>
+                        de&nbsp;10 ans&nbsp;d’expérience au service des clients polonais <br/>
+                        et&nbsp;internationaux les&nbsp;plus&nbsp;exigeants. Responsable <br/>
+                        de&nbsp;la&nbsp;gestion des&nbsp;campagnes à&nbsp;360 degrés <br/>
+                        et&nbsp;de&nbsp;l’établissement de&nbsp;relations à&nbsp;long terme <br/>
+                        avec les&nbsp;clients de&nbsp;l’agence. Expert en&nbsp;processus <br/>
+                        marketing complexes - loteries, développement <br/>
+                        de&nbsp;nouveaux produits et&nbsp;innovations technologiques.
                     </div>
                 </div>
             </section>

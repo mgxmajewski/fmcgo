@@ -21,12 +21,7 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                 className={foundersSection}
                 id="founders-section"
             >
-                <div
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    id="slider-container"
-                    className={founderContainer}
-                >
+                <div data-aos="fade-up" data-aos-once="true" id="slider-container" className={founderContainer}>
                     <div className={topPaddingDiv} ref={aboveFounderOneRef}></div>
                     <div className={founderPictureContainer} ref={founderOneRef}>
                         <StaticImage
@@ -78,6 +73,32 @@ const FoundersSection = ({data, aboveFounderOneRef, aboveFounderTwoRef, founderO
                         Produkte und Dienstleistungen. <br/>
                         Schöpfer von Kommunikationsstrategien, <br/>
                         kreativen Plattformen und Produktinnovationen.
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" className={founderContainer}>
+                    <div className={topPaddingDiv} ref={aboveFounderTwoRef}></div>
+                    <div className={founderPictureContainer} ref={founderTwoRef}>
+                        <StaticImage
+                            className={founderImage}
+                            objectPosition="75%"
+                            data-aos="fade-in" data-aos-duration="4000"
+                            alt={'Anna Turek Photo'}
+                            src="../images/aniaturek.png"
+                        />
+                    </div>
+                    <div className={founderTagline}>
+                        <span className={founderTaglinePrefix}>Go</span>
+                        &nbsp;
+                        <span className={founderTaglineName}>Anna Turek!</span>
+                    </div>
+                    <div className={founderCopy}>
+                        Account, Client Service Director mit über 10 Jahren Erfahrung <br/>
+                        in der Arbeit&nbsp;für&nbsp;die&nbsp;anspruchsvollsten polnischen <br/>
+                        internationalen Kunden. Verantwortlich für&nbsp;das&nbsp;Management <br/>
+                        von&nbsp;360-Grad-Kampagnen&nbsp;und&nbsp;den&nbsp;Aufbau langfristiger <br/>
+                        Beziehungen zu&nbsp;den&nbsp;Kunden der&nbsp;Agentur. Experte <br/>
+                        für&nbsp;komplexe Marketingprozesse - Lotterien, <br/>
+                        Produktinnovation und&nbsp;technologische Innovation.
                     </div>
                 </div>
             </section>
