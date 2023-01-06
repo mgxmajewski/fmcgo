@@ -50,13 +50,14 @@ const GoHero = ({heroSectionRef}) => {
                 className={fmcgoCopy}
             >
                 <h2>Go FMC_Go!</h2>
-                Nous sommes une agence de publicité à service complet, spécialisée dans la création de communications
-                pour des marques dans les catégories biens de consommation courante (FMCG, pour fast-moving consumer
-                goods), commerce de détail (retail) et services relatifs aux marchandises (commodity services). Nous
-                créons des communications marketing qui tirent leur pouvoir de promotion des ventes autant de
-                l’engagement social de la marque que de la proposition unique d’un produit ou service. La publicité
-                (advertising) n’est pas une religion pour qu’elle se nourrisse uniquement de la mission et du style de
-                vie.
+                We Are FMCgo! Nous sommes une&nbsp;agence de&nbsp;publicité à&nbsp;service complet, spécialisée
+                dans la&nbsp;création de&nbsp;communications pour&nbsp;des&nbsp;marques dans les&nbsp;catégories suivantes:
+                biens de&nbsp;consommation courante (FMCG, pour&nbsp;fast-moving consumer goods), commerce&nbsp;de
+                détail et&nbsp;services interchangeables. Nous créons des&nbsp;communications marketing qui &nbsp;tirent leur pouvoir
+                de&nbsp;soutien aux&nbsp;ventes autant de&nbsp;l’engagement social de&nbsp;la&nbsp;marque que&nbsp;de&nbsp;la&nbsp;proposition
+                unique du&nbsp;produit ou&nbsp;du&nbsp;service. Chez FMCgo, nous&nbsp;sommes d’avis que&nbsp;la&nbsp;publicité
+                doit se&nbsp;nourrir de&nbsp;plus que&nbsp;de&nbsp;la&nbsp;mission et&nbsp;du style de&nbsp;vie. Sinon, il&nbsp;s’agirait
+                simplement d’une&nbsp;religion.
             </div>
         </section>
     );

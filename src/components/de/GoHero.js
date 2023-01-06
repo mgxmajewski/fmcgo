@@ -50,11 +50,12 @@ const GoHero = ({heroSectionRef}) => {
                 className={fmcgoCopy}
             >
                 <h2>Go FMC_Go!</h2>
-                Wir sind die Full-Service-Werbeagentur, die sich auf die Gestaltung der Kommunikation für Marken in den
-                Bereichen FMCG, Retail und Commodity Services spezialisiert hat. Wir kreieren Marketingkommunikation,
-                die ihre verkaufsfördernde Wirkung sowohl <br/>aus dem sozialen Engagement der Marke als auch
-                aus dem Alleinstellungsmerkmal des Produkts oder der Dienstleistung ableitet. Advertising ist keine
-                Religion, so dass sie sich ausschließlich aus Mission und Lebensstil speisen sollte.
+                Wir sind FMCgo! Wir&nbsp;sind die&nbsp;Full-Service-Werbeagentur, die&nbsp;sich auf&nbsp;die&nbsp;Gestaltung der&nbsp;Kommunikation
+                für&nbsp;Marken in&nbsp;den&nbsp;Bereichen FMCG, Retail i&nbsp;Commodity Services spezialisiert. Wir&nbsp;kreieren
+                Marketingkommunikation, die&nbsp;ihre&nbsp;verkaufsfördernde Wirkung sowohl aus&nbsp;dem&nbsp;sozialen Engagement
+                der&nbsp;Marke als auch aus&nbsp;dem&nbsp;Alleinstellungsmerkmal des&nbsp;Produkts oder der&nbsp;Dienstleistung ableitet.
+                Wir von&nbsp;FMCgo sind der&nbsp;Meinung, dass sich die&nbsp;Werbung nicht nur&nbsp;aus&nbsp;Mission und&nbsp;Lifestyle speisen muss.
+                Sonst wäre es&nbsp;einfach eine Religion.
             </div>
         </section>
     );
