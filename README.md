@@ -18,24 +18,17 @@ Parts of the project:
 - **multilanguage support**: each language is redundant code (components) version. The reason for not using a library, for example, i18n was that the business decided that eventually the content source will be changed to CMS and later the multilanguage support will be provided on the CMS level. Also, that way there is better control for text formatting and styling (for example breaking lines and adding &nbsp; which was big focus for designer of the layout). Each language can vary in content and styling which happend for languages which are less concise than English.
 
 
-
-
 ## Running the project
 Development and building for production is done with GatsbyJS CLI and is straightforward.
 No environment variables are needed as everything is defined in the code and is a static content.
 
 **develop**
-
-Navigate into your new site’s directory and start it up.
-
 ```
 npm run develop
-npm run develop --host
 ```
 * --host flag is used to make the site available on the local network (useful for docker container)
 
 **build**
-
 ```
 npm run build
 ```
