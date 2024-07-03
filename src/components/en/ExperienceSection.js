@@ -54,8 +54,14 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 </div>
                 <div>
                     <StaticImage
-                        alt={'Echo Investment logo'}
-                        src="../images/echoinvestment.png"
+                        alt={'Archicom logo'}
+                        src="../images/archicom.jpeg"
+                    />
+                </div>
+                <div>
+                    <StaticImage
+                        alt={'Triverna logo'}
+                        src="../images/triverna.jpeg"
                     />
                 </div>
             </div>
