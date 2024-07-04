@@ -99,6 +99,9 @@
     padding: 4vw;
     grid-area: experience-clients;
     display: flex;
+    justify-self: left;
+    width: 100%;
+    max-width: 1250px;
     /*flex-direction: column;*/
     gap: 10vw;
 }
