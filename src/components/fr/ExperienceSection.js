@@ -1,12 +1,7 @@
 import React from 'react';
-import {StaticImage} from "gatsby-plugin-image";
-import {
-    experienceClients,
-    experienceCopy,
-    experienceSection,
-    experienceTagline,
-} from '../../styles/experience-section.module.css'
+import {experienceCopy, experienceSection, experienceTagline} from '../../styles/experience-section.module.css'
 import "aos/dist/aos.css";
+import ExperienceClientsLogos from "../common/ExperienceClientsLogos";
 
 
 const ExperienceSection = ({experienceSectionRef}) => {
@@ -33,38 +28,7 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 Toute plate-forme de communication, toute campagne peut «faire tourner le compteur» si la créativité est
                 associée à l’expertise en matière de marketing, de produits et de stratégie.
             </div>
-            <div className={experienceClients}>
-                <div>
-                    <StaticImage
-                        alt={'Develey logo'}
-                        src="../images/develey.png"
-                    />
-                </div>
-                <div>
-                    <StaticImage
-                        alt={'Tchibo logo'}
-                        src="../images/tchibo.png"
-                    />
-                </div>
-                <div>
-                    <StaticImage
-                        alt={'Travelist.pl logo'}
-                        src="../images/travelist.png"
-                    />
-                </div>
-                <div>
-                    <StaticImage
-                        alt={'Archicom logo'}
-                        src="../images/archicom.jpeg"
-                    />
-                </div>
-                <div>
-                    <StaticImage
-                        alt={'Triverna logo'}
-                        src="../images/triverna.jpeg"
-                    />
-                </div>
-            </div>
+            <ExperienceClientsLogos/>
         </section>
     )
         ;

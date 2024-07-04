@@ -1,15 +1,7 @@
 import React from 'react';
-import {StaticImage} from "gatsby-plugin-image";
-import {
-    experienceClients,
-    experienceCopy,
-    experienceSection,
-    experienceTagline,
-    experienceLogos,
-    experienceLogosCenteredRow,
-    // plusStar
-} from '../styles/experience-section.module.css'
+import {experienceCopy, experienceSection, experienceTagline,} from '../styles/experience-section.module.css'
 import "aos/dist/aos.css";
+import ExperienceClientsLogos from "./common/ExperienceClientsLogos";
 
 
 const ExperienceSection = ({experienceSectionRef}) => {
@@ -36,37 +28,7 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 Każda platforma komunikacji, każda kampania może "przekręcić licznik", jeśli&nbsp;tylko kreatywność połączy
                 się <br/>z ekspertyzą marketingową, produktową i&nbsp;strategiczną.
             </div>
-            <div className={experienceClients}>
-                <div className={experienceLogos}>
-                    <StaticImage
-                        alt={'Develey logo'}
-                        src="../images/develey.png"
-                        objectFit="contain"
-                    />
-                    <StaticImage
-                        alt={'Tchibo logo'}
-                        src="../images/tchibo.png"
-                        objectFit="contain"
-                    />
-                    <StaticImage
-                        alt={'Travelist.pl logo'}
-                        src="../images/travelist.png"
-                        objectFit="contain"
-                    />
-                </div>
-                <div className={experienceLogosCenteredRow}>
-                    <StaticImage
-                        alt={'Archicom logo'}
-                        src="../images/archicom.jpeg"
-                        objectFit="contain"
-                    />
-                    <StaticImage
-                        alt={'Triverna logo'}
-                        src="../images/triverna.jpeg"
-                        objectFit="contain"
-                    />
-                </div>
-            </div>
+            <ExperienceClientsLogos/>
         </section>
     )
         ;
