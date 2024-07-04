@@ -96,45 +96,48 @@
 }
 
 .experience-clients {
-    padding: 4vw;
     grid-area: experience-clients;
-    display: flex;
+    display: grid;
     justify-self: left;
+    grid-template-columns: repeat(2, auto);
     width: 100%;
     max-width: 1150px;
     /*flex-direction: column;*/
     gap: 10vw;
 }
 
-.experience-logos, .experience-logos-centered-row  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    gap: 10vw;
+.span-cols-2:last-child{
+    grid-column: span 2;
+    width: 50%;
+    justify-self: center;
 }
+
+
 
 @media (min-width: 900px) {
     .experience-clients {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4vw;
-        padding: 0;
-    }
-
-    .experience-logos {
-        flex-direction: row;
-        justify-content: space-between;
+        grid-area: experience-clients;
+        display: grid;
+        justify-self: left;
+        grid-template-columns: repeat(6, auto);
         width: 100%;
+        max-width: 1150px;
+        /*flex-direction: column;*/
         gap: 4vw;
     }
 
-    .experience-logos-centered-row {
-        flex-direction: row;
-        width: 100%;
-        gap: 4vw;
-        justify-content: center;
+    .span-cols-2{
+        grid-column: span 2;
     }
+
+    .span-cols-2-skip-1{
+        grid-column: 2 / span 2;
+    }
+
+    .span-cols-2:last-child{
+        width: 100%;
+    }
+
 }
+
 
