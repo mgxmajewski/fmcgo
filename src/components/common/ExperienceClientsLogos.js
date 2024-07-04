@@ -8,31 +8,31 @@ const ExperienceClientsLogos = () => {
                 <StaticImage
                     alt={'Develey logo'}
                     src="../../images/develey.png"
-                    objectFit="cover"
+                    objectFit="contain"
                     className={spanCols2}
                 />
                 <StaticImage
                     alt={'Tchibo logo'}
                     src="../../images/tchibo.png"
-                    objectFit="cover"
+                    objectFit="contain"
                     className={spanCols2}
                 />
                 <StaticImage
                     alt={'Travelist.pl logo'}
                     src="../../images/travelist.png"
-                    objectFit="cover"
+                    objectFit="contain"
                     className={spanCols2}
                 />
                 <StaticImage
                     alt={'Archicom logo'}
                     src="../../images/archicom.jpeg"
-                    objectFit="cover"
+                    objectFit="contain"
                     className={spanCols2Skip1}
                 />
                 <StaticImage
                     alt={'Triverna logo'}
                     src="../../images/triverna.jpeg"
-                    objectFit="cover"
+                    objectFit="contain"
                     className={spanCols2}
                 />
         </div>
