@@ -5,6 +5,8 @@ import {
     experienceCopy,
     experienceSection,
     experienceTagline,
+    experienceLogos,
+    experienceLogosCenteredRow,
     // plusStar
 } from '../styles/experience-section.module.css'
 import "aos/dist/aos.css";
@@ -35,34 +37,33 @@ const ExperienceSection = ({experienceSectionRef}) => {
                 się <br/>z ekspertyzą marketingową, produktową i&nbsp;strategiczną.
             </div>
             <div className={experienceClients}>
-                <div>
+                <div className={experienceLogos}>
                     <StaticImage
                         alt={'Develey logo'}
                         src="../images/develey.png"
+                        objectFit="contain"
                     />
-                </div>
-                <div>
                     <StaticImage
                         alt={'Tchibo logo'}
                         src="../images/tchibo.png"
+                        objectFit="contain"
                     />
-                </div>
-                <div>
                     <StaticImage
                         alt={'Travelist.pl logo'}
                         src="../images/travelist.png"
+                        objectFit="contain"
                     />
                 </div>
-                <div>
+                <div className={experienceLogosCenteredRow}>
                     <StaticImage
                         alt={'Archicom logo'}
                         src="../images/archicom.jpeg"
+                        objectFit="contain"
                     />
-                </div>
-                <div>
                     <StaticImage
                         alt={'Triverna logo'}
                         src="../images/triverna.jpeg"
+                        objectFit="contain"
                     />
                 </div>
             </div>
