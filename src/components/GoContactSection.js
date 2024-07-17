@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-    // goBadge,
-    goContactSection,
-    mainLead,
-    sideLead,
-    socialIcons,
-    tagLine
-} from '../styles/go-contact-section.module.css'
+import {goContactSection, mainLead, sideLead, socialIcons, tagLine} from '../styles/go-contact-section.module.css'
 import {iconBox} from "../styles/radical.module.css";
 import "aos/dist/aos.css";
 // import {StaticImage} from "gatsby-plugin-image";
@@ -40,12 +33,12 @@ const GoContactSection = ({contactSectionRef}) => {
             </div>
             <div className={sideLead}>
                 <div>
-                    <b>FMCgo</b><br/>
+                    <b>FMCgo Sp. z o.o.</b><br/>
                     ul. Walecznych 18 lok 1<br/>
                     03-916 Warszawa<br/>
-                    <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>
-                        <u>go@fmcgo.pl</u>
-                    </a>
+                    KRS: 0000994755 <br/>
+                    NIP: 113-307-30-27 <br/>
+                    <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}><u>go@fmcgo.pl</u></a>
                 </div>
                 <div className={socialIcons}>
                     <a href="mailto:go@fmcgo.pl" style={{textDecoration: "none"}}>
